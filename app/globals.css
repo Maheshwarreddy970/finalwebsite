@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: hsl(0, 0%, 87%); /* Or hsl(210 20% 98%) or #e5e7eb for neutral gray */
+  }
+}
+
+@theme inline {
+  --animate-line-shadow: line-shadow 45s linear infinite;
+ 
+  @keyframes line-shadow {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 100% -100%;
+    }
+  }
+}
