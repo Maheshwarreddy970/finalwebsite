@@ -75,7 +75,7 @@ export const CarFilterControls = ({
             <span>{section.title}</span>
             {section.currentValue && (
               <DestructiveButton
-                className=" text-gray-600 flex items-center"
+                className=" text-gray-600 flex items-center "
                 onClick={() => onClearFilter(section.id)}
               >
                 <X className="mr-1  h-3 w-3" />

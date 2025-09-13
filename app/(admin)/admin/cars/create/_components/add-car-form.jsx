@@ -124,7 +124,7 @@ export const AddCarForm = () => {
   useEffect(() => {
     if (addCarResult?.success) {
       toast.success("Car added successfully");
-      router.push(`/${clientInfo?.name}/admin/cars`);
+      router.push(`/admin/cars`);
     }
   }, [addCarResult, router]);
 
@@ -619,7 +619,7 @@ export const AddCarForm = () => {
                               type="button"
                               size="icon"
                               variant="destructive"
-                              className="absolute top-1 right-1 h-6 w-6 opacity-0 group-hover:opacity-100 transition-opacity"
+                              className="absolute top-1 bg-red-500 right-1 h-6 w-6 text-white border  shadow-md opacity-100 tr"
                               onClick={() => removeImage(index)}
                             >
                               <X className="h-3 w-3" />
@@ -633,7 +633,7 @@ export const AddCarForm = () => {
 
                 <Button
                   type="submit"
-                  className="w-full md:w-auto"
+                  className="w-full md:w-auto bg-white border shadow-md"
                   disabled={addCarLoading}
                 >
                   {addCarLoading ? (

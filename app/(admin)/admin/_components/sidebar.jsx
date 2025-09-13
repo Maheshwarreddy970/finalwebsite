@@ -5,39 +5,37 @@ import { usePathname } from "next/navigation";
 import { LayoutDashboard, Car, Calendar, Cog, LogOut, MessageCircle } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { SignOutButton } from "@clerk/nextjs";
-import { useClientStore } from "@/store/useClientStore";
 import Image from "next/image";
 
 
 export const Sidebar = () => {
   const pathname = usePathname();
-  const clientInfo = useClientStore((state) => state.clientInfo);
   // Navigation items
   const routes = [
     {
       label: "Dashboard",
       icon: LayoutDashboard,
-      href: `/${clientInfo?.name}/admin`,
+      href: `/admin`,
     },
     {
       label: "Cars",
       icon: Car,
-      href: `/${clientInfo?.name}/admin/cars`,
+      href: `/admin/cars`,
     },
     {
       label: "Test Drives",
       icon: Calendar,
-      href: `/${clientInfo?.name}/admin/test-drives`,
+      href: `/admin/test-drives`,
     },
     {
       label: "Chat",
       icon: MessageCircle,
-      href: `/${clientInfo?.name}/admin/chat`,
+      href: `/admin/chat`,
     },
     {
       label: "Settings",
       icon: Cog,
-      href: `/${clientInfo?.name}/admin/settings`,
+      href: `/admin/settings`,
     },
   ];
   return (
@@ -45,8 +43,8 @@ export const Sidebar = () => {
       {/* Desktop Sidebar */}
       <div className="hidden md:flex h-full flex-col overflow-y-auto bg-white  shadow-sm border-r">
         <div className="p-6">
-          <Link href={`/${clientInfo?.name}`}>
-            <Image src={clientInfo?.logo} alt="Logo" width={100} height={100} className="h-8 w-auto" />
+          <Link href="/">
+            <Image src="/swtlogo.png" alt="Logo" width={100} height={100} className="h-8 w-auto" />
           </Link>
         </div>
         <div className="flex flex-col w-full px-3 gap-3">

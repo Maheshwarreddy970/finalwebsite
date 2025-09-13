@@ -1,13 +1,20 @@
 "use server";
 
 import { GoogleGenerativeAI } from "@google/generative-ai";
-import { cookies } from "next/headers";
 import { revalidatePath } from "next/cache";
 import { v4 as uuidv4 } from "uuid";
 import { db } from "@/lib/prisma";
-import { createClient } from "@/lib/supabase";
 import { auth } from "@clerk/nextjs/server";
 import { serializeCarData } from "@/lib/helpers";
+import { v2 as cloudinary } from "cloudinary";
+
+// Configure Cloudinary
+cloudinary.config({
+  cloud_name: process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME || "dduwiqu4j",
+  api_key: "214725748195245", // Replace with your actual API key
+  api_secret: process.env.CLOUDINARY_API_SECRET || "bWK-VpWK1DG8q7u1Q1x3DsYYeDQ", // Replace with your actual API secret
+  secure: true,
+});
 
 // Function to convert File to base64
 async function fileToBase64(file) {
@@ -19,19 +26,15 @@ async function fileToBase64(file) {
 // Gemini AI integration for car image processing
 export async function processCarImageWithAI(file) {
   try {
-    // Check if API key is available
     if (!process.env.GEMINI_API_KEY) {
       throw new Error("Gemini API key is not configured");
     }
 
-    // Initialize Gemini API
     const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
     const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
-    // Convert image file to base64
     const base64Image = await fileToBase64(file);
 
-    // Create image part for the model
     const imagePart = {
       inlineData: {
         data: base64Image,
@@ -39,7 +42,6 @@ export async function processCarImageWithAI(file) {
       },
     };
 
-    // Define the prompt for car detail extraction
     const prompt = `
       Analyze this car image and extract the following information:
       1. Make (manufacturer)
@@ -47,17 +49,17 @@ export async function processCarImageWithAI(file) {
       3. Year (approximately)
       4. Color
       5. Body type (SUV, Sedan, Hatchback, etc.)
-      6. Mileage
+      6. Mileage (in miles) extract milage base on car
       7. Fuel type (your best guess)
       8. Transmission type (your best guess)
-      9. Price (your best guess) not add $ symbol or commas in your response e.g. 10000 just simple number in a string formate
-      9. Short Description as to be added to a car listing
+      9. Price (your best guess) not add $ symbol or commas in your response e.g. 10000 just simple number in a string format
+      10. Most Attractive Description of the car to create intrest in buyer about the car as to be added to a car listing
 
       Format your response as a clean JSON object with these fields:
       {
         "make": "",
         "model": "",
-        "year": 0000,
+        "year": 0,
         "color": "",
         "price": "",
         "mileage": "",
@@ -72,17 +74,14 @@ export async function processCarImageWithAI(file) {
       Only respond with the JSON object, nothing else.
     `;
 
-    // Get response from Gemini
     const result = await model.generateContent([imagePart, prompt]);
     const response = await result.response;
     const text = response.text();
     const cleanedText = text.replace(/```(?:json)?\n?/g, "").trim();
 
-    // Parse the JSON response
     try {
       const carDetails = JSON.parse(cleanedText);
 
-      // Validate the response format
       const requiredFields = [
         "make",
         "model",
@@ -106,8 +105,6 @@ export async function processCarImageWithAI(file) {
           `AI response missing required fields: ${missingFields.join(", ")}`
         );
       }
-
-      // Return success response with data
       return {
         success: true,
         data: carDetails,
@@ -121,8 +118,8 @@ export async function processCarImageWithAI(file) {
       };
     }
   } catch (error) {
-    console.error();
-    throw new Error("Gemini API error:" + error.message);
+    console.error("Gemini API error:", error);
+    throw new Error("Gemini API error: " + error.message);
   }
 }
 
@@ -142,11 +139,7 @@ export async function addCar({ carData, images }) {
     const carId = uuidv4();
     const folderPath = `cars/${carId}`;
 
-    // Initialize Supabase client for server-side operations
-    const cookieStore = await cookies();
-    const supabase = createClient(cookieStore);
-
-    // Upload all images to Supabase storage
+    // Upload all images to Cloudinary
     const imageUrls = [];
 
     for (let i = 0; i < images.length; i++) {
@@ -160,42 +153,41 @@ export async function addCar({ carData, images }) {
 
       // Extract the base64 part (remove the data:image/xyz;base64, prefix)
       const base64 = base64Data.split(",")[1];
-      const imageBuffer = Buffer.from(base64, "base64");
 
       // Determine file extension from the data URL
       const mimeMatch = base64Data.match(/data:image\/([a-zA-Z0-9]+);/);
       const fileExtension = mimeMatch ? mimeMatch[1] : "jpeg";
 
-      // Create filename
-      const fileName = `image-${Date.now()}-${i}.${fileExtension}`;
-      const filePath = `${folderPath}/${fileName}`;
-      
-      // Upload the file buffer directly
-      const { data, error } = await supabase.storage
-      .from("cardealerimages")
-      .upload(filePath, imageBuffer, {
-        contentType: `image/${fileExtension}`,
-      });
-      
-      if (error) {
-        console.error("Error uploading image:", error);
-        throw new Error(`Failed to upload image: ${error.message}`);
+      // Create filename (without extension in public_id)
+      const fileName = `image-${Date.now()}-${i}`;
+      const publicId = `${folderPath}/${fileName}`;
+
+      // Upload to Cloudinary
+      const uploadResult = await cloudinary.uploader.upload(
+        `data:image/${fileExtension};base64,${base64}`,
+        {
+          folder: folderPath, // Specify folder separately
+          public_id: publicId, // Specify public_id without extension
+          resource_type: "image",
+        }
+      );
+
+      if (!uploadResult.secure_url) {
+        console.error("Error uploading image to Cloudinary:", uploadResult);
+        throw new Error("Failed to upload image to Cloudinary");
       }
-      
-      // Get the public URL for the uploaded file
-      const publicUrl = `${process.env.NEXT_PUBLIC_SUPABASE_URL}/storage/v1/object/public/cardealerimages/${filePath}`; // disable cache in config
-      
-      imageUrls.push(publicUrl);
+
+      imageUrls.push(uploadResult.secure_url);
     }
-    
+
     if (imageUrls.length === 0) {
       throw new Error("No valid images were uploaded");
     }
-    
+
     // Add the car to the database
     const car = await db.car.create({
       data: {
-        id: carId, // Use the same ID we used for the folder
+        id: carId,
         make: carData.make,
         model: carData.model,
         year: carData.year,
@@ -209,28 +201,26 @@ export async function addCar({ carData, images }) {
         description: carData.description,
         status: carData.status,
         featured: carData.featured,
-        images: imageUrls, // Store the array of image URLs
+        images: imageUrls,
       },
     });
-    
+
     // Revalidate the cars list page
     revalidatePath("/admin/cars");
-    
+
     return {
       success: true,
     };
   } catch (error) {
-    throw new Error("Error adding car:" + error.message);
+    console.error("Error adding car:", error);
+    throw new Error("Error adding car: " + error.message);
   }
 }
-
 // Fetch all cars with simple search
 export async function getCars(search = "") {
   try {
-    // Build where conditions
     let where = {};
 
-    // Add search filter
     if (search) {
       where.OR = [
         { make: { contains: search, mode: "insensitive" } },
@@ -239,7 +229,6 @@ export async function getCars(search = "") {
       ];
     }
 
-    // Execute main query
     const cars = await db.car.findMany({
       where,
       orderBy: { createdAt: "desc" },
@@ -266,7 +255,7 @@ export async function deleteCar(id) {
     const { userId } = await auth();
     if (!userId) throw new Error("Unauthorized");
 
-    // First, fetch the car to get its images
+    // Fetch the car to get its images
     const car = await db.car.findUnique({
       where: { id },
       select: { images: true },
@@ -284,34 +273,30 @@ export async function deleteCar(id) {
       where: { id },
     });
 
-    // Delete the images from Supabase storage
+    // Delete images from Cloudinary
     try {
-      const cookieStore = cookies();
-      const supabase = createClient(cookieStore);
-
-      // Extract file paths from image URLs
-      const filePaths = car.images
+      const publicIds = car.images
         .map((imageUrl) => {
-          const url = new URL(imageUrl);
-          const pathMatch = url.pathname.match(/\/cardealerimages\/(.*)/);
-          return pathMatch ? pathMatch[1] : null;
+          // Extract public_id from Cloudinary URL
+          // Example URL: https://res.cloudinary.com/dduwiqu4j/image/upload/v1234567890/cars/carId/image-1234567890-0.jpeg
+          const urlParts = imageUrl.split("/");
+          const publicIdWithExtension = urlParts
+            .slice(urlParts.indexOf("cars"))
+            .join("/");
+          const publicId = publicIdWithExtension.split(".").slice(0, -1).join(".");
+          return publicId;
         })
         .filter(Boolean);
 
-      // Delete files from storage if paths were extracted
-      if (filePaths.length > 0) {
-        const { error } = await supabase.storage
-          .from("cardealerimages")
-          .remove(filePaths);
-
-        if (error) {
-          console.error("Error deleting images:", error);
-          // We continue even if image deletion fails
+      // Delete files from Cloudinary if publicIds were extracted
+      if (publicIds.length > 0) {
+        for (const publicId of publicIds) {
+          await cloudinary.uploader.destroy(publicId, { resource_type: "image" });
         }
       }
     } catch (storageError) {
-      console.error("Error with storage operations:", storageError);
-      // Continue with the function even if storage operations fail
+      console.error("Error deleting images from Cloudinary:", storageError);
+      // Continue even if image deletion fails
     }
 
     // Revalidate the cars list page
@@ -345,13 +330,11 @@ export async function updateCarStatus(id, { status, featured }) {
       updateData.featured = featured;
     }
 
-    // Update the car
     await db.car.update({
       where: { id },
       data: updateData,
     });
 
-    // Revalidate the cars list page
     revalidatePath("/admin/cars");
 
     return {

@@ -16,14 +16,13 @@ function serializeCarData(car) {
 /**
  * Get featured cars for the homepage
  */
-export async function getFeaturedCars(limit = 3) {
+export async function getFeaturedCars() {
   try {
     const cars = await db.car.findMany({
       where: {
         featured: true,
         status: "AVAILABLE",
       },
-      take: limit,
       orderBy: { createdAt: "desc" },
     });
 

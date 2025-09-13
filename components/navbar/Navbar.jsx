@@ -26,7 +26,7 @@ const Header = async ({ isAdminPage = false, clientInfo }) => {
     <header className="fixed  px-3 md:px-10 py-5  top-0 w-full bg-white backdrop-blur-md z-50 ">
       <nav className="mx-auto flex items-center justify-between">
         <div className="flex gap-10 items-center">
-          <Link href={isAdminPage ? `/${clientInfo?.name}/admin` : `/${clientInfo?.name}`} className="flex">
+          <Link href={isAdminPage ? `/admin` : `/${clientInfo?.name}`} className="flex">
             <Image
               src={`${clientInfo?.logo ? clientInfo?.logo : "/vehiql-logo.png"}`}
               alt="Vehiql Logo"
@@ -51,7 +51,7 @@ const Header = async ({ isAdminPage = false, clientInfo }) => {
           <Tooltip>
             <TooltipTrigger asChild>
               <Link
-                href={`/${clientInfo?.name}/admin`}
+                href={`/admin`}
                 className=""
               >
                 <svg

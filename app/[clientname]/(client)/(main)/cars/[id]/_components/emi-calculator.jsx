@@ -11,17 +11,12 @@ import {
 import { cn } from "@/lib/utils";
 import { ClockIcon } from "lucide-react";
 import React, { useEffect, useState } from "react";
-import { Lato } from "next/font/google";
-import { ChartContainer } from "@/components/ui/chart";
+import { Philosopher } from 'next/font/google'
 import { ChartPieDonutActive } from "@/components/ui/chart-pie-label";
 
 
+const philosopher = Philosopher({ subsets: ['latin'], weight: ["400", '700'] })
 
-const lato = Lato({
-  subsets: ["latin"],
-  weight: ["400", "700", "900"],
-  display: "swap",
-})
 const scoreToRate = {
   "0": 6.95, // Excellent (800+)
   "1": 7.50, // Very Good (740–799)
@@ -143,11 +138,15 @@ function EmiCalculator({ price = 100000, className }) {
 
   return (
     <>
-      <section className=" w-full border rounded-2xl p-8 shadow-md overflow-hidden   ">
-        <h1 className="text-5xl font-semibold text-gray-900  ">FINANCING MADE EASY</h1>
+        <div
+          className={cn(' flex gap-4 mb-5 items-center text-6xl font-semibold text-black  ', philosopher.className)}
+        >
+          FINANCING MADE EASY
+        </div>
+      <section className=" w-full border rounded-2xl p-8 shadow-xl border-neutral-300 overflow-hidden   ">
         <div className=" mt-5 flex gap-16 justify-between  ">
           <div className="flex flex-col gap-5 w-full  max-w-[65%]  ">
-            
+
             <div className="">
               <p
                 className="block  font-medium  text-gray-900"
@@ -216,7 +215,7 @@ function EmiCalculator({ price = 100000, className }) {
                   className="peer ps-6 sm:text-base text-base file:text-base placeholder:text-base   pe-12 bg-white focus-visible:ring-blue-400 rounded-xl h-10"
                   placeholder="0.00"
                   type="number"
-                  value={downPayment}
+                  value={Math.trunc(downPayment)}
                   onChange={(e) =>
                     handleDownPaymentChange(parseFloat(e.target.value))
                   }
@@ -329,7 +328,7 @@ function EmiCalculator({ price = 100000, className }) {
                 </Select>
               </div>
             </div>
-            <div className=" flex flex-col gap-0.5">
+            <div className=" flex flex-col gap-0.5 mt-1.5">
               <p>
                 <span className=" font-semibold text-green-500 text-lg">✓ </span>
                 <span className=" font-semibold">No Credit Impact </span>
@@ -352,7 +351,7 @@ function EmiCalculator({ price = 100000, className }) {
               </p>
             </div>
           </div>
-          <div className=" p-7 flex flex-col w-full max-w-[35%] text-white h-full bg-indigo-600 border-neutral-200 justify-between  gap-8 relative  rounded-3xl border shadow  ">
+          <div className=" p-7 flex flex-col w-full max-w-[35%] text-white h-full bg-indigo-600 border-neutral-200 justify-between  gap-8 relative  rounded-3xl border shadow-md  ">
             <h1 className=" text-center -mb-7   text-2xl">Breakedown of EMI</h1>
             <ChartPieDonutActive loanamount={Math.trunc(results.loanPrincipal)} vehicleprice={Math.trunc(loanAmount)} monthlypayment={`${Math.trunc(results.emi).toLocaleString()}`}></ChartPieDonutActive>
             <div className=" -mt-6 flex gap-0.5 flex-col">
@@ -361,7 +360,7 @@ function EmiCalculator({ price = 100000, className }) {
                   Vehicle Price
                 </span>
                 <span className=" text-lg font-semibold ">
-                  ${formatNumber(loanAmount)}
+                  ${formatNumber(Math.trunc(loanAmount))}
                 </span>
               </div>
               <div className=" flex justify-between">
@@ -369,7 +368,7 @@ function EmiCalculator({ price = 100000, className }) {
                   Loan Amount
                 </span>
                 <span className=" text-lg font-semibold ">
-                  ${formatNumber(results.loanPrincipal)}
+                  ${formatNumber(Math.trunc(results.loanPrincipal))}
                 </span>
               </div>
             </div>
@@ -382,7 +381,7 @@ function EmiCalculator({ price = 100000, className }) {
                     Down Payment
                   </span>
                   <span className=" text-lg font-semibold ">
-                    ${formatNumber(results.downPayment)}
+                    ${formatNumber(Math.trunc(results.downPayment))}
                   </span>
                 </div>
                 <div className=" flex justify-between">
@@ -390,7 +389,7 @@ function EmiCalculator({ price = 100000, className }) {
                     Total Interest
                   </span>
                   <span className=" text-lg font-semibold ">
-                    ${formatNumber(results.totalInterest)}
+                    ${formatNumber(Math.trunc(results.totalInterest))}
                   </span>
                 </div>
                 <div className=" flex justify-between border-t py-2  border-white border-dashed">
@@ -398,7 +397,7 @@ function EmiCalculator({ price = 100000, className }) {
                     Total Amount
                   </span>
                   <span className=" text-lg font-semibold ">
-                    ${formatNumber(results.totalPayment)}
+                    ${formatNumber(Math.trunc(results.totalPayment))}
                   </span>
                 </div>
               </div>

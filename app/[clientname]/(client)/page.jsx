@@ -1,6 +1,7 @@
 import { getFeaturedCars } from "@/actions/home";
 import Herosection from "@/components/landingpage/Herosection";
 import EmiCalculator from "./(main)/cars/[id]/_components/emi-calculator";
+import Featured from "@/components/landingpage/Featured";
 
 
 export default async function Home() {
@@ -8,7 +9,8 @@ export default async function Home() {
   return (
     <>
       <Herosection></Herosection>
-      <div className="px-3 md:px-10 mt-96 ">
+      <Featured Cars={featuredCars}></Featured>
+      <div className="px-3 md:px-10">
         <EmiCalculator  className={' max-h-[150vh] overflow-y-visible'} />
       </div>
     </>

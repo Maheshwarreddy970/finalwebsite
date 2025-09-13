@@ -171,7 +171,7 @@ export const CarsList = () => {
       {/* Actions and Search */}
       <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-between">
         <RainbowLink
-          href={`/${clientInfo?.name}/admin/cars/create`}
+          href={`/admin/cars/create`}
           className="flex items-center gap-2 mb-5"
         >
           Add Car
@@ -194,7 +194,7 @@ export const CarsList = () => {
       </div>
 
       {/* Cars Table */}
-      <Card className=" shadow-md border">
+      <Card className=" shadow-md border bg-white">
         <CardContent className="p-0">
           {loadingCars && !carsData ? (
             <div className="flex justify-center items-center py-12">
@@ -333,7 +333,7 @@ export const CarsList = () => {
                   ? "No cars match your search criteria"
                   : "Your inventory is empty. Add cars to get started."}
               </p>
-              <Link href={`/${clientInfo?.name}/admin/cars/create`}>
+              <Link href={`/admin/cars/create`}>
                 Add Your First Car
               </Link>
             </div>
