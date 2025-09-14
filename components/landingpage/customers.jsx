@@ -42,25 +42,28 @@ export default function Customerstories() {
                     {clientInfo?.images?.map((image, index) => (
                         <CarouselItem key={index} className="basis-[25%]">
                             <div>
-                                <div className=' h-96 rounded-4xl overflow-hidden border border-neutral-300   bg-white p-1.5'>
+                                <div className=' h-96 rounded-4xl shadow  overflow-hidden border border-neutral-300   bg-white p-1.5'>
                                     <Image src={image} alt="Image" width={1920} height={1080} priority={false} loading="lazy" className="w-full h-full rounded-3xl overflow-hidden  object-cover"></Image>
                                 </div>
                                 <div className=' px-6 mt-2 items-center flex justify-between bg-white '>
-                                    <Image
+                                    {/* <Image
                                         src={`${clientInfo?.logo ? clientInfo?.logo : "/vehiql-logo.png"}`}
                                         alt="Vehiql Logo"
                                         width={200}
                                         height={60}
                                         className="h-7 w-auto object-contain mt-4 "
-                                    />
-                                    <div className=' flex gap-2 '>
-                                        <div className='w-9 h-9 group  border shadow-md flex justify-center items-center bg-gradient-to-tl   from-[#833ab4] via-[#fd1d1d] to-[#fcb045]  relative  rounded-lg  '>
+                                    /> */}
+                                     <div className=' text-lg text-neutral-600 '>
+                                        @{clientInfo?.name}
+                                    </div>
+                                    <div className=' flex gap-2  '>
+                                        <div className='w-8 h-8 group  border shadow-md flex justify-center items-center bg-gradient-to-tl   from-[#833ab4] via-[#fd1d1d] to-[#fcb045]  relative  rounded-lg  '>
                                             <span class="svgContainer" className=' z-20  '>
                                                 <svg fill="white" class="svgIcon" viewBox="0 0 448 512" height="1.5em" xmlns="http://www.w3.org/2000/svg"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>
                                             </span>
                                             <span class="BG"></span>
                                         </div>
-                                        <div className='w-9 h-9 p-2 border shadow-md  group flex justify-center items-center bg-blue-600  relative  rounded-lg  '>
+                                        <div className='w-8 h-8 p-2 border shadow-md  group flex justify-center items-center bg-blue-600  relative  rounded-lg  '>
                                             <span class="svgContainerstock ml-1">
                                                 <svg
                                                     viewBox="0 0 384 512"

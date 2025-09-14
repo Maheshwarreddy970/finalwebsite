@@ -23,3 +23,14 @@
     }
   }
 }
+@keyframes moveTopToBottom {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(calc(100% + 18rem));
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
