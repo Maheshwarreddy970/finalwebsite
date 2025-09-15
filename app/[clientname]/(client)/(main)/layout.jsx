@@ -8,7 +8,6 @@ const MainLayout = ({ children }) => {
       <div className="container mx-auto my-8">
         {children}
       </div>
-      <Footer></Footer>
     </>
   );
 };

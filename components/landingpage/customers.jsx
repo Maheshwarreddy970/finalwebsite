@@ -27,9 +27,13 @@ export default function Customerstories() {
         <section className='relative w-full mt-16 mb-3 px-3 md:px-10'>
             <div>
                 <div
-                    className={cn(' flex gap-4 items-center text-6xl font-semibold text-black  ', philosopher.className)}
+                    className={cn(' flex gap-4 items-center text-5xl font-semibold text-black  ', philosopher.className)}
                 >
-                    Driven by <SparklesText colors={{ first: "#ffc400", second: "#ff9100" }} className="text-6xl  font-semibold" sparklesCount={5}>Deals</SparklesText>customers
+                    Deals That Drive
+                    <SparklesText colors={{ first: "#ffc400", second: "#ff9100" }} className="text-5xl  font-semibold" sparklesCount={5}>Customer Satisfaction </SparklesText>
+                </div>
+                <div className="mt-4 max-w-2xl">
+                    <p>Over 5,000 happy customers share their experiences with our transparent pricing and exceptional service</p>
                 </div>
             </div>
             <Carousel
@@ -53,7 +57,7 @@ export default function Customerstories() {
                                         height={60}
                                         className="h-7 w-auto object-contain mt-4 "
                                     /> */}
-                                     <div className=' text-lg text-neutral-600 '>
+                                    <div className=' text-lg text-neutral-600 '>
                                         @{clientInfo?.name}
                                     </div>
                                     <div className=' flex gap-2  '>

@@ -81,11 +81,12 @@ export default function Searchsection() {
   }, [currentFilters, router, filters.priceRange.max]);
 
   return (
-    <section className='px-3 md:px-10'>
-      <div className={cn(' flex gap-4 items-center text-6xl font-semibold text-black  ', philosopher.className)}>
-       Ways to start <SparklesText colors={{ first: "#ffc400", second: "#ff9100" }} className="text-6xl  font-semibold" sparklesCount={5}>searching</SparklesText>
+    <section className='px-3 md:px-10 mt-10'>
+      <div className={cn(' flex gap-4 items-center justify-center text-6xl font-semibold text-black  ', philosopher.className)}>
+       Ways To Start <SparklesText colors={{ first: "#ffc400", second: "#ff9100" }} className="text-6xl  font-semibold" sparklesCount={5}>Searching</SparklesText>
       </div>
-      <div className="p-4  border rounded-2xl shadow mt-8 px-10 py-12">
+
+      <div className="mt-16  ">
         <CarFilterControls
           filters={filters}
           currentFilters={currentFilters}

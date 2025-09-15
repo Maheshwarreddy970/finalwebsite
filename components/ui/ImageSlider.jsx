@@ -47,7 +47,7 @@ const ImageSlider = () => {
   const centerImageIndex = positionIndexes.findIndex((index) => positions[index] === "center");
 
   return (
-    <div className="relative flex flex-col items-center justify-center h-full w-full md:mt-16 px-3 md:px-10  ">
+    <div className="relative  flex flex-col items-center justify-center h-full w-full md:mt-16 px-3 md:px-10  ">
       <SparklesText className=" md:text-[9rem] mb-10  font-bold text-black text-center">{images[centerImageIndex].body}</SparklesText>
 
       {images.map((image, index) => (

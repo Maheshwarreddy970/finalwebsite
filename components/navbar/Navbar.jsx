@@ -12,14 +12,14 @@ import { cn } from "@/lib/utils";
 
 const philosopher = Philosopher({ subsets: ['latin'], weight: ["400"] })
 
-const pagesNames = [
-  { name: "Shop", href: "/cars" },
-  { name: "Sell/Trade", href: "/sell-trade" },
-  { name: "Finance", href: "/finance" },
-  { name: "Contact", href: "/contact" },
-];
 
 const Header = async ({ isAdminPage = false, clientInfo }) => {
+  const pagesNames = [
+    { name: "Shop", href: `/${clientInfo?.name}/cars` },
+    { name: "Finance", href: `/${clientInfo?.name}/finance` },
+    { name: "News/Videos", href: `/${clientInfo?.name}/news-videos` },
+    { name: "Contact", href: `/${clientInfo?.name}/contact` },
+  ];
   const user = await checkUser();
   const isAdmin = user?.role === "ADMIN";
   return (

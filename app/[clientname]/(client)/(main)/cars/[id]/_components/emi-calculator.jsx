@@ -139,14 +139,35 @@ function EmiCalculator({ price = 100000, className }) {
   return (
     <>
         <div
-          className={cn(' flex gap-4 mb-5 items-center text-6xl font-semibold text-black  ', philosopher.className)}
+          className={cn(' flex gap-4 mb-5 items-center text-6xl  text-center justify-center font-semibold text-black  ', philosopher.className)}
         >
           FINANCING MADE EASY
         </div>
-      <section className=" w-full border rounded-2xl p-8 shadow-xl border-neutral-300 overflow-hidden   ">
+      <section className=" w-full   overflow-hidden   ">
         <div className=" mt-5 flex gap-16 justify-between  ">
           <div className="flex flex-col gap-5 w-full  max-w-[65%]  ">
-
+<div className=" flex flex-col gap-0.5 mt-1.5">
+              <p>
+                <span className=" font-semibold text-green-500 text-lg">✓ </span>
+                <span className=" font-semibold">No Credit Impact </span>
+                Check your rates without affecting your credit score. Soft credit checks only - your credit stays protected.
+              </p>
+              <p>
+                <span className=" font-semibold text-green-500 text-lg">✓ </span>
+                <span className=" font-semibold">Instant Results </span>
+                Get personalized rates and monthly payments in just minutes. No waiting, no hassle.
+              </p>
+              <p>
+                <span className=" font-semibold text-green-500 text-lg">✓ </span>
+                <span className=" font-semibold">Real Rates from Real Lenders </span>
+                See actual rates from our network of trusted lenders, not estimates or teaser rates.
+              </p>
+              <p>
+                <span className=" font-semibold text-green-500 text-lg">✓ </span>
+                <span className=" font-semibold">Shop with Confidence </span>
+                Know your budget before you browse. No surprises at the dealership.
+              </p>
+            </div>
             <div className="">
               <p
                 className="block  font-medium  text-gray-900"
@@ -328,28 +349,7 @@ function EmiCalculator({ price = 100000, className }) {
                 </Select>
               </div>
             </div>
-            <div className=" flex flex-col gap-0.5 mt-1.5">
-              <p>
-                <span className=" font-semibold text-green-500 text-lg">✓ </span>
-                <span className=" font-semibold">No Credit Impact </span>
-                Check your rates without affecting your credit score. Soft credit checks only - your credit stays protected.
-              </p>
-              <p>
-                <span className=" font-semibold text-green-500 text-lg">✓ </span>
-                <span className=" font-semibold">Instant Results </span>
-                Get personalized rates and monthly payments in just minutes. No waiting, no hassle.
-              </p>
-              <p>
-                <span className=" font-semibold text-green-500 text-lg">✓ </span>
-                <span className=" font-semibold">Real Rates from Real Lenders </span>
-                See actual rates from our network of trusted lenders, not estimates or teaser rates.
-              </p>
-              <p>
-                <span className=" font-semibold text-green-500 text-lg">✓ </span>
-                <span className=" font-semibold">Shop with Confidence </span>
-                Know your budget before you browse. No surprises at the dealership.
-              </p>
-            </div>
+            
           </div>
           <div className=" p-7 flex flex-col w-full max-w-[35%] text-white h-full bg-indigo-600 border-neutral-200 justify-between  gap-8 relative  rounded-3xl border shadow-md  ">
             <h1 className=" text-center -mb-7   text-2xl">Breakedown of EMI</h1>

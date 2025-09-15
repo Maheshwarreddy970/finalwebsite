@@ -5,6 +5,7 @@ import React from "react";
 import { NotFoundPage } from "@/components/ui/NotFoundPage";
 import { FamilyButtonDemo } from "@/components/chatbot/newchatbot";
 import Navbar from "@/components/navbar/Navbar";
+import { Footer } from "@/components/navbar/Footer";
 
 // ✅ Add dynamic metadata
 export async function generateMetadata({ params }) {
@@ -86,6 +87,7 @@ export default async function Layout({ params, children }) {
       <ClientStoreInitializer clientInfo={clientInfo} />
        <Navbar clientInfo={clientInfo}/>
       {children}
+      <Footer></Footer>
       <FamilyButtonDemo />
     </>
   );

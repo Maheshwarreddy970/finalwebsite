@@ -19,10 +19,10 @@ export const clientDetails = {
     ],
     socialmedia:
       [
-        { name: "Facebook", link: "https://www.facebook.com" },
-        { name: "Twitter", link: "https://www.twitter.com" },
+        { name: "YouTube", link: "https://www.youtube.com" },
         { name: "Instagram", link: "https://www.instagram.com" },
-        { name: "LinkedIn", link: "https://www.linkedin.com" }
+        { name: "Facebook", link: "https://www.facebook.com" },
+        { name: "TikTok", link: "https://www.tiktok.com" }
       ],
     contact: {
       phone: "123-456-7890",
@@ -48,10 +48,10 @@ export const clientDetails = {
     ],
     socialmedia:
       [
-        { name: "Facebook", link: "https://www.facebook.com" },
-        { name: "Twitter", link: "https://www.twitter.com" },
+        { name: "YouTube", link: "https://www.youtube.com" },
         { name: "Instagram", link: "https://www.instagram.com" },
-        { name: "LinkedIn", link: "https://www.linkedin.com" }
+        { name: "Facebook", link: "https://www.facebook.com" },
+        { name: "TikTok", link: "https://www.tiktok.com" }
       ],
     contact: {
       phone: "(954) 371-0519",
@@ -77,10 +77,10 @@ export const clientDetails = {
     ],
     socialmedia:
       [
-        { name: "Facebook", link: "https://www.facebook.com" },
-        { name: "Twitter", link: "https://www.twitter.com" },
+        { name: "YouTube", link: "https://www.youtube.com" },
         { name: "Instagram", link: "https://www.instagram.com" },
-        { name: "LinkedIn", link: "https://www.linkedin.com" }
+        { name: "Facebook", link: "https://www.facebook.com" },
+        { name: "TikTok", link: "https://www.tiktok.com" }
       ],
     contact: {
       phone: "123-456-7891",
@@ -106,10 +106,10 @@ export const clientDetails = {
     ],
     socialmedia:
       [
-        { name: "Facebook", link: "https://www.facebook.com" },
-        { name: "Twitter", link: "https://www.twitter.com" },
+        { name: "YouTube", link: "https://www.youtube.com" },
         { name: "Instagram", link: "https://www.instagram.com" },
-        { name: "LinkedIn", link: "https://www.linkedin.com" }
+        { name: "Facebook", link: "https://www.facebook.com" },
+        { name: "TikTok", link: "https://www.tiktok.com" }
       ],
     contact: {
       phone: "123-456-7891",
@@ -135,10 +135,10 @@ export const clientDetails = {
     ],
     socialmedia:
       [
-        { name: "Facebook", link: "https://www.facebook.com" },
-        { name: "Twitter", link: "https://www.twitter.com" },
+        { name: "YouTube", link: "https://www.youtube.com" },
         { name: "Instagram", link: "https://www.instagram.com" },
-        { name: "LinkedIn", link: "https://www.linkedin.com" }
+        { name: "Facebook", link: "https://www.facebook.com" },
+        { name: "TikTok", link: "https://www.tiktok.com" }
       ],
     contact: {
       phone: "123-456-7891",
@@ -164,10 +164,10 @@ export const clientDetails = {
     ],
     socialmedia:
       [
-        { name: "Facebook", link: "https://www.facebook.com" },
-        { name: "Twitter", link: "https://www.twitter.com" },
+        { name: "YouTube", link: "https://www.youtube.com" },
         { name: "Instagram", link: "https://www.instagram.com" },
-        { name: "LinkedIn", link: "https://www.linkedin.com" }
+        { name: "Facebook", link: "https://www.facebook.com" },
+        { name: "TikTok", link: "https://www.tiktok.com" }
       ],
     contact: {
       phone: "123-456-7891",
@@ -193,10 +193,10 @@ export const clientDetails = {
     ],
     socialmedia:
       [
-        { name: "Facebook", link: "https://www.facebook.com" },
-        { name: "Twitter", link: "https://www.twitter.com" },
+        { name: "YouTube", link: "https://www.youtube.com" },
         { name: "Instagram", link: "https://www.instagram.com" },
-        { name: "LinkedIn", link: "https://www.linkedin.com" }
+        { name: "Facebook", link: "https://www.facebook.com" },
+        { name: "TikTok", link: "https://www.tiktok.com" }
       ],
     contact: {
       phone: "123-456-7891",
@@ -222,10 +222,10 @@ export const clientDetails = {
     ],
     socialmedia:
       [
-        { name: "Facebook", link: "https://www.facebook.com" },
-        { name: "Twitter", link: "https://www.twitter.com" },
+        { name: "YouTube", link: "https://www.youtube.com" },
         { name: "Instagram", link: "https://www.instagram.com" },
-        { name: "LinkedIn", link: "https://www.linkedin.com" }
+        { name: "Facebook", link: "https://www.facebook.com" },
+        { name: "TikTok", link: "https://www.tiktok.com" }
       ],
     contact: {
       phone: "123-456-7891",
@@ -251,10 +251,10 @@ export const clientDetails = {
     ],
     socialmedia:
       [
-        { name: "Facebook", link: "https://www.facebook.com" },
-        { name: "Twitter", link: "https://www.twitter.com" },
+        { name: "YouTube", link: "https://www.youtube.com" },
         { name: "Instagram", link: "https://www.instagram.com" },
-        { name: "LinkedIn", link: "https://www.linkedin.com" }
+        { name: "Facebook", link: "https://www.facebook.com" },
+        { name: "TikTok", link: "https://www.tiktok.com" }
       ],
     contact: {
       phone: "123-456-7891",
@@ -280,10 +280,10 @@ export const clientDetails = {
     ],
     socialmedia:
       [
-        { name: "Facebook", link: "https://www.facebook.com" },
-        { name: "Twitter", link: "https://www.twitter.com" },
+        { name: "YouTube", link: "https://www.youtube.com" },
         { name: "Instagram", link: "https://www.instagram.com" },
-        { name: "LinkedIn", link: "https://www.linkedin.com" }
+        { name: "Facebook", link: "https://www.facebook.com" },
+        { name: "TikTok", link: "https://www.tiktok.com" }
       ],
     contact: {
       phone: "123-456-7891",
@@ -309,10 +309,10 @@ export const clientDetails = {
     ],
     socialmedia:
       [
-        { name: "Facebook", link: "https://www.facebook.com" },
-        { name: "Twitter", link: "https://www.twitter.com" },
+        { name: "YouTube", link: "https://www.youtube.com" },
         { name: "Instagram", link: "https://www.instagram.com" },
-        { name: "LinkedIn", link: "https://www.linkedin.com" }
+        { name: "Facebook", link: "https://www.facebook.com" },
+        { name: "TikTok", link: "https://www.tiktok.com" }
       ],
     contact: {
       phone: "123-456-7891",
@@ -338,10 +338,10 @@ export const clientDetails = {
     ],
     socialmedia:
       [
-        { name: "Facebook", link: "https://www.facebook.com" },
-        { name: "Twitter", link: "https://www.twitter.com" },
+        { name: "YouTube", link: "https://www.youtube.com" },
         { name: "Instagram", link: "https://www.instagram.com" },
-        { name: "LinkedIn", link: "https://www.linkedin.com" }
+        { name: "Facebook", link: "https://www.facebook.com" },
+        { name: "TikTok", link: "https://www.tiktok.com" }
       ],
     contact: {
       phone: "123-456-7891",
@@ -368,10 +368,10 @@ export const clientDetails = {
     ],
     socialmedia:
       [
-        { name: "Facebook", link: "https://www.facebook.com" },
-        { name: "Twitter", link: "https://www.twitter.com" },
+        { name: "YouTube", link: "https://www.youtube.com" },
         { name: "Instagram", link: "https://www.instagram.com" },
-        { name: "LinkedIn", link: "https://www.linkedin.com" }
+        { name: "Facebook", link: "https://www.facebook.com" },
+        { name: "TikTok", link: "https://www.tiktok.com" }
       ],
     contact: {
       phone: "123-456-7891",
@@ -397,10 +397,10 @@ export const clientDetails = {
     ],
     socialmedia:
       [
-        { name: "Facebook", link: "https://www.facebook.com" },
-        { name: "Twitter", link: "https://www.twitter.com" },
+        { name: "YouTube", link: "https://www.youtube.com" },
         { name: "Instagram", link: "https://www.instagram.com" },
-        { name: "LinkedIn", link: "https://www.linkedin.com" }
+        { name: "Facebook", link: "https://www.facebook.com" },
+        { name: "TikTok", link: "https://www.tiktok.com" }
       ],
     contact: {
       phone: "123-456-7891",
@@ -426,10 +426,10 @@ export const clientDetails = {
     ],
     socialmedia:
       [
-        { name: "Facebook", link: "https://www.facebook.com" },
-        { name: "Twitter", link: "https://www.twitter.com" },
+        { name: "YouTube", link: "https://www.youtube.com" },
         { name: "Instagram", link: "https://www.instagram.com" },
-        { name: "LinkedIn", link: "https://www.linkedin.com" }
+        { name: "Facebook", link: "https://www.facebook.com" },
+        { name: "TikTok", link: "https://www.tiktok.com" }
       ],
     contact: {
       phone: "123-456-7891",
@@ -455,10 +455,10 @@ export const clientDetails = {
     ],
     socialmedia:
       [
-        { name: "Facebook", link: "https://www.facebook.com" },
-        { name: "Twitter", link: "https://www.twitter.com" },
+        { name: "YouTube", link: "https://www.youtube.com" },
         { name: "Instagram", link: "https://www.instagram.com" },
-        { name: "LinkedIn", link: "https://www.linkedin.com" }
+        { name: "Facebook", link: "https://www.facebook.com" },
+        { name: "TikTok", link: "https://www.tiktok.com" }
       ],
     contact: {
       phone: "123-456-7891",
@@ -484,10 +484,10 @@ export const clientDetails = {
     ],
     socialmedia:
       [
-        { name: "Facebook", link: "https://www.facebook.com" },
-        { name: "Twitter", link: "https://www.twitter.com" },
+        { name: "YouTube", link: "https://www.youtube.com" },
         { name: "Instagram", link: "https://www.instagram.com" },
-        { name: "LinkedIn", link: "https://www.linkedin.com" }
+        { name: "Facebook", link: "https://www.facebook.com" },
+        { name: "TikTok", link: "https://www.tiktok.com" }
       ],
     contact: {
       phone: "123-456-7891",
@@ -513,10 +513,10 @@ export const clientDetails = {
     ],
     socialmedia:
       [
-        { name: "Facebook", link: "https://www.facebook.com" },
-        { name: "Twitter", link: "https://www.twitter.com" },
+        { name: "YouTube", link: "https://www.youtube.com" },
         { name: "Instagram", link: "https://www.instagram.com" },
-        { name: "LinkedIn", link: "https://www.linkedin.com" }
+        { name: "Facebook", link: "https://www.facebook.com" },
+        { name: "TikTok", link: "https://www.tiktok.com" }
       ],
     contact: {
       phone: "123-456-7891",
@@ -542,10 +542,10 @@ export const clientDetails = {
     ],
     socialmedia:
       [
-        { name: "Facebook", link: "https://www.facebook.com" },
-        { name: "Twitter", link: "https://www.twitter.com" },
+        { name: "YouTube", link: "https://www.youtube.com" },
         { name: "Instagram", link: "https://www.instagram.com" },
-        { name: "LinkedIn", link: "https://www.linkedin.com" }
+        { name: "Facebook", link: "https://www.facebook.com" },
+        { name: "TikTok", link: "https://www.tiktok.com" }
       ],
     contact: {
       phone: "123-456-7891",
@@ -571,10 +571,10 @@ export const clientDetails = {
     ],
     socialmedia:
       [
-        { name: "Facebook", link: "https://www.facebook.com" },
-        { name: "Twitter", link: "https://www.twitter.com" },
+        { name: "YouTube", link: "https://www.youtube.com" },
         { name: "Instagram", link: "https://www.instagram.com" },
-        { name: "LinkedIn", link: "https://www.linkedin.com" }
+        { name: "Facebook", link: "https://www.facebook.com" },
+        { name: "TikTok", link: "https://www.tiktok.com" }
       ],
     contact: {
       phone: "123-456-7891",
@@ -600,10 +600,10 @@ export const clientDetails = {
     ],
     socialmedia:
       [
-        { name: "Facebook", link: "https://www.facebook.com" },
-        { name: "Twitter", link: "https://www.twitter.com" },
+        { name: "YouTube", link: "https://www.youtube.com" },
         { name: "Instagram", link: "https://www.instagram.com" },
-        { name: "LinkedIn", link: "https://www.linkedin.com" }
+        { name: "Facebook", link: "https://www.facebook.com" },
+        { name: "TikTok", link: "https://www.tiktok.com" }
       ],
     contact: {
       phone: "123-456-7891",
@@ -630,10 +630,10 @@ export const clientDetails = {
     ],
     socialmedia:
       [
-        { name: "Facebook", link: "https://www.facebook.com" },
-        { name: "Twitter", link: "https://www.twitter.com" },
+        { name: "YouTube", link: "https://www.youtube.com" },
         { name: "Instagram", link: "https://www.instagram.com" },
-        { name: "LinkedIn", link: "https://www.linkedin.com" }
+        { name: "Facebook", link: "https://www.facebook.com" },
+        { name: "TikTok", link: "https://www.tiktok.com" }
       ],
     contact: {
       phone: "123-456-7891",
@@ -659,10 +659,10 @@ export const clientDetails = {
     ],
     socialmedia:
       [
-        { name: "Facebook", link: "https://www.facebook.com" },
-        { name: "Twitter", link: "https://www.twitter.com" },
+        { name: "YouTube", link: "https://www.youtube.com" },
         { name: "Instagram", link: "https://www.instagram.com" },
-        { name: "LinkedIn", link: "https://www.linkedin.com" }
+        { name: "Facebook", link: "https://www.facebook.com" },
+        { name: "TikTok", link: "https://www.tiktok.com" }
       ],
     contact: {
       phone: "123-456-7891",
@@ -688,10 +688,10 @@ export const clientDetails = {
     ],
     socialmedia:
       [
-        { name: "Facebook", link: "https://www.facebook.com" },
-        { name: "Twitter", link: "https://www.twitter.com" },
+        { name: "YouTube", link: "https://www.youtube.com" },
         { name: "Instagram", link: "https://www.instagram.com" },
-        { name: "LinkedIn", link: "https://www.linkedin.com" }
+        { name: "Facebook", link: "https://www.facebook.com" },
+        { name: "TikTok", link: "https://www.tiktok.com" }
       ],
     contact: {
       phone: "123-456-7891",
@@ -717,10 +717,10 @@ export const clientDetails = {
     ],
     socialmedia:
       [
-        { name: "Facebook", link: "https://www.facebook.com" },
-        { name: "Twitter", link: "https://www.twitter.com" },
+        { name: "YouTube", link: "https://www.youtube.com" },
         { name: "Instagram", link: "https://www.instagram.com" },
-        { name: "LinkedIn", link: "https://www.linkedin.com" }
+        { name: "Facebook", link: "https://www.facebook.com" },
+        { name: "TikTok", link: "https://www.tiktok.com" }
       ],
     contact: {
       phone: "123-456-7891",
@@ -746,10 +746,10 @@ export const clientDetails = {
     ],
     socialmedia:
       [
-        { name: "Facebook", link: "https://www.facebook.com" },
-        { name: "Twitter", link: "https://www.twitter.com" },
+        { name: "YouTube", link: "https://www.youtube.com" },
         { name: "Instagram", link: "https://www.instagram.com" },
-        { name: "LinkedIn", link: "https://www.linkedin.com" }
+        { name: "Facebook", link: "https://www.facebook.com" },
+        { name: "TikTok", link: "https://www.tiktok.com" }
       ],
     contact: {
       phone: "123-456-7891",
@@ -775,10 +775,10 @@ export const clientDetails = {
     ],
     socialmedia:
       [
-        { name: "Facebook", link: "https://www.facebook.com" },
-        { name: "Twitter", link: "https://www.twitter.com" },
+        { name: "YouTube", link: "https://www.youtube.com" },
         { name: "Instagram", link: "https://www.instagram.com" },
-        { name: "LinkedIn", link: "https://www.linkedin.com" }
+        { name: "Facebook", link: "https://www.facebook.com" },
+        { name: "TikTok", link: "https://www.tiktok.com" }
       ],
     contact: {
       phone: "123-456-7891",
@@ -804,10 +804,10 @@ export const clientDetails = {
     ],
     socialmedia:
       [
-        { name: "Facebook", link: "https://www.facebook.com" },
-        { name: "Twitter", link: "https://www.twitter.com" },
+        { name: "YouTube", link: "https://www.youtube.com" },
         { name: "Instagram", link: "https://www.instagram.com" },
-        { name: "LinkedIn", link: "https://www.linkedin.com" }
+        { name: "Facebook", link: "https://www.facebook.com" },
+        { name: "TikTok", link: "https://www.tiktok.com" }
       ],
     contact: {
       phone: "123-456-7891",
@@ -833,10 +833,10 @@ export const clientDetails = {
     ],
     socialmedia:
       [
-        { name: "Facebook", link: "https://www.facebook.com" },
-        { name: "Twitter", link: "https://www.twitter.com" },
+        { name: "YouTube", link: "https://www.youtube.com" },
         { name: "Instagram", link: "https://www.instagram.com" },
-        { name: "LinkedIn", link: "https://www.linkedin.com" }
+        { name: "Facebook", link: "https://www.facebook.com" },
+        { name: "TikTok", link: "https://www.tiktok.com" }
       ],
     contact: {
       phone: "123-456-7891",
@@ -862,10 +862,10 @@ export const clientDetails = {
     ],
     socialmedia:
       [
-        { name: "Facebook", link: "https://www.facebook.com" },
-        { name: "Twitter", link: "https://www.twitter.com" },
+        { name: "YouTube", link: "https://www.youtube.com" },
         { name: "Instagram", link: "https://www.instagram.com" },
-        { name: "LinkedIn", link: "https://www.linkedin.com" }
+        { name: "Facebook", link: "https://www.facebook.com" },
+        { name: "TikTok", link: "https://www.tiktok.com" }
       ],
     contact: {
       phone: "123-456-7891",
@@ -891,10 +891,10 @@ export const clientDetails = {
     ],
     socialmedia:
       [
-        { name: "Facebook", link: "https://www.facebook.com" },
-        { name: "Twitter", link: "https://www.twitter.com" },
+        { name: "YouTube", link: "https://www.youtube.com" },
         { name: "Instagram", link: "https://www.instagram.com" },
-        { name: "LinkedIn", link: "https://www.linkedin.com" }
+        { name: "Facebook", link: "https://www.facebook.com" },
+        { name: "TikTok", link: "https://www.tiktok.com" }
       ],
     contact: {
       phone: "123-456-7891",
@@ -920,10 +920,10 @@ export const clientDetails = {
     ],
     socialmedia:
       [
-        { name: "Facebook", link: "https://www.facebook.com" },
-        { name: "Twitter", link: "https://www.twitter.com" },
+        { name: "YouTube", link: "https://www.youtube.com" },
         { name: "Instagram", link: "https://www.instagram.com" },
-        { name: "LinkedIn", link: "https://www.linkedin.com" }
+        { name: "Facebook", link: "https://www.facebook.com" },
+        { name: "TikTok", link: "https://www.tiktok.com" }
       ],
     contact: {
       phone: "123-456-7891",
@@ -949,10 +949,10 @@ export const clientDetails = {
     ],
     socialmedia:
       [
-        { name: "Facebook", link: "https://www.facebook.com" },
-        { name: "Twitter", link: "https://www.twitter.com" },
+        { name: "YouTube", link: "https://www.youtube.com" },
         { name: "Instagram", link: "https://www.instagram.com" },
-        { name: "LinkedIn", link: "https://www.linkedin.com" }
+        { name: "Facebook", link: "https://www.facebook.com" },
+        { name: "TikTok", link: "https://www.tiktok.com" }
       ],
     contact: {
       phone: "123-456-7891",
@@ -978,10 +978,10 @@ export const clientDetails = {
     ],
     socialmedia:
       [
-        { name: "Facebook", link: "https://www.facebook.com" },
-        { name: "Twitter", link: "https://www.twitter.com" },
+        { name: "YouTube", link: "https://www.youtube.com" },
         { name: "Instagram", link: "https://www.instagram.com" },
-        { name: "LinkedIn", link: "https://www.linkedin.com" }
+        { name: "Facebook", link: "https://www.facebook.com" },
+        { name: "TikTok", link: "https://www.tiktok.com" }
       ],
     contact: {
       phone: "123-456-7891",
@@ -1007,10 +1007,10 @@ export const clientDetails = {
     ],
     socialmedia:
       [
-        { name: "Facebook", link: "https://www.facebook.com" },
-        { name: "Twitter", link: "https://www.twitter.com" },
+        { name: "YouTube", link: "https://www.youtube.com" },
         { name: "Instagram", link: "https://www.instagram.com" },
-        { name: "LinkedIn", link: "https://www.linkedin.com" }
+        { name: "Facebook", link: "https://www.facebook.com" },
+        { name: "TikTok", link: "https://www.tiktok.com" }
       ],
     contact: {
       phone: "123-456-7891",
@@ -1036,10 +1036,10 @@ export const clientDetails = {
     ],
     socialmedia:
       [
-        { name: "Facebook", link: "https://www.facebook.com" },
-        { name: "Twitter", link: "https://www.twitter.com" },
+        { name: "YouTube", link: "https://www.youtube.com" },
         { name: "Instagram", link: "https://www.instagram.com" },
-        { name: "LinkedIn", link: "https://www.linkedin.com" }
+        { name: "Facebook", link: "https://www.facebook.com" },
+        { name: "TikTok", link: "https://www.tiktok.com" }
       ],
     contact: {
       phone: "123-456-7891",
@@ -1065,10 +1065,10 @@ export const clientDetails = {
     ],
     socialmedia:
       [
-        { name: "Facebook", link: "https://www.facebook.com" },
-        { name: "Twitter", link: "https://www.twitter.com" },
+        { name: "YouTube", link: "https://www.youtube.com" },
         { name: "Instagram", link: "https://www.instagram.com" },
-        { name: "LinkedIn", link: "https://www.linkedin.com" }
+        { name: "Facebook", link: "https://www.facebook.com" },
+        { name: "TikTok", link: "https://www.tiktok.com" }
       ],
     contact: {
       phone: "123-456-7891",
@@ -1094,10 +1094,10 @@ export const clientDetails = {
     ],
     socialmedia:
       [
-        { name: "Facebook", link: "https://www.facebook.com" },
-        { name: "Twitter", link: "https://www.twitter.com" },
+        { name: "YouTube", link: "https://www.youtube.com" },
         { name: "Instagram", link: "https://www.instagram.com" },
-        { name: "LinkedIn", link: "https://www.linkedin.com" }
+        { name: "Facebook", link: "https://www.facebook.com" },
+        { name: "TikTok", link: "https://www.tiktok.com" }
       ],
     contact: {
       phone: "123-456-7891",
@@ -1123,10 +1123,10 @@ export const clientDetails = {
     ],
     socialmedia:
       [
-        { name: "Facebook", link: "https://www.facebook.com" },
-        { name: "Twitter", link: "https://www.twitter.com" },
+        { name: "YouTube", link: "https://www.youtube.com" },
         { name: "Instagram", link: "https://www.instagram.com" },
-        { name: "LinkedIn", link: "https://www.linkedin.com" }
+        { name: "Facebook", link: "https://www.facebook.com" },
+        { name: "TikTok", link: "https://www.tiktok.com" }
       ],
     contact: {
       phone: "123-456-7891",
@@ -1152,10 +1152,10 @@ export const clientDetails = {
     ],
     socialmedia:
       [
-        { name: "Facebook", link: "https://www.facebook.com" },
-        { name: "Twitter", link: "https://www.twitter.com" },
+        { name: "YouTube", link: "https://www.youtube.com" },
         { name: "Instagram", link: "https://www.instagram.com" },
-        { name: "LinkedIn", link: "https://www.linkedin.com" }
+        { name: "Facebook", link: "https://www.facebook.com" },
+        { name: "TikTok", link: "https://www.tiktok.com" }
       ],
     contact: {
       phone: "123-456-7891",
@@ -1181,10 +1181,10 @@ export const clientDetails = {
     ],
     socialmedia:
       [
-        { name: "Facebook", link: "https://www.facebook.com" },
-        { name: "Twitter", link: "https://www.twitter.com" },
+        { name: "YouTube", link: "https://www.youtube.com" },
         { name: "Instagram", link: "https://www.instagram.com" },
-        { name: "LinkedIn", link: "https://www.linkedin.com" }
+        { name: "Facebook", link: "https://www.facebook.com" },
+        { name: "TikTok", link: "https://www.tiktok.com" }
       ],
     contact: {
       phone: "123-456-7891",
@@ -1210,10 +1210,10 @@ export const clientDetails = {
     ],
     socialmedia:
       [
-        { name: "Facebook", link: "https://www.facebook.com" },
-        { name: "Twitter", link: "https://www.twitter.com" },
+        { name: "YouTube", link: "https://www.youtube.com" },
         { name: "Instagram", link: "https://www.instagram.com" },
-        { name: "LinkedIn", link: "https://www.linkedin.com" }
+        { name: "Facebook", link: "https://www.facebook.com" },
+        { name: "TikTok", link: "https://www.tiktok.com" }
       ],
     contact: {
       phone: "123-456-7891",
@@ -1239,10 +1239,10 @@ export const clientDetails = {
     ],
     socialmedia:
       [
-        { name: "Facebook", link: "https://www.facebook.com" },
-        { name: "Twitter", link: "https://www.twitter.com" },
+        { name: "YouTube", link: "https://www.youtube.com" },
         { name: "Instagram", link: "https://www.instagram.com" },
-        { name: "LinkedIn", link: "https://www.linkedin.com" }
+        { name: "Facebook", link: "https://www.facebook.com" },
+        { name: "TikTok", link: "https://www.tiktok.com" }
       ],
     contact: {
       phone: "123-456-7891",
@@ -1268,10 +1268,10 @@ export const clientDetails = {
     ],
     socialmedia:
       [
-        { name: "Facebook", link: "https://www.facebook.com" },
-        { name: "Twitter", link: "https://www.twitter.com" },
+        { name: "YouTube", link: "https://www.youtube.com" },
         { name: "Instagram", link: "https://www.instagram.com" },
-        { name: "LinkedIn", link: "https://www.linkedin.com" }
+        { name: "Facebook", link: "https://www.facebook.com" },
+        { name: "TikTok", link: "https://www.tiktok.com" }
       ],
     contact: {
       phone: "123-456-7891",
@@ -1297,10 +1297,10 @@ export const clientDetails = {
     ],
     socialmedia:
       [
-        { name: "Facebook", link: "https://www.facebook.com" },
-        { name: "Twitter", link: "https://www.twitter.com" },
+        { name: "YouTube", link: "https://www.youtube.com" },
         { name: "Instagram", link: "https://www.instagram.com" },
-        { name: "LinkedIn", link: "https://www.linkedin.com" }
+        { name: "Facebook", link: "https://www.facebook.com" },
+        { name: "TikTok", link: "https://www.tiktok.com" }
       ],
     contact: {
       phone: "123-456-7891",
@@ -1326,10 +1326,10 @@ export const clientDetails = {
     ],
     socialmedia:
       [
-        { name: "Facebook", link: "https://www.facebook.com" },
-        { name: "Twitter", link: "https://www.twitter.com" },
+        { name: "YouTube", link: "https://www.youtube.com" },
         { name: "Instagram", link: "https://www.instagram.com" },
-        { name: "LinkedIn", link: "https://www.linkedin.com" }
+        { name: "Facebook", link: "https://www.facebook.com" },
+        { name: "TikTok", link: "https://www.tiktok.com" }
       ],
     contact: {
       phone: "123-456-7891",
@@ -1355,10 +1355,10 @@ export const clientDetails = {
     ],
     socialmedia:
       [
-        { name: "Facebook", link: "https://www.facebook.com" },
-        { name: "Twitter", link: "https://www.twitter.com" },
+        { name: "YouTube", link: "https://www.youtube.com" },
         { name: "Instagram", link: "https://www.instagram.com" },
-        { name: "LinkedIn", link: "https://www.linkedin.com" }
+        { name: "Facebook", link: "https://www.facebook.com" },
+        { name: "TikTok", link: "https://www.tiktok.com" }
       ],
     contact: {
       phone: "123-456-7891",
@@ -1384,10 +1384,10 @@ export const clientDetails = {
     ],
     socialmedia:
       [
-        { name: "Facebook", link: "https://www.facebook.com" },
-        { name: "Twitter", link: "https://www.twitter.com" },
+        { name: "YouTube", link: "https://www.youtube.com" },
         { name: "Instagram", link: "https://www.instagram.com" },
-        { name: "LinkedIn", link: "https://www.linkedin.com" }
+        { name: "Facebook", link: "https://www.facebook.com" },
+        { name: "TikTok", link: "https://www.tiktok.com" }
       ],
     contact: {
       phone: "123-456-7891",
@@ -1414,10 +1414,10 @@ export const clientDetails = {
     ],
     socialmedia:
       [
-        { name: "Facebook", link: "https://www.facebook.com" },
-        { name: "Twitter", link: "https://www.twitter.com" },
+        { name: "YouTube", link: "https://www.youtube.com" },
         { name: "Instagram", link: "https://www.instagram.com" },
-        { name: "LinkedIn", link: "https://www.linkedin.com" }
+        { name: "Facebook", link: "https://www.facebook.com" },
+        { name: "TikTok", link: "https://www.tiktok.com" }
       ],
     contact: {
       phone: "123-456-7891",
@@ -1443,10 +1443,10 @@ export const clientDetails = {
     ],
     socialmedia:
       [
-        { name: "Facebook", link: "https://www.facebook.com" },
-        { name: "Twitter", link: "https://www.twitter.com" },
+        { name: "YouTube", link: "https://www.youtube.com" },
         { name: "Instagram", link: "https://www.instagram.com" },
-        { name: "LinkedIn", link: "https://www.linkedin.com" }
+        { name: "Facebook", link: "https://www.facebook.com" },
+        { name: "TikTok", link: "https://www.tiktok.com" }
       ],
     contact: {
       phone: "123-456-7891",
@@ -1472,10 +1472,10 @@ export const clientDetails = {
     ],
     socialmedia:
       [
-        { name: "Facebook", link: "https://www.facebook.com" },
-        { name: "Twitter", link: "https://www.twitter.com" },
+        { name: "YouTube", link: "https://www.youtube.com" },
         { name: "Instagram", link: "https://www.instagram.com" },
-        { name: "LinkedIn", link: "https://www.linkedin.com" }
+        { name: "Facebook", link: "https://www.facebook.com" },
+        { name: "TikTok", link: "https://www.tiktok.com" }
       ],
     contact: {
       phone: "123-456-7891",
@@ -1501,10 +1501,10 @@ export const clientDetails = {
     ],
     socialmedia:
       [
-        { name: "Facebook", link: "https://www.facebook.com" },
-        { name: "Twitter", link: "https://www.twitter.com" },
+        { name: "YouTube", link: "https://www.youtube.com" },
         { name: "Instagram", link: "https://www.instagram.com" },
-        { name: "LinkedIn", link: "https://www.linkedin.com" }
+        { name: "Facebook", link: "https://www.facebook.com" },
+        { name: "TikTok", link: "https://www.tiktok.com" }
       ],
     contact: {
       phone: "123-456-7891",
@@ -1530,10 +1530,10 @@ export const clientDetails = {
     ],
     socialmedia:
       [
-        { name: "Facebook", link: "https://www.facebook.com" },
-        { name: "Twitter", link: "https://www.twitter.com" },
+        { name: "YouTube", link: "https://www.youtube.com" },
         { name: "Instagram", link: "https://www.instagram.com" },
-        { name: "LinkedIn", link: "https://www.linkedin.com" }
+        { name: "Facebook", link: "https://www.facebook.com" },
+        { name: "TikTok", link: "https://www.tiktok.com" }
       ],
     contact: {
       phone: "123-456-7891",
@@ -1559,10 +1559,10 @@ export const clientDetails = {
     ],
     socialmedia:
       [
-        { name: "Facebook", link: "https://www.facebook.com" },
-        { name: "Twitter", link: "https://www.twitter.com" },
+        { name: "YouTube", link: "https://www.youtube.com" },
         { name: "Instagram", link: "https://www.instagram.com" },
-        { name: "LinkedIn", link: "https://www.linkedin.com" }
+        { name: "Facebook", link: "https://www.facebook.com" },
+        { name: "TikTok", link: "https://www.tiktok.com" }
       ],
     contact: {
       phone: "123-456-7891",
@@ -1588,10 +1588,10 @@ export const clientDetails = {
     ],
     socialmedia:
       [
-        { name: "Facebook", link: "https://www.facebook.com" },
-        { name: "Twitter", link: "https://www.twitter.com" },
+        { name: "YouTube", link: "https://www.youtube.com" },
         { name: "Instagram", link: "https://www.instagram.com" },
-        { name: "LinkedIn", link: "https://www.linkedin.com" }
+        { name: "Facebook", link: "https://www.facebook.com" },
+        { name: "TikTok", link: "https://www.tiktok.com" }
       ],
     contact: {
       phone: "123-456-7891",
@@ -1617,10 +1617,10 @@ export const clientDetails = {
     ],
     socialmedia:
       [
-        { name: "Facebook", link: "https://www.facebook.com" },
-        { name: "Twitter", link: "https://www.twitter.com" },
+        { name: "YouTube", link: "https://www.youtube.com" },
         { name: "Instagram", link: "https://www.instagram.com" },
-        { name: "LinkedIn", link: "https://www.linkedin.com" }
+        { name: "Facebook", link: "https://www.facebook.com" },
+        { name: "TikTok", link: "https://www.tiktok.com" }
       ],
     contact: {
       phone: "123-456-7891",
@@ -1646,10 +1646,10 @@ export const clientDetails = {
     ],
     socialmedia:
       [
-        { name: "Facebook", link: "https://www.facebook.com" },
-        { name: "Twitter", link: "https://www.twitter.com" },
+        { name: "YouTube", link: "https://www.youtube.com" },
         { name: "Instagram", link: "https://www.instagram.com" },
-        { name: "LinkedIn", link: "https://www.linkedin.com" }
+        { name: "Facebook", link: "https://www.facebook.com" },
+        { name: "TikTok", link: "https://www.tiktok.com" }
       ],
     contact: {
       phone: "123-456-7891",
@@ -1675,10 +1675,10 @@ export const clientDetails = {
     ],
     socialmedia:
       [
-        { name: "Facebook", link: "https://www.facebook.com" },
-        { name: "Twitter", link: "https://www.twitter.com" },
+        { name: "YouTube", link: "https://www.youtube.com" },
         { name: "Instagram", link: "https://www.instagram.com" },
-        { name: "LinkedIn", link: "https://www.linkedin.com" }
+        { name: "Facebook", link: "https://www.facebook.com" },
+        { name: "TikTok", link: "https://www.tiktok.com" }
       ],
     contact: {
       phone: "123-456-7891",
@@ -1704,10 +1704,10 @@ export const clientDetails = {
     ],
     socialmedia:
       [
-        { name: "Facebook", link: "https://www.facebook.com" },
-        { name: "Twitter", link: "https://www.twitter.com" },
+        { name: "YouTube", link: "https://www.youtube.com" },
         { name: "Instagram", link: "https://www.instagram.com" },
-        { name: "LinkedIn", link: "https://www.linkedin.com" }
+        { name: "Facebook", link: "https://www.facebook.com" },
+        { name: "TikTok", link: "https://www.tiktok.com" }
       ],
     contact: {
       phone: "123-456-7891",
@@ -1733,10 +1733,10 @@ export const clientDetails = {
     ],
     socialmedia:
       [
-        { name: "Facebook", link: "https://www.facebook.com" },
-        { name: "Twitter", link: "https://www.twitter.com" },
+        { name: "YouTube", link: "https://www.youtube.com" },
         { name: "Instagram", link: "https://www.instagram.com" },
-        { name: "LinkedIn", link: "https://www.linkedin.com" }
+        { name: "Facebook", link: "https://www.facebook.com" },
+        { name: "TikTok", link: "https://www.tiktok.com" }
       ],
     contact: {
       phone: "123-456-7891",
@@ -1762,10 +1762,10 @@ export const clientDetails = {
     ],
     socialmedia:
       [
-        { name: "Facebook", link: "https://www.facebook.com" },
-        { name: "Twitter", link: "https://www.twitter.com" },
+        { name: "YouTube", link: "https://www.youtube.com" },
         { name: "Instagram", link: "https://www.instagram.com" },
-        { name: "LinkedIn", link: "https://www.linkedin.com" }
+        { name: "Facebook", link: "https://www.facebook.com" },
+        { name: "TikTok", link: "https://www.tiktok.com" }
       ],
     contact: {
       phone: "123-456-7891",
@@ -1791,10 +1791,10 @@ export const clientDetails = {
     ],
     socialmedia:
       [
-        { name: "Facebook", link: "https://www.facebook.com" },
-        { name: "Twitter", link: "https://www.twitter.com" },
+        { name: "YouTube", link: "https://www.youtube.com" },
         { name: "Instagram", link: "https://www.instagram.com" },
-        { name: "LinkedIn", link: "https://www.linkedin.com" }
+        { name: "Facebook", link: "https://www.facebook.com" },
+        { name: "TikTok", link: "https://www.tiktok.com" }
       ],
     contact: {
       phone: "123-456-7891",
@@ -1820,10 +1820,10 @@ export const clientDetails = {
     ],
     socialmedia:
       [
-        { name: "Facebook", link: "https://www.facebook.com" },
-        { name: "Twitter", link: "https://www.twitter.com" },
+        { name: "YouTube", link: "https://www.youtube.com" },
         { name: "Instagram", link: "https://www.instagram.com" },
-        { name: "LinkedIn", link: "https://www.linkedin.com" }
+        { name: "Facebook", link: "https://www.facebook.com" },
+        { name: "TikTok", link: "https://www.tiktok.com" }
       ],
     contact: {
       phone: "123-456-7891",
@@ -1849,10 +1849,10 @@ export const clientDetails = {
     ],
     socialmedia:
       [
-        { name: "Facebook", link: "https://www.facebook.com" },
-        { name: "Twitter", link: "https://www.twitter.com" },
+        { name: "YouTube", link: "https://www.youtube.com" },
         { name: "Instagram", link: "https://www.instagram.com" },
-        { name: "LinkedIn", link: "https://www.linkedin.com" }
+        { name: "Facebook", link: "https://www.facebook.com" },
+        { name: "TikTok", link: "https://www.tiktok.com" }
       ],
     contact: {
       phone: "123-456-7891",
@@ -1883,10 +1883,10 @@ const dummy = {
     ],
     socialmedia:
       [
-        { name: "Facebook", link: "https://www.facebook.com" },
-        { name: "Twitter", link: "https://www.twitter.com" },
+        { name: "YouTube", link: "https://www.youtube.com" },
         { name: "Instagram", link: "https://www.instagram.com" },
-        { name: "LinkedIn", link: "https://www.linkedin.com" }
+        { name: "Facebook", link: "https://www.facebook.com" },
+        { name: "TikTok", link: "https://www.tiktok.com" }
       ],
     contact: {
       phone: "123-456-7891",
