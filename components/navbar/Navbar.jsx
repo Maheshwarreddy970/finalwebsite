@@ -16,8 +16,8 @@ const philosopher = Philosopher({ subsets: ['latin'], weight: ["400"] })
 const Header = async ({ isAdminPage = false, clientInfo }) => {
   const pagesNames = [
     { name: "Shop", href: `/${clientInfo?.name}/cars` },
+    { name: "About", href: `/${clientInfo?.name}/about` },
     { name: "Finance", href: `/${clientInfo?.name}/finance` },
-    { name: "News/Videos", href: `/${clientInfo?.name}/news-videos` },
     { name: "Contact", href: `/${clientInfo?.name}/contact` },
   ];
   const user = await checkUser();
