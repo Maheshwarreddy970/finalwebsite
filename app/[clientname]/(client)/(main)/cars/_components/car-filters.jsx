@@ -286,7 +286,7 @@ export const CarFilters = ({ filters }) => {
           </div>
 
           <div className="px-4 py-4 border-t">
-            <RainbowButton onClick={applyFilters} className="w-full">
+            <RainbowButton applyFilters={applyFilters} className="w-full">
               Apply Filters
             </RainbowButton>
           </div>

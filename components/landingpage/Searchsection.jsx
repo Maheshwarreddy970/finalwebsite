@@ -7,6 +7,7 @@ import { CarFilterControls } from '@/app/[clientname]/(client)/(main)/cars/_comp
 import { SparklesText } from '../ui/SparklesText';
 import { cn } from '@/lib/utils';
 import { Philosopher } from 'next/font/google'
+import Button05 from '../ui/rainbow-button';
 
 const philosopher = Philosopher({ subsets: ['latin'], weight: ["400", '700'] })
 
@@ -83,7 +84,7 @@ export default function Searchsection() {
   return (
     <section className='px-3 md:px-10 mt-10'>
       <div className={cn(' flex gap-4 items-center justify-center text-6xl font-semibold text-black  ', philosopher.className)}>
-       Ways To Start <SparklesText colors={{ first: "#ffc400", second: "#ff9100" }} className="text-6xl  font-semibold" sparklesCount={5}>Searching</SparklesText>
+        Ways To Start <SparklesText colors={{ first: "#ffc400", second: "#ff9100" }} className="text-6xl  font-semibold" sparklesCount={5}>Searching</SparklesText>
       </div>
 
       <div className="mt-16  ">
@@ -96,11 +97,10 @@ export default function Searchsection() {
         <div className="mt-6">
           <Button
             onClick={handleApplyFilters}
-            className="bg-blue-600 text-white hover:bg-blue-700"
-            disabled={false} // Ensure button is always clickable unless specific logic applies
           >
             Apply Filters
           </Button>
+          <Button05></Button05>
         </div>
       </div>
     </section>

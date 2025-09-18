@@ -1,31 +1,177 @@
+"use client";
+
 import React from "react";
 
-import { cn } from "@/lib/utils";
+const Button05 = ({applyFilters}) => {
+  // Generate dot elements for the icons
+  const renderDots = () => {
+    const dotValues = [2, 1, 0, 1, 2];
+    return dotValues.map((value, index) => (
+      <span
+        key={`dot-${index}`}
+        className="button05_dot"
+        style={{ "--index": value }}
+      />
+    ));
+  };
 
-export function RainbowButton({
-  children,
-  className,
-  ...props
-}) {
+  // Generate icon elements with dots
+  const renderIcons = () => {
+    return [3, 2, 1, 0].map((indexParent) => (
+      <span
+        key={`icon-${indexParent}`}
+        className="button05_icon"
+        style={{ "--index-parent": indexParent }}
+      >
+        {renderDots()}
+      </span>
+    ));
+  };
+
   return (
-    <button
-      className={cn(
-        "group relative inline-flex h-11 animate-rainbow cursor-pointer items-center justify-center rounded-xl border-0 bg-[length:200%] px-8 py-2 font-medium text-primary-foreground transition-colors [background-clip:padding-box,border-box,border-box] [background-origin:border-box] [border:calc(0.08*1rem)_solid_transparent] focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50",
+    <>
+      <button onClick={applyFilters} href="#" className="button05 w-inline-block px-3 border shadow-md  bg-black rounded-xl max-w-56">
+        <span className="button05_bg"></span>
+        <span className="button05_inner flex ">
+          <span className="button05_text">Arrow-Dots</span>
+          <span className="button05_icon-wrap">{renderIcons()}</span>
+        </span>
+      </button>
 
-        // before styles
-        "before:absolute before:bottom-[-20%] before:left-1/2 before:z-0 before:h-1/5 before:w-3/5 before:-translate-x-1/2 before:animate-rainbow before:bg-[linear-gradient(90deg,hsl(var(--color-1)),hsl(var(--color-5)),hsl(var(--color-3)),hsl(var(--color-4)),hsl(var(--color-2)))] before:bg-[length:200%] before:[filter:blur(calc(0.8*1rem))]",
+      <style>{`
+        .button05 {
+          color: #f9f4eb;
+          letter-spacing: -.02em;
+          text-transform: uppercase;
+          -webkit-user-select: none;
+          user-select: none;
+          transform-style: preserve-3d;
+          font-size: .875rem;
+          line-height: 1em;
+          text-decoration: none;
+          display: grid;
+          --elastic-ease-out: linear(
+            0,
+            0.5737 7.6%,
+            0.8382 11.87%,
+            0.9463 14.19%,
+            1.0292 16.54%,
+            1.0886 18.97%,
+            1.1258 21.53%,
+            1.137 22.97%,
+            1.1424 24.48%,
+            1.1423 26.1%,
+            1.1366 27.86%,
+            1.1165 31.01%,
+            1.0507 38.62%,
+            1.0219 42.57%,
+            0.9995 46.99%,
+            0.9872 51.63%,
+            0.9842 58.77%,
+            1.0011 81.26%,
+            1
+          );
+          --smooth-ease: cubic-bezier(.32, .72, 0, 1);
+          --color-ease: cubic-bezier(.215, .61, .355, 1);
+          transition: transform .45s var(--elastic-ease-out);
+          -webkit-tap-highlight-color: transparent;
+        }
 
-        // light mode colors
-        "bg-[linear-gradient(#121213,#121213),linear-gradient(#121213_50%,rgba(18,18,19,0.6)_80%,rgba(18,18,19,0)),linear-gradient(90deg,hsl(var(--color-1)),hsl(var(--color-5)),hsl(var(--color-3)),hsl(var(--color-4)),hsl(var(--color-2)))]",
+        .button05:active {
+          transform: scaleX(0.955) scaleY(0.954);
+        }
 
-        // dark mode colors
-        "dark:bg-[linear-gradient(#fff,#fff),linear-gradient(#fff_50%,rgba(255,255,255,0.6)_80%,rgba(0,0,0,0)),linear-gradient(90deg,hsl(var(--color-1)),hsl(var(--color-5)),hsl(var(--color-3)),hsl(var(--color-4)),hsl(var(--color-2)))]",
+        .button05_bg {
+          background-color: #000;
+          border-radius: .3125rem;
+          grid-area: 1/1;
+          overflow: clip;
+          transition: background-color .2s var(--color-ease);
+        }
 
-        className,
-      )}
-      {...props}
-    >
-      {children}
-    </button>
-  );
+      .button05_inner {
+  grid-gap: 0.625rem;
+  grid-area: 1/1;
+
+  padding: 0.875rem 0.625rem 0.875rem 0.75rem;
+  display: grid;
+  grid-auto-flow: column; /* make children flow in a row */
+  justify-content: space-between; /* spread items */
+  align-items: center; /* center items vertically */
+  translate: 0;
 }
+
+        .button05_text {
+          grid-area: 1/1;
+          transition: scale .45s var(--smooth-ease);
+          transform-origin: right center;
+        }
+
+        .button05_inner::before {
+          content: attr(data-text);
+          grid-area: 1 / 1;
+          scale: 0;
+          pointer-events: none;
+          transition: scale .45s var(--smooth-ease);
+          transform-origin: left center;
+        }
+
+        .button05_icon-wrap {
+          grid-column-gap: .125rem;
+          grid-row-gap: .125rem;
+          grid-row: 1;
+          display: flex;
+        }
+
+        .button05_icon {
+          grid-column-gap: .0625rem;
+          grid-row-gap: .0625rem;
+          flex-flow: column;
+          justify-content: center;
+          align-items: flex-end;
+          display: flex;
+        }
+
+        .button05_dot {
+          margin-right: calc(var(--index) * .1875rem);
+          background-color: #f9f4eb;
+          border-radius: .0625rem;
+          width: .125rem;
+          height: .125rem;
+          display: block;
+          transition: scale .4s var(--smooth-ease), translate .45s var(--smooth-ease);
+        }
+
+        .button05_icon:first-child .button05_dot {
+          scale: 0;
+        }
+
+        @media (hover: hover) and (pointer: fine) {
+          
+          .button05:is(:hover, :focus-visible) .button05_inner::before {
+            scale: 1;
+          }
+          .button05:is(:hover, :focus-visible) .button05_icon:last-child .button05_dot {
+            scale: 0;
+            translate: .5625rem 0 0;
+            transition-delay: calc(var(--index) * .04s);
+          }
+          .button05:is(:hover, :focus-visible) .button05_icon:nth-child(-n+3) .button05_dot {
+            scale: 1;
+            translate: .5625rem 0 0;
+            transition-delay: calc((var(--index) * .04s) + (var(--index-parent) * .07s));
+          }
+        }
+
+        @media (hover: none) or (pointer: coarse) {
+          .button05:active .button05_bg {
+            background-color: #4D4D4D;
+            transition-duration: 0s;
+          }
+        }
+      `}</style>
+    </>
+  );
+};
+
+export default Button05;

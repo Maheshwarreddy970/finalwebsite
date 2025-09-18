@@ -2,19 +2,18 @@
 
 import React from "react";
 
-const Button04 = ({ text = "View Car" }) => {
+const Button04 = ({ text = "View Car" ,url}) => {
     const firstIconDots = [0, 2, 2, 1, 2, 0, 1, 1, 2, 2, 0, 1, 0, 2, 2, 1, 0, 2, 2, 2, 2, 0, 1, 0, 2];
     const secondIconDots = [0, 2, 2, 1, 2, 0, 1, 1, 2];
 
     return (
         <>
             {/* full width button */}
-            <a href="#" className="button04 w-full px-6 rounded-xl shadow-md  border  ease-in-out  bg-black py-4 ">
+            <a href={url} className="button04 w-full px-6 rounded-xl active:scale-95 duration-300 transition-all shadow-md border ease-in-out bg-black py-4">
                 <span className="button04_bg"></span>
 
                 <span className="button04_text">{text}</span>
                 <span data-text={text} className="button04_inner">
-
                     <span className="button04_icon-wrap">
                         {/* First icon dots */}
                         <span style={{ "--index-parent": 0 }} className="button04_icon">
@@ -43,7 +42,7 @@ const Button04 = ({ text = "View Car" }) => {
 
             <style jsx>{`
         .button04 {
-          width: 100%; /* 🔥 enforce full width */
+          width: 100%;
           color: #f9f4eb;
           letter-spacing: -0.02em;
           text-transform: uppercase;
@@ -91,15 +90,13 @@ const Button04 = ({ text = "View Car" }) => {
           transition: scale 0.45s var(--smooth-ease),
             background-color 0.2s var(--color-ease);
         }
-       .button04_inner {
-  grid-area: 1/1;
-  
-
-  display: flex;               /* use flexbox instead of grid */
-  justify-content: space-between; /* spread text & icon */
-  align-items: center;         /* vertically center */
-  gap: 0.625rem;               /* same spacing as before */
-}
+        .button04_inner {
+          grid-area: 1/1;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          gap: 0.625rem;
+        }
         .button04_text {
           grid-area: 1/1;
           transition: scale 0.45s var(--smooth-ease);
@@ -121,23 +118,23 @@ const Button04 = ({ text = "View Car" }) => {
           width: 0.125rem;
           height: 0.125rem;
           display: block;
-          transition: scale 0.4s var(--smooth-ease);
-          transition-delay: calc(var(--index) * 0.04s);
+          animation: dotAnimation 2s infinite;
+          animation-delay: calc(var(--index) * 0.04s + var(--index-parent) * 0.07s);
         }
         .button04_icon.is-arrow .button04_dot {
-          scale: 0;
-          transition-delay: 0s;
+          animation: arrowDotAnimation 2s infinite;
+          animation-delay: calc(var(--index) * 0.04s + var(--index-parent) * 0.07s);
         }
         .button04_inner::before {
           content: attr(data-text);
           grid-area: 1 / 1;
-          scale: 1 0;
+          scale: 1 1;
           pointer-events: none;
           transition: scale 0.45s var(--smooth-ease);
           transform-origin: center bottom;
         }
 
-        /* arrow positioning */
+        /* Arrow positioning */
         .button04_icon.is-arrow .button04_dot:nth-child(1) {
           grid-area: 3 / 1;
         }
@@ -166,38 +163,45 @@ const Button04 = ({ text = "View Car" }) => {
           grid-area: 5 / 3;
         }
 
-        /* hover/focus */
-        @media (hover: hover) and (pointer: fine) {
-          .button04:is(:hover, :focus-visible) .button04_text {
-            scale: 1 0;
+        /* Infinite animation keyframes */
+        @keyframes dotAnimation {
+          0%, 20% {
+            scale: 1;
           }
-          .button04:is(:hover, :focus-visible) .button04_inner::before {
-            scale: 1 1;
-          }
-          .button04:is(:hover, :focus-visible) .button04_dot {
+          40%, 60% {
             scale: 0;
-            transition-delay: calc(
-              (var(--index) * 0.04s) + (var(--index-parent) * 0.07s)
-            );
           }
-          .button04:is(:hover, :focus-visible)
-            .button04_icon.is-arrow
-            .button04_dot {
+          80%, 100% {
             scale: 1;
           }
         }
+        @keyframes arrowDotAnimation {
+          0%, 20% {
+            scale: 0;
+          }
+          40%, 60% {
+            scale: 1;
+          }
+          80%, 100% {
+            scale: 0;
+          }
+        }
 
-        /* touch devices */
+        /* Remove hover-specific styles */
+        @media (hover: hover) and (pointer: fine) {
+          .button04_text {
+            scale: 1 1;
+          }
+          .button04_inner::before {
+            scale: 1 1;
+          }
+        }
+
+        /* Touch devices */
         @media (hover: none) or (pointer: coarse) {
           .button04:active .button04_bg {
             background-color: #4d4d4d;
             transition-duration: 0s;
-          }
-          .button04_dot {
-            scale: 0;
-          }
-          .button04_icon.is-arrow .button04_dot {
-            scale: 1;
           }
         }
       `}</style>

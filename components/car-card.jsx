@@ -164,31 +164,8 @@ export const CarCard = ({ car, showwishlist = true, className }) => {
             </TooltipContent>
           </Tooltip>
         </div>
-
-        <div className="flex justify-between">
-          <NeumorphButton
-            className="flex-1 group/viewcar relative overflow-hidden"
-            onClick={() => {
-              router.push(`/${clientInfo?.name}/cars/${car.id}`);
-            }}
-          >
-            <span className="mr-8 transition-opacity duration-500 ease-in-out group-hover/viewcar:opacity-0 group-hover/viewcar:translate-x-[-10px]">
-              View Car
-            </span>
-            <i
-              className="absolute right-1 top-1 bottom-1 rounded-sm z-10 grid w-1/4 place-items-center transition-all duration-500 ease-out bg-primary-foreground/15 group-hover/viewcar:w-[calc(100%-0.5rem)] group-hover/viewcar:bg-primary-foreground/25 group-active/viewcar:scale-90 text-black-500"
-            >
-              <ChevronRight
-                size={16}
-                strokeWidth={2}
-                aria-hidden="true"
-                className="transition-transform duration-300 group-hover/viewcar:scale-110 group-active/viewcar:rotate-[-10deg]"
-              />
-            </i>
-          </NeumorphButton>
-        </div>
         <div className=" flex mt-5 w-full ">
-          <Button04></Button04>
+          <Button04 url={`/${clientInfo?.name}/cars/${car.id}`}></Button04>
         </div>
       </CardContent>
     </MinimalCard>
