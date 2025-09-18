@@ -4,8 +4,9 @@ const nextConfig = {
     domains: ["res.cloudinary.com"],
   },
   serverActions: {
-    bodySizeLimit: "5mb", // Increase to 2 MB (or adjust as needed)
+    bodySizeLimit: "5mb",
   },
+  output: "standalone", // ✅ enables SSR deployment on Netlify
 };
 
 export default nextConfig;
