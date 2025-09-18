@@ -5,7 +5,7 @@ const MainLayout = ({ children }) => {
 
   return (
     <>
-      <div className="container mx-auto my-8">
+      <div className="container mx-auto my-24">
         {children}
       </div>
     </>

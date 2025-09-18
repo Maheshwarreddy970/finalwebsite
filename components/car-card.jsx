@@ -15,8 +15,10 @@ import { Tooltip, TooltipContent, TooltipTrigger } from "./ui/tooltip";
 import { LineShadowText } from "./ui/line-shadow-text";
 import { useClientStore } from "@/store/useClientStore";
 import { cn } from "@/lib/utils";
+import Button04 from "./Mainbutton";
 
-export const CarCard = ({ car ,className}) => {
+export const CarCard = ({ car, showwishlist = true, className }) => {
+  console.log(car)
   const { isSignedIn } = useAuth();
   const router = useRouter();
   const [isSaved, setIsSaved] = useState(car.wishlisted);
@@ -76,7 +78,7 @@ export const CarCard = ({ car ,className}) => {
           </div>
         )}
 
-        <Button
+        {showwishlist && <Button
           variant="ghost"
           size="icon"
           className={`absolute top-2 right-2 bg-white/90 rounded-full p-1.5 ${isSaved
@@ -91,7 +93,7 @@ export const CarCard = ({ car ,className}) => {
           ) : (
             <Heart className={isSaved ? "fill-current" : ""} size={20} />
           )}
-        </Button>
+        </Button>}
       </div>
 
       <CardContent className="p-4">
@@ -184,6 +186,9 @@ export const CarCard = ({ car ,className}) => {
               />
             </i>
           </NeumorphButton>
+        </div>
+        <div className=" flex mt-5 w-full ">
+          <Button04></Button04>
         </div>
       </CardContent>
     </MinimalCard>

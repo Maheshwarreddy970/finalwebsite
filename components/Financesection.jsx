@@ -69,7 +69,7 @@ export default function Financesection() {
                 <div className=' flex flex-col gap-6  mt-10 col-span-1  '>
                     <SparklesText
                         className={cn("text-7xl  font-light  text-black  ", philosopher.className)}>
-                        Drive Your  Car with  <span className={greatVibes.className}>Dream</span> Confidence
+                        Drive Your <span className={greatVibes.className}>Dream</span> <br></br>  Car with  Confidence
                     </SparklesText >
                     <div
                         className={cn(' text-2xl max-w-2xl text-black  ', philosopher.className)}

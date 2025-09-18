@@ -37,7 +37,7 @@ export default function Featured({ Cars }) {
                 <CarouselContent>
                     {Cars.map((car, index) => (
                         <CarouselItem key={index} className="basis-[28.5%]">
-                            <CarCard key={car.id + index} car={car} />
+                            <CarCard showwishlist={false} key={car.id + index} car={car} />
                         </CarouselItem>
                     ))}
                 </CarouselContent>

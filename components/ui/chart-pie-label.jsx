@@ -22,7 +22,6 @@ const chartConfig = {
 
 export function ChartPieDonutActive({monthlypayment, vehicleprice, loanamount}) {
 
-  console.log(monthlypayment, vehicleprice, loanamount)
 
 const chartData = [
   { browser: "Vehicle Price", visitors: vehicleprice, fill: "oklch(72.3% 0.219 149.579)" },

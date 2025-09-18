@@ -48,7 +48,7 @@ const members = [
 export default function TeamSection() {
     return (
         <>
-            <section className='relative w-full mt-10 mb-5 px-3 md:px-10'>
+            <section className='relative w-full mt-10 mb-5  px-3 md:px-10'>
                 <div>
                     <div
                         className={cn(' flex gap-4 items-center text-6xl font-semibold text-black  ', philosopher.className)}

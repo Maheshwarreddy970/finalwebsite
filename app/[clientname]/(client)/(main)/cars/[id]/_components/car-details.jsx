@@ -36,6 +36,7 @@ import { useAnimate } from "framer-motion";
 import NeumorphButton from "@/components/ui/neumorph-butto";
 import { LineShadowText } from "@/components/ui/line-shadow-text";
 import { useClientStore } from "@/store/useClientStore";
+import Workinghours from "@/components/landingpage/Workinghours";
 
 export function CarDetails({ car, testDriveInfo }) {
   const router = useRouter();
@@ -438,76 +439,9 @@ export function CarDetails({ car, testDriveInfo }) {
           </div>
         </div>
       </div>
-      {/* Dealership Location Section */}
-      <div className={cn("grid grid-cols-1 mt-7 bg-black/5 relative rounded-2xl", "shadow-[inset_0_0_1px_1px_#ffffff4d] sm:shadow-[inset_0_0_2px_1px_#ffffff4d]", "ring-1 ring-black/5", "mx-auto w-full", "transition-all duration-300 ease-in-out")}>
-        <GlowingEffect
-          spread={40}
-          glow={true}
-          disabled={false}
-          proximity={64}
-          inactiveZone={0.01}
-          borderWidth={3}
-        />
-        <div className="grid grid-cols-1 rounded-2xl p-1 sm:p-1.5 shadow-md shadow-black/5">
-          <div className="rounded-2xl bg-white px-5 py-4 flex flex-col gap-3 shadow-xl ring-1 ring-black/5">
-            <LineShadowText className="italic text-3xl font-semibold mb-4" shadowColor='black'>Dealership Location</LineShadowText>
-            <div className="bg-gray-50 rounded-lg p-6">
-              <div className="flex flex-col md:flex-row gap-6 justify-between">
-                {/* Dealership Name and Address */}
-                <div className="flex items-start gap-3">
-                  <LocateFixed className="h-5 w-5 text-blue-600 mt-1 flex-shrink-0" />
-                  <div>
-                    <h4 className="font-medium">{`${clientInfo?.name}`}</h4>
-                    <p className="text-gray-600">
-                      {clientInfo?.contact?.address || "Not Available"}
-                    </p>
-                    <p className="text-gray-600 mt-1">
-                      Phone: {clientInfo?.contact?.phone || "Not Available"}
-                    </p>
-                    <p className="text-gray-600">
-                      Email: {clientInfo?.contact?.email || "Not Available"}
-                    </p>
-                  </div>
-                </div>
-
-                {/* Working Hours */}
-                <div className="md:w-1/2 lg:w-1/3">
-                  <h4 className="font-medium mb-2">Working Hours</h4>
-                  <div className="space-y-2">
-                    {testDriveInfo.dealership?.workingHours
-                      ? testDriveInfo.dealership.workingHours
-                        .sort((a, b) => {
-                          const days = ["MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY", "SUNDAY"];
-                          return days.indexOf(a.dayOfWeek) - days.indexOf(b.dayOfWeek);
-                        })
-                        .map((day, index) => (
-                          <div key={index} className="grid grid-cols-2 gap-4 text-sm">
-                            <div className="text-gray-600 text-left">
-                              {day.dayOfWeek.charAt(0) + day.dayOfWeek.slice(1).toLowerCase()}
-                            </div>
-                            <div className={`font-semibold ${day.isOpen ? "text-green-600" : "text-red-600"} text-right`}>
-                              {day.isOpen ? `${day.openTime} - ${day.closeTime}` : "Closed"}
-                            </div>
-                          </div>
-                        ))
-                      : // Default hours if none provided
-                      ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"].map((day, index) => (
-                        <div key={day} className="grid grid-cols-2 gap-4 text-sm">
-                          <div className="text-gray-600 text-left">{day}</div>
-                          <div className={`font-semibold ${index < 6 ? "text-green-600" : "text-red-600"} text-right`}>
-                            {index < 5 ? "9:00 - 18:00" : index === 5 ? "10:00 - 16:00" : "Closed"}
-                          </div>
-                        </div>
-                      ))}
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+    
+        <Workinghours></Workinghours>
       </div>
-
-    </div>
   );
 }
 

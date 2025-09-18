@@ -20,7 +20,7 @@ export default async function TestDrivePage({ params }) {
   }
 
   return (
-    <div className="container mx-auto px-4 py-12">
+    <div className="container mx-auto px-3 md:px-10 py-12">
       <LineShadowText shadowColor="black" className="text-balance  tracking-tighter w-full flex flex-initial leading-none text-5xl font-bold text-blue-600 my-5">Book a Test Drive</LineShadowText>
       <TestDriveForm
         car={result.data}

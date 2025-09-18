@@ -1,4 +1,3 @@
-import { getFeaturedCars } from "@/actions/home";
 import Herosection from "@/components/landingpage/Herosection";
 import EmiCalculator from "./(main)/cars/[id]/_components/emi-calculator";
 import Featured from "@/components/landingpage/Featured";
@@ -16,6 +15,8 @@ import {
   IconCashRegister,
   IconShieldBolt
 } from "@tabler/icons-react";
+import MediaSection from "@/components/ui/MediaSection";
+import { getFeaturedCars } from "@/actions/car-listing";
 
 
 export default async function Home() {
@@ -66,6 +67,7 @@ export default async function Home() {
       </div>
       <Customerstories></Customerstories>
       <Searchsection></Searchsection>
+      <MediaSection></MediaSection>
       <BodyType></BodyType>
       <TeamSection></TeamSection>
     </>

@@ -16,21 +16,7 @@ function serializeCarData(car) {
 /**
  * Get featured cars for the homepage
  */
-export async function getFeaturedCars() {
-  try {
-    const cars = await db.car.findMany({
-      where: {
-        featured: true,
-        status: "AVAILABLE",
-      },
-      orderBy: { createdAt: "desc" },
-    });
 
-    return cars.map(serializeCarData);
-  } catch (error) {
-    throw new Error("Error fetching featured cars: " + error.message);
-  }
-}
 
 // Function to convert File to base64
 async function fileToBase64(file) {

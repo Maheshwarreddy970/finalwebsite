@@ -9,7 +9,6 @@ export const metadata = {
 
 export default async function CarsPage() {
   const filtersData = await getCarFilters();
-
   return (
     <div className="container mx-auto px-4 py-12">
       <div className="flex flex-col lg:flex-row gap-8">

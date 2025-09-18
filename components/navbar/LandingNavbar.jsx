@@ -25,10 +25,6 @@ export function AppNavbar({ user, isAdmin }) {
       name: "Cars",
       link: "/cars",
     },
-    {
-      name: "Admin",
-      link: "/admin",
-    },
   ];
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const clientInfo = useClientStore((state) => state.clientInfo);

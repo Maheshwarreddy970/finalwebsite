@@ -8,6 +8,21 @@ import { revalidatePath } from "next/cache";
 /**
  * Get simplified filters for the car marketplace
  */
+export async function getFeaturedCars() {
+  try {
+    const cars = await db.car.findMany({
+      where: {
+        featured: true,
+        status: "AVAILABLE",
+      },
+      orderBy: { createdAt: "desc" },
+    });
+    return cars.map(serializeCarData);
+  } catch (error) {
+    throw new Error("Error fetching featured cars: " + error.message);
+  }
+}
+
 export async function getCarFilters() {
   try {
     // Get unique makes

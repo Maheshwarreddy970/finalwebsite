@@ -1,4 +1,3 @@
-import { image } from "@cloudinary/url-gen/qualifiers/source";
 
 export const clientDetails = {
   g: {
@@ -24,6 +23,25 @@ export const clientDetails = {
         { name: "Facebook", link: "https://www.facebook.com" },
         { name: "TikTok", link: "https://www.tiktok.com" }
       ],
+
+    mediaItems: [
+      {
+        url: "https://www.instagram.com/reel/DN5ro4sAjaT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DNFwXOdonZZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMfWAeDJiLd/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMvVqElMVyu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DOqmssBEvFK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+    ],
+
     contact: {
       phone: "123-456-7890",
       email: "gogo@example.com",
@@ -53,6 +71,25 @@ export const clientDetails = {
         { name: "Facebook", link: "https://www.facebook.com" },
         { name: "TikTok", link: "https://www.tiktok.com" }
       ],
+
+    mediaItems: [
+      {
+        url: "https://www.instagram.com/reel/DN5ro4sAjaT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DNFwXOdonZZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMfWAeDJiLd/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMvVqElMVyu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DOqmssBEvFK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+    ],
+
     contact: {
       phone: "(954) 371-0519",
       email: "sales@supercarmiamigroup.com",
@@ -82,6 +119,25 @@ export const clientDetails = {
         { name: "Facebook", link: "https://www.facebook.com" },
         { name: "TikTok", link: "https://www.tiktok.com" }
       ],
+
+    mediaItems: [
+      {
+        url: "https://www.instagram.com/reel/DN5ro4sAjaT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DNFwXOdonZZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMfWAeDJiLd/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMvVqElMVyu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DOqmssBEvFK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+    ],
+
     contact: {
       phone: "123-456-7891",
       email: "sales@example.com",
@@ -111,6 +167,25 @@ export const clientDetails = {
         { name: "Facebook", link: "https://www.facebook.com" },
         { name: "TikTok", link: "https://www.tiktok.com" }
       ],
+
+    mediaItems: [
+      {
+        url: "https://www.instagram.com/reel/DN5ro4sAjaT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DNFwXOdonZZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMfWAeDJiLd/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMvVqElMVyu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DOqmssBEvFK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+    ],
+
     contact: {
       phone: "123-456-7891",
       email: "sales@example.com",
@@ -140,6 +215,25 @@ export const clientDetails = {
         { name: "Facebook", link: "https://www.facebook.com" },
         { name: "TikTok", link: "https://www.tiktok.com" }
       ],
+
+    mediaItems: [
+      {
+        url: "https://www.instagram.com/reel/DN5ro4sAjaT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DNFwXOdonZZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMfWAeDJiLd/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMvVqElMVyu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DOqmssBEvFK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+    ],
+
     contact: {
       phone: "123-456-7891",
       email: "sales@example.com",
@@ -169,6 +263,25 @@ export const clientDetails = {
         { name: "Facebook", link: "https://www.facebook.com" },
         { name: "TikTok", link: "https://www.tiktok.com" }
       ],
+
+    mediaItems: [
+      {
+        url: "https://www.instagram.com/reel/DN5ro4sAjaT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DNFwXOdonZZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMfWAeDJiLd/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMvVqElMVyu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DOqmssBEvFK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+    ],
+
     contact: {
       phone: "123-456-7891",
       email: "sales@example.com",
@@ -198,6 +311,25 @@ export const clientDetails = {
         { name: "Facebook", link: "https://www.facebook.com" },
         { name: "TikTok", link: "https://www.tiktok.com" }
       ],
+
+    mediaItems: [
+      {
+        url: "https://www.instagram.com/reel/DN5ro4sAjaT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DNFwXOdonZZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMfWAeDJiLd/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMvVqElMVyu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DOqmssBEvFK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+    ],
+
     contact: {
       phone: "123-456-7891",
       email: "sales@example.com",
@@ -227,6 +359,25 @@ export const clientDetails = {
         { name: "Facebook", link: "https://www.facebook.com" },
         { name: "TikTok", link: "https://www.tiktok.com" }
       ],
+
+    mediaItems: [
+      {
+        url: "https://www.instagram.com/reel/DN5ro4sAjaT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DNFwXOdonZZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMfWAeDJiLd/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMvVqElMVyu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DOqmssBEvFK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+    ],
+
     contact: {
       phone: "123-456-7891",
       email: "sales@example.com",
@@ -256,6 +407,25 @@ export const clientDetails = {
         { name: "Facebook", link: "https://www.facebook.com" },
         { name: "TikTok", link: "https://www.tiktok.com" }
       ],
+
+    mediaItems: [
+      {
+        url: "https://www.instagram.com/reel/DN5ro4sAjaT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DNFwXOdonZZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMfWAeDJiLd/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMvVqElMVyu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DOqmssBEvFK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+    ],
+
     contact: {
       phone: "123-456-7891",
       email: "sales@example.com",
@@ -285,6 +455,25 @@ export const clientDetails = {
         { name: "Facebook", link: "https://www.facebook.com" },
         { name: "TikTok", link: "https://www.tiktok.com" }
       ],
+
+    mediaItems: [
+      {
+        url: "https://www.instagram.com/reel/DN5ro4sAjaT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DNFwXOdonZZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMfWAeDJiLd/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMvVqElMVyu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DOqmssBEvFK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+    ],
+
     contact: {
       phone: "123-456-7891",
       email: "sales@example.com",
@@ -314,6 +503,25 @@ export const clientDetails = {
         { name: "Facebook", link: "https://www.facebook.com" },
         { name: "TikTok", link: "https://www.tiktok.com" }
       ],
+
+    mediaItems: [
+      {
+        url: "https://www.instagram.com/reel/DN5ro4sAjaT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DNFwXOdonZZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMfWAeDJiLd/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMvVqElMVyu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DOqmssBEvFK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+    ],
+
     contact: {
       phone: "123-456-7891",
       email: "sales@example.com",
@@ -343,6 +551,25 @@ export const clientDetails = {
         { name: "Facebook", link: "https://www.facebook.com" },
         { name: "TikTok", link: "https://www.tiktok.com" }
       ],
+
+    mediaItems: [
+      {
+        url: "https://www.instagram.com/reel/DN5ro4sAjaT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DNFwXOdonZZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMfWAeDJiLd/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMvVqElMVyu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DOqmssBEvFK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+    ],
+
     contact: {
       phone: "123-456-7891",
       email: "sales@example.com",
@@ -373,6 +600,25 @@ export const clientDetails = {
         { name: "Facebook", link: "https://www.facebook.com" },
         { name: "TikTok", link: "https://www.tiktok.com" }
       ],
+
+    mediaItems: [
+      {
+        url: "https://www.instagram.com/reel/DN5ro4sAjaT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DNFwXOdonZZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMfWAeDJiLd/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMvVqElMVyu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DOqmssBEvFK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+    ],
+
     contact: {
       phone: "123-456-7891",
       email: "sales@example.com",
@@ -402,6 +648,25 @@ export const clientDetails = {
         { name: "Facebook", link: "https://www.facebook.com" },
         { name: "TikTok", link: "https://www.tiktok.com" }
       ],
+
+    mediaItems: [
+      {
+        url: "https://www.instagram.com/reel/DN5ro4sAjaT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DNFwXOdonZZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMfWAeDJiLd/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMvVqElMVyu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DOqmssBEvFK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+    ],
+
     contact: {
       phone: "123-456-7891",
       email: "sales@example.com",
@@ -431,6 +696,25 @@ export const clientDetails = {
         { name: "Facebook", link: "https://www.facebook.com" },
         { name: "TikTok", link: "https://www.tiktok.com" }
       ],
+
+    mediaItems: [
+      {
+        url: "https://www.instagram.com/reel/DN5ro4sAjaT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DNFwXOdonZZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMfWAeDJiLd/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMvVqElMVyu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DOqmssBEvFK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+    ],
+
     contact: {
       phone: "123-456-7891",
       email: "sales@example.com",
@@ -460,6 +744,25 @@ export const clientDetails = {
         { name: "Facebook", link: "https://www.facebook.com" },
         { name: "TikTok", link: "https://www.tiktok.com" }
       ],
+
+    mediaItems: [
+      {
+        url: "https://www.instagram.com/reel/DN5ro4sAjaT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DNFwXOdonZZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMfWAeDJiLd/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMvVqElMVyu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DOqmssBEvFK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+    ],
+
     contact: {
       phone: "123-456-7891",
       email: "sales@example.com",
@@ -489,6 +792,25 @@ export const clientDetails = {
         { name: "Facebook", link: "https://www.facebook.com" },
         { name: "TikTok", link: "https://www.tiktok.com" }
       ],
+
+    mediaItems: [
+      {
+        url: "https://www.instagram.com/reel/DN5ro4sAjaT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DNFwXOdonZZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMfWAeDJiLd/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMvVqElMVyu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DOqmssBEvFK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+    ],
+
     contact: {
       phone: "123-456-7891",
       email: "sales@example.com",
@@ -518,6 +840,25 @@ export const clientDetails = {
         { name: "Facebook", link: "https://www.facebook.com" },
         { name: "TikTok", link: "https://www.tiktok.com" }
       ],
+
+    mediaItems: [
+      {
+        url: "https://www.instagram.com/reel/DN5ro4sAjaT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DNFwXOdonZZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMfWAeDJiLd/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMvVqElMVyu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DOqmssBEvFK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+    ],
+
     contact: {
       phone: "123-456-7891",
       email: "sales@example.com",
@@ -547,6 +888,25 @@ export const clientDetails = {
         { name: "Facebook", link: "https://www.facebook.com" },
         { name: "TikTok", link: "https://www.tiktok.com" }
       ],
+
+    mediaItems: [
+      {
+        url: "https://www.instagram.com/reel/DN5ro4sAjaT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DNFwXOdonZZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMfWAeDJiLd/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMvVqElMVyu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DOqmssBEvFK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+    ],
+
     contact: {
       phone: "123-456-7891",
       email: "sales@example.com",
@@ -576,6 +936,25 @@ export const clientDetails = {
         { name: "Facebook", link: "https://www.facebook.com" },
         { name: "TikTok", link: "https://www.tiktok.com" }
       ],
+
+    mediaItems: [
+      {
+        url: "https://www.instagram.com/reel/DN5ro4sAjaT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DNFwXOdonZZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMfWAeDJiLd/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMvVqElMVyu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DOqmssBEvFK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+    ],
+
     contact: {
       phone: "123-456-7891",
       email: "sales@example.com",
@@ -605,6 +984,25 @@ export const clientDetails = {
         { name: "Facebook", link: "https://www.facebook.com" },
         { name: "TikTok", link: "https://www.tiktok.com" }
       ],
+
+    mediaItems: [
+      {
+        url: "https://www.instagram.com/reel/DN5ro4sAjaT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DNFwXOdonZZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMfWAeDJiLd/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMvVqElMVyu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DOqmssBEvFK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+    ],
+
     contact: {
       phone: "123-456-7891",
       email: "sales@example.com",
@@ -635,6 +1033,25 @@ export const clientDetails = {
         { name: "Facebook", link: "https://www.facebook.com" },
         { name: "TikTok", link: "https://www.tiktok.com" }
       ],
+
+    mediaItems: [
+      {
+        url: "https://www.instagram.com/reel/DN5ro4sAjaT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DNFwXOdonZZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMfWAeDJiLd/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMvVqElMVyu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DOqmssBEvFK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+    ],
+
     contact: {
       phone: "123-456-7891",
       email: "sales@example.com",
@@ -664,6 +1081,25 @@ export const clientDetails = {
         { name: "Facebook", link: "https://www.facebook.com" },
         { name: "TikTok", link: "https://www.tiktok.com" }
       ],
+
+    mediaItems: [
+      {
+        url: "https://www.instagram.com/reel/DN5ro4sAjaT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DNFwXOdonZZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMfWAeDJiLd/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMvVqElMVyu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DOqmssBEvFK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+    ],
+
     contact: {
       phone: "123-456-7891",
       email: "sales@example.com",
@@ -693,6 +1129,25 @@ export const clientDetails = {
         { name: "Facebook", link: "https://www.facebook.com" },
         { name: "TikTok", link: "https://www.tiktok.com" }
       ],
+
+    mediaItems: [
+      {
+        url: "https://www.instagram.com/reel/DN5ro4sAjaT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DNFwXOdonZZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMfWAeDJiLd/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMvVqElMVyu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DOqmssBEvFK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+    ],
+
     contact: {
       phone: "123-456-7891",
       email: "sales@example.com",
@@ -722,6 +1177,25 @@ export const clientDetails = {
         { name: "Facebook", link: "https://www.facebook.com" },
         { name: "TikTok", link: "https://www.tiktok.com" }
       ],
+
+    mediaItems: [
+      {
+        url: "https://www.instagram.com/reel/DN5ro4sAjaT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DNFwXOdonZZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMfWAeDJiLd/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMvVqElMVyu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DOqmssBEvFK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+    ],
+
     contact: {
       phone: "123-456-7891",
       email: "sales@example.com",
@@ -751,6 +1225,25 @@ export const clientDetails = {
         { name: "Facebook", link: "https://www.facebook.com" },
         { name: "TikTok", link: "https://www.tiktok.com" }
       ],
+
+    mediaItems: [
+      {
+        url: "https://www.instagram.com/reel/DN5ro4sAjaT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DNFwXOdonZZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMfWAeDJiLd/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMvVqElMVyu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DOqmssBEvFK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+    ],
+
     contact: {
       phone: "123-456-7891",
       email: "sales@example.com",
@@ -780,6 +1273,25 @@ export const clientDetails = {
         { name: "Facebook", link: "https://www.facebook.com" },
         { name: "TikTok", link: "https://www.tiktok.com" }
       ],
+
+    mediaItems: [
+      {
+        url: "https://www.instagram.com/reel/DN5ro4sAjaT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DNFwXOdonZZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMfWAeDJiLd/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMvVqElMVyu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DOqmssBEvFK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+    ],
+
     contact: {
       phone: "123-456-7891",
       email: "sales@example.com",
@@ -809,6 +1321,25 @@ export const clientDetails = {
         { name: "Facebook", link: "https://www.facebook.com" },
         { name: "TikTok", link: "https://www.tiktok.com" }
       ],
+
+    mediaItems: [
+      {
+        url: "https://www.instagram.com/reel/DN5ro4sAjaT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DNFwXOdonZZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMfWAeDJiLd/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMvVqElMVyu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DOqmssBEvFK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+    ],
+
     contact: {
       phone: "123-456-7891",
       email: "sales@example.com",
@@ -838,6 +1369,25 @@ export const clientDetails = {
         { name: "Facebook", link: "https://www.facebook.com" },
         { name: "TikTok", link: "https://www.tiktok.com" }
       ],
+
+    mediaItems: [
+      {
+        url: "https://www.instagram.com/reel/DN5ro4sAjaT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DNFwXOdonZZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMfWAeDJiLd/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMvVqElMVyu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DOqmssBEvFK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+    ],
+
     contact: {
       phone: "123-456-7891",
       email: "sales@example.com",
@@ -867,6 +1417,25 @@ export const clientDetails = {
         { name: "Facebook", link: "https://www.facebook.com" },
         { name: "TikTok", link: "https://www.tiktok.com" }
       ],
+
+    mediaItems: [
+      {
+        url: "https://www.instagram.com/reel/DN5ro4sAjaT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DNFwXOdonZZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMfWAeDJiLd/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMvVqElMVyu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DOqmssBEvFK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+    ],
+
     contact: {
       phone: "123-456-7891",
       email: "sales@example.com",
@@ -896,6 +1465,25 @@ export const clientDetails = {
         { name: "Facebook", link: "https://www.facebook.com" },
         { name: "TikTok", link: "https://www.tiktok.com" }
       ],
+
+    mediaItems: [
+      {
+        url: "https://www.instagram.com/reel/DN5ro4sAjaT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DNFwXOdonZZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMfWAeDJiLd/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMvVqElMVyu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DOqmssBEvFK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+    ],
+
     contact: {
       phone: "123-456-7891",
       email: "sales@example.com",
@@ -925,6 +1513,25 @@ export const clientDetails = {
         { name: "Facebook", link: "https://www.facebook.com" },
         { name: "TikTok", link: "https://www.tiktok.com" }
       ],
+
+    mediaItems: [
+      {
+        url: "https://www.instagram.com/reel/DN5ro4sAjaT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DNFwXOdonZZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMfWAeDJiLd/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMvVqElMVyu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DOqmssBEvFK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+    ],
+
     contact: {
       phone: "123-456-7891",
       email: "sales@example.com",
@@ -954,6 +1561,25 @@ export const clientDetails = {
         { name: "Facebook", link: "https://www.facebook.com" },
         { name: "TikTok", link: "https://www.tiktok.com" }
       ],
+
+    mediaItems: [
+      {
+        url: "https://www.instagram.com/reel/DN5ro4sAjaT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DNFwXOdonZZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMfWAeDJiLd/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMvVqElMVyu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DOqmssBEvFK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+    ],
+
     contact: {
       phone: "123-456-7891",
       email: "sales@example.com",
@@ -983,6 +1609,25 @@ export const clientDetails = {
         { name: "Facebook", link: "https://www.facebook.com" },
         { name: "TikTok", link: "https://www.tiktok.com" }
       ],
+
+    mediaItems: [
+      {
+        url: "https://www.instagram.com/reel/DN5ro4sAjaT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DNFwXOdonZZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMfWAeDJiLd/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMvVqElMVyu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DOqmssBEvFK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+    ],
+
     contact: {
       phone: "123-456-7891",
       email: "sales@example.com",
@@ -1012,6 +1657,25 @@ export const clientDetails = {
         { name: "Facebook", link: "https://www.facebook.com" },
         { name: "TikTok", link: "https://www.tiktok.com" }
       ],
+
+    mediaItems: [
+      {
+        url: "https://www.instagram.com/reel/DN5ro4sAjaT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DNFwXOdonZZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMfWAeDJiLd/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMvVqElMVyu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DOqmssBEvFK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+    ],
+
     contact: {
       phone: "123-456-7891",
       email: "sales@example.com",
@@ -1041,6 +1705,25 @@ export const clientDetails = {
         { name: "Facebook", link: "https://www.facebook.com" },
         { name: "TikTok", link: "https://www.tiktok.com" }
       ],
+
+    mediaItems: [
+      {
+        url: "https://www.instagram.com/reel/DN5ro4sAjaT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DNFwXOdonZZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMfWAeDJiLd/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMvVqElMVyu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DOqmssBEvFK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+    ],
+
     contact: {
       phone: "123-456-7891",
       email: "sales@example.com",
@@ -1070,6 +1753,25 @@ export const clientDetails = {
         { name: "Facebook", link: "https://www.facebook.com" },
         { name: "TikTok", link: "https://www.tiktok.com" }
       ],
+
+    mediaItems: [
+      {
+        url: "https://www.instagram.com/reel/DN5ro4sAjaT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DNFwXOdonZZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMfWAeDJiLd/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMvVqElMVyu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DOqmssBEvFK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+    ],
+
     contact: {
       phone: "123-456-7891",
       email: "sales@example.com",
@@ -1099,6 +1801,25 @@ export const clientDetails = {
         { name: "Facebook", link: "https://www.facebook.com" },
         { name: "TikTok", link: "https://www.tiktok.com" }
       ],
+
+    mediaItems: [
+      {
+        url: "https://www.instagram.com/reel/DN5ro4sAjaT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DNFwXOdonZZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMfWAeDJiLd/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMvVqElMVyu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DOqmssBEvFK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+    ],
+
     contact: {
       phone: "123-456-7891",
       email: "sales@example.com",
@@ -1128,6 +1849,25 @@ export const clientDetails = {
         { name: "Facebook", link: "https://www.facebook.com" },
         { name: "TikTok", link: "https://www.tiktok.com" }
       ],
+
+    mediaItems: [
+      {
+        url: "https://www.instagram.com/reel/DN5ro4sAjaT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DNFwXOdonZZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMfWAeDJiLd/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMvVqElMVyu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DOqmssBEvFK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+    ],
+
     contact: {
       phone: "123-456-7891",
       email: "sales@example.com",
@@ -1157,6 +1897,25 @@ export const clientDetails = {
         { name: "Facebook", link: "https://www.facebook.com" },
         { name: "TikTok", link: "https://www.tiktok.com" }
       ],
+
+    mediaItems: [
+      {
+        url: "https://www.instagram.com/reel/DN5ro4sAjaT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DNFwXOdonZZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMfWAeDJiLd/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMvVqElMVyu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DOqmssBEvFK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+    ],
+
     contact: {
       phone: "123-456-7891",
       email: "sales@example.com",
@@ -1186,6 +1945,25 @@ export const clientDetails = {
         { name: "Facebook", link: "https://www.facebook.com" },
         { name: "TikTok", link: "https://www.tiktok.com" }
       ],
+
+    mediaItems: [
+      {
+        url: "https://www.instagram.com/reel/DN5ro4sAjaT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DNFwXOdonZZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMfWAeDJiLd/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMvVqElMVyu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DOqmssBEvFK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+    ],
+
     contact: {
       phone: "123-456-7891",
       email: "sales@example.com",
@@ -1215,6 +1993,25 @@ export const clientDetails = {
         { name: "Facebook", link: "https://www.facebook.com" },
         { name: "TikTok", link: "https://www.tiktok.com" }
       ],
+
+    mediaItems: [
+      {
+        url: "https://www.instagram.com/reel/DN5ro4sAjaT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DNFwXOdonZZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMfWAeDJiLd/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMvVqElMVyu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DOqmssBEvFK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+    ],
+
     contact: {
       phone: "123-456-7891",
       email: "sales@example.com",
@@ -1244,6 +2041,25 @@ export const clientDetails = {
         { name: "Facebook", link: "https://www.facebook.com" },
         { name: "TikTok", link: "https://www.tiktok.com" }
       ],
+
+    mediaItems: [
+      {
+        url: "https://www.instagram.com/reel/DN5ro4sAjaT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DNFwXOdonZZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMfWAeDJiLd/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMvVqElMVyu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DOqmssBEvFK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+    ],
+
     contact: {
       phone: "123-456-7891",
       email: "sales@example.com",
@@ -1273,6 +2089,25 @@ export const clientDetails = {
         { name: "Facebook", link: "https://www.facebook.com" },
         { name: "TikTok", link: "https://www.tiktok.com" }
       ],
+
+    mediaItems: [
+      {
+        url: "https://www.instagram.com/reel/DN5ro4sAjaT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DNFwXOdonZZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMfWAeDJiLd/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMvVqElMVyu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DOqmssBEvFK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+    ],
+
     contact: {
       phone: "123-456-7891",
       email: "sales@example.com",
@@ -1302,6 +2137,25 @@ export const clientDetails = {
         { name: "Facebook", link: "https://www.facebook.com" },
         { name: "TikTok", link: "https://www.tiktok.com" }
       ],
+
+    mediaItems: [
+      {
+        url: "https://www.instagram.com/reel/DN5ro4sAjaT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DNFwXOdonZZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMfWAeDJiLd/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMvVqElMVyu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DOqmssBEvFK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+    ],
+
     contact: {
       phone: "123-456-7891",
       email: "sales@example.com",
@@ -1331,6 +2185,25 @@ export const clientDetails = {
         { name: "Facebook", link: "https://www.facebook.com" },
         { name: "TikTok", link: "https://www.tiktok.com" }
       ],
+
+    mediaItems: [
+      {
+        url: "https://www.instagram.com/reel/DN5ro4sAjaT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DNFwXOdonZZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMfWAeDJiLd/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMvVqElMVyu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DOqmssBEvFK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+    ],
+
     contact: {
       phone: "123-456-7891",
       email: "sales@example.com",
@@ -1360,6 +2233,25 @@ export const clientDetails = {
         { name: "Facebook", link: "https://www.facebook.com" },
         { name: "TikTok", link: "https://www.tiktok.com" }
       ],
+
+    mediaItems: [
+      {
+        url: "https://www.instagram.com/reel/DN5ro4sAjaT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DNFwXOdonZZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMfWAeDJiLd/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMvVqElMVyu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DOqmssBEvFK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+    ],
+
     contact: {
       phone: "123-456-7891",
       email: "sales@example.com",
@@ -1389,6 +2281,25 @@ export const clientDetails = {
         { name: "Facebook", link: "https://www.facebook.com" },
         { name: "TikTok", link: "https://www.tiktok.com" }
       ],
+
+    mediaItems: [
+      {
+        url: "https://www.instagram.com/reel/DN5ro4sAjaT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DNFwXOdonZZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMfWAeDJiLd/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMvVqElMVyu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DOqmssBEvFK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+    ],
+
     contact: {
       phone: "123-456-7891",
       email: "sales@example.com",
@@ -1419,6 +2330,25 @@ export const clientDetails = {
         { name: "Facebook", link: "https://www.facebook.com" },
         { name: "TikTok", link: "https://www.tiktok.com" }
       ],
+
+    mediaItems: [
+      {
+        url: "https://www.instagram.com/reel/DN5ro4sAjaT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DNFwXOdonZZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMfWAeDJiLd/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMvVqElMVyu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DOqmssBEvFK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+    ],
+
     contact: {
       phone: "123-456-7891",
       email: "sales@example.com",
@@ -1448,6 +2378,25 @@ export const clientDetails = {
         { name: "Facebook", link: "https://www.facebook.com" },
         { name: "TikTok", link: "https://www.tiktok.com" }
       ],
+
+    mediaItems: [
+      {
+        url: "https://www.instagram.com/reel/DN5ro4sAjaT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DNFwXOdonZZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMfWAeDJiLd/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMvVqElMVyu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DOqmssBEvFK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+    ],
+
     contact: {
       phone: "123-456-7891",
       email: "sales@example.com",
@@ -1457,7 +2406,7 @@ export const clientDetails = {
   keystoneautogroup: {
     name: "keystoneautogroup",
     background: {
-     image: "/1359276.jpeg"
+      image: "/1359276.jpeg"
     },
     logo: "https://res.cloudinary.com/dbcodcumz/image/upload/v1756721476/cropped-201907-b62cb7e34a794315952d6047cacce793-1_pl02ob.jpg",
     thumbnail: "https://res.cloudinary.com/dbcodcumz/image/upload/v1756721476/481254108_1295997688971110_6399575972784777625_n_plibtz.jpg",
@@ -1477,6 +2426,25 @@ export const clientDetails = {
         { name: "Facebook", link: "https://www.facebook.com" },
         { name: "TikTok", link: "https://www.tiktok.com" }
       ],
+
+    mediaItems: [
+      {
+        url: "https://www.instagram.com/reel/DN5ro4sAjaT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DNFwXOdonZZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMfWAeDJiLd/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMvVqElMVyu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DOqmssBEvFK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+    ],
+
     contact: {
       phone: "123-456-7891",
       email: "sales@example.com",
@@ -1486,7 +2454,7 @@ export const clientDetails = {
   standardmotors: {
     name: "standardmotors",
     background: {
-     image: "/1359276.jpeg"
+      image: "/1359276.jpeg"
     },
     logo: "https://res.cloudinary.com/dbcodcumz/image/upload/v1756723637/cropped-Logo33782.abfa856e-1_mrqakj.png",
     thumbnail: "https://res.cloudinary.com/dbcodcumz/image/upload/v1756723636/482219970_641063842039102_7133751383629833188_n_onzsd1.jpg",
@@ -1506,6 +2474,25 @@ export const clientDetails = {
         { name: "Facebook", link: "https://www.facebook.com" },
         { name: "TikTok", link: "https://www.tiktok.com" }
       ],
+
+    mediaItems: [
+      {
+        url: "https://www.instagram.com/reel/DN5ro4sAjaT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DNFwXOdonZZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMfWAeDJiLd/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMvVqElMVyu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DOqmssBEvFK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+    ],
+
     contact: {
       phone: "123-456-7891",
       email: "sales@example.com",
@@ -1535,6 +2522,25 @@ export const clientDetails = {
         { name: "Facebook", link: "https://www.facebook.com" },
         { name: "TikTok", link: "https://www.tiktok.com" }
       ],
+
+    mediaItems: [
+      {
+        url: "https://www.instagram.com/reel/DN5ro4sAjaT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DNFwXOdonZZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMfWAeDJiLd/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMvVqElMVyu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DOqmssBEvFK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+    ],
+
     contact: {
       phone: "123-456-7891",
       email: "sales@example.com",
@@ -1564,6 +2570,25 @@ export const clientDetails = {
         { name: "Facebook", link: "https://www.facebook.com" },
         { name: "TikTok", link: "https://www.tiktok.com" }
       ],
+
+    mediaItems: [
+      {
+        url: "https://www.instagram.com/reel/DN5ro4sAjaT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DNFwXOdonZZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMfWAeDJiLd/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMvVqElMVyu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DOqmssBEvFK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+    ],
+
     contact: {
       phone: "123-456-7891",
       email: "sales@example.com",
@@ -1593,6 +2618,25 @@ export const clientDetails = {
         { name: "Facebook", link: "https://www.facebook.com" },
         { name: "TikTok", link: "https://www.tiktok.com" }
       ],
+
+    mediaItems: [
+      {
+        url: "https://www.instagram.com/reel/DN5ro4sAjaT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DNFwXOdonZZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMfWAeDJiLd/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMvVqElMVyu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DOqmssBEvFK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+    ],
+
     contact: {
       phone: "123-456-7891",
       email: "sales@example.com",
@@ -1622,6 +2666,25 @@ export const clientDetails = {
         { name: "Facebook", link: "https://www.facebook.com" },
         { name: "TikTok", link: "https://www.tiktok.com" }
       ],
+
+    mediaItems: [
+      {
+        url: "https://www.instagram.com/reel/DN5ro4sAjaT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DNFwXOdonZZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMfWAeDJiLd/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMvVqElMVyu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DOqmssBEvFK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+    ],
+
     contact: {
       phone: "123-456-7891",
       email: "sales@example.com",
@@ -1651,6 +2714,25 @@ export const clientDetails = {
         { name: "Facebook", link: "https://www.facebook.com" },
         { name: "TikTok", link: "https://www.tiktok.com" }
       ],
+
+    mediaItems: [
+      {
+        url: "https://www.instagram.com/reel/DN5ro4sAjaT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DNFwXOdonZZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMfWAeDJiLd/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMvVqElMVyu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DOqmssBEvFK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+    ],
+
     contact: {
       phone: "123-456-7891",
       email: "sales@example.com",
@@ -1680,13 +2762,32 @@ export const clientDetails = {
         { name: "Facebook", link: "https://www.facebook.com" },
         { name: "TikTok", link: "https://www.tiktok.com" }
       ],
+
+    mediaItems: [
+      {
+        url: "https://www.instagram.com/reel/DN5ro4sAjaT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DNFwXOdonZZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMfWAeDJiLd/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMvVqElMVyu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DOqmssBEvFK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+    ],
+
     contact: {
       phone: "123-456-7891",
       email: "sales@example.com",
       address: "1234 Maplewood Drive, Springfield|Driving Directions"
     }
   },
-   signatureautoworld: {
+  signatureautoworld: {
     name: "signatureautoworld",
     background: {
       image: "https://res.cloudinary.com/dbcodcumz/image/upload/v1756741454/2024_Sig_Slider_1_xmlhra.jpg",
@@ -1709,6 +2810,25 @@ export const clientDetails = {
         { name: "Facebook", link: "https://www.facebook.com" },
         { name: "TikTok", link: "https://www.tiktok.com" }
       ],
+
+    mediaItems: [
+      {
+        url: "https://www.instagram.com/reel/DN5ro4sAjaT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DNFwXOdonZZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMfWAeDJiLd/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMvVqElMVyu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DOqmssBEvFK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+    ],
+
     contact: {
       phone: "123-456-7891",
       email: "sales@example.com",
@@ -1738,13 +2858,32 @@ export const clientDetails = {
         { name: "Facebook", link: "https://www.facebook.com" },
         { name: "TikTok", link: "https://www.tiktok.com" }
       ],
+
+    mediaItems: [
+      {
+        url: "https://www.instagram.com/reel/DN5ro4sAjaT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DNFwXOdonZZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMfWAeDJiLd/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMvVqElMVyu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DOqmssBEvFK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+    ],
+
     contact: {
       phone: "123-456-7891",
       email: "sales@example.com",
       address: "1234 Maplewood Drive, Springfield|Driving Directions"
     }
   },
-   mymrcar: {
+  mymrcar: {
     name: "mymrcar",
     background: {
       video: "https://akbwqmvsjmqzpegrqsgq.supabase.co/storage/v1/object/public/store/snapsave-app_1461638664690385_hd.mp4",
@@ -1767,13 +2906,32 @@ export const clientDetails = {
         { name: "Facebook", link: "https://www.facebook.com" },
         { name: "TikTok", link: "https://www.tiktok.com" }
       ],
+
+    mediaItems: [
+      {
+        url: "https://www.instagram.com/reel/DN5ro4sAjaT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DNFwXOdonZZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMfWAeDJiLd/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMvVqElMVyu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DOqmssBEvFK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+    ],
+
     contact: {
       phone: "123-456-7891",
       email: "sales@example.com",
       address: "1234 Maplewood Drive, Springfield|Driving Directions"
     }
   },
-   carsbuckny: {
+  carsbuckny: {
     name: "carsbuckny",
     background: {
       image: "/1359276.jpeg"
@@ -1796,6 +2954,25 @@ export const clientDetails = {
         { name: "Facebook", link: "https://www.facebook.com" },
         { name: "TikTok", link: "https://www.tiktok.com" }
       ],
+
+    mediaItems: [
+      {
+        url: "https://www.instagram.com/reel/DN5ro4sAjaT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DNFwXOdonZZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMfWAeDJiLd/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMvVqElMVyu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DOqmssBEvFK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+    ],
+
     contact: {
       phone: "123-456-7891",
       email: "sales@example.com",
@@ -1825,6 +3002,25 @@ export const clientDetails = {
         { name: "Facebook", link: "https://www.facebook.com" },
         { name: "TikTok", link: "https://www.tiktok.com" }
       ],
+
+    mediaItems: [
+      {
+        url: "https://www.instagram.com/reel/DN5ro4sAjaT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DNFwXOdonZZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMfWAeDJiLd/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMvVqElMVyu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DOqmssBEvFK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+    ],
+
     contact: {
       phone: "123-456-7891",
       email: "sales@example.com",
@@ -1854,6 +3050,25 @@ export const clientDetails = {
         { name: "Facebook", link: "https://www.facebook.com" },
         { name: "TikTok", link: "https://www.tiktok.com" }
       ],
+
+    mediaItems: [
+      {
+        url: "https://www.instagram.com/reel/DN5ro4sAjaT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DNFwXOdonZZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMfWAeDJiLd/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMvVqElMVyu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DOqmssBEvFK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+    ],
+
     contact: {
       phone: "123-456-7891",
       email: "sales@example.com",
@@ -1888,6 +3103,25 @@ const dummy = {
         { name: "Facebook", link: "https://www.facebook.com" },
         { name: "TikTok", link: "https://www.tiktok.com" }
       ],
+
+    mediaItems: [
+      {
+        url: "https://www.instagram.com/reel/DN5ro4sAjaT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DNFwXOdonZZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMfWAeDJiLd/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DMvVqElMVyu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DOqmssBEvFK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+    ],
+
     contact: {
       phone: "123-456-7891",
       email: "sales@example.com",
