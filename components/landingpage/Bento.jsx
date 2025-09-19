@@ -1,81 +1,561 @@
-import { cn } from "@/lib/utils";
-import { IconCar } from "@tabler/icons-react";
-import { IconCheckupList } from "@tabler/icons-react";
-import {
-  IconAdjustmentsBolt,
-  IconCloud,
-  IconCurrencyDollar,
-  IconEaseInOut,
-  IconCertificate,
-  IconRouteAltLeft,
-  IconTerminal2,
-  IconCashRegister,
-  IconShieldBolt 
-} from "@tabler/icons-react";
-import { Philosopher } from 'next/font/google'
+'use client'
 
-const philosopher = Philosopher({ subsets: ['latin'], weight: ["400", '700'] })
+import { Card, CardContent, CardHeader } from '@/components/ui/card'
+import { cn } from '@/lib/utils'
+import { forwardRef } from 'react';
+import { useId } from "react";
 
-export default function Bento({ mainfeatures }) {
+
+const features = [
+  {
+    title: "Certified Quality Inspection",
+    description: "Every vehicle undergoes our comprehensive 150+ point inspection process covering engine performance, safety systems, brakes, transmission, and electrical components. Our certified technicians ensure each car meets our strict quality standards before it reaches our showroom floor.",
+  },
+  {
+    title: "Flexible Financing Options",
+    description: "Get approved today with $0 down payment options available. We welcome all credit types - bad credit, no credit, or first-time buyers. Our network of trusted lenders compete to offer you the best rates starting as low as 2.9% APR.",
+  },
+  {
+    title: "Trade-In & Instant Cash",
+    description: "Get an instant cash offer for your current vehicle in minutes. Use your trade-in value as down payment or walk away with cash in hand. We accept vehicles in any condition - running or not, paid off or with existing loans.",
+  },
+  {
+    title: "Extended Warranty Coverage",
+    description: "Drive with complete peace of mind with our extended warranty options covering up to 7 years or 100,000 miles. Additional protection plans include gap insurance, tire and wheel coverage, and comprehensive mechanical breakdown protection.",
+  },
+  {
+    title: "Complete Vehicle History",
+    description: "Every car comes with a free comprehensive vehicle history report showing accident history, previous ownership, service records, and title information. We guarantee clean titles with no flood damage or major accident history on all our vehicles.",
+  },
+  {
+    title: "Transparent Pricing Promise",
+    description: "No hidden fees, no surprise charges, no haggling pressure. Our upfront pricing includes all costs with detailed breakdowns so you know exactly what you're paying. What you see is what you get - guaranteed transparent transactions every time.",
+  }
+];
+
+export default function Features() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 relative z-10 py-10 px-3 md:px-10 mx-auto">
-      {mainfeatures.map((feature, index) => (
-        <Feature key={feature.title} {...feature} index={index} />
-      ))}
-    </div>
-  );
+    <section className=" py-16 md:py-32 px-3 md:px-10 ">
+      <div className="mx-auto grid grid-cols-3  gap-8 ">
+
+        <FeatureCard className='relative overflow-hidden'>
+          <Grid size={20} />
+          <CardHeader className="pb-3 ">
+
+            <CardHeading
+              title="Certified Quality Inspection"
+              description="Every vehicle undergoes our comprehensive 150+ point inspection process covering engine performance, safety systems, brakes, transmission, and electrical components. Our certified technicians ensure each car meets our strict quality standards before it reaches our showroom floor."
+            >
+              <InspectionIcon></InspectionIcon>
+            </CardHeading>
+          </CardHeader>
+        </FeatureCard>
+        <FeatureCard className='relative overflow-hidden'>
+          <Grid size={20} />
+          <CardHeader className="pb-3 ">
+
+            <CardHeading
+              title="Certified Quality Inspection"
+              description="Every vehicle undergoes our comprehensive 150+ point inspection process covering engine performance, safety systems, brakes, transmission, and electrical components. Our certified technicians ensure each car meets our strict quality standards before it reaches our showroom floor."
+            >
+              <FlippableCreditCard
+                cardholderName="RAVI KATIYAR"
+                // It's a good practice to show masked numbers in demos.
+                cardNumber="•••• •••• •••• 1939"
+                expiryDate="12/27"
+                cvv="987"
+                />
+            </CardHeading>
+          </CardHeader>
+        </FeatureCard>
+        <FeatureCard className='relative overflow-hidden'>
+          <Grid size={20} />
+          <CardHeader className="pb-3 ">
+
+            <CardHeading
+              title="Certified Quality Inspection"
+              description="Every vehicle undergoes our comprehensive 150+ point inspection process covering engine performance, safety systems, brakes, transmission, and electrical components. Our certified technicians ensure each car meets our strict quality standards before it reaches our showroom floor."
+            >
+              <PricingIcon></PricingIcon>
+            </CardHeading>
+          </CardHeader>
+        </FeatureCard>
+      </div>
+    </section>
+  )
 }
 
 
-const Feature = ({
-  title,
-  description,
-  icon,
-  index,
-}) => {
-  return (
-    <div
-      className={cn(
-        "flex flex-col lg:border-r  py-10 relative group/feature dark:border-neutral-800",
-        (index === 0 || index === 3) && "lg:border-l dark:border-neutral-800",
-        index < 3 && "lg:border-b dark:border-neutral-800"
-      )}
-    >
 
-      {index < 3 && (
-        <div className="opacity-0 group-hover/feature:opacity-100 transition duration-200 absolute inset-0 h-full w-full bg-gradient-to-t from-blue-50 dark:from-neutral-800 to-transparent pointer-events-none" />
-      )}
-      {index >= 3 && (
-        <div className="opacity-0 group-hover/feature:opacity-100 transition duration-200 absolute inset-0 h-full w-full bg-gradient-to-b from-blue-50 dark:from-neutral-800 to-transparent pointer-events-none" />
-      )}
-      <div className="mb-4 relative z-10 px-10 text-neutral-600 dark:text-neutral-400">
-        {icon}
+const FeatureCard = ({ children, className }) => (
+  <Card className={cn('group relative  shadow-md hover:shadow-xl border  rounded-2xl  ', className)}>
+    {children}
+  </Card>
+)
+
+
+const CardHeading = ({ title, description, children }) => (
+  <div className="p-2 relative  flex gap-1 flex-col ">
+
+    <span className=' mb-4 z-20'>
+      {children}
+    </span>
+    <span className="text-xl font-bold text-neutral-800  relative z-20">
+      {title}
+    </span>
+    <p className="  text-neutral-600 dark:text-neutral-400 text-sm  font-normal relative z-20  ">{description}</p>
+  </div>
+)
+
+const InspectionIcon = () => (
+  <>
+    <style dangerouslySetInnerHTML={{
+      __html: `
+        .inspection-container {
+          width: 80px;
+          height: 80px;
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        
+        .clipboard {
+          width: 50px;
+          height: 60px;
+          border-radius: 6px;
+          position: relative;
+          animation: clipboardFloat 3s ease-in-out infinite;
+        }
+        
+        .clipboard::before {
+          content: '';
+          position: absolute;
+          top: -8px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 20px;
+          height: 16px;
+          border: 2px solid #954520;
+          background: #954520;
+          border-radius: 4px;
+        }
+        
+        .checklist {
+          position: absolute;
+          top: 12px;
+          left: 8px;
+          right: 8px;
+        }
+        
+        .check-item {
+          display: flex;
+          align-items: center;
+          margin-bottom: 6px;
+          opacity: 0;
+          transform: translateX(-10px);
+          animation: checkItemCycle 4s ease-in-out infinite;
+        }
+        
+        .check-item:nth-child(1) { animation-delay: 0s; }
+        .check-item:nth-child(2) { animation-delay: 0.8s; }
+        .check-item:nth-child(3) { animation-delay: 1.6s; }
+        
+        .check-box {
+          width: 8px;
+          height: 8px;
+          border-radius: 2px;
+          margin-right: 4px;
+          position: relative;
+        }
+        
+        .check-mark {
+          position: absolute;
+          top: -1px;
+          left: 1px;
+          width: 4px;
+          height: 8px;
+          border: solid #22C55E;
+          border-width: 0 2px 2px 0;
+          transform: rotate(45deg) scale(0);
+          animation: checkMarkCycle 4s ease-in-out infinite;
+          animation-delay: inherit;
+        }
+        
+        .check-line {
+          height: 2px;
+          border-radius: 1px;
+          flex: 1;
+          transform: scaleX(0);
+          transform-origin: left;
+          animation: lineGrow 4s ease-in-out infinite;
+          animation-delay: inherit;
+        }
+        
+        @keyframes clipboardFloat {
+          0%, 100% { transform: translateY(0px); }
+          50% { transform: translateY(-5px); }
+        }
+        
+        @keyframes checkItemCycle {
+          0%, 100% { opacity: 0; transform: translateX(-10px); }
+          25%, 75% { opacity: 1; transform: translateX(0); }
+        }
+        
+        @keyframes checkMarkCycle {
+          0%, 100% { transform: rotate(45deg) scale(0); }
+          25%, 75% { transform: rotate(45deg) scale(1); }
+        }
+        
+        @keyframes lineGrow {
+          0%, 100% { transform: scaleX(0); }
+          25%, 75% { transform: scaleX(1); }
+        }
+      `
+    }} />
+    <div className="inspection-container">
+      <div className="clipboard bg-white  border shadow-md">
+        <div className="checklist">
+          <div className="check-item">
+            <div className="check-box border shadow ">
+              <div className="check-mark"></div>
+            </div>
+            <div className="check-line bg-black"></div>
+          </div>
+          <div className="check-item">
+            <div className="check-box border shadow ">
+              <div className="check-mark"></div>
+            </div>
+            <div className="check-line bg-black"></div>
+          </div>
+          <div className="check-item">
+            <div className="check-box border shadow ">
+              <div className="check-mark"></div>
+            </div>
+            <div className="check-line bg-black"></div>
+          </div>
+        </div>
       </div>
-      {index >= 3 && (
-        <>
-          <div className="absolute opacity-0 group-hover/feature:opacity-100 transition duration-200  inset-x-10 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-[85%] blur-sm" />
-          <div className="absolute opacity-0 group-hover/feature:opacity-100 transition duration-200 inset-x-10 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-[85%]" />
-          <div className="absolute opacity-0 group-hover/feature:opacity-100 transition duration-200 inset-x-40 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-[5px] w-[35%] blur-sm" />
-          <div className="absolute opacity-0 group-hover/feature:opacity-100 transition duration-200 inset-x-40 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-px w-[35%]" />
-        </>
-      )}
-      {index < 3 && (
-        <>
-          <div className="absolute opacity-0 group-hover/feature:opacity-100 transition duration-200  inset-x-10 bottom-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-[85%] blur-sm" />
-          <div className="absolute opacity-0 group-hover/feature:opacity-100 transition duration-200 inset-x-10 bottom-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-[85%]" />
-          <div className="absolute opacity-0 group-hover/feature:opacity-100 transition duration-200 inset-x-40 bottom-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-[5px] w-[35%] blur-sm" />
-          <div className="absolute opacity-0 group-hover/feature:opacity-100 transition duration-200 inset-x-40 bottom-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-px w-[35%]" />
-        </>
-      )}
-      <div className="text-2xl font-semibold mb-2 relative z-10 px-10">
-        <div className="absolute left-0 inset-y-0 h-8 group-hover/feature:h-10 w-1 rounded-tr-full rounded-br-full bg-neutral-300 dark:bg-neutral-700 group-hover/feature:bg-blue-500 transition-all duration-200 origin-center" />
-        <span className={cn("group-hover/feature:text-blue-500 group-hover/feature:translate-x-2 transition duration-200 inline-block text-neutral-800 dark:text-neutral-100", philosopher.className)}>
-          {title}
-        </span>
+    </div>
+  </>
+);
+
+const Grid = ({
+  pattern,
+  size,
+}) => {
+  const p = pattern ?? [
+    [Math.floor(Math.random() * 4) + 7, Math.floor(Math.random() * 6) + 1],
+    [Math.floor(Math.random() * 4) + 7, Math.floor(Math.random() * 6) + 1],
+    [Math.floor(Math.random() * 4) + 7, Math.floor(Math.random() * 6) + 1],
+    [Math.floor(Math.random() * 4) + 7, Math.floor(Math.random() * 6) + 1],
+    [Math.floor(Math.random() * 4) + 7, Math.floor(Math.random() * 6) + 1],
+  ];
+  return (
+    <div className="pointer-events-none absolute left-[70%] top-0  -ml-28 -mt-2 h-full w-full [mask-image:linear-gradient(white,transparent)]">
+      <div className="absolute inset-0 bg-gradient-to-r  [mask-image:radial-gradient(farthest-side_at_top,white,transparent)]  from-blue-300/30 to-blue-500/30  opacity-100">
+        <GridPattern
+          width={size ?? 20}
+          height={size ?? 20}
+          x="-12"
+          y="4"
+          squares={p}
+          className="absolute inset-0 h-full w-full  mix-blend-overlay   stroke-black/10 fill-black/10"
+        />
       </div>
-      <p className=" text-neutral-500 dark:text-neutral-300 max-w-xl relative z-10 px-10">
-        {description}
-      </p>
     </div>
   );
 };
+
+function GridPattern({ width, height, x, y, squares, ...props }) {
+  const patternId = useId();
+
+  return (
+    <svg aria-hidden="true" {...props}>
+      <defs>
+        <pattern
+          id={patternId}
+          width={width}
+          height={height}
+          patternUnits="userSpaceOnUse"
+          x={x}
+          y={y}
+        >
+          <path d={`M.5 ${height}V.5H${width}`} fill="none" />
+        </pattern>
+      </defs>
+      <rect
+        width="100%"
+        height="100%"
+        strokeWidth={0}
+        fill={`url(#${patternId})`}
+      />
+      {squares && (
+        <svg x={x} y={y} className="overflow-visible">
+          {squares.map(([x, y]) => (
+            <rect
+              strokeWidth="0"
+              key={`${x}-${y}`}
+              width={width + 1}
+              height={height + 1}
+              x={x * width}
+              y={y * height}
+            />
+          ))}
+        </svg>
+      )}
+    </svg>
+  );
+}
+
+const FlippableCreditCard = forwardRef(
+  ({ className, cardholderName, cardNumber, expiryDate, cvv, ...props }, ref) => {
+    return (
+      <>
+        <style>{`
+          @keyframes cardFlip {
+            0%, 10% { 
+              transform: rotateY(0deg); 
+            }
+            50% { 
+              transform: rotateY(180deg); 
+            }
+            60%, 100% { 
+              transform: rotateY(360deg); 
+            }
+          }
+          .flippable-card {
+            animation: cardFlip 2s ease-in-out infinite;
+          }
+          .flippable-card:hover {
+            animation-play-state: paused;
+          }
+        `}</style>
+        
+        {/* The main container uses perspective to create the 3D effect. */}
+        <div
+          className={cn("group h-14 w-24 [perspective:850px]", className)}
+          ref={ref}
+          {...props}
+        >
+          {/* The inner container handles the transform animation. */}
+          <div className="flippable-card relative h-full w-full shadow-md border rounded border-gray-200 transition-transform duration-3000 ease-in-out [transform-style:preserve-3d]">
+
+            {/* --- CARD FRONT --- */}
+            <div className="absolute h-full w-full rounded bg-card text-card-foreground [backface-visibility:hidden]">
+              <div className="relative flex h-full flex-col justify-between p-[3px]">
+                {/* Card Header */}
+                <div className="flex items-start justify-between">
+                  <svg
+                    className="h-2.25 w-2.25"
+                    xmlns="http://www.w3.org/2000/svg"
+                    x="0px"
+                    y="0px"
+                    viewBox="0 0 50 50"
+                  >
+                    <image 
+                      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAMAAAAp4XiDAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAB6VBMVEUAAACNcTiVeUKVeUOYfEaafEeUeUSYfEWZfEaykleyklaXe0SWekSZZjOYfEWYe0WXfUWXe0WcgEicfkiXe0SVekSXekSWekKYe0a9nF67m12ZfUWUeEaXfESVekOdgEmVeUWWekSniU+VeUKVeUOrjFKYfEWliE6WeESZe0GSe0WYfES7ml2Xe0WXeESUeEOWfEWcf0eWfESXe0SXfEWYekSVeUKXfEWxklawkVaZfEWWekOUekOWekSYfESZe0eXekWYfEWZe0WZe0eVeUSWeETAnmDCoWLJpmbxy4P1zoXwyoLIpWbjvXjivnjgu3bfu3beunWvkFWxkle/nmDivXiWekTnwXvkwHrCoWOuj1SXe0TEo2TDo2PlwHratnKZfEbQrWvPrWua fUfbt3PJp2agg0v0zYX0zYSfgkvKp2frxX7mwHrlv3rsxn/yzIPgvHfduXWXe0XuyIDzzISsjVO1lVm0lFitjVPzzIPqxX7duna0lVncuHTLqGjvyIHeuXXxyYGZfUayk1iyk1e2lln1zYTEomO2llrb tnOafkjFpGSbfkfZtXLhvHfkv3nqxH3mwXujhU3KqWizlFilh06khk2fgkqsjlPHpWXJp2erjVOhg0yWe0SliE+XekShhEvAn2D///+gx8TWAAAARnRSTlMACVCTtsRl7Pv7+vxkBab7pZv5+ZlL/UnU/f3SJCVe+Fx39naA9/75XSMh0/3SSkia+pil/KRj7Pr662JPkrbP7OLQ0JFOijI1MwAAAAFiS0dEorDd34wAAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfnAg0IDx2lsiuJAAACLElEQVRIx2NgGAXkAUYmZhZWPICFmYkRVQcbOwenmzse4MbFzc6DpIGXj8PD04sA8PbhF+CFaxEU8iWkAQT8hEVgOkTF/InR4eUVICYO1SIhCRMLDAoKDvFDVhUaEhwUFAjjSUlDdMiEhcOEItzdI6OiYxA6YqODIt3dI2DcuDBZsBY5eVTr4xMSYcyk5BRUOXkFsBZFJTQnp6alQxgZmVloUkrKYC0qqmji2WE5EEZuWB6alKoKdi35YQUQRkFYPpFaCouKIYzi6EDitJSUlsGY5RWVRGjJLyxNy4ZxqtIqqvOxaVELQwZFZdkIJVU1RSiSalAt6rUwUBdWG1CP6pT6gNqwOrgCdQyHNYR5YQFhDXj8MiK1IAeyN6aORiyBjByVTc0FqBoKWpqwRCVSgilOaY2OaUPw29qjOzqLvTAchpos47u6EZyYnngUSRwpuTe6D+6qaFQdOPNLRzOM1dzhRZyW+CZouHk3dWLXglFcFIflQhj9YWjJGlZcaKAVSvjyPrRQ0oQVKDAQHlYFYUwIm4gqExGmBSkutaVQJeomwViTJqPK6OhCy2Q9sQBk8cY0DxjTJw0lAQWK6cOKfgNhpKK7ZMpUeF3jPa28BCETamiEqJKM+X1gxvWXpoUjVIVPnwErw71nmpgiqiQGBjNzbgs3j1nus+fMndc+Cwm0T52/oNR9lsdCS24ra7Tq1cbWjpXV3sHRCb1idXZ0sGdltXNxRateRwHRAACYHutzk/2I5QAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyMy0wMi0xM1QwODoxNToyOSswMDowMEUnN7UAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjMtMDItMTNUMDg6MTU6MjkrMDA6MDA0eo8JAAAAKHRFWHRkYXRlOnRpbWVzdGFtcAAyMDIzLTAyLTEzVDA4OjE1OjI5KzAwOjAwY2+u1gAAAABJRU5ErkJggg==" 
+                      alt="Mastercard Logo"
+                    />
+                  </svg>
+                  <p className="font-bold tracking-widest text-[5.5px]">MASTERCARD</p>
+                </div>
+
+                {/* Card Number */}
+                <div className="text-center font-mono text-[6.5px] tracking-widest leading-[0.8]">
+                  {cardNumber}
+                </div>
+
+                {/* Card Footer */}
+                <div className="flex items-end justify-between space-x-0.5">
+                  <div className="text-left flex-1 pr-0.5">
+                    <p className="text-[5.5px] font-semibold uppercase opacity-70 leading-[0.8]">Card Holder</p>
+                    <p className="font-mono text-[5.5px] font-medium truncate leading-[0.8]">{cardholderName}</p>
+                  </div>
+                  <div className="text-right flex-1 pl-0.5">
+                    <p className="text-[5.5px] font-semibold uppercase opacity-70 leading-[0.8]">Expires</p>
+                    <p className="font-mono text-[5.5px] font-medium leading-[0.8]">{expiryDate}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* --- CARD BACK --- */}
+            <div className="absolute h-full w-full rounded bg-card text-card-foreground [backface-visibility:hidden] [transform:rotateY(180deg)]">
+              <div className="flex h-full flex-col">
+                {/* Magnetic Strip */}
+                <div className="mt-0.5 h-2.25 w-full bg-neutral-900" />
+                
+                {/* CVV Section */}
+                <div className="mx-0.5 mt-0.5 flex justify-end">
+                  <div className="flex h-2.75 w-full items-center justify-end rounded bg-neutral-200 pr-0.5 dark:bg-neutral-700">
+                    <p className="font-mono text-[5.5px] text-black dark:text-white">{cvv}</p>
+                  </div>
+                </div>
+                
+                <p className="self-end pr-0.5 text-[5.5px] font-semibold uppercase opacity-70 leading-[0.8]">CVV</p>
+
+                {/* Signature Logo */}
+                <div className="mt-auto p-0.5 text-right">
+                  <svg
+                    className="h-1.75 w-1.75 ml-auto"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 48 48"
+                  >
+                    <path fill="#ff9800" d="M32 10A14 14 0 1 0 32 38A14 14 0 1 0 32 10Z" />
+                    <path fill="#d50000" d="M16 10A14 14 0 1 0 16 38A14 14 0 1 0 16 10Z" />
+                    <path
+                      fill="#ff3d00"
+                      d="M18,24c0,4.755,2.376,8.95,6,11.48c3.624-2.53,6-6.725,6-11.48s-2.376-8.95-6-11.48 C20.376,15.05,18,19.245,18,24z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </>
+    );
+  }
+);
+
+
+const PricingIcon = () => (
+  <>
+    <style dangerouslySetInnerHTML={{
+      __html: `
+        .pricing-container {
+          width: 80px;
+          height: 60px;
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        
+        .receipt {
+          padding: 6px;
+          border-radius: 6px;
+          position: relative;
+          transition: var(--transition-smooth);
+          animation: receiptFloat 3s ease-in-out infinite;
+        }
+
+        .receipt-header {
+          text-align: center;
+          font-size: 6px;
+          font-weight: bold;
+          margin-bottom: 4px;
+          color: hsl(var(--foreground));
+          animation: headerPulse 2s ease-in-out infinite;
+        }
+
+        .receipt-items {
+          display: flex;
+          flex-direction: column;
+          gap: 2px;
+          margin-bottom: 4px;
+        }
+
+        .receipt-item {
+          display: flex;
+          justify-content: space-between;
+          font-size: 4px;
+          color: hsl(var(--muted-foreground));
+          opacity: 0;
+          transform: translateX(-5px);
+          animation: itemSlide 4s ease-in-out infinite;
+        }
+
+        .receipt-item:nth-child(1) {
+          animation-delay: 0s;
+        }
+        
+        .receipt-item:nth-child(2) {
+          animation-delay: 0.5s;
+        }
+        
+        .receipt-item:nth-child(3) {
+          animation-delay: 1s;
+        }
+
+        .receipt-total {
+          border-top: 1px solid hsl(var(--border));
+          padding-top: 2px;
+          display: flex;
+          justify-content: space-between;
+          font-size: 5px;
+          font-weight: bold;
+          color: hsl(var(--foreground));
+          animation: totalHighlight 3s ease-in-out infinite;
+        }
+
+        .transparent-stamp {
+          position: absolute;
+          top: -8px;
+          right: -8px;
+          background: linear-gradient(135deg, hsl(var(--success)), hsl(var(--success) / 0.8));
+          color: hsl(var(--success-foreground));
+          border-radius: 50%;
+          width: 24px;
+          height: 24px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 6px;
+          font-weight: bold;
+          animation: stampRotate 4s ease-in-out infinite;
+        }
+        
+        @keyframes receiptFloat {
+          0%, 100% { transform: translateY(0px) rotate(0deg); }
+          50% { transform: translateY(-3px) rotate(1deg); }
+        }
+        
+        @keyframes headerPulse {
+          0%, 100% { opacity: 0.8; }
+          50% { opacity: 1; }
+        }
+        
+        @keyframes itemSlide {
+          0%, 100% { opacity: 0; transform: translateX(-5px); }
+          25%, 75% { opacity: 1; transform: translateX(0); }
+        }
+        
+        @keyframes totalHighlight {
+          0%, 100% { color: hsl(var(--foreground)); }
+          50% { color: hsl(var(--success)); }
+        }
+        
+        @keyframes stampRotate {
+          0%, 100% { transform: scale(1) rotate(0deg); }
+          50% { transform: scale(1.1) rotate(10deg); }
+        }
+      `
+    }} />
+    <div className="pricing-container">
+      <div className="receipt border shadow  w-16 h-[5rem] flex justify-center items-center flex-col">
+        <div className="receipt-header">INVOICE</div>
+        <div className="receipt-items">
+          <div className="receipt-item">
+            <span>Base Price</span>
+            <span>$25,999</span>
+          </div>
+          <div className="receipt-item">
+            <span>Inspection</span>
+            <span>$0</span>
+          </div>
+          <div className="receipt-item">
+            <span>Fees</span>
+            <span>$0</span>
+          </div>
+        </div>
+        <div className="receipt-total">
+          <span>Total:</span>
+          <span>$25,999</span>
+        </div>
+        <div className=" absolute -top-1 -right-1 flex justify-center items-center w-5 h-5 p-1 border shadow text-white bg-green-500 rounded-full"><div>✓</div></div>
+      </div>
+    </div>
+  </>
+);

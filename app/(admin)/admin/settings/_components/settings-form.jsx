@@ -50,7 +50,7 @@ import {
   getUsers,
   updateUserRole,
 } from "@/actions/settings";
-import { RainbowButton } from "@/components/ui/rainbow-button";
+import {TextureButton } from "@/components/ui/rainbow-button";
 
 // Day names for display
 const DAYS = [
@@ -316,22 +316,24 @@ export const SettingsForm = () => {
                   </div>
                 ))}
               </div>
-
-              <div className="mt-6 flex justify-end">
-                <RainbowButton onClick={handleSaveHours} disabled={savingHours}>
-                  {savingHours ? (
-                    <>
-                      <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                      Saving...
-                    </>
-                  ) : (
-                    <>
-                      <Save className="mr-2 h-4 w-4" />
-                      Save Working Hours
-                    </>
-                  )}
-                </RainbowButton>
+              <div className="mt-6">
+                <div className=' flex '>
+                  <TextureButton onClick={handleSaveHours} disabled={savingHours} className=" w-52 flex " variant="accent" size="lg">
+                    {savingHours ? (
+                      <>
+                        <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                        Saving...
+                      </>
+                    ) : (
+                      <>
+                        <Save className="mr-2 h-4 w-4" />
+                        Save Working Hours
+                      </>
+                    )}
+                  </TextureButton>
+                </div>
               </div>
+             
             </CardContent>
           </Card>
         </TabsContent>

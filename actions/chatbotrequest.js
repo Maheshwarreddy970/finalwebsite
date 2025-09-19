@@ -13,7 +13,6 @@ export async function AiChatBotCall(messages, data) {
   // Convert dealership data to a string
   const dataString = JSON.stringify(data, null, 2);
 
-  console.log('dataString:', dataString);
 
   const chatHistory = messages.map(msg => `${msg.isBot ? "Bot" : "User"}: ${msg.text}`).join("\n");
 

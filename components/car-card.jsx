@@ -18,7 +18,6 @@ import { cn } from "@/lib/utils";
 import Button04 from "./Mainbutton";
 
 export const CarCard = ({ car, showwishlist = true, className }) => {
-  console.log(car)
   const { isSignedIn } = useAuth();
   const router = useRouter();
   const [isSaved, setIsSaved] = useState(car.wishlisted);

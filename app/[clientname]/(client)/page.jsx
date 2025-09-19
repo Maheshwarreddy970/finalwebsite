@@ -61,15 +61,8 @@ export default async function Home() {
     <>
       <Herosection></Herosection>
       <Featured Cars={featuredCars}></Featured>
-      <Bento mainfeatures={features} />
-      <div className="px-3 mt-10 md:px-10">
-        <EmiCalculator className={' max-h-[150vh] overflow-y-visible'} />
-      </div>
-      <Customerstories></Customerstories>
-      <Searchsection></Searchsection>
-      <MediaSection></MediaSection>
-      <BodyType></BodyType>
-      <TeamSection></TeamSection>
+      <Bento />
+  
     </>
   );
 }

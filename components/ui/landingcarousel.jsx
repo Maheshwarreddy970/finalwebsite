@@ -115,7 +115,7 @@ function CarouselContent({ className, ...props }) {
   return (
     <div
       ref={carouselRef}
-      className="overflow-hidden py-10"
+      className="overflow-hidden py-8 md:py-10"
       data-slot="carousel-content"
     >
       <div

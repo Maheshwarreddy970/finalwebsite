@@ -1,177 +1,92 @@
-"use client";
-
-import React from "react";
-
-const Button05 = ({applyFilters}) => {
-  // Generate dot elements for the icons
-  const renderDots = () => {
-    const dotValues = [2, 1, 0, 1, 2];
-    return dotValues.map((value, index) => (
-      <span
-        key={`dot-${index}`}
-        className="button05_dot"
-        style={{ "--index": value }}
-      />
-    ));
-  };
-
-  // Generate icon elements with dots
-  const renderIcons = () => {
-    return [3, 2, 1, 0].map((indexParent) => (
-      <span
-        key={`icon-${indexParent}`}
-        className="button05_icon"
-        style={{ "--index-parent": indexParent }}
+"use client"
+import * as React from "react"
+import { Slot } from "@radix-ui/react-slot"
+import { cva } from "class-variance-authority"
+import { cn } from "@/lib/utils"
+const buttonVariantsOuter = cva("", {
+  variants: {
+    variant: {
+      primary:
+        "w-full border border-[1px] dark:border-[2px] border-black/10 dark:border-black bg-gradient-to-b from-black/70 to-black dark:from-white dark:to-white/80 p-[1px] transition duration-300 ease-in-out ",
+      accent:
+        "w-full border-[1px] dark:border-[2px] border-black/10 dark:border-neutral-950 bg-gradient-to-b from-indigo-300/90 to-indigo-500 dark:from-indigo-200/70 dark:to-indigo-500 p-[1px] transition duration-300 ease-in-out ",
+      destructive:
+        "w-full border-[1px] dark:border-[2px] border-black/10 dark:border-neutral-950 bg-gradient-to-b from-red-300/90 to-red-500 dark:from-red-300/90 dark:to-red-500 p-[1px] transition duration-300 ease-in-out ",
+      secondary:
+        "w-full border-[1px] dark:border-[2px] border-black/20 bg-white/50 dark:border-neutral-950 dark:bg-neutral-600/50 p-[1px] transition duration-300 ease-in-out ",
+      minimal:
+        "group  w-full border-[1px] dark:border-[2px] border-black/20 bg-white/50 dark:border-neutral-950 dark:bg-neutral-600/80 p-[1px]  active:bg-neutral-200 dark:active:bg-neutral-800 hover:bg-gradient-to-t hover:from-neutral-100 to-white dark:hover:from-neutral-600/50 dark:hover:to-neutral-600/70 active:bg-neutral-200 dark:active:bg-neutral-800",
+      icon: "group rounded-full border dark:border-neutral-950 border-black/10 dark:bg-neutral-600/50 bg-white/50 p-[1px] active:bg-neutral-200 dark:active:bg-neutral-800 hover:bg-gradient-to-t hover:from-neutral-100 to-white dark:hover:from-neutral-700 dark:hover:to-neutral-600 active:bg-neutral-200 dark:active:bg-neutral-800",
+    },
+    size: {
+      sm: "rounded-[6px]",
+      default: "rounded-[12px]",
+      lg: "rounded-[12px]",
+      icon: "rounded-full",
+    },
+  },
+  defaultVariants: {
+    variant: "primary",
+    size: "default",
+  },
+})
+const innerDivVariants = cva(
+  "w-full h-full flex items-center justify-center text-muted-foreground",
+  {
+    variants: {
+      variant: {
+        primary:
+          "gap-2 bg-gradient-to-b from-neutral-800 to-black  dark:from-neutral-200 dark:to-neutral-50 text-sm text-white/90 dark:text-black/80 transition duration-300 ease-in-out  hover:from-stone-800 hover:to-neutral-800/70 dark:hover:from-stone-200 dark:hover:to-neutral-200 dark:active:from-stone-300 dark:active:to-neutral-300 active:bg-gradient-to-b active:from-black active:to-black ",
+        accent:
+          "gap-2 bg-gradient-to-b from-indigo-400 to-indigo-600 text-sm text-white/90 transition duration-300 ease-in-out hover:bg-gradient-to-b hover:from-indigo-400/70 hover:to-indigo-600/70 dark:hover:from-indigo-400/70 dark:hover:to-indigo-600/70 active:bg-gradient-to-b active:from-indigo-400/80 active:to-indigo-600/80 dark:active:from-indigo-400 dark:active:to-indigo-600",
+        destructive:
+          "gap-2 bg-gradient-to-b from-red-400/60 to-red-500/60 text-sm text-white/90 transition duration-300 ease-in-out hover:bg-gradient-to-b hover:from-red-400/70 hover:to-red-600/70 dark:hover:from-red-400/70 dark:hover:to-red-500/80 active:bg-gradient-to-b active:from-red-400/80 active:to-red-600/80 dark:active:from-red-400 dark:active:to-red-500",
+        secondary:
+          "bg-gradient-to-b from-neutral-100/80 to-neutral-200/50 dark:from-neutral-800 dark:to-neutral-700/50 text-sm transition duration-300 ease-in-out hover:bg-gradient-to-b hover:from-neutral-200/40 hover:to-neutral-300/60 dark:hover:from-neutral-700 dark:hover:to-neutral-700/60 active:bg-gradient-to-b active:from-neutral-200/60 active:to-neutral-300/70 dark:active:from-neutral-800 dark:active:to-neutral-700",
+        minimal:
+          "bg-gradient-to-b from-white to-neutral-50/50 dark:from-neutral-800 dark:to-neutral-700/50 text-sm transition duration-300 ease-in-out group-hover:bg-gradient-to-b group-hover:from-neutral-50/50 group-hover:to-neutral-100/60 dark:group-hover:from-neutral-700 dark:group-hover:to-neutral-700/60 group-active:bg-gradient-to-b group-active:from-neutral-100/60 group-active:to-neutral-100/90 dark:group-active:from-neutral-800 dark:group-active:to-neutral-700",
+        icon: "bg-gradient-to-b from-white to-neutral-50/50 dark:from-neutral-800 dark:to-neutral-700/50 group-active:bg-neutral-200 dark:group-active:bg-neutral-800 rounded-full",
+      },
+      size: {
+        sm: "text-xs rounded-[4px] px-4 py-1",
+        default: "text-sm rounded-[10px] px-4 py-2",
+        lg: "text-base rounded-[10px] px-4 py-2",
+        icon: " rounded-full p-1",
+      },
+    },
+    defaultVariants: {
+      variant: "primary",
+      size: "default",
+    },
+  }
+)
+ 
+const TextureButton = React.forwardRef(
+  (
+    {
+      children,
+      variant = "primary",
+      size = "default",
+      asChild = false,
+      className,
+      ...props
+    },
+    ref
+  ) => {
+    const Comp = asChild ? Slot : "button"
+    return (
+      <Comp
+        className={cn(" hover:scale-[1.02] active:scale-95 transition-all duration-300 ease-in-out ",buttonVariantsOuter({ variant, size }), className)}
+        ref={ref}
+        {...props}
       >
-        {renderDots()}
-      </span>
-    ));
-  };
+        <div className={cn(innerDivVariants({ variant, size }))}>
+          {children}
+        </div>
+      </Comp>
+    )
+  }
+)
+TextureButton.displayName = "TextureButton"
 
-  return (
-    <>
-      <button onClick={applyFilters} href="#" className="button05 w-inline-block px-3 border shadow-md  bg-black rounded-xl max-w-56">
-        <span className="button05_bg"></span>
-        <span className="button05_inner flex ">
-          <span className="button05_text">Arrow-Dots</span>
-          <span className="button05_icon-wrap">{renderIcons()}</span>
-        </span>
-      </button>
-
-      <style>{`
-        .button05 {
-          color: #f9f4eb;
-          letter-spacing: -.02em;
-          text-transform: uppercase;
-          -webkit-user-select: none;
-          user-select: none;
-          transform-style: preserve-3d;
-          font-size: .875rem;
-          line-height: 1em;
-          text-decoration: none;
-          display: grid;
-          --elastic-ease-out: linear(
-            0,
-            0.5737 7.6%,
-            0.8382 11.87%,
-            0.9463 14.19%,
-            1.0292 16.54%,
-            1.0886 18.97%,
-            1.1258 21.53%,
-            1.137 22.97%,
-            1.1424 24.48%,
-            1.1423 26.1%,
-            1.1366 27.86%,
-            1.1165 31.01%,
-            1.0507 38.62%,
-            1.0219 42.57%,
-            0.9995 46.99%,
-            0.9872 51.63%,
-            0.9842 58.77%,
-            1.0011 81.26%,
-            1
-          );
-          --smooth-ease: cubic-bezier(.32, .72, 0, 1);
-          --color-ease: cubic-bezier(.215, .61, .355, 1);
-          transition: transform .45s var(--elastic-ease-out);
-          -webkit-tap-highlight-color: transparent;
-        }
-
-        .button05:active {
-          transform: scaleX(0.955) scaleY(0.954);
-        }
-
-        .button05_bg {
-          background-color: #000;
-          border-radius: .3125rem;
-          grid-area: 1/1;
-          overflow: clip;
-          transition: background-color .2s var(--color-ease);
-        }
-
-      .button05_inner {
-  grid-gap: 0.625rem;
-  grid-area: 1/1;
-
-  padding: 0.875rem 0.625rem 0.875rem 0.75rem;
-  display: grid;
-  grid-auto-flow: column; /* make children flow in a row */
-  justify-content: space-between; /* spread items */
-  align-items: center; /* center items vertically */
-  translate: 0;
-}
-
-        .button05_text {
-          grid-area: 1/1;
-          transition: scale .45s var(--smooth-ease);
-          transform-origin: right center;
-        }
-
-        .button05_inner::before {
-          content: attr(data-text);
-          grid-area: 1 / 1;
-          scale: 0;
-          pointer-events: none;
-          transition: scale .45s var(--smooth-ease);
-          transform-origin: left center;
-        }
-
-        .button05_icon-wrap {
-          grid-column-gap: .125rem;
-          grid-row-gap: .125rem;
-          grid-row: 1;
-          display: flex;
-        }
-
-        .button05_icon {
-          grid-column-gap: .0625rem;
-          grid-row-gap: .0625rem;
-          flex-flow: column;
-          justify-content: center;
-          align-items: flex-end;
-          display: flex;
-        }
-
-        .button05_dot {
-          margin-right: calc(var(--index) * .1875rem);
-          background-color: #f9f4eb;
-          border-radius: .0625rem;
-          width: .125rem;
-          height: .125rem;
-          display: block;
-          transition: scale .4s var(--smooth-ease), translate .45s var(--smooth-ease);
-        }
-
-        .button05_icon:first-child .button05_dot {
-          scale: 0;
-        }
-
-        @media (hover: hover) and (pointer: fine) {
-          
-          .button05:is(:hover, :focus-visible) .button05_inner::before {
-            scale: 1;
-          }
-          .button05:is(:hover, :focus-visible) .button05_icon:last-child .button05_dot {
-            scale: 0;
-            translate: .5625rem 0 0;
-            transition-delay: calc(var(--index) * .04s);
-          }
-          .button05:is(:hover, :focus-visible) .button05_icon:nth-child(-n+3) .button05_dot {
-            scale: 1;
-            translate: .5625rem 0 0;
-            transition-delay: calc((var(--index) * .04s) + (var(--index-parent) * .07s));
-          }
-        }
-
-        @media (hover: none) or (pointer: coarse) {
-          .button05:active .button05_bg {
-            background-color: #4D4D4D;
-            transition-duration: 0s;
-          }
-        }
-      `}</style>
-    </>
-  );
-};
-
-export default Button05;
+export { TextureButton }

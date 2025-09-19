@@ -7,7 +7,8 @@ import { CarFilterControls } from '@/app/[clientname]/(client)/(main)/cars/_comp
 import { SparklesText } from '../ui/SparklesText';
 import { cn } from '@/lib/utils';
 import { Philosopher } from 'next/font/google'
-import Button05 from '../ui/rainbow-button';
+import { TextureButton } from '../ui/rainbow-button';
+import { SlidersHorizontal } from 'lucide-react';
 
 const philosopher = Philosopher({ subsets: ['latin'], weight: ["400", '700'] })
 
@@ -95,12 +96,12 @@ export default function Searchsection() {
           onClearFilter={handleClearFilter}
         />
         <div className="mt-6">
-          <Button
-            onClick={handleApplyFilters}
-          >
-            Apply Filters
-          </Button>
-          <Button05></Button05>
+          <div className=' flex '>
+            <TextureButton onClick={handleApplyFilters} className=" w-52 flex " variant="accent" size="lg">
+              Apply Filters
+              <SlidersHorizontal className=' size-5'></SlidersHorizontal>
+            </TextureButton>
+          </div>
         </div>
       </div>
     </section>

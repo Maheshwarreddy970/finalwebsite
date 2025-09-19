@@ -22,8 +22,9 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { DestructiveButton } from "@/components/ui/destructive-button";
-import { RainbowButton } from "@/components/ui/rainbow-button";
+import { TextureButton } from "@/components/ui/rainbow-button";
 import { useClientStore } from "@/store/useClientStore";
+import { SlidersHorizontal } from "lucide-react";
 
 export const CarFilters = ({ filters }) => {
   const router = useRouter();
@@ -284,11 +285,13 @@ export const CarFilters = ({ filters }) => {
               onClearFilter={handleClearFilter}
             />
           </div>
-
-          <div className="px-4 py-4 border-t">
-            <RainbowButton applyFilters={applyFilters} className="w-full">
-              Apply Filters
-            </RainbowButton>
+          <div className="mt-6">
+            <div className=' flex '>
+              <TextureButton onClick={applyFilters} className=" w-[90%] mx-auto flex " variant="accent" size="lg">
+                Apply Filters
+                <SlidersHorizontal className=' size-5'></SlidersHorizontal>
+              </TextureButton>
+            </div>
           </div>
         </div>
       </div>
