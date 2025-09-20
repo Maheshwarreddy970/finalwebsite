@@ -11,6 +11,7 @@ import { processImageSearch } from "@/actions/home";
 import { useClientStore } from "@/store/useClientStore";
 import Image from "next/image";
 import { useDropzone } from "react-dropzone";
+import { TextureButton } from "../ui/rainbow-button";
 
 export default function Search() {
   const router = useRouter();
@@ -18,6 +19,7 @@ export default function Search() {
   const [imagePreview, setImagePreview] = useState("");
   const [isUploading, setIsUploading] = useState(false);
   const [isImageSearchActive, setIsImageSearchActive] = useState(false);
+  const [searchTerm, setSearchTerm] = useState("");
 
   // fetch hook for processing image
   const {
@@ -69,16 +71,29 @@ export default function Search() {
     }
     await processImageFn(searchImage);
   };
+  
+  // Handle text search submissions
+  const handleTextSearch = (e) => {
+    e.preventDefault();
+    if (!searchTerm.trim()) {
+      toast.error("Please enter a search term");
+      return;
+    }
+
+    router.push(`${clientInfo?.name}/cars?search=${encodeURIComponent(searchTerm)}`);
+  };
 
   return (
     <>
-      <form className="mt-4 flex gap-2">
+      <form className="mt-4 flex gap-2" onSubmit={handleTextSearch}>
         <div className="h-11 rounded-xl border shadow flex items-center overflow-hidden w-full relative">
-        
+
           <Input
-          placeholder="What car are you looking for?"
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+            placeholder="What car are you looking for?"
             className="border-none shadow-none h-full w-full focus-visible:ring-0 focus-visible:outline-none"
-            type="search"
+            type="text"
           />
           <div className="w-14 border-l text-neutral-700 flex justify-center items-center">
             <SearchIcon className="w-7" />
@@ -101,10 +116,11 @@ export default function Search() {
                     height={200}
                     src={imagePreview}
                     alt="Car preview"
-                    className="h-40 object-contain mb-4"
+                    className="h-60 object-contain mb-4"
                   />
                   <Button
                     variant="outline"
+                    className=" bg-red-600 text-white hover:bg-red-700"
                     onClick={() => {
                       setSearchImage(null);
                       setImagePreview("");
@@ -136,17 +152,18 @@ export default function Search() {
             </div>
 
             {imagePreview && (
-              <Button
+              <TextureButton
+                className=" w-70 flex " variant="accent" size="lg"
                 type="submit"
-                className="w-full"
                 disabled={isUploading || isProcessing}
               >
+                <SearchIcon className=' size-5'></SearchIcon>
                 {isUploading
                   ? "Uploading..."
                   : isProcessing
-                  ? "Analyzing image..."
-                  : "Search with this Image"}
-              </Button>
+                    ? "Analyzing image..."
+                    : "Search with this Image"}
+              </TextureButton>
             )}
           </form>
         </div>

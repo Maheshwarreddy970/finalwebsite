@@ -1,10 +1,10 @@
 import Link from 'next/link'
-import { SparklesText } from '../ui/SparklesText'
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '../ui/landingcarousel';
 import { cn } from '@/lib/utils'
-import { Philosopher } from 'next/font/google'
+import { Philosopher, Great_Vibes } from 'next/font/google'
 
 const philosopher = Philosopher({ subsets: ['latin'], weight: ["400", '700'] })
+const greatVibes = Great_Vibes({ subsets: ['latin'], weight: ["400"] })
 
 const members = [
     {
@@ -48,26 +48,27 @@ const members = [
 export default function TeamSection() {
     return (
         <>
-            <section className='relative w-full mt-10 mb-5  px-3 md:px-10'>
+            <section className='relative w-full md:mt-10 mb-5  px-3 md:px-10'>
+
                 <div>
                     <div
-                        className={cn(' flex gap-4 items-center text-6xl font-semibold text-black  ', philosopher.className)}
+                        className={cn('  text-center  text-4xl md:text-6xl font-semibold text-black  ', philosopher.className)}
                     >
-                        Meet Our Expert <SparklesText colors={{ first: "#ffc400", second: "#ff9100" }} className="text-6xl  font-semibold" sparklesCount={5}>Team</SparklesText>
+                        Meet Our Dedicated <span className={greatVibes.className}>Team</span> <br></br> Committed to Your Satisfaction
+                              
                     </div>
-                     <div className="mt-4 max-w-2xl">
-                            <p>Our experienced professionals are dedicated to providing exceptional service and helping you find the perfect vehicle. From sales to service, we're here to make your car buying experience smooth and enjoyable.</p>
-                        </div>
+                        <p className=' max-w-2xl mt-2 mx-auto text-center '>Our experienced professionals are dedicated to providing exceptional service and helping you find the perfect vehicle. From sales to service, we're here to make your car buying experience smooth and enjoyable.</p>
                 </div>
+                
                 <Carousel
                     opts={{
                         align: "start",
                     }}
-                    className="w-full relative"
+                    className="w-full mt-14 md:mt-0  relative"
                 >
                     <CarouselContent>
                         {members.map((member, index) => (
-                            <CarouselItem key={index} className="basis-[25%]">
+                            <CarouselItem key={index} className="basis-1/2 md:basis-[25%]">
 
 
                                 <div
@@ -99,13 +100,13 @@ export default function TeamSection() {
                             </CarouselItem>
                         ))}
                     </CarouselContent>
-                    <div className=' absolute flex -top-7  right-10 '>
+                    <div className=' absolute flex -top-7  right-4 md:right-10 '>
                         <CarouselPrevious />
                         <CarouselNext className='  size-10' />
                     </div>
                 </Carousel>
-            </section>
-          
+            </section >
+
         </>
     )
 }

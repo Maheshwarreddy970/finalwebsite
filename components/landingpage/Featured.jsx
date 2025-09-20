@@ -5,7 +5,6 @@ import { Playfair_Display } from 'next/font/google'
 import { CarCard } from '../car-card'
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '../ui/landingcarousel';
 import { Philosopher } from 'next/font/google'
-import { SparklesText } from '../ui/SparklesText';
 import Image from 'next/image';
 
 const philosopher = Philosopher({ subsets: ['latin'], weight: ["400", '700'] })

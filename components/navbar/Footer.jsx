@@ -3,16 +3,14 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Facebook, Instagram, Linkedin, Send, Twitter } from "lucide-react";
-import { useClientStore } from "@/store/useClientStore";
+import { Send } from "lucide-react";
 import Link from "next/link";
 
-function Footer() {
-    const clientInfo = useClientStore((state) => state.clientInfo);
+function Footer({clientInfo}) {
 
     return (
         <>
-            <footer className="px-4 pt-12  md:px-6 lg:px-12   overflow-hidden relative     border-t  bg-background text-foreground transition-colors duration-300 w-full  ">
+            <footer className="px-4 mt-16 lg:mt-0 pt-12  md:px-6 lg:px-12   overflow-hidden relative border-dotted     border-t  bg-background text-foreground transition-colors duration-300 w-full  ">
                 <div className="container mx-auto ">
                     <div className="grid  grid-cols-1 md:grid-cols-2  gap-16">
                         {/* Newsletter Subscription */}

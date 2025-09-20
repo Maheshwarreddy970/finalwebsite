@@ -6,83 +6,42 @@ import React from 'react'
 import { Philosopher, Great_Vibes } from 'next/font/google'
 import { cn } from '@/lib/utils'
 import { ArrowRight } from 'lucide-react'
-import { SparklesText } from '@/components/ui/SparklesText'
 import Bento from './landingpage/Bento'
-import { IconSearch } from '@tabler/icons-react'
-import { IconCurrencyDollar } from '@tabler/icons-react'
-import { IconWallet } from '@tabler/icons-react'
-import { IconBolt } from '@tabler/icons-react'
-import { IconUsers } from '@tabler/icons-react'
-import { IconFileDescription } from '@tabler/icons-react'
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from './ui/accordion'
 import Customerstories from './landingpage/customers'
 import EmiCalculator from '@/app/[clientname]/(client)/(main)/cars/[id]/_components/emi-calculator'
+import { Phone } from 'lucide-react'
 
 const philosopher = Philosopher({ subsets: ['latin'], weight: ["400", '700'] })
 const greatVibes = Great_Vibes({ subsets: ['latin'], weight: ["400"] })
 
-const features = [
-    {
-        title: "Quick Prequalification",
-        description:
-            "Get pre-qualified in minutes with no impact on your credit score. Understand your financing options upfront and shop with confidence.",
-        icon: <IconSearch className="size-8 group-hover/feature:text-blue-500" />,
-    },
-    {
-        title: "Personalized Loan Offers",
-        description:
-            "Receive real, personalized loan terms based on your credit profile. Tailored monthly payments and interest rates that match your budget.",
-        icon: <IconCurrencyDollar className="size-8 group-hover/feature:text-blue-500" />,
-    },
-    {
-        title: "Flexible Down Payment Options",
-        description:
-            "Choose from $0 down payment offers or flexible down payment plans to fit your financial situation and increase approval chances.",
-        icon: <IconWallet className="size-8 group-hover/feature:text-blue-500" />,
-    },
-    {
-        title: "Fast Approval at Dealership",
-        description:
-            "Bring your prequalification offers to the dealership and enjoy a streamlined, hassle-free loan approval process with trusted lenders.",
-        icon: <IconBolt className="size-8 group-hover/feature:text-blue-500" />,
-    },
-    {
-        title: "Co-Buyer & Trade-In Assistance",
-        description:
-            "Include a co-buyer to improve loan terms or use your trade-in value as down payment. We make financing easier and more accessible for you.",
-        icon: <IconUsers className="size-8 group-hover/feature:text-blue-500" />,
-    },
-    {
-        title: "Transparent Terms & No Surprises",
-        description:
-            "Know all fees upfront with no hidden charges or haggling. Transparent financing ensures you understand every aspect of your loan.",
-        icon: <IconFileDescription className="size-8 group-hover/feature:text-blue-500" />,
-    }
-];
+
 
 
 export default function Financesection() {
-    const clientInfo = useClientStore((state) => state.clientInfo)
     return (
         <>
-            <section className="px-3 md:px-10  grid grid-cols-1 md:grid-cols-2  pt-36  w-full">
+            <section className="px-3 md:px-10  grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-0 pt-8 lg:pt-20 w-full">
                 <div className=' flex flex-col gap-6  mt-10 col-span-1  '>
-                    <SparklesText
-                        className={cn("text-7xl  font-light  text-black  ", philosopher.className)}>
-                        Drive Your <span className={greatVibes.className}>Dream</span> <br></br>  Car with  Confidence
-                    </SparklesText >
                     <div
-                        className={cn(' text-2xl max-w-2xl text-black  ', philosopher.className)}
+                        className={cn(" text-5xl lg:text-7xl  font-light  text-black  ", philosopher.className)}>
+                        Drive Your <span className={greatVibes.className}>Dream</span> <br></br>  Car with  Confidence
+                    </div >
+                    <div
+                        className={cn(' text-lg lg:text-2xl max-w-2xl text-black  ', philosopher.className)}
                     >
                         Get personalized financing options with no impact on your credit score. Fast prequalification, real rates, and flexible payment plans designed just for you.
                         .
                     </div>
                     <div className=' flex  '>
-                        <button className="group hover:scale-105 transition-all duration-300  ease-in-out relative inline-flex h-[calc(40px+8px)] items-center justify-center rounded-full shadow-md bg-neutral-950 border border-neutral-200    py-1 pl-6 pr-14 font-medium text-white">
-                            <span className="z-10 pr-2 group-hover:text-white">Search Cars</span>
+                        <button
+                            className="group hover:scale-105 transition-all duration-300 ease-in-out relative inline-flex h-[calc(40px+8px)] items-center justify-center rounded-full shadow-md bg-neutral-950 border border-neutral-200 py-1 pl-6 pr-14 font-medium text-white"
+                            onClick={() => window.open('tel:+1234567890', '_blank')} // Replace with your phone number
+                        >
+                            <span className="z-10 pr-2 group-hover:text-white">Call Us</span>
                             <div className="absolute right-1 inline-flex h-10 w-10 items-center justify-end rounded-full bg-neutral-700 transition-[width] group-hover:w-[calc(100%-8px)]">
                                 <div className="mr-2 flex items-center justify-center">
-                                    <ArrowRight className="h-5 w-5 stroke-white" />
+                                    <Phone className="h-5 w-5 stroke-white" />
                                 </div>
                             </div>
                         </button>
@@ -116,11 +75,11 @@ export default function Financesection() {
                 </div>
             </section>
             <div className=' mt-24'>
-                <Bento mainfeatures={features}></Bento>
+                <Bento ></Bento>
             </div>
-            <div className="px-3 mt-4 md:px-10">
-        <EmiCalculator className={' max-h-[150vh] overflow-y-visible'} />
-      </div>
+            <div className="px-3 mt-24 md:px-10">
+                <EmiCalculator className={' max-h-[150vh] overflow-y-visible'} />
+            </div>
             <Customerstories></Customerstories>
             <FAQs></FAQs>
         </>
@@ -253,9 +212,9 @@ const faqCategories = [
 
 function FAQs() {
     return (
-        <section className="py-16 px-3 md:px-10 overflow-hidden">
-            <div className="container grid grid-cols-5 gap-10 ">
-                <div className=' col-span-2 flex flex-col gap-4'>
+        <section className="py-16 px-4 md:px-10 overflow-hidden">
+            <div className="container grid col-span-1 md:grid-cols-5 gap-10 ">
+                <div className=' md:col-span-2 flex flex-col gap-4'>
                     <h2 className={cn('text-5xl  text-black  ', philosopher.className)}>Frequently asked questions.</h2>
                     <div
                         className={cn('text-lg text-black   ', philosopher.className)}
@@ -263,7 +222,7 @@ function FAQs() {
                         Find answers to common questions about our used cars, financing options, trade-ins, warranties, and purchasing process. We're here to help make your car buying experience smooth and transparent                    </div>
                 </div>
 
-                <div className=" flex flex-col gap-8 col-span-3">
+                <div className=" flex flex-col gap-8 md:col-span-3">
                     {faqCategories.map((category, idx) => (
                         <div key={idx} className={idx === 0 ? "" : "md:col-span-2"}>
                             <h3 className="text-xl font-medium mb-4 ">{category.title}</h3>

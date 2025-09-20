@@ -87,6 +87,7 @@ export default async function Layout({ params, children }) {
       <ClientStoreInitializer clientInfo={clientInfo} />
        <Navbar clientInfo={clientInfo}/>
       {children}
+      <Footer clientInfo={clientInfo} />
     </>
   );
 }

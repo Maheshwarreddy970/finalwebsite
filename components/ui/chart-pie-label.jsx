@@ -20,12 +20,14 @@ const chartConfig = {
   },
 } ;
 
-export function ChartPieDonutActive({monthlypayment, vehicleprice, loanamount}) {
+export function ChartPieDonutActive({monthlypayment, vehicleprice, loanamount, interestrate,downpayment}) {
 
 
 const chartData = [
   { browser: "Vehicle Price", visitors: vehicleprice, fill: "oklch(72.3% 0.219 149.579)" },
-  { browser: "Loan Amount", visitors: loanamount, fill: "oklch(90.5% 0.182 98.111)" },
+  { browser: "Loan Amount", visitors: loanamount, fill: "white" },
+  { browser: "Interest Rate", visitors: interestrate, fill: "oklch(85.2% 0.199 91.936)" },
+  { browser: "Down Payment", visitors: downpayment, fill: "oklch(63.7% 0.237 25.331)" },
 ];
 
   return (

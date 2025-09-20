@@ -4,108 +4,218 @@ import { Card, CardContent, CardHeader } from '@/components/ui/card'
 import { cn } from '@/lib/utils'
 import { forwardRef } from 'react';
 import { useId } from "react";
+import { Philosopher, Great_Vibes } from 'next/font/google'
 
+
+const philosopher = Philosopher({ subsets: ['latin'], weight: ["400", '700'] })
+const greatVibes = Great_Vibes({ subsets: ['latin'], weight: ["400"] })
 
 const features = [
   {
     title: "Certified Quality Inspection",
     description: "Every vehicle undergoes our comprehensive 150+ point inspection process covering engine performance, safety systems, brakes, transmission, and electrical components. Our certified technicians ensure each car meets our strict quality standards before it reaches our showroom floor.",
-  },
-  {
-    title: "Flexible Financing Options",
-    description: "Get approved today with $0 down payment options available. We welcome all credit types - bad credit, no credit, or first-time buyers. Our network of trusted lenders compete to offer you the best rates starting as low as 2.9% APR.",
-  },
-  {
-    title: "Trade-In & Instant Cash",
-    description: "Get an instant cash offer for your current vehicle in minutes. Use your trade-in value as down payment or walk away with cash in hand. We accept vehicles in any condition - running or not, paid off or with existing loans.",
-  },
-  {
-    title: "Extended Warranty Coverage",
-    description: "Drive with complete peace of mind with our extended warranty options covering up to 7 years or 100,000 miles. Additional protection plans include gap insurance, tire and wheel coverage, and comprehensive mechanical breakdown protection.",
-  },
-  {
-    title: "Complete Vehicle History",
-    description: "Every car comes with a free comprehensive vehicle history report showing accident history, previous ownership, service records, and title information. We guarantee clean titles with no flood damage or major accident history on all our vehicles.",
+    iconType: "inspection",
+    gradient: "from-green-300/30 to-green-500/30" // Green for quality/safety
   },
   {
     title: "Transparent Pricing Promise",
     description: "No hidden fees, no surprise charges, no haggling pressure. Our upfront pricing includes all costs with detailed breakdowns so you know exactly what you're paying. What you see is what you get - guaranteed transparent transactions every time.",
+    iconType: "pricing",
+    gradient: "from-blue-300/30 to-blue-500/30" // Blue for transparency/finance
+  },
+  {
+    title: "Complete Vehicle History",
+    description: "Every car comes with a free comprehensive vehicle history report showing accident history, previous ownership, service records, and title information. We guarantee clean titles with no flood damage or major accident history on all our vehicles.",
+    iconType: "history",
+    gradient: "from-orange-300/30 to-orange-500/30" // Orange for history/records
+  },
+  {
+    title: "Trade-In & Instant Cash",
+    description: "Get an instant cash offer for your current vehicle in minutes. Use your trade-in value as down payment or walk away with cash in hand. We accept vehicles in any condition - running or not, paid off or with existing loans.",
+    iconType: "tradeIn",
+    gradient: "from-purple-300/30 to-purple-500/30" // Purple for deals/exchange
+  },
+  {
+    title: "Flexible Financing Options",
+    description: "Get approved today with $0 down payment options available. We welcome all credit types - bad credit, no credit, or first-time buyers. Our network of trusted lenders compete to offer you the best rates starting as low as 2.9% APR.",
+    iconType: "creditCard",
+    gradient: "from-indigo-300/30 to-indigo-500/30" // Indigo for financing
+  },
+  {
+    title: "Extended Warranty Coverage",
+    description: "Drive with complete peace of mind with our extended warranty options covering up to 7 years or 100,000 miles. Additional protection plans include gap insurance, tire and wheel coverage, and comprehensive mechanical breakdown protection.",
+    iconType: "warranty",
+    gradient: "from-teal-300/30 to-teal-500/30" // Teal for protection/coverage (no red)
   }
 ];
 
 export default function Features() {
+  // Helper function to render icons based on iconType
+  const renderIcon = (iconType) => {
+    switch (iconType) {
+      case "inspection":
+        return <InspectionIcon />;
+      case "pricing":
+        return <PricingIcon />;
+      case "history":
+        return <HistoryIcon />;
+      case "creditCard":
+        return (
+          <FlippableCreditCard
+            cardholderName="RAVI KATIYAR"
+            cardNumber="•••• •••• •••• 1939"
+            expiryDate="12/27"
+            cvv="987"
+          />
+        );
+      case "tradeIn":
+        return (
+          <div className='h-12 w-20 animate-line-shadow transition-all ease-in-out'>
+            <img
+              src={'/car-rental-sale-concept-car-sharing-service-.jpg'}
+              className='h-full w-full object-cover'
+              width={200}
+              height={200}
+              alt='car'
+            />
+          </div>
+        );
+      case "warranty":
+        return (
+          <div className='h-12 w-20 relative animate-line-shadow transition-all ease-in-out'>
+            <img
+              src={'/carear.jpeg'}
+              className='h-full w-full object-cover'
+              width={200}
+              height={200}
+              alt='car'
+            />
+          </div>
+        );
+      default:
+        return null;
+    }
+  };
+
   return (
-    <section className=" py-16 md:py-32 px-3 md:px-10 ">
-      <div className="mx-auto grid grid-cols-3  gap-8 ">
-
-        <FeatureCard className='relative overflow-hidden'>
-          <Grid size={20} />
-          <CardHeader className="pb-3 ">
-
-            <CardHeading
-              title="Certified Quality Inspection"
-              description="Every vehicle undergoes our comprehensive 150+ point inspection process covering engine performance, safety systems, brakes, transmission, and electrical components. Our certified technicians ensure each car meets our strict quality standards before it reaches our showroom floor."
-            >
-              <InspectionIcon></InspectionIcon>
-            </CardHeading>
-          </CardHeader>
-        </FeatureCard>
-        <FeatureCard className='relative overflow-hidden'>
-          <Grid size={20} />
-          <CardHeader className="pb-3 ">
-
-            <CardHeading
-              title="Certified Quality Inspection"
-              description="Every vehicle undergoes our comprehensive 150+ point inspection process covering engine performance, safety systems, brakes, transmission, and electrical components. Our certified technicians ensure each car meets our strict quality standards before it reaches our showroom floor."
-            >
-              <FlippableCreditCard
-                cardholderName="RAVI KATIYAR"
-                // It's a good practice to show masked numbers in demos.
-                cardNumber="•••• •••• •••• 1939"
-                expiryDate="12/27"
-                cvv="987"
-                />
-            </CardHeading>
-          </CardHeader>
-        </FeatureCard>
-        <FeatureCard className='relative overflow-hidden'>
-          <Grid size={20} />
-          <CardHeader className="pb-3 ">
-
-            <CardHeading
-              title="Certified Quality Inspection"
-              description="Every vehicle undergoes our comprehensive 150+ point inspection process covering engine performance, safety systems, brakes, transmission, and electrical components. Our certified technicians ensure each car meets our strict quality standards before it reaches our showroom floor."
-            >
-              <PricingIcon></PricingIcon>
-            </CardHeading>
-          </CardHeader>
-        </FeatureCard>
+    <section className="py-6 px-3 md:px-10">
+      <div>
+        <div
+          className={cn('  text-center  text-4xl md:text-6xl font-semibold text-black  ', philosopher.className)}
+        >
+          Why Choose Us for <br></br>Your  <span className={greatVibes.className}>Next</span>   Car
+        </div>
+        <p className=' max-w-2xl mt-2 mx-auto text-center '>Experience unbeatable quality, transparent pricing, and personalized service. Discover why thousands of drivers trust our dealership for reliable vehicles, simple financing, and ongoing support every step of the way.</p>
+      </div>
+      <div className="mx-auto mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {features.map((feature, index) => (
+          <FeatureCard key={index} className='relative overflow-hidden' gradient={feature.gradient}>
+            <Grid size={20} gradient={feature.gradient} />
+            <CardHeader className="pb-3">
+              <CardHeading
+                title={feature.title}
+                description={feature.description}
+                gradient={feature.gradient}
+              >
+                {renderIcon(feature.iconType)}
+              </CardHeading>
+            </CardHeader>
+          </FeatureCard>
+        ))}
       </div>
     </section>
-  )
+  );
+}
+
+const FeatureCard = ({ children, className, gradient }) => (
+  <Card className={cn('group relative border-gray-300 hover:ring-1 ring-black/10 transition-all ease-in-out duration-300 shadow-md hover:shadow-xl border rounded-2xl ', className)}>
+    {children}
+  </Card>
+);
+
+const CardHeading = ({ title, description, children, gradient }) => (
+  <div className="p-2 relative flex gap-1 flex-col">
+    <span className='mb-4 z-20'>
+      <div className={``}>
+        {children}
+      </div>
+    </span>
+    <span className="text-xl font-bold text-neutral-800 relative z-20">
+      {title}
+    </span>
+    <p className="text-neutral-600 dark:text-neutral-400 text-sm font-normal relative z-20">
+      {description}
+    </p>
+  </div>
+);
+
+const Grid = ({ gradient, pattern, size }) => {
+  const p = pattern ?? [
+    [Math.floor(Math.random() * 4) + 7, Math.floor(Math.random() * 6) + 1],
+    [Math.floor(Math.random() * 4) + 7, Math.floor(Math.random() * 6) + 1],
+    [Math.floor(Math.random() * 4) + 7, Math.floor(Math.random() * 6) + 1],
+    [Math.floor(Math.random() * 4) + 7, Math.floor(Math.random() * 6) + 1],
+    [Math.floor(Math.random() * 4) + 7, Math.floor(Math.random() * 6) + 1],
+  ];
+  return (
+    <div className="pointer-events-none absolute left-[70%] top-0 -ml-28 -mt-2 h-full w-full [mask-image:linear-gradient(white,transparent)]">
+      <div className={cn(`absolute inset-0 bg-gradient-to-r [mask-image:radial-gradient(farthest-side_at_top,white,transparent)] opacity-100`, gradient)}>
+        <GridPattern
+          width={size ?? 20}
+          height={size ?? 20}
+          x="-12"
+          y="4"
+          squares={p}
+          className="absolute inset-0 h-full w-full mix-blend-overlay stroke-black/10 fill-black/10"
+        />
+      </div>
+    </div>
+  );
+};
+
+function GridPattern({ width, height, x, y, squares, ...props }) {
+  const patternId = useId();
+
+  return (
+    <svg aria-hidden="true" {...props}>
+      <defs>
+        <pattern
+          id={patternId}
+          width={width}
+          height={height}
+          patternUnits="userSpaceOnUse"
+          x={x}
+          y={y}
+        >
+          <path d={`M.5 ${height}V.5H${width}`} fill="none" />
+        </pattern>
+      </defs>
+      <rect
+        width="100%"
+        height="100%"
+        strokeWidth={0}
+        fill={`url(#${patternId})`}
+      />
+      {squares && (
+        <svg x={x} y={y} className="overflow-visible">
+          {squares.map(([x, y]) => (
+            <rect
+              strokeWidth="0"
+              key={`${x}-${y}`}
+              width={width + 1}
+              height={height + 1}
+              x={x * width}
+              y={y * height}
+            />
+          ))}
+        </svg>
+      )}
+    </svg>
+  );
 }
 
 
 
-const FeatureCard = ({ children, className }) => (
-  <Card className={cn('group relative  shadow-md hover:shadow-xl border  rounded-2xl  ', className)}>
-    {children}
-  </Card>
-)
-
-
-const CardHeading = ({ title, description, children }) => (
-  <div className="p-2 relative  flex gap-1 flex-col ">
-
-    <span className=' mb-4 z-20'>
-      {children}
-    </span>
-    <span className="text-xl font-bold text-neutral-800  relative z-20">
-      {title}
-    </span>
-    <p className="  text-neutral-600 dark:text-neutral-400 text-sm  font-normal relative z-20  ">{description}</p>
-  </div>
-)
 
 const InspectionIcon = () => (
   <>
@@ -240,74 +350,6 @@ const InspectionIcon = () => (
   </>
 );
 
-const Grid = ({
-  pattern,
-  size,
-}) => {
-  const p = pattern ?? [
-    [Math.floor(Math.random() * 4) + 7, Math.floor(Math.random() * 6) + 1],
-    [Math.floor(Math.random() * 4) + 7, Math.floor(Math.random() * 6) + 1],
-    [Math.floor(Math.random() * 4) + 7, Math.floor(Math.random() * 6) + 1],
-    [Math.floor(Math.random() * 4) + 7, Math.floor(Math.random() * 6) + 1],
-    [Math.floor(Math.random() * 4) + 7, Math.floor(Math.random() * 6) + 1],
-  ];
-  return (
-    <div className="pointer-events-none absolute left-[70%] top-0  -ml-28 -mt-2 h-full w-full [mask-image:linear-gradient(white,transparent)]">
-      <div className="absolute inset-0 bg-gradient-to-r  [mask-image:radial-gradient(farthest-side_at_top,white,transparent)]  from-blue-300/30 to-blue-500/30  opacity-100">
-        <GridPattern
-          width={size ?? 20}
-          height={size ?? 20}
-          x="-12"
-          y="4"
-          squares={p}
-          className="absolute inset-0 h-full w-full  mix-blend-overlay   stroke-black/10 fill-black/10"
-        />
-      </div>
-    </div>
-  );
-};
-
-function GridPattern({ width, height, x, y, squares, ...props }) {
-  const patternId = useId();
-
-  return (
-    <svg aria-hidden="true" {...props}>
-      <defs>
-        <pattern
-          id={patternId}
-          width={width}
-          height={height}
-          patternUnits="userSpaceOnUse"
-          x={x}
-          y={y}
-        >
-          <path d={`M.5 ${height}V.5H${width}`} fill="none" />
-        </pattern>
-      </defs>
-      <rect
-        width="100%"
-        height="100%"
-        strokeWidth={0}
-        fill={`url(#${patternId})`}
-      />
-      {squares && (
-        <svg x={x} y={y} className="overflow-visible">
-          {squares.map(([x, y]) => (
-            <rect
-              strokeWidth="0"
-              key={`${x}-${y}`}
-              width={width + 1}
-              height={height + 1}
-              x={x * width}
-              y={y * height}
-            />
-          ))}
-        </svg>
-      )}
-    </svg>
-  );
-}
-
 const FlippableCreditCard = forwardRef(
   ({ className, cardholderName, cardNumber, expiryDate, cvv, ...props }, ref) => {
     return (
@@ -325,13 +367,13 @@ const FlippableCreditCard = forwardRef(
             }
           }
           .flippable-card {
-            animation: cardFlip 2s ease-in-out infinite;
+            animation: cardFlip 4s ease-in-out infinite;
           }
           .flippable-card:hover {
             animation-play-state: paused;
           }
         `}</style>
-        
+
         {/* The main container uses perspective to create the 3D effect. */}
         <div
           className={cn("group h-14 w-24 [perspective:850px]", className)}
@@ -339,7 +381,7 @@ const FlippableCreditCard = forwardRef(
           {...props}
         >
           {/* The inner container handles the transform animation. */}
-          <div className="flippable-card relative h-full w-full shadow-md border rounded border-gray-200 transition-transform duration-3000 ease-in-out [transform-style:preserve-3d]">
+          <div className="flippable-card relative h-full w-full shadow-md border rounded border-gray-200 [transform-style:preserve-3d]">
 
             {/* --- CARD FRONT --- */}
             <div className="absolute h-full w-full rounded bg-card text-card-foreground [backface-visibility:hidden]">
@@ -353,8 +395,8 @@ const FlippableCreditCard = forwardRef(
                     y="0px"
                     viewBox="0 0 50 50"
                   >
-                    <image 
-                      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAMAAAAp4XiDAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAB6VBMVEUAAACNcTiVeUKVeUOYfEaafEeUeUSYfEWZfEaykleyklaXe0SWekSZZjOYfEWYe0WXfUWXe0WcgEicfkiXe0SVekSXekSWekKYe0a9nF67m12ZfUWUeEaXfESVekOdgEmVeUWWekSniU+VeUKVeUOrjFKYfEWliE6WeESZe0GSe0WYfES7ml2Xe0WXeESUeEOWfEWcf0eWfESXe0SXfEWYekSVeUKXfEWxklawkVaZfEWWekOUekOWekSYfESZe0eXekWYfEWZe0WZe0eVeUSWeETAnmDCoWLJpmbxy4P1zoXwyoLIpWbjvXjivnjgu3bfu3beunWvkFWxkle/nmDivXiWekTnwXvkwHrCoWOuj1SXe0TEo2TDo2PlwHratnKZfEbQrWvPrWua fUfbt3PJp2agg0v0zYX0zYSfgkvKp2frxX7mwHrlv3rsxn/yzIPgvHfduXWXe0XuyIDzzISsjVO1lVm0lFitjVPzzIPqxX7duna0lVncuHTLqGjvyIHeuXXxyYGZfUayk1iyk1e2lln1zYTEomO2llrb tnOafkjFpGSbfkfZtXLhvHfkv3nqxH3mwXujhU3KqWizlFilh06khk2fgkqsjlPHpWXJp2erjVOhg0yWe0SliE+XekShhEvAn2D///+gx8TWAAAARnRSTlMACVCTtsRl7Pv7+vxkBab7pZv5+ZlL/UnU/f3SJCVe+Fx39naA9/75XSMh0/3SSkia+pil/KRj7Pr662JPkrbP7OLQ0JFOijI1MwAAAAFiS0dEorDd34wAAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfnAg0IDx2lsiuJAAACLElEQVRIx2NgGAXkAUYmZhZWPICFmYkRVQcbOwenmzse4MbFzc6DpIGXj8PD04sA8PbhF+CFaxEU8iWkAQT8hEVgOkTF/InR4eUVICYO1SIhCRMLDAoKDvFDVhUaEhwUFAjjSUlDdMiEhcOEItzdI6OiYxA6YqODIt3dI2DcuDBZsBY5eVTr4xMSYcyk5BRUOXkFsBZFJTQnp6alQxgZmVloUkrKYC0qqmji2WE5EEZuWB6alKoKdi35YQUQRkFYPpFaCouKIYzi6EDitJSUlsGY5RWVRGjJLyxNy4ZxqtIqqvOxaVELQwZFZdkIJVU1RSiSalAt6rUwUBdWG1CP6pT6gNqwOrgCdQyHNYR5YQFhDXj8MiK1IAeyN6aORiyBjByVTc0FqBoKWpqwRCVSgilOaY2OaUPw29qjOzqLvTAchpos47u6EZyYnngUSRwpuTe6D+6qaFQdOPNLRzOM1dzhRZyW+CZouHk3dWLXglFcFIflQhj9YWjJGlZcaKAVSvjyPrRQ0oQVKDAQHlYFYUwIm4gqExGmBSkutaVQJeomwViTJqPK6OhCy2Q9sQBk8cY0DxjTJw0lAQWK6cOKfgNhpKK7ZMpUeF3jPa28BCETamiEqJKM+X1gxvWXpoUjVIVPnwErw71nmpgiqiQGBjNzbgs3j1nus+fMndc+Cwm0T52/oNR9lsdCS24ra7Tq1cbWjpXV3sHRCb1idXZ0sGdltXNxRateRwHRAACYHutzk/2I5QAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyMy0wMi0xM1QwODoxNToyOSswMDowMEUnN7UAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjMtMDItMTNUMDg6MTU6MjkrMDA6MDA0eo8JAAAAKHRFWHRkYXRlOnRpbWVzdGFtcAAyMDIzLTAyLTEzVDA4OjE1OjI5KzAwOjAwY2+u1gAAAABJRU5ErkJggg==" 
+                    <image
+                      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAMAAAAp4XiDAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAB6VBMVEUAAACNcTiVeUKVeUOYfEaafEeUeUSYfEWZfEaykleyklaXe0SWekSZZjOYfEWYe0WXfUWXe0WcgEicfkiXe0SVekSXekSWekKYe0a9nF67m12ZfUWUeEaXfESVekOdgEmVeUWWekSniU+VeUKVeUOrjFKYfEWliE6WeESZe0GSe0WYfES7ml2Xe0WXeESUeEOWfEWcf0eWfESXe0SXfEWYekSVeUKXfEWxklawkVaZfEWWekOUekOWekSYfESZe0eXekWYfEWZe0WZe0eVeUSWeETAnmDCoWLJpmbxy4P1zoXwyoLIpWbjvXjivnjgu3bfu3beunWvkFWxkle/nmDivXiWekTnwXvkwHrCoWOuj1SXe0TEo2TDo2PlwHratnKZfEbQrWvPrWua fUfbt3PJp2agg0v0zYX0zYSfgkvKp2frxX7mwHrlv3rsxn/yzIPgvHfduXWXe0XuyIDzzISsjVO1lVm0lFitjVPzzIPqxX7duna0lVncuHTLqGjvyIHeuXXxyYGZfUayk1iyk1e2lln1zYTEomO2llrb tnOafkjFpGSbfkfZtXLhvHfkv3nqxH3mwXujhU3KqWizlFilh06khk2fgkqsjlPHpWXJp2erjVOhg0yWe0SliE+XekShhEvAn2D///+gx8TWAAAARnRSTlMACVCTtsRl7Pv7+vxkBab7pZv5+ZlL/UnU/f3SJCVe+Fx39naA9/75XSMh0/3SSkia+pil/KRj7Pr662JPkrbP7OLQ0JFOijI1MwAAAAFiS0dEorDd34wAAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfnAg0IDx2lsiuJAAACLElEQVRIx2NgGAXkAUYmZhZWPICFmYkRVQcbOwenmzse4MbFzc6DpIGXj8PD04sA8PbhF+CFaxEU8iWkAQT8hEVgOkTF/InR4eUVICYO1SIhCRMLDAoKDvFDVhUaEhwUFAjjSUlDdMiEhcOEItzdI6OiYxA6YqODIt3dI2DcuDBZsBY5eVTr4xMSYcyk5BRUOXkFsBZFJTQnp6alQxgZmVloUkrKYC0qqmji2WE5EEZuWB6alKoKdi35YQUQRkFYPpFaCouKIYzi6EDitJSUlsGY5RWVRGjJLyxNy4ZxqtIqqvOxaVELQwZFZdkIJVU1RSiSalAt6rUwUBdWG1CP6pT6gNqwOrgCdQyHNYR5YQFhDXj8MiK1IAeyN6aORiyBjByVTc0FqBoKWpqwRCVSgilOaY2OaUPw29qjOzqLvTAchpos47u6EZyYnngUSRwpuTe6D+6qaFQdOPNLRzOM1dzhRZyW+CZouHk3dWLXglFcFIflQhj9YWjJGlZcaKAVSvjyPrRQ0oQVKDAQHlYFYUwIm4gqExGmBSkutaVQJeomwViTJqPK6OhCy2Q9sQBk8cY0DxjTJw0lAQWK6cOKfgNhpKK7ZMpUeF3jPa28BCETamiEqJKM+X1gxvWXpoUjVIVPnwErw71nmpgiqiQGBjNzbgs3j1nus+fMndc+Cwm0T52/oNR9lsdCS24ra7Tq1cbWjpXV3sHRCb1idXZ0sGdltXNxRateRwHRAACYHutzk/2I5QAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyMy0wMi0xM1QwODoxNToyOSswMDowMEUnN7UAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjMtMDItMTNUMDg6MTU6MjkrMDA6MDA0eo8JAAAAKHRFWHRkYXRlOnRpbWVzdGFtcAAyMDIzLTAyLTEzVDA4OjE1OjI5KzAwOjAwY2+u1gAAAABJRU5ErkJggg=="
                       alt="Mastercard Logo"
                     />
                   </svg>
@@ -385,14 +427,14 @@ const FlippableCreditCard = forwardRef(
               <div className="flex h-full flex-col">
                 {/* Magnetic Strip */}
                 <div className="mt-0.5 h-2.25 w-full bg-neutral-900" />
-                
+
                 {/* CVV Section */}
                 <div className="mx-0.5 mt-0.5 flex justify-end">
                   <div className="flex h-2.75 w-full items-center justify-end rounded bg-neutral-200 pr-0.5 dark:bg-neutral-700">
                     <p className="font-mono text-[5.5px] text-black dark:text-white">{cvv}</p>
                   </div>
                 </div>
-                
+
                 <p className="self-end pr-0.5 text-[5.5px] font-semibold uppercase opacity-70 leading-[0.8]">CVV</p>
 
                 {/* Signature Logo */}
@@ -419,6 +461,134 @@ const FlippableCreditCard = forwardRef(
   }
 );
 
+const HistoryIcon = () => (
+  <>
+    <style dangerouslySetInnerHTML={{
+      __html: `
+        .history-container {
+         
+          position: relative;
+        }
+        
+        .document {
+        
+          border-radius: 8px;
+          position: relative;
+          transition: var(--transition-smooth);
+          animation: documentFloat 3s ease-in-out infinite;
+        }
+        
+        .document::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 12px;
+          height: 12px;
+          background: hsl(var(--border));
+          clip-path: polygon(0 0, 100% 100%, 0 100%);
+        }
+        
+        .doc-lines {
+          padding: 8px 6px;
+          display: flex;
+          flex-direction: column;
+          gap: 3px;
+        }
+        
+        .doc-line {
+          height: 2px;
+          border-radius: 1px;
+          transform: scaleX(0);
+          transform-origin: left;
+          animation: lineWrite 4s ease-in-out infinite;
+        }
+        
+        .doc-line:nth-child(1) {
+          width: 80%;
+          animation-delay: 0s;
+        }
+        
+        .doc-line:nth-child(2) {
+          width: 90%;
+          animation-delay: 0.5s;
+        }
+        
+        .doc-line:nth-child(3) {
+          width: 70%;
+          animation-delay: 1s;
+        }
+        
+        .doc-line:nth-child(4) {
+          width: 85%;
+          animation-delay: 1.5s;
+        }
+        
+        .verified-badge {
+          position: absolute;
+          bottom: -5px;
+          right: -5px;
+          width: 20px;
+          height: 20px;
+          background: linear-gradient(135deg, hsl(var(--success)), hsl(var(--success) / 0.8));
+          border: 2px solid hsl(var(--card));
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          animation: badgeGlow 2s ease-in-out infinite;
+        }
+        
+        .verified-check {
+          width: 10px;
+          height: 10px;
+          stroke: hsl(var(--success-foreground));
+          stroke-width: 2;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+        }
+        
+        @keyframes documentFloat {
+          0%, 100% { transform: translateY(0px); }
+          50% { transform: translateY(-3px); }
+        }
+        
+        @keyframes lineWrite {
+          0%, 100% { transform: scaleX(0); }
+          25%, 75% { transform: scaleX(1); }
+        }
+        
+        @keyframes badgeGlow {
+          0%, 100% { box-shadow: 0 0 5px hsl(var(--success) / 0.5); }
+          50% { box-shadow: 0 0 15px hsl(var(--success) / 0.8); }
+        }
+      `
+    }} />
+    <div className="history-container relative flex justify-start items-center ">
+      <div className="document   border shadow  w-14 h-[4.5rem] ">
+        <img src={'/history.png'} className='absolute -top-2.5 -right-2.5 ' height={25} width={25} alt='history'></img>
+        <div className="doc-lines">
+          <div className="doc-line bg-black"></div>
+          <div className="doc-line bg-black"></div>
+          <div className="doc-line bg-black"></div>
+          <div className="doc-line bg-black"></div>
+        </div>
+        <div className="doc-lines">
+          <div className="doc-line bg-black"></div>
+          <div className="doc-line bg-black"></div>
+          <div className="doc-line bg-black"></div>
+          <div className="doc-line bg-black"></div>
+        </div>
+
+        <div className="verified-badge">
+          <svg className="verified-check" viewBox="0 0 24 24" fill="none">
+            <path d="M20 6L9 17l-5-5" />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </>
+);
 
 const PricingIcon = () => (
   <>

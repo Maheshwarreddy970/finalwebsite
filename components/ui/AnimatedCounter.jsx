@@ -48,7 +48,7 @@ export const AnimatedCounter = ({
     }, [ref, inView, from, to]);
 
     return (
-        <div className=" text-2xl md:text-6xl font-semibold flex gap-1 mb-2 ">
+        <div className=" text-xl  md:text-6xl font-semibold flex gap-1 mb-2 ">
             <span className=" " ref={ref} ></span>
             <span className="  text-2xl md:text-6xl">+</span>
         </div>

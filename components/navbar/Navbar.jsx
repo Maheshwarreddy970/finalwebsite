@@ -9,7 +9,6 @@ import { Tooltip, TooltipContent, TooltipTrigger } from "../ui/tooltip";
 import Search from "./Search";
 import { Philosopher } from 'next/font/google'
 import { cn } from "@/lib/utils";
-import { HomeIcon } from "lucide-react";
 import { Store } from "lucide-react";
 import { IconSearch } from "@tabler/icons-react";
 import { IconHeart } from "@tabler/icons-react";
@@ -42,7 +41,7 @@ const Header = async ({ isAdminPage = false, clientInfo }) => {
 
             <div>
               {pagesNames.map((page) => (
-                <Link key={page.name} href={page.href} className={cn(" md:hover:text-xl   md:text-lg text-neutral-600 hover:text-black  font-medium hover:border-b border-black  px-2  transition-all duration-300 ease-in-out  py-1 ", philosopher.className)}>
+                <Link key={page.name} href={page.href} className={cn(" md:hover:text-xl text-sm   md:text-lg text-neutral-600 hover:text-black  font-medium hover:border-b border-black  px-2  transition-all duration-300 ease-in-out  py-1 ", philosopher.className)}>
                   {page.name}
                 </Link>
               ))}
@@ -54,7 +53,9 @@ const Header = async ({ isAdminPage = false, clientInfo }) => {
           <div className="md:flex hidden items-center gap-2">
             <Tooltip>
               <TooltipTrigger asChild>
+                <a target="_blank" href="https://maps.app.goo.gl/o9jkQjKhG972GVSMA">
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler hover:scale-110 transition-all duration-300 ease-in-out icons-tabler-outline icon-tabler-map-pin-pin"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /><path d="M12.783 21.326a2 2 0 0 1 -2.196 -.426l-4.244 -4.243a8 8 0 1 1 13.657 -5.62" /><path d="M21.121 20.121a3 3 0 1 0 -4.242 0c.418 .419 1.125 1.045 2.121 1.879c1.051 -.89 1.759 -1.516 2.121 -1.879z" /><path d="M19 18v.01" /></svg>
+                </a>
               </TooltipTrigger>
               <TooltipContent>
                 <p>Location</p>
@@ -117,7 +118,7 @@ const Header = async ({ isAdminPage = false, clientInfo }) => {
         <Search></Search>
       </header>
       <section className=" -bottom-0 overflow-hidden fixed w-full left-0 z-50    md:hidden">
-        <div className="grid grid-cols-5  gap-2 w-full bg-white/50 backdrop-blur-3xl shadow   justify-between py-4  px-5 ">
+        <div className="grid grid-cols-5  gap-2 w-full bg-white/80 backdrop-blur-3xl shadow   justify-between py-4  px-5 ">
           <div className=" flex w-full h-full justify-center items-center">
             <Store className=" size-8 " strokeWidth={1}></Store>
           </div>

@@ -11,10 +11,10 @@ import {
 import { cn } from "@/lib/utils";
 import { ClockIcon } from "lucide-react";
 import React, { useEffect, useState } from "react";
-import { Philosopher } from 'next/font/google'
+import { Philosopher, Great_Vibes } from 'next/font/google'
 import { ChartPieDonutActive } from "@/components/ui/chart-pie-label";
 
-
+const greatVibes = Great_Vibes({ subsets: ['latin'], weight: ["400"] })
 const philosopher = Philosopher({ subsets: ['latin'], weight: ["400", '700'] })
 
 const scoreToRate = {
@@ -138,15 +138,83 @@ function EmiCalculator({ price = 100000, className }) {
 
   return (
     <>
-        <div
-          className={cn(' flex gap-4 mb-5 items-center text-6xl  text-center justify-center font-semibold text-black  ', philosopher.className)}
-        >
-          FINANCING MADE EASY
-        </div>
-      <section className=" w-full   overflow-hidden   ">
-        <div className=" mt-5 flex gap-16 justify-between  ">
-          <div className="flex flex-col gap-5 w-full  max-w-[65%]  ">
-<div className=" flex flex-col gap-0.5 mt-1.5">
+
+      <div
+        className={cn('  gap-4 mb-5  text-4xl md:text-6xl  text-center  font-semibold text-black  ', philosopher.className)}
+      >
+        Unlock Your Dream Car <br></br> with Our <span className={greatVibes.className}>Financing</span>
+      </div>
+      <section className=" w-full p-2 md:p-4 lg:p-7   overflow-hidden border-gray-300 hover:ring-1 ring-black/10 transition-all ease-in-out duration-300 shadow-md hover:shadow-xl border rounded-2xl   ">
+        <div className=" lg:mt-5 flex gap-7 lg:gap-16 lg:flex-row flex-col lg:justify-between  ">
+          <div className=" p-7 flex flex-col lg:order-last w-full lg:max-w-[35%] text-white h-full bg-indigo-600 border-neutral-200 justify-between  gap-8 relative  rounded-3xl border shadow-md  ">
+            <h1 className=" text-center -mb-7   text-2xl">Breakedown of EMI</h1>
+            <ChartPieDonutActive downpayment={Math.trunc(results.downPayment)} interestrate={Math.trunc(results.totalInterest)} loanamount={Math.trunc(results.loanPrincipal)} vehicleprice={Math.trunc(loanAmount)} monthlypayment={`${Math.trunc(results.emi).toLocaleString()}`}></ChartPieDonutActive>
+            <div className=" -mt-6 flex gap-0.5 flex-col">
+              <div className=" flex justify-between">
+                <span className="    ">
+                  Vehicle Price
+                </span>
+                <span className=" text-lg font-semibold ">
+                  ${formatNumber(Math.trunc(loanAmount))}
+                </span>
+              </div>
+              <div className=" flex justify-between">
+                <span className="  ">
+                  Loan Amount
+                </span>
+                <span className=" text-lg font-semibold ">
+                  ${formatNumber(Math.trunc(results.loanPrincipal))}
+                </span>
+              </div>
+            </div>
+            <div>
+
+              <div className="-mt-5 border-t pt-2  border-white border-dotted  flex flex-col gap-1">
+                <h1 className=" text-center text-xl ">Estimate payment</h1>
+                <div className=" flex justify-between">
+                  <span>
+                    Down Payment
+                  </span>
+                  <span className=" text-lg font-semibold ">
+                    ${formatNumber(Math.trunc(results.downPayment))}
+                  </span>
+                </div>
+                <div className=" flex justify-between">
+                  <span>
+                    Total Interest
+                  </span>
+                  <span className=" text-lg font-semibold ">
+                    ${formatNumber(Math.trunc(results.totalInterest))}
+                  </span>
+                </div>
+                <div className=" flex justify-between border-t py-2  border-white border-dashed">
+                  <span>
+                    Total Amount
+                  </span>
+                  <span className=" text-lg font-semibold ">
+                    ${formatNumber(Math.trunc(results.totalPayment))}
+                  </span>
+                </div>
+              </div>
+            </div>
+
+
+            {/* <div className={cn("   font-semibold text-7xl", lato.className)}>
+              <h1 > ${Math.trunc(results.emi).toLocaleString()}</h1>
+              <p className="text-base  text-center ">Your Monthly Payment</p>
+            </div>
+            <div className={cn("   font-semibold text-5xl", lato.className)}>
+              <h1 > ${Math.trunc(results.totalPayment).toLocaleString()}</h1>
+              <p className="text-base  text-center ">Total Payment</p>
+            </div>
+            <div className={cn("   font-semibold text-5xl", lato.className)}>
+              <h1 > ${Math.trunc(results.totalInterest).toLocaleString()}</h1>
+              <p className="text-base  text-center ">Total Interest</p>
+            </div> */}
+
+          </div>
+          <div className="flex flex-col  px-1.5 md:px-0 lg:order-first gap-5 w-full  lg:max-w-[65%]  ">
+            <div className=" flex flex-col gap-0.5 mt-1.5">
               <p>
                 <span className=" font-semibold text-green-500 text-lg">✓ </span>
                 <span className=" font-semibold">No Credit Impact </span>
@@ -349,75 +417,9 @@ function EmiCalculator({ price = 100000, className }) {
                 </Select>
               </div>
             </div>
-            
-          </div>
-          <div className=" p-7 flex flex-col w-full max-w-[35%] text-white h-full bg-indigo-600 border-neutral-200 justify-between  gap-8 relative  rounded-3xl border shadow-md  ">
-            <h1 className=" text-center -mb-7   text-2xl">Breakedown of EMI</h1>
-            <ChartPieDonutActive loanamount={Math.trunc(results.loanPrincipal)} vehicleprice={Math.trunc(loanAmount)} monthlypayment={`${Math.trunc(results.emi).toLocaleString()}`}></ChartPieDonutActive>
-            <div className=" -mt-6 flex gap-0.5 flex-col">
-              <div className=" flex justify-between">
-                <span className="    ">
-                  Vehicle Price
-                </span>
-                <span className=" text-lg font-semibold ">
-                  ${formatNumber(Math.trunc(loanAmount))}
-                </span>
-              </div>
-              <div className=" flex justify-between">
-                <span className="  ">
-                  Loan Amount
-                </span>
-                <span className=" text-lg font-semibold ">
-                  ${formatNumber(Math.trunc(results.loanPrincipal))}
-                </span>
-              </div>
-            </div>
-            <div>
-
-              <div className="-mt-5 border-t pt-2  border-white border-dotted  flex flex-col gap-1">
-                <h1 className=" text-center text-xl ">Estimate payment</h1>
-                <div className=" flex justify-between">
-                  <span>
-                    Down Payment
-                  </span>
-                  <span className=" text-lg font-semibold ">
-                    ${formatNumber(Math.trunc(results.downPayment))}
-                  </span>
-                </div>
-                <div className=" flex justify-between">
-                  <span>
-                    Total Interest
-                  </span>
-                  <span className=" text-lg font-semibold ">
-                    ${formatNumber(Math.trunc(results.totalInterest))}
-                  </span>
-                </div>
-                <div className=" flex justify-between border-t py-2  border-white border-dashed">
-                  <span>
-                    Total Amount
-                  </span>
-                  <span className=" text-lg font-semibold ">
-                    ${formatNumber(Math.trunc(results.totalPayment))}
-                  </span>
-                </div>
-              </div>
-            </div>
-
-
-            {/* <div className={cn("   font-semibold text-7xl", lato.className)}>
-              <h1 > ${Math.trunc(results.emi).toLocaleString()}</h1>
-              <p className="text-base  text-center ">Your Monthly Payment</p>
-            </div>
-            <div className={cn("   font-semibold text-5xl", lato.className)}>
-              <h1 > ${Math.trunc(results.totalPayment).toLocaleString()}</h1>
-              <p className="text-base  text-center ">Total Payment</p>
-            </div>
-            <div className={cn("   font-semibold text-5xl", lato.className)}>
-              <h1 > ${Math.trunc(results.totalInterest).toLocaleString()}</h1>
-              <p className="text-base  text-center ">Total Interest</p>
-            </div> */}
 
           </div>
+
         </div>
       </section>
     </>

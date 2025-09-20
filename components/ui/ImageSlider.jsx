@@ -3,9 +3,12 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowLeft, ArrowRight } from "lucide-react";
-import { SparklesText } from "./SparklesText";
 import { useClientStore } from "@/store/useClientStore";
 import Image from "next/image";
+import { cn } from "@/lib/utils";
+import { Philosopher } from 'next/font/google'
+
+const philosopher = Philosopher({ subsets: ['latin'], weight: ["400", '700'] })
 
 const ImageSlider = () => {
   const [positionIndexes, setPositionIndexes] = useState([0, 1, 2, 3, 4]);
@@ -48,42 +51,44 @@ const ImageSlider = () => {
 
   return (
     <div className="relative  flex flex-col items-center justify-center h-full w-full md:mt-16 px-3 md:px-10  ">
-      <SparklesText className=" md:text-[9rem] mb-10  font-bold text-black text-center">{images[centerImageIndex].body}</SparklesText>
+      <div className={cn(" text-6xl md:text-[9rem] md:mb-10  font-bold text-black text-center",philosopher.className)}>{images[centerImageIndex].body}</div>
 
-      {images.map((image, index) => (
-        <motion.a
-          className="rounded-[12px]  w-[90%] md:w-[50%] "
-          initial="center"
-          animate={positions[positionIndexes[index]]}
-          variants={imageVariants}
-          transition={{ duration: 0.5 }}
-          style={{ position: "absolute" }}
-          href={`${clientInfo?.name}/cars?bodyType=${image.body}`} key={index}>
+      {
+    images.map((image, index) => (
+      <motion.a
+        className="rounded-[12px]  w-[90%] md:w-[50%] "
+        initial="center"
+        animate={positions[positionIndexes[index]]}
+        variants={imageVariants}
+        transition={{ duration: 0.5 }}
+        style={{ position: "absolute" }}
+        href={`${clientInfo?.name}/cars?bodyType=${image.body}`} key={index}>
 
-          <Image
-            width={1000}
-            height={1000}
-            src={image.src}
-            alt={image.alt}
+        <Image
+          width={1000}
+          height={1000}
+          src={image.src}
+          alt={image.alt}
 
-          />
-        </motion.a>
-      ))}
-      <div className="flex flex-row z-40 gap-6 mt-[200px]">
-        <button
-          className="hover:scale-110 active:scale-90 transition-all duration-300 ease-in-out text-white bg-black rounded-full p-2 shadow-sm border size-12 flex justify-center items-center"
-          onClick={handleBack}
-        >
-          <ArrowLeft />
-        </button>
-        <button
-          className="hover:scale-110 active:scale-90 transition-all duration-300 ease-in-out text-white bg-black rounded-full p-2 shadow-sm border size-12 flex justify-center items-center"
-          onClick={handleNext}
-        >
-          <ArrowRight />
-        </button>
-      </div>
-    </div>
+        />
+      </motion.a>
+    ))
+  }
+  <div className="flex flex-row z-40 gap-6 mt-[200px]">
+    <button
+      className="hover:scale-110 active:scale-90 transition-all duration-300 ease-in-out text-white bg-black rounded-full p-2 shadow-sm border size-12 flex justify-center items-center"
+      onClick={handleBack}
+    >
+      <ArrowLeft />
+    </button>
+    <button
+      className="hover:scale-110 active:scale-90 transition-all duration-300 ease-in-out text-white bg-black rounded-full p-2 shadow-sm border size-12 flex justify-center items-center"
+      onClick={handleNext}
+    >
+      <ArrowRight />
+    </button>
+  </div>
+    </div >
   );
 };
 
