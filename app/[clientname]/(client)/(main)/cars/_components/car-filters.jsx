@@ -249,8 +249,8 @@ export const CarFilters = ({ filters }) => {
             { value: "newest", label: "Newest First" },
             { value: "priceAsc", label: "Price: Low to High" },
             { value: "priceDesc", label: "Price: High to Low" },
-          ].map((option) => (
-            <SelectItem key={option.value} value={option.value}>
+          ].map((option, index) => (
+            <SelectItem key={option.value+index} value={option.value}>
               {option.label}
             </SelectItem>
           ))}

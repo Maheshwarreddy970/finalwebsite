@@ -178,8 +178,8 @@ export default function TimeLine_01({
                   className={
                     "flex flex-col md:w-1/2 rounded-2xl border p-3 transition-all duration-300 " +
                     (isActive
-                      ? "border-gray-50 dark:border-gray-800 bg-gray-50 dark:bg-black shadow-lg"
-                      : "border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-black")
+                      ? "border-gray-50  bg-gray-50  shadow-lg"
+                      : "border-gray-200  bg-gray-50 ")
                   }
                 >
                   {entry.image && (
@@ -224,7 +224,7 @@ export default function TimeLine_01({
                       <div className="overflow-hidden">
                         <div className="space-y-4 pt-2">
                           {entry.items && entry.items.length > 0 && (
-                            <div className="rounded-lg border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-black p-4">
+                            <div className="rounded-lg border border-gray-200  bg-gray-50  p-4">
                               <ul className="space-y-2">
                                 {entry.items.map((item, itemIndex) => (
                                   <li

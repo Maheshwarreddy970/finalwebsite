@@ -36,10 +36,7 @@ export async function generateMetadata({ params }) {
         title: "Client Not Found | Your Website",
         description: "The requested client page could not be found.",
         images: ["https://superworldtechnologies.com/thumbnail.png"],
-      },
-      icons: {
-        icon: "/favicon.ico",
-      },
+      }
     };
   }
 
@@ -66,10 +63,7 @@ export async function generateMetadata({ params }) {
       title: `${clientInfo?.name} `,
       description: `${clientInfo?.name} your journey starts here`,
       images: [clientInfo?.thumbnail],
-    },
-    icons: {
-      icon: clientInfo?.logo,
-    },
+    }
   };
 }
 
@@ -87,6 +81,7 @@ export default async function Layout({ params, children }) {
       <ClientStoreInitializer clientInfo={clientInfo} />
        <Navbar clientInfo={clientInfo}/>
       {children}
+      <FamilyButtonDemo></FamilyButtonDemo>
       <Footer clientInfo={clientInfo} />
     </>
   );

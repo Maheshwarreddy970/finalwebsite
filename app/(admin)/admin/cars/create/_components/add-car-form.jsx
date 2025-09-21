@@ -423,8 +423,8 @@ export const AddCarForm = () => {
                         <SelectValue placeholder="Select fuel type" />
                       </SelectTrigger>
                       <SelectContent>
-                        {fuelTypes.map((type) => (
-                          <SelectItem key={type} value={type}>
+                        {fuelTypes.map((type,index) => (
+                          <SelectItem key={type+index} value={type}>
                             {type}
                           </SelectItem>
                         ))}
@@ -450,8 +450,8 @@ export const AddCarForm = () => {
                         <SelectValue placeholder="Select transmission" />
                       </SelectTrigger>
                       <SelectContent>
-                        {transmissions.map((type) => (
-                          <SelectItem key={type} value={type}>
+                        {transmissions.map((type,index) => (
+                          <SelectItem key={type+index} value={type}>
                             {type}
                           </SelectItem>
                         ))}
@@ -477,8 +477,8 @@ export const AddCarForm = () => {
                         <SelectValue placeholder="Select body type" />
                       </SelectTrigger>
                       <SelectContent>
-                        {bodyTypes.map((type) => (
-                          <SelectItem key={type} value={type}>
+                        {bodyTypes.map((type,index) => (
+                          <SelectItem key={type+index} value={type}>
                             {type}
                           </SelectItem>
                         ))}
@@ -515,8 +515,8 @@ export const AddCarForm = () => {
                         <SelectValue placeholder="Select status" />
                       </SelectTrigger>
                       <SelectContent>
-                        {carStatuses.map((status) => (
-                          <SelectItem key={status} value={status}>
+                        {carStatuses.map((status,index) => (
+                          <SelectItem key={status+index} value={status}>
                             {status.charAt(0) + status.slice(1).toLowerCase()}
                           </SelectItem>
                         ))}

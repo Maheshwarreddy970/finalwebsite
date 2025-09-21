@@ -1,11 +1,12 @@
 import * as React from "react";
 import { cn } from "@/lib/utils";
 
-const MinimalCard = React.forwardRef(({ className, children, ...props }) => (
+// Card wrapper
+const MinimalCard = React.forwardRef(({ className, children, ...props }, ref) => (
   <div
-
+    ref={ref}
     className={cn(
-      "rounded-[24px]  relative dark:bg-neutral-800 bg-neutral-50 p-2  shadow-md  transition-all duration-300  ease-in-out ",
+      "rounded-[24px] relative  bg-neutral-50 p-2 shadow-md transition-all duration-300 ease-in-out",
       className
     )}
     {...props}
@@ -15,32 +16,28 @@ const MinimalCard = React.forwardRef(({ className, children, ...props }) => (
 ));
 MinimalCard.displayName = "MinimalCard";
 
+// Card image
 const MinimalCardImage = React.forwardRef(({ className, alt, src, ...props }, ref) => (
   <div
     ref={ref}
-    className={cn(
-      "relative h-60 w-full bg-white rounded-[20px]     ",
-      className
-    )}
+    className={cn("relative h-60 w-full bg-white rounded-[20px]", className)}
     {...props}
   >
     <img
       src={src}
       alt={alt}
-      className="rounded-[16px]  object-cover absolute h-full w-full inset-0  "
+      className="rounded-[16px] object-cover absolute h-full w-full inset-0"
     />
     <div className="absolute inset-0 rounded-[16px]">
       <div
         className={cn(
           "absolute inset-0 rounded-[16px]",
           "shadow-[0px_0px_0px_1px_rgba(0,0,0,.07),0px_0px_0px_3px_#fff,0px_0px_0px_4px_rgba(0,0,0,.08)]",
-          "dark:shadow-[0px_0px_0px_1px_rgba(0,0,0,.07),0px_0px_0px_3px_rgba(100,100,100,0.3),0px_0px_0px_4px_rgba(0,0,0,.08)]"
         )}
       />
       <div
         className={cn(
           "absolute inset-0 rounded-[16px]",
-          "dark:shadow-[0px_1px_1px_0px_rgba(0,0,0,0.15),0px_1px_1px_0px_rgba(0,0,0,0.15)_inset,0px_0px_0px_1px_rgba(0,0,0,0.15)_inset,0px_0px_1px_0px_rgba(0,0,0,0.15)]"
         )}
       />
     </div>
@@ -48,6 +45,7 @@ const MinimalCardImage = React.forwardRef(({ className, alt, src, ...props }, re
 ));
 MinimalCardImage.displayName = "MinimalCardImage";
 
+// Title
 const MinimalCardTitle = React.forwardRef(({ className, ...props }, ref) => (
   <h3
     ref={ref}
@@ -57,6 +55,7 @@ const MinimalCardTitle = React.forwardRef(({ className, ...props }, ref) => (
 ));
 MinimalCardTitle.displayName = "MinimalCardTitle";
 
+// Description
 const MinimalCardDescription = React.forwardRef(({ className, ...props }, ref) => (
   <p
     ref={ref}
@@ -66,11 +65,13 @@ const MinimalCardDescription = React.forwardRef(({ className, ...props }, ref) =
 ));
 MinimalCardDescription.displayName = "MinimalCardDescription";
 
+// Content
 const MinimalCardContent = React.forwardRef(({ className, ...props }, ref) => (
   <div ref={ref} className={cn("p-6 pt-0", className)} {...props} />
 ));
 MinimalCardContent.displayName = "MinimalCardContent";
 
+// Footer
 const MinimalCardFooter = React.forwardRef(({ className, ...props }, ref) => (
   <div ref={ref} className={cn("flex items-center p-6 pt-0", className)} {...props} />
 ));

@@ -82,7 +82,7 @@ const buttonVariants = cva(
   }
 )
 
-const NeumorphButton = ({
+const TextureButton = ({
   className,
   intent,
   size,
@@ -114,4 +114,4 @@ const NeumorphButton = ({
   )
 }
 
-export default NeumorphButton
+export default TextureButton

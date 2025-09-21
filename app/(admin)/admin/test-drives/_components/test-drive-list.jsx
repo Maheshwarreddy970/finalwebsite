@@ -181,8 +181,8 @@ export const TestDrivesList = () => {
             </div>
           ) : (
             <div className="space-y-4">
-              {testDrivesData?.data?.map((booking) => (
-                <div key={booking.id} className="relative">
+              {testDrivesData?.data?.map((booking, index) => (
+                <div key={booking.id+index} className="relative">
                   <TestDriveCard
                     booking={booking}
                     onCancel={handleCancel}

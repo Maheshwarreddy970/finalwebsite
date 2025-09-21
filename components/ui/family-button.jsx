@@ -22,7 +22,7 @@ const FamilyButton = ({ children }) => {
   return (
     <div className={cn("rounded-[24px] z-[9999] shadow-xl overflow-hidden bg-white")}>
       <div className="rounded-[23px] border overflow-hidden border-[#3e362e]/60">
-        <div className="rounded-[22px] border overflow-hidden dark:border-stone-800 border-white/50">
+        <div className="rounded-[22px] border overflow-hidden  border-white/50">
           <div className="rounded-[21px] border overflow-hidden border-neutral-950/20 flex items-center justify-center">
             <FamilyButtonContainer isExpanded={isExpanded} toggleExpand={toggleExpand}>
               {isExpanded && (
@@ -79,7 +79,7 @@ const FamilyButtonContainer = ({ isExpanded, toggleExpand, children }) => {
     <motion.div
       className={cn(
         "relative z-[9999] shadow-lg flex flex-col w-full h-full space-y-1 items-center text-white cursor-pointer",
-        !isExpanded ? "bg-black dark:from-stone-700 dark:to-neutral-800/80" : ""
+        !isExpanded ? "bg-black " : ""
       )}
       layoutRoot
       layout
@@ -124,7 +124,7 @@ const FamilyButtonContainer = ({ isExpanded, toggleExpand, children }) => {
       >
         {isExpanded ? (
           <motion.div
-            className="p-[10px] group bg-black dark:bg-black/50 border border-cyan-100/30 hover:border-neutral-200 text-orange-50 rounded-full shadow-2xl transition-colors duration-300"
+            className="p-[10px] group bg-black  border border-cyan-100/30 hover:border-neutral-200 text-orange-50 rounded-full shadow-2xl transition-colors duration-300"
             onClick={toggleExpand}
             layoutId="expand-toggle"
             initial={false}
@@ -135,7 +135,7 @@ const FamilyButtonContainer = ({ isExpanded, toggleExpand, children }) => {
               },
             }}
           >
-            <XIcon className="h-5 w-5 text-white dark:text-neutral-400/80 transition-colors duration-200" />
+            <XIcon className="h-5 w-5 text-white /80 transition-colors duration-200" />
           </motion.div>
         ) : (
           <motion.div

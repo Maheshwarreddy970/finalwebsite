@@ -31,9 +31,7 @@ export const metadata = {
     description: "AI-Driven Showrooms That Convert Browsers Into Buyers",
     images: ["https://www.superworldtechnologies.com/thumbnail.png"], // also better absolute in production
   },
-  icons: {
-    icon: "/favicon.ico",
-  },
+
 };
 
 

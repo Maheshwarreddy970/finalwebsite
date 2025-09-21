@@ -275,13 +275,13 @@ export function PlaceholdersAndVanishInput({
     <>
       <form
         className={cn(
-          " w-full relative mt-5 mx-auto z-20 bg-white dark:bg-zinc-800 h-12 rounded-xl overflow-hidden shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),_0px_1px_0px_0px_rgba(25,28,33,0.02),_0px_0px_0px_1px_rgba(25,28,33,0.08)] transition duration-200",
+          " w-full relative mt-5 mx-auto z-20 bg-white  h-12 rounded-xl overflow-hidden shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),_0px_1px_0px_0px_rgba(25,28,33,0.02),_0px_0px_0px_1px_rgba(25,28,33,0.08)] transition duration-200",
           value && "bg-gray-50", className
         )}
         onSubmit={handleSubmit}>
         <canvas
           className={cn(
-            "absolute pointer-events-none  text-base transform scale-50 top-[20%] left-2 sm:left-8 origin-top-left filter invert dark:invert-0 pr-20",
+            "absolute pointer-events-none  text-base transform scale-50 top-[20%] left-2 sm:left-8 origin-top-left filter invert  pr-20",
             !animating ? "opacity-0" : "opacity-100"
           )}
           ref={canvasRef} />
@@ -298,8 +298,8 @@ export function PlaceholdersAndVanishInput({
           value={value}
           type="text"
           className={cn(
-            "w-full relative text-sm sm:text-base z-20 border-none dark:text-white bg-transparent text-black h-full rounded-full focus:outline-none focus:ring-0 pl-4 sm:pl-10 pr-20",
-            animating && "text-transparent dark:text-transparent"
+            "w-full relative text-sm sm:text-base z-20 border-none  bg-transparent text-black h-full rounded-full focus:outline-none focus:ring-0 pl-4 sm:pl-10 pr-20",
+            animating && "text-transparent "
           )} />
         <div className="absolute h-full  right-0 flex items-center  inset-0 z-20">
           <div
@@ -345,7 +345,7 @@ export function PlaceholdersAndVanishInput({
                   duration: 0.3,
                   ease: "linear",
                 }}
-                className="dark:text-zinc-500 text-sm sm:text-base font-normal text-neutral-500 pl-4 sm:pl-12 text-left w-[calc(100%-2rem)] truncate"
+                className="text-sm sm:text-base font-normal text-neutral-500 pl-4 sm:pl-12 text-left w-[calc(100%-2rem)] truncate"
               >
                 {placeholders[currentPlaceholder]}
               </motion.p>

@@ -48,9 +48,9 @@ export const Sidebar = () => {
           </Link>
         </div>
         <div className="flex flex-col w-full px-3 gap-3">
-          {routes.map((route) => (
+          {routes.map((route, index) => (
             <Link
-              key={route.href}
+              key={route.href+index}
               href={route.href}
               className={cn(
                 "flex items-center py-2 gap-x-2 rounded-lg text-slate-800 text-base font-medium pl-3 transition-all ",
@@ -76,9 +76,9 @@ export const Sidebar = () => {
 
       {/* Mobile Bottom Tabs */}
       <div className="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-white border-t flex justify-around items-center h-16">
-        {routes.map((route) => (
+        {routes.map((route, index) => (
           <Link
-            key={route.href}
+            key={route.href+index}
             href={route.href}
             className={cn(
               "flex flex-col items-center justify-center text-slate-500 text-xs font-medium transition-all",

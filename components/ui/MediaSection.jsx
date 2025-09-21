@@ -42,7 +42,7 @@ export default function MediaSection() {
           Follow our dealership for the latest deals, new arrivals, behind-the-scenes content, and community stories. Join our online community and never miss an update about your next car!
         </p>
       </div>
-    
+
       <Carousel
         opts={{
           align: "start",
@@ -103,28 +103,28 @@ function InstagramIcon() {
       <path d="M66.602 88.7046C54.3597 88.7046 44.4258 78.787 44.4258 66.5447C44.4258 54.2827 54.3597 44.3523 66.602 44.3523C78.8477 44.3523 88.7947 54.2827 88.7947 66.5447C88.7947 78.787 78.8477 88.7046 66.602 88.7046ZM66.602 32.3566C47.7305 32.3566 32.4467 47.6733 32.4467 66.5447C32.4467 85.3999 47.7305 100.7 66.602 100.7C85.4734 100.7 100.774 85.3999 100.774 66.5447C100.774 47.6733 85.4734 32.3566 66.602 32.3566Z" fill="url(#paint2_linear_301_3)" />
       <defs>
         <linearGradient id="paint0_linear_301_3" x1="1.27375" y1="131.698" x2="122.063" y2="10.9086" gradientUnits="userSpaceOnUse">
-          <stop stop-color="#FFD521" />
-          <stop offset="0.05" stop-color="#FFD521" />
-          <stop offset="0.501119" stop-color="#F50000" />
-          <stop offset="0.95" stop-color="#B900B4" />
-          <stop offset="0.950079" stop-color="#B900B4" />
-          <stop offset="1" stop-color="#B900B4" />
+          <stop stopColor="#FFD521" />
+          <stop offset="0.05" stopColor="#FFD521" />
+          <stop offset="0.501119" stopColor="#F50000" />
+          <stop offset="0.95" stopColor="#B900B4" />
+          <stop offset="0.950079" stopColor="#B900B4" />
+          <stop offset="1" stopColor="#B900B4" />
         </linearGradient>
         <linearGradient id="paint1_linear_301_3" x1="1.27382" y1="131.863" x2="122.163" y2="10.9746" gradientUnits="userSpaceOnUse">
-          <stop stop-color="#FFD521" />
-          <stop offset="0.05" stop-color="#FFD521" />
-          <stop offset="0.501119" stop-color="#F50000" />
-          <stop offset="0.95" stop-color="#B900B4" />
-          <stop offset="0.950079" stop-color="#B900B4" />
-          <stop offset="1" stop-color="#B900B4" />
+          <stop stopColor="#FFD521" />
+          <stop offset="0.05" stopColor="#FFD521" />
+          <stop offset="0.501119" stopColor="#F50000" />
+          <stop offset="0.95" stopColor="#B900B4" />
+          <stop offset="0.950079" stopColor="#B900B4" />
+          <stop offset="1" stopColor="#B900B4" />
         </linearGradient>
         <linearGradient id="paint2_linear_301_3" x1="1.30515" y1="131.867" x2="122.165" y2="11.0069" gradientUnits="userSpaceOnUse">
-          <stop stop-color="#FFD521" />
-          <stop offset="0.05" stop-color="#FFD521" />
-          <stop offset="0.501119" stop-color="#F50000" />
-          <stop offset="0.95" stop-color="#B900B4" />
-          <stop offset="0.950079" stop-color="#B900B4" />
-          <stop offset="1" stop-color="#B900B4" />
+          <stop stopColor="#FFD521" />
+          <stop offset="0.05" stopColor="#FFD521" />
+          <stop offset="0.501119" stopColor="#F50000" />
+          <stop offset="0.95" stopColor="#B900B4" />
+          <stop offset="0.950079" stopColor="#B900B4" />
+          <stop offset="1" stopColor="#B900B4" />
         </linearGradient>
       </defs>
     </svg>

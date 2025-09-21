@@ -10,7 +10,6 @@ import { useAuth } from "@clerk/nextjs";
 import { useRouter } from "next/navigation";
 import useFetch from "@/hooks/use-fetch";
 import MinimalCard, { MinimalCardImage } from "./ui/minimal-car";
-import NeumorphButton from "./ui/neumorph-butto";
 import { Tooltip, TooltipContent, TooltipTrigger } from "./ui/tooltip";
 import { LineShadowText } from "./ui/line-shadow-text";
 import { useClientStore } from "@/store/useClientStore";
@@ -69,7 +68,6 @@ export const CarCard = ({ car, showwishlist = true, className }) => {
           <MinimalCardImage
             src={car.images[0]}
             alt={`${car.make} ${car.model}`}
-            fill
           />
         ) : (
           <div className="w-full h-full bg-gray-200 flex items-center justify-center">

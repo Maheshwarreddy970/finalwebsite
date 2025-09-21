@@ -6,7 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Send } from "lucide-react";
 import Link from "next/link";
 
-function Footer({clientInfo}) {
+function Footer({ clientInfo }) {
 
     return (
         <>
@@ -37,9 +37,9 @@ function Footer({clientInfo}) {
                                 </Button>
                             </div>
                             <div className="mb-6 flex space-x-4 mt-10">
-                                {clientInfo?.socialmedia.map((social) => (
+                                {clientInfo?.socialmedia.map((social,index) => (
                                     <Link
-                                        key={social.name}
+                                        key={social.name+index}
                                         href={social.link}
                                         target="_blank"
                                         rel="noopener noreferrer"
@@ -52,7 +52,7 @@ function Footer({clientInfo}) {
                                         {social.name === "Facebook" &&
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" className="h-7 w-7" viewBox="0 0 16 16" id="facebook">
                                                 <path fill="#1976D2" d="M14 0H2C.897 0 0 .897 0 2v12c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2V2c0-1.103-.897-2-2-2z"></path>
-                                                <path fill="#FAFAFA" fill-rule="evenodd" d="M13.5 8H11V6c0-.552.448-.5 1-.5h1V3h-2a3 3 0 0 0-3 3v2H6v2.5h2V16h3v-5.5h1.5l1-2.5z" clip-rule="evenodd"></path>
+                                                <path fill="#FAFAFA" fillRule="evenodd" d="M13.5 8H11V6c0-.552.448-.5 1-.5h1V3h-2a3 3 0 0 0-3 3v2H6v2.5h2V16h3v-5.5h1.5l1-2.5z" clipRule="evenodd"></path>
                                             </svg>
                                         }
                                         {social.name === "Instagram" && <svg className="h-7 w-7" width="134" height="134" viewBox="0 0 134 134" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -61,28 +61,28 @@ function Footer({clientInfo}) {
                                             <path d="M66.602 88.7046C54.3597 88.7046 44.4258 78.787 44.4258 66.5447C44.4258 54.2827 54.3597 44.3523 66.602 44.3523C78.8477 44.3523 88.7947 54.2827 88.7947 66.5447C88.7947 78.787 78.8477 88.7046 66.602 88.7046ZM66.602 32.3566C47.7305 32.3566 32.4467 47.6733 32.4467 66.5447C32.4467 85.3999 47.7305 100.7 66.602 100.7C85.4734 100.7 100.774 85.3999 100.774 66.5447C100.774 47.6733 85.4734 32.3566 66.602 32.3566Z" fill="url(#paint2_linear_301_3)" />
                                             <defs>
                                                 <linearGradient id="paint0_linear_301_3" x1="1.27375" y1="131.698" x2="122.063" y2="10.9086" gradientUnits="userSpaceOnUse">
-                                                    <stop stop-color="#FFD521" />
-                                                    <stop offset="0.05" stop-color="#FFD521" />
-                                                    <stop offset="0.501119" stop-color="#F50000" />
-                                                    <stop offset="0.95" stop-color="#B900B4" />
-                                                    <stop offset="0.950079" stop-color="#B900B4" />
-                                                    <stop offset="1" stop-color="#B900B4" />
+                                                    <stop stopColor="#FFD521" />
+                                                    <stop offset="0.05" stopColor="#FFD521" />
+                                                    <stop offset="0.501119" stopColor="#F50000" />
+                                                    <stop offset="0.95" stopColor="#B900B4" />
+                                                    <stop offset="0.950079" stopColor="#B900B4" />
+                                                    <stop offset="1" stopColor="#B900B4" />
                                                 </linearGradient>
                                                 <linearGradient id="paint1_linear_301_3" x1="1.27382" y1="131.863" x2="122.163" y2="10.9746" gradientUnits="userSpaceOnUse">
-                                                    <stop stop-color="#FFD521" />
-                                                    <stop offset="0.05" stop-color="#FFD521" />
-                                                    <stop offset="0.501119" stop-color="#F50000" />
-                                                    <stop offset="0.95" stop-color="#B900B4" />
-                                                    <stop offset="0.950079" stop-color="#B900B4" />
-                                                    <stop offset="1" stop-color="#B900B4" />
+                                                    <stop stopColor="#FFD521" />
+                                                    <stop offset="0.05" stopColor="#FFD521" />
+                                                    <stop offset="0.501119" stopColor="#F50000" />
+                                                    <stop offset="0.95" stopColor="#B900B4" />
+                                                    <stop offset="0.950079" stopColor="#B900B4" />
+                                                    <stop offset="1" stopColor="#B900B4" />
                                                 </linearGradient>
                                                 <linearGradient id="paint2_linear_301_3" x1="1.30515" y1="131.867" x2="122.165" y2="11.0069" gradientUnits="userSpaceOnUse">
-                                                    <stop stop-color="#FFD521" />
-                                                    <stop offset="0.05" stop-color="#FFD521" />
-                                                    <stop offset="0.501119" stop-color="#F50000" />
-                                                    <stop offset="0.95" stop-color="#B900B4" />
-                                                    <stop offset="0.950079" stop-color="#B900B4" />
-                                                    <stop offset="1" stop-color="#B900B4" />
+                                                    <stop stopColor="#FFD521" />
+                                                    <stop offset="0.05" stopColor="#FFD521" />
+                                                    <stop offset="0.501119" stopColor="#F50000" />
+                                                    <stop offset="0.95" stopColor="#B900B4" />
+                                                    <stop offset="0.950079" stopColor="#B900B4" />
+                                                    <stop offset="1" stopColor="#B900B4" />
                                                 </linearGradient>
                                             </defs>
                                         </svg>
@@ -138,7 +138,7 @@ function Footer({clientInfo}) {
                         </div>
                     </div>
                     <div className="flex justify-between mt-16  ">
-                        
+
                         {/* Quick Links */}
                         <div className="col-span-1 my-7 md:my-0">
                             <h3 className="mb-4 text-lg font-semibold">Quick Links</h3>
@@ -159,13 +159,13 @@ function Footer({clientInfo}) {
                         <div className="col-span-1 my-7 md:my-0">
                             <h3 className="mb-4 text-lg font-semibold">Contact Us</h3>
                             <address className="space-y-2 text-sm not-italic">
-                                <p>{clientInfo?.contact?.address}</p>
-                                <p>Phone: {clientInfo?.contact?.phone}</p>
-                                <p>Email: {clientInfo?.contact?.email}</p>
+                                <p key={1}>123 Innovation Street, Tech City, TC 12345</p>
+                                <p key={2}>Phone: 123-456-7890</p>
+                                <p key={3}>Email: gogo@example.com</p>
                             </address>
                         </div>
                     </div>
-                    <p className="text-center mt-16  text-5xl md:text-9xl lg:text-[10rem] font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 dark:from-neutral-950 to-neutral-200 dark:to-neutral-800 inset-x-0">{clientInfo?.name}</p>
+                    <p className="text-center mt-16  text-5xl md:text-9xl lg:text-[10rem] font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-200 inset-x-0">{clientInfo?.name}</p>
 
                 </div>
             </footer>

@@ -21,7 +21,7 @@ export function SocialProofAvatars({
           <div
             aria-hidden
             className={cn(
-              "relative h-12 w-12 shrink-0 overflow-hidden rounded-full border-4 border-white bg-neutral-100 shadow-sm dark:border-neutral-900 dark:bg-neutral-950",
+              "relative h-12 w-12 shrink-0 overflow-hidden rounded-full border-4 border-white bg-neutral-100 shadow-sm ",
             )}
             key={i}
           >
@@ -36,8 +36,8 @@ export function SocialProofAvatars({
           </div>
         ))}
         {extraCount && (
-          <div className="z-20 flex h-12 w-12 shrink-0 items-center justify-center rounded-full border-4 border-white bg-neutral-100 shadow-sm dark:border-neutral-900 dark:bg-neutral-950">
-            <span className="text-sm font-medium text-black dark:text-white">
+          <div className="z-20 flex h-12 w-12 shrink-0 items-center justify-center rounded-full border-4 border-white bg-neutral-100 shadow-sm ">
+            <span className="text-sm font-medium text-black ">
               {extraCount}+
             </span>
           </div>

@@ -143,7 +143,7 @@ const CardHeading = ({ title, description, children, gradient }) => (
     <span className="text-xl font-bold text-neutral-800 relative z-20">
       {title}
     </span>
-    <p className="text-neutral-600 dark:text-neutral-400 text-sm font-normal relative z-20">
+    <p className="text-neutral-600  text-sm font-normal relative z-20">
       {description}
     </p>
   </div>
@@ -430,8 +430,8 @@ const FlippableCreditCard = forwardRef(
 
                 {/* CVV Section */}
                 <div className="mx-0.5 mt-0.5 flex justify-end">
-                  <div className="flex h-2.75 w-full items-center justify-end rounded bg-neutral-200 pr-0.5 dark:bg-neutral-700">
-                    <p className="font-mono text-[5.5px] text-black dark:text-white">{cvv}</p>
+                  <div className="flex h-2.75 w-full items-center justify-end rounded bg-neutral-200 pr-0.5 ">
+                    <p className="font-mono text-[5.5px] text-black ">{cvv}</p>
                   </div>
                 </div>
 

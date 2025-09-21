@@ -68,9 +68,9 @@ export const CarFilterControls = ({
       </div>
 
       {/* Filter Categories */}
-      {filterSections.map((section) => (
+      {filterSections.map((section,index) => (
 
-        <div key={section.id} className="space-y-3">
+        <div key={index} className="space-y-3">
           <h4 className=" font-semibold text-lg   flex justify-between">
             <span>{section.title}</span>
             {section.currentValue && (
@@ -84,9 +84,9 @@ export const CarFilterControls = ({
             )}
           </h4>
           <div className="flex flex-wrap gap-2  pr-1 custom-scrollbar">
-            {section.options.map((option) => (
+            {section.options.map((option,index) => (
               <motion.button
-                key={option}
+                key={index}
                 onClick={() => {
                   section.onChange(
                     section.currentValue === option.value ? "" : option.value

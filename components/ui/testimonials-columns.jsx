@@ -43,7 +43,7 @@ export const TestimonialsColumn = React.memo((props) => {
             />
             <span
               className={cn(
-                "absolute h-px top-0 opacity-100 group-hover:opacity-100 transition-all duration-500 ease-in-out inset-x-0 inset-y-0 bg-gradient-to-r w-full mx-auto from-transparent dark:via-blue-500 via-blue-600 to-transparent"
+                "absolute h-px top-0 opacity-100 group-hover:opacity-100 transition-all duration-500 ease-in-out inset-x-0 inset-y-0 bg-gradient-to-r w-full mx-auto from-transparent  via-blue-600 to-transparent"
               )}
             />
 
@@ -73,7 +73,7 @@ export const TestimonialsColumn = React.memo((props) => {
 
             <span
               className={cn(
-                "absolute group-hover:opacity-30 transition-all duration-500 ease-in-out inset-x-0 h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent dark:via-blue-500 via-blue-600 to-transparent"
+                "absolute group-hover:opacity-30 transition-all duration-500 ease-in-out inset-x-0 h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent  via-blue-600 to-transparent"
               )}
             />
           </div>

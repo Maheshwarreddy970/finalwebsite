@@ -62,7 +62,7 @@ export function AppNavbar({ user, isAdmin }) {
               key={`mobile-link-${idx}`}
               href={`${clientInfo?.name}${item.link}`}
               onClick={() => setIsMobileMenuOpen(false)}
-              className="relative text-neutral-600 z-50 dark:text-neutral-300">
+              className="relative text-neutral-600 z-50 ">
               <span className="block">{item.name}</span>
             </a>
           ))}

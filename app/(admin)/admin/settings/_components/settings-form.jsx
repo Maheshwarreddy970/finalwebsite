@@ -246,7 +246,7 @@ export const SettingsForm = () => {
               <div className="space-y-4">
                 {DAYS.map((day, index) => (
                   <div
-                    key={day.value}
+                    key={day.value+index}
                     className="grid grid-cols-12 gap-4 items-center py-3 px-4 rounded-lg hover:bg-slate-50"
                   >
                     <div className="col-span-3 md:col-span-2">
@@ -374,8 +374,8 @@ export const SettingsForm = () => {
                       </TableRow>
                     </TableHeader>
                     <TableBody>
-                      {filteredUsers.map((user) => (
-                        <TableRow key={user.id}>
+                      {filteredUsers.map((user, index) => (
+                        <TableRow key={user.id+index}>
                           <TableCell className="font-medium">
                             <div className="flex items-center gap-2">
                               <div className="w-8 h-8 rounded-full bg-gray-200 flex items-center justify-center overflow-hidden">

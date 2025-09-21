@@ -95,9 +95,9 @@ export default function Search() {
             className="border-none shadow-none h-full w-full focus-visible:ring-0 focus-visible:outline-none"
             type="text"
           />
-          <div className="w-14 border-l text-neutral-700 flex justify-center items-center">
+          <button type="submit" className="w-14 border-l text-neutral-700 flex justify-center items-center">
             <SearchIcon className="w-7" />
-          </div>
+          </button>
         </div>
         <AiButton
           isImageSearchActive={isImageSearchActive}

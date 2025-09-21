@@ -13,8 +13,8 @@ export function DestructiveButton({
     <motion.button
       className={cn(
         "relative font-mono text-sm",
-        "text-neutral-500 dark:text-neutral-400",
-        "hover:text-red-500/90 dark:hover:text-red-400/90",
+        "text-neutral-500 ",
+        "hover:text-red-500/90 ",
         "transition-all duration-300",
         className
       )}

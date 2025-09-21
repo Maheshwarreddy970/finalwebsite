@@ -101,7 +101,7 @@ function CarouselNavigation({ className, classNameButton, alwaysShow }) {
         type="button"
         aria-label="Previous slide"
         className={cn(
-          'pointer-events-auto h-fit w-fit  bg-zinc-50 p-1 transition-opacity duration-300 dark:bg-zinc-950',
+          'pointer-events-auto h-fit w-fit  bg-zinc-50 p-1 transition-opacity duration-300 ',
           alwaysShow ? 'opacity-100' : 'opacity-0 group-hover/hover:opacity-100',
           alwaysShow ? 'disabled:opacity-40' : 'group-hover/hover:disabled:opacity-40',
           classNameButton
@@ -111,13 +111,13 @@ function CarouselNavigation({ className, classNameButton, alwaysShow }) {
           if (index > 0) setIndex(index - 1);
         }}
       >
-        <ChevronLeft className="stroke-zinc-600 dark:stroke-zinc-50" size={20} />
+        <ChevronLeft className="stroke-zinc-600 d" size={20} />
       </button>
       <button
         type="button"
         aria-label="Next slide"
         className={cn(
-          'pointer-events-auto h-fit w-fit  bg-zinc-50 p-1 transition-opacity duration-300 dark:bg-zinc-950',
+          'pointer-events-auto h-fit w-fit  bg-zinc-50 p-1 transition-opacity duration-300 ',
           alwaysShow ? 'opacity-100' : 'opacity-0 group-hover/hover:opacity-100',
           alwaysShow ? 'disabled:opacity-40' : 'group-hover/hover:disabled:opacity-40',
           classNameButton
@@ -127,7 +127,7 @@ function CarouselNavigation({ className, classNameButton, alwaysShow }) {
           if (index < itemsCount - 1) setIndex(index + 1);
         }}
       >
-        <ChevronRight className="stroke-zinc-600 dark:stroke-zinc-50" size={20} />
+        <ChevronRight className="stroke-zinc-600 " size={20} />
       </button>
     </div>
   );
@@ -153,8 +153,8 @@ function CarouselIndicator({ className, classNameButton }) {
             className={cn(
               'h-2 w-2  transition-opacity duration-300',
               index === i
-                ? 'bg-zinc-950 dark:bg-zinc-50'
-                : 'bg-zinc-900/50 dark:bg-zinc-100/50',
+                ? 'bg-zinc-950 '
+                : 'bg-zinc-900/50 ',
               classNameButton
             )}
           />

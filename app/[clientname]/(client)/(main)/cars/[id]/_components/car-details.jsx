@@ -33,7 +33,7 @@ import { cn } from "@/lib/utils";
 import { Lens } from "@/components/ui/lens";
 import { GlowingEffect } from "@/components/ui/background-gradient";
 import { useAnimate } from "framer-motion";
-import NeumorphButton from "@/components/ui/neumorph-butto";
+import {TextureButton} from "@/components/ui/rainbow-button";
 import { LineShadowText } from "@/components/ui/line-shadow-text";
 import { useClientStore } from "@/store/useClientStore";
 import Workinghours from "@/components/landingpage/Workinghours";
@@ -140,7 +140,6 @@ export function CarDetails({ car, testDriveInfo }) {
                       <img
                         src={car.images[currentImageIndex]}
                         alt={`${car.year} ${car.make} ${car.model}`}
-                        fill
                         className="object-cover aspect-video "
                         priority
                       />
@@ -171,8 +170,11 @@ export function CarDetails({ car, testDriveInfo }) {
                         src={image}
                         alt={`${car.year} ${car.make} ${car.model} - view ${index + 1
                           }`}
-                        fill
-                        className="object-cover rounded-lg "
+                        quality={80}
+                        width={80}
+                        height={96}
+                        loading="lazy" // defers loading until visible
+                        className="object-cover w-full h-full rounded-lg "
                       />
                     </div>
                   </CarouselItem>
@@ -185,7 +187,7 @@ export function CarDetails({ car, testDriveInfo }) {
           )}
           {/* Secondary Actions */}
           <div className="flex gap-5  md:gap-10 mb-5">
-            <NeumorphButton
+            <TextureButton
               intent="secondary"
               className={`flex items-center font-semibold gap-2 w-1/2 ${isWishlisted ? "text-red-500" : ""
                 }`}
@@ -196,21 +198,22 @@ export function CarDetails({ car, testDriveInfo }) {
                 className={`h-5 w-5 mr-2 ${isWishlisted ? "fill-red-500" : ""}`}
               />
               {isWishlisted ? "Saved" : "Save"}
-            </NeumorphButton>
-            <NeumorphButton
+            </TextureButton>
+            <TextureButton
               intent="secondary"
               className="flex items-center gap-2 w-1/2"
               onClick={handleShare}
             >
               <Share2 className="h-5 w-5  mr-2" />
               Share
-            </NeumorphButton>
+            </TextureButton>
 
           </div>
           {/* Book Test Drive Button */}
           {car.status !== "SOLD" && car.status !== "UNAVAILABLE" && (
-            <NeumorphButton
-              intent="primary"
+            <TextureButton
+
+              variant="blue"
               className="flex-1 w-full group/viewcar  relative overflow-hidden"
               onClick={handleBookTestDrive}
               disabled={testDriveInfo.userTestDrive}
@@ -223,7 +226,7 @@ export function CarDetails({ car, testDriveInfo }) {
                   "EEEE, MMMM d, yyyy"
                 )}`
                 : "Book Test Drive"}
-            </NeumorphButton>
+            </TextureButton>
           )}
         </div>
         {/* Car Details */}
@@ -287,7 +290,7 @@ export function CarDetails({ car, testDriveInfo }) {
                     *Based on $0 down payment and 4.5% interest rate
                   </div>
                   <DialogTrigger className="w-full text-start mt-1">
-                    <NeumorphButton
+                    <TextureButton
                       className="flex-1 w-full group/viewcar relative overflow-hidden"
                     >
                       <span className="mr-8 transition-opacity duration-500 ease-in-out group-hover/viewcar:opacity-0 group-hover/viewcar:translate-x-[-10px]">
@@ -303,14 +306,14 @@ export function CarDetails({ car, testDriveInfo }) {
                           className="transition-transform duration-300 group-hover/viewcar:scale-110 group-active/viewcar:rotate-[-10deg]"
                         />
                       </i>
-                    </NeumorphButton>
+                    </TextureButton>
                   </DialogTrigger>
                 </div>
               </div>
             </div>
             <DialogContent className=" p-4 w-[90%] overflow-hidden ">
               <DialogHeader>
-                <DialogTitle>{`${ car.make } ${ car.model } Car Loan Calculator `}</DialogTitle>
+                <DialogTitle>{`${car.make} ${car.model} Car Loan Calculator `}</DialogTitle>
                 <EmiCalculator price={car.price} />
               </DialogHeader>
             </DialogContent>
@@ -336,7 +339,7 @@ export function CarDetails({ car, testDriveInfo }) {
                 </p>
 
                 <a href="mailto:help@vehiql.in">
-                  <NeumorphButton
+                  <TextureButton
                     className="flex-1 w-full group/viewcar relative overflow-hidden"
                   >
                     <span className="mr-8 transition-opacity duration-500 ease-in-out group-hover/viewcar:opacity-0 group-hover/viewcar:translate-x-[-10px]">
@@ -352,7 +355,7 @@ export function CarDetails({ car, testDriveInfo }) {
                         className="transition-transform duration-300 group-hover/viewcar:scale-110 group-active/viewcar:rotate-[-10deg]"
                       />
                     </i>
-                  </NeumorphButton>
+                  </TextureButton>
                 </a>
               </div>
             </div>
@@ -439,9 +442,9 @@ export function CarDetails({ car, testDriveInfo }) {
           </div>
         </div>
       </div>
-    
-        <Workinghours></Workinghours>
-      </div>
+
+      <Workinghours></Workinghours>
+    </div>
   );
 }
 
