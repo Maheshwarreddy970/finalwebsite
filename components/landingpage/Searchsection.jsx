@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { CarFilterControls } from '@/app/[clientname]/(client)/(main)/cars/_components/filter-controls';
 import { cn } from '@/lib/utils';
 import { Philosopher, Great_Vibes } from 'next/font/google'
-import { TextureButton } from '../ui/rainbow-button';
+import NeumorphButton from '../ui/rainbow-button';
 import { SlidersHorizontal } from 'lucide-react';
 import Search from '../navbar/Search';
 
@@ -99,24 +99,39 @@ export default function Searchsection() {
         </div>
         <p className=' max-w-2xl mt-2 mx-auto text-center '>Customize your search by make, model, price, year, and more to quickly discover the car that fits your needs and budget. Use our powerful filters for a seamless browsing experience.</p>
       </div>
-  
+
       <div className="mt-10 p-4 lg:p-7 border-gray-300 hover:ring-1 ring-black/10 transition-all ease-in-out duration-300 shadow-md hover:shadow-xl border rounded-2xl  ">
-       <div className=' mb-16 w-full '>
-        <Search></Search>
-       </div>
-        
+        <div className=' mb-16 w-full '>
+          <Search></Search>
+        </div>
+
         <CarFilterControls
           filters={filters}
           currentFilters={currentFilters}
           onFilterChange={handleFilterChange}
           onClearFilter={handleClearFilter}
         />
-        <div className="mt-6">
+        <div className="mt-10">
           <div className=' flex '>
-            <TextureButton onClick={handleApplyFilters} className=" w-52 flex " variant="accent" size="lg">
-              Apply Filters
-              <SlidersHorizontal className=' size-5'></SlidersHorizontal>
-            </TextureButton>
+            <NeumorphButton
+            intent="primary"
+              onClick={handleApplyFilters}
+              className="flex-1 w-full group/viewcar relative overflow-hidden"
+            >
+              <span className="mr-8 transition-opacity duration-500 ease-in-out group-hover/viewcar:opacity-0 group-hover/viewcar:translate-x-[-10px]">
+                Apply Filters
+              </span>
+              <i
+                className="absolute bg-blue-400  right-1 top-1 bottom-1 rounded-sm z-10 grid w-1/4 place-items-center transition-all duration-500 ease-out bg-primary-foreground/15 group-hover/viewcar:w-[calc(100%-0.5rem)] group-hover/viewcar:bg-primary-foreground/25 group-active/viewcar:scale-90 text-black-500"
+              >
+                <SlidersHorizontal
+                  size={16}
+                  strokeWidth={2}
+                  aria-hidden="true"
+                  className="transition-transform duration-300 group-hover/viewcar:scale-110 group-active/viewcar:rotate-[-10deg]"
+                />
+              </i>
+            </NeumorphButton>
           </div>
         </div>
       </div>

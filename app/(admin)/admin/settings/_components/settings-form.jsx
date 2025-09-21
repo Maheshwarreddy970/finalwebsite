@@ -50,7 +50,7 @@ import {
   getUsers,
   updateUserRole,
 } from "@/actions/settings";
-import {TextureButton } from "@/components/ui/rainbow-button";
+import TextureButton  from "@/components/ui/rainbow-button";
 
 // Day names for display
 const DAYS = [

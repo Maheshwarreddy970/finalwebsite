@@ -268,7 +268,7 @@ export function FamilyButtonDemo() {
 
   return (
     <div className="z-[50]">
-      <div className="fixed bottom-20 right-4 z-[50]">
+      <div className="fixed bottom-20 md:bottom-4 right-4 z-[50]">
         <FamilyButton>
           <div className="h-[10%]  w-full flex justify-center items-center gap-2 py-3 shadow-sm border-b ">
             <Image

@@ -221,7 +221,7 @@ function EmiCalculator({ price = CONSTANTS.DEFAULT_LOAN_AMOUNT, className }) {
   return (
     <>
       <div className={cn(
-        'gap-4 mb-5 text-4xl md:text-6xl text-center font-semibold text-black',
+        'gap-4 mb-5 text-4xl md:text-6xl text-center font-semibold bg-white text-black',
         philosopher.className,
         className
       )}>
@@ -229,7 +229,7 @@ function EmiCalculator({ price = CONSTANTS.DEFAULT_LOAN_AMOUNT, className }) {
         with Our <span className={greatVibes.className}>Financing</span>
       </div>
 
-      <section className="w-full p-2 md:p-4 lg:p-7 overflow-hidden border-gray-300 hover:ring-1 ring-black/10 transition-all ease-in-out duration-300 shadow-md hover:shadow-xl border rounded-2xl">
+      <section className="w-full bg-white p-2 md:p-4 lg:p-7 overflow-hidden border-gray-300 hover:ring-1 ring-black/10 transition-all ease-in-out duration-300 shadow-md hover:shadow-xl border rounded-2xl">
         <div className="lg:mt-5 flex gap-7 lg:gap-16 lg:flex-row flex-col lg:justify-between">
 
           {/* Results Panel */}

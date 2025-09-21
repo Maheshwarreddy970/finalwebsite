@@ -33,7 +33,7 @@ import { cn } from "@/lib/utils";
 import { Lens } from "@/components/ui/lens";
 import { GlowingEffect } from "@/components/ui/background-gradient";
 import { useAnimate } from "framer-motion";
-import {TextureButton} from "@/components/ui/rainbow-button";
+import NeumorphButton from "@/components/ui/neumorph-butto";
 import { LineShadowText } from "@/components/ui/line-shadow-text";
 import { useClientStore } from "@/store/useClientStore";
 import Workinghours from "@/components/landingpage/Workinghours";
@@ -140,6 +140,7 @@ export function CarDetails({ car, testDriveInfo }) {
                       <img
                         src={car.images[currentImageIndex]}
                         alt={`${car.year} ${car.make} ${car.model}`}
+                        fill
                         className="object-cover aspect-video "
                         priority
                       />
@@ -170,11 +171,8 @@ export function CarDetails({ car, testDriveInfo }) {
                         src={image}
                         alt={`${car.year} ${car.make} ${car.model} - view ${index + 1
                           }`}
-                        quality={80}
-                        width={80}
-                        height={96}
-                        loading="lazy" // defers loading until visible
-                        className="object-cover w-full h-full rounded-lg "
+                        fill
+                        className="object-cover rounded-lg "
                       />
                     </div>
                   </CarouselItem>
@@ -187,7 +185,7 @@ export function CarDetails({ car, testDriveInfo }) {
           )}
           {/* Secondary Actions */}
           <div className="flex gap-5  md:gap-10 mb-5">
-            <TextureButton
+            <NeumorphButton
               intent="secondary"
               className={`flex items-center font-semibold gap-2 w-1/2 ${isWishlisted ? "text-red-500" : ""
                 }`}
@@ -198,22 +196,21 @@ export function CarDetails({ car, testDriveInfo }) {
                 className={`h-5 w-5 mr-2 ${isWishlisted ? "fill-red-500" : ""}`}
               />
               {isWishlisted ? "Saved" : "Save"}
-            </TextureButton>
-            <TextureButton
+            </NeumorphButton>
+            <NeumorphButton
               intent="secondary"
               className="flex items-center gap-2 w-1/2"
               onClick={handleShare}
             >
               <Share2 className="h-5 w-5  mr-2" />
               Share
-            </TextureButton>
+            </NeumorphButton>
 
           </div>
           {/* Book Test Drive Button */}
           {car.status !== "SOLD" && car.status !== "UNAVAILABLE" && (
-            <TextureButton
-
-              variant="blue"
+            <NeumorphButton
+              intent="primary"
               className="flex-1 w-full group/viewcar  relative overflow-hidden"
               onClick={handleBookTestDrive}
               disabled={testDriveInfo.userTestDrive}
@@ -226,7 +223,7 @@ export function CarDetails({ car, testDriveInfo }) {
                   "EEEE, MMMM d, yyyy"
                 )}`
                 : "Book Test Drive"}
-            </TextureButton>
+            </NeumorphButton>
           )}
         </div>
         {/* Car Details */}
@@ -290,14 +287,14 @@ export function CarDetails({ car, testDriveInfo }) {
                     *Based on $0 down payment and 4.5% interest rate
                   </div>
                   <DialogTrigger className="w-full text-start mt-1">
-                    <TextureButton
+                    <NeumorphButton
                       className="flex-1 w-full group/viewcar relative overflow-hidden"
                     >
                       <span className="mr-8 transition-opacity duration-500 ease-in-out group-hover/viewcar:opacity-0 group-hover/viewcar:translate-x-[-10px]">
                         Calculate EMI
                       </span>
                       <i
-                        className="absolute right-1 top-1 bottom-1 rounded-sm z-10 grid w-1/4 place-items-center transition-all duration-500 ease-out bg-primary-foreground/15 group-hover/viewcar:w-[calc(100%-0.5rem)] group-hover/viewcar:bg-primary-foreground/25 group-active/viewcar:scale-90 text-black-500"
+                        className="absolute bg-neutral-700  right-1 top-1 bottom-1 rounded-sm z-10 grid w-1/4 place-items-center transition-all duration-500 ease-out bg-primary-foreground/15 group-hover/viewcar:w-[calc(100%-0.5rem)] group-hover/viewcar:bg-primary-foreground/25 group-active/viewcar:scale-90 text-black-500"
                       >
                         <Calculator
                           size={16}
@@ -306,7 +303,7 @@ export function CarDetails({ car, testDriveInfo }) {
                           className="transition-transform duration-300 group-hover/viewcar:scale-110 group-active/viewcar:rotate-[-10deg]"
                         />
                       </i>
-                    </TextureButton>
+                    </NeumorphButton>
                   </DialogTrigger>
                 </div>
               </div>
@@ -339,14 +336,14 @@ export function CarDetails({ car, testDriveInfo }) {
                 </p>
 
                 <a href="mailto:help@vehiql.in">
-                  <TextureButton
+                  <NeumorphButton
                     className="flex-1 w-full group/viewcar relative overflow-hidden"
                   >
                     <span className="mr-8 transition-opacity duration-500 ease-in-out group-hover/viewcar:opacity-0 group-hover/viewcar:translate-x-[-10px]">
                       Request Info
                     </span>
                     <i
-                      className="absolute right-1 top-1 bottom-1 rounded-sm z-10 grid w-1/4 place-items-center transition-all duration-500 ease-out bg-primary-foreground/15 group-hover/viewcar:w-[calc(100%-0.5rem)] group-hover/viewcar:bg-primary-foreground/25 group-active/viewcar:scale-90 text-black-500"
+                      className="absolute right-1 top-1 bottom-1 rounded-sm z-10 grid w-1/4 place-items-center transition-all duration-500 ease-out bg-neutral-700 group-hover/viewcar:w-[calc(100%-0.5rem)] group-hover/viewcar:bg-primary-foreground/25 group-active/viewcar:scale-90 text-black-500"
                     >
                       <MessageSquare
                         size={16}
@@ -355,7 +352,7 @@ export function CarDetails({ car, testDriveInfo }) {
                         className="transition-transform duration-300 group-hover/viewcar:scale-110 group-active/viewcar:rotate-[-10deg]"
                       />
                     </i>
-                  </TextureButton>
+                  </NeumorphButton>
                 </a>
               </div>
             </div>
@@ -442,8 +439,25 @@ export function CarDetails({ car, testDriveInfo }) {
           </div>
         </div>
       </div>
+      {/* Dealership Location Section */}
+      <div className={cn("grid grid-cols-1 mt-7 bg-black/5 relative rounded-2xl", "shadow-[inset_0_0_1px_1px_#ffffff4d] sm:shadow-[inset_0_0_2px_1px_#ffffff4d]", "ring-1 ring-black/5", "mx-auto w-full", "transition-all duration-300 ease-in-out")}>
+        <GlowingEffect
+          spread={40}
+          glow={true}
+          disabled={false}
+          proximity={64}
+          inactiveZone={0.01}
+          borderWidth={3}
+        />
+        <div className="grid grid-cols-1 rounded-2xl p-1 sm:p-1.5 shadow-md shadow-black/5">
+          <div className="rounded-2xl bg-white px-5 py-4 flex flex-col gap-3 shadow-xl ring-1 ring-black/5">
+            <div className="flex flex-col md:flex-row gap-6 justify-center items-center">
+              <Workinghours></Workinghours>
+            </div>
+          </div>
+        </div>
+      </div>
 
-      <Workinghours></Workinghours>
     </div>
   );
 }

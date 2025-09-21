@@ -1,96 +1,105 @@
 "use client"
-import * as React from "react"
-import { Slot } from "@radix-ui/react-slot"
+import React from "react"
 import { cva } from "class-variance-authority"
-import { cn } from "@/lib/utils"
+import { Loader2 } from "lucide-react"
 
-const buttonVariantsOuter = cva("", {
-  variants: {
-    variant: {
-      primary:
-        "w-full border border-[1px]  border-black/10  bg-gradient-to-b from-black/70 to-black   p-[1px] transition duration-300 ease-in-out ",
-      accent:
-        "w-full border-[1px]  border-black/10  bg-gradient-to-b from-indigo-300/90 to-indigo-500  p-[1px] transition duration-300 ease-in-out ",
-      destructive:
-        "w-full border-[1px]  border-black/10  bg-gradient-to-b from-red-300/90 to-red-500  p-[1px] transition duration-300 ease-in-out ",
-      secondary:
-        "w-full border-[1px]  border-black/20 bg-white/50   p-[1px] transition duration-300 ease-in-out ",
-      minimal:
-        "group  w-full border-[1px]  border-black/20 bg-white/50   p-[1px]  active:bg-neutral-200  hover:bg-gradient-to-t hover:from-neutral-100 to-white   active:bg-neutral-200 ",
-      icon: "group rounded-full border  border-black/10  bg-white/50 p-[1px] active:bg-neutral-200  hover:bg-gradient-to-t hover:from-neutral-100 to-white active:bg-neutral-200 ",
-    },
-    size: {
-      sm: "rounded-[6px]",
-      default: "rounded-[12px]",
-      lg: "rounded-[12px]",
-      icon: "rounded-full",
-    },
-  },
-  defaultVariants: {
-    variant: "primary",
-    size: "default",
-  },
-})
-
-const innerDivVariants = cva(
-  "w-full h-full flex items-center justify-center text-muted-foreground",
+const buttonVariants = cva(
+  "justify-center px-4 text-sm font-medium items-center transition-[box-shadow,background-color] disabled:cursor-not-allowed disabled:opacity-50 flex active:transition-none",
   {
     variants: {
-      variant: {
-        primary:
-          "gap-2 bg-gradient-to-b from-neutral-800 to-black text-sm text-white/90 transition duration-300 ease-in-out  hover:from-stone-800 hover:to-neutral-800/70 active:bg-gradient-to-b active:from-black active:to-black ",
-        accent:
-          "gap-2 bg-gradient-to-b from-indigo-400 to-indigo-600 text-sm text-white/90 transition duration-300 ease-in-out hover:bg-gradient-to-b hover:from-indigo-400/70 hover:to-indigo-600/70 active:bg-gradient-to-b active:from-indigo-400/80 active:to-indigo-600/80",
-        blue:
-          "gap-2 bg-gradient-to-b from-blue-400 to-blue-600 text-sm text-white/90 transition duration-300 ease-in-out hover:bg-gradient-to-b hover:from-blue-400/70 hover:to-blue-600/70 active:bg-gradient-to-b active:from-blue-400/80 active:to-blue-600/80",
-        destructive:
-          "gap-2 bg-gradient-to-b from-red-400/60 to-red-500/60 text-sm text-white/90 transition duration-300 ease-in-out hover:bg-gradient-to-b hover:from-red-400/70 hover:to-red-600/70 active:bg-gradient-to-b active:from-red-400/80 active:to-red-600/80",
-        secondary:
-          "bg-gradient-to-b from-neutral-100/80 to-neutral-200/50 text-sm transition duration-300 ease-in-out hover:bg-gradient-to-b hover:from-neutral-200/40 hover:to-neutral-300/60 active:bg-gradient-to-b active:from-neutral-200/60 active:to-neutral-300/70",
-        minimal:
-          "bg-gradient-to-b from-white to-neutral-50/50 text-sm transition duration-300 ease-in-out group-hover:bg-gradient-to-b group-hover:from-neutral-50/50 group-hover:to-neutral-100/60 group-active:bg-gradient-to-b group-active:from-neutral-100/60 group-active:to-neutral-100/90",
-        icon: "bg-gradient-to-b from-white to-neutral-50/50 group-active:bg-neutral-200 rounded-full",
+      intent: {
+        default: [
+          "bg-[#36322F]",
+          "text-[#fff]",
+          "hover:enabled:bg-[#4a4542]",
+          "disabled:bg-[#8c8885]",
+          "[box-shadow:inset_0px_-2.1px_0px_0px_#171310,_0px_1.2px_6.3px_0px_rgba(58,_33,_8,_58%)]",
+          "hover:enabled:[box-shadow:inset_0px_-2.5px_0px_0px_#171310,_0px_1.4px_7.6px_0px_rgba(58,_33,_8,_64%)]",
+          "disabled:shadow-none",
+          "active:bg-[#2A2724]",
+          "active:[box-shadow:inset_0px_-1.5px_0px_0px_#171310,_0px_0.5px_2px_0px_rgba(58,_33,_8,_70%)]",
+        ],
+        primary: [
+          "bg-[#2C7BE5]",
+          "text-[#fff]",
+          "hover:enabled:bg-[#3D8DF5]",
+          "disabled:bg-[#9FC3F5]",
+          "[box-shadow:inset_0px_-2.1px_0px_0px_#1A68D1,_0px_1.2px_6.3px_0px_rgba(28,_100,_242,_58%)]",
+          "hover:enabled:[box-shadow:inset_0px_-2.5px_0px_0px_#2C7BE5,_0px_1.4px_7.6px_0px_rgba(28,_100,_242,_64%)]",
+          "disabled:shadow-none",
+          "active:bg-[#1A68D1]",
+          "active:[box-shadow:inset_0px_-1.5px_0px_0px_#1554AB,_0px_0.5px_2px_0px_rgba(28,_100,_242,_70%)]",
+        ],
+        secondary: [
+          "bg-[#FFFFFF]",
+          "text-[#36322F]",
+          "hover:enabled:bg-[#F8F8F8]",
+          "disabled:bg-[#F0F0F0]",
+          "[box-shadow:inset_0px_-2.1px_0px_0px_#E0E0E0,_0px_1.2px_6.3px_0px_rgba(0,_0,_0,_10%)]",
+          "hover:enabled:[box-shadow:inset_0px_-2.5px_0px_0px_#E8E8E8,_0px_1.4px_7.6px_0px_rgba(0,_0,_0,_12%)]",
+          "disabled:shadow-none",
+          "border",
+          "border-[#E0E0E0]",
+          "active:bg-[#F0F0F0]",
+          "active:[box-shadow:inset_0px_-1.5px_0px_0px_#D8D8D8,_0px_0.5px_2px_0px_rgba(0,_0,_0,_15%)]",
+        ],
+        danger: [
+          "bg-[#E6492D]",
+          "text-[#fff]",
+          "hover:enabled:bg-[#F05B41]",
+          "disabled:bg-[#F5A799]",
+          "[box-shadow:inset_0px_-2.1px_0px_0px_#D63A1F,_0px_1.2px_6.3px_0px_rgba(214,_58,_31,_58%)]",
+          "hover:enabled:[box-shadow:inset_0px_-2.5px_0px_0px_#E6492D,_0px_1.4px_7.6px_0px_rgba(214,_58,_31,_64%)]",
+          "disabled:shadow-none",
+          "active:bg-[#D63A1F]",
+          "active:[box-shadow:inset_0px_-1.5px_0px_0px_#B22E17,_0px_0.5px_2px_0px_rgba(214,_58,_31,_70%)]",
+        ],
       },
       size: {
-        sm: "text-xs rounded-[4px] px-4 py-1",
-        default: "text-sm rounded-[10px] px-4 py-2",
-        lg: "text-base rounded-[10px] px-4 py-2",
-        icon: " rounded-full p-1",
+        small: ["text-xs", "py-1", "px-2", "h-9", "rounded-[8px]"],
+        medium: ["text-base", "py-2", "px-4", "h-11", "rounded-[9px]"],
+        large: ["text-lg", "py-3", "px-6", "h-14", "rounded-[11px]"],
+      },
+      fullWidth: {
+        true: "w-full",
       },
     },
+    compoundVariants: [
+      {
+        intent: ["default", "primary", "secondary", "danger"],
+        size: "medium",
+        className: "uppercase",
+      },
+    ],
     defaultVariants: {
-      variant: "primary",
-      size: "default",
+      intent: "default",
+      size: "medium",
     },
   }
 )
- 
-const TextureButton = React.forwardRef(
-  (
-    {
-      children,
-      variant = "primary",
-      size = "default",
-      asChild = false,
-      className,
-      ...props
-    },
-    ref
-  ) => {
-    const Comp = asChild ? Slot : "button"
-    return (
-      <Comp
-        className={cn(" hover:scale-[1.02] active:scale-95 transition-all duration-300 ease-in-out ",buttonVariantsOuter({ variant, size }), className)}
-        ref={ref}
-        {...props}
-      >
-        <div className={cn(innerDivVariants({ variant, size }))}>
-          {children}
-        </div>
-      </Comp>
-    )
-  }
-)
-TextureButton.displayName = "TextureButton"
 
-export { TextureButton }
+const NeumorphButton = ({
+  className,
+  intent,
+  size,
+  fullWidth,
+  children,
+  loading = false,
+  disabled,
+  ...props
+}) => {
+  return (
+    <button
+      className={buttonVariants({ intent, size, fullWidth, className })}
+      disabled={disabled || loading}
+      {...props}
+    >
+      {loading ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : null}
+      <span className={loading ? "opacity-70" : "opacity-100"}>
+        {children}
+      </span>
+    </button>
+  )
+}
+
+export default NeumorphButton

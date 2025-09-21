@@ -11,7 +11,7 @@ import { processImageSearch } from "@/actions/home";
 import { useClientStore } from "@/store/useClientStore";
 import Image from "next/image";
 import { useDropzone } from "react-dropzone";
-import { TextureButton } from "../ui/rainbow-button";
+import  TextureButton  from "../ui/rainbow-button";
 
 export default function Search() {
   const router = useRouter();

@@ -22,9 +22,9 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { DestructiveButton } from "@/components/ui/destructive-button";
-import { TextureButton } from "@/components/ui/rainbow-button";
 import { useClientStore } from "@/store/useClientStore";
 import { SlidersHorizontal } from "lucide-react";
+import NeumorphButton from "@/components/ui/rainbow-button";
 
 export const CarFilters = ({ filters }) => {
   const router = useRouter();
@@ -287,10 +287,26 @@ export const CarFilters = ({ filters }) => {
           </div>
           <div className="mt-6">
             <div className=' flex '>
-              <TextureButton onClick={applyFilters} className=" w-[90%] mx-auto flex " variant="accent" size="lg">
-                Apply Filters
-                <SlidersHorizontal className=' size-5'></SlidersHorizontal>
-              </TextureButton>
+                   <NeumorphButton
+                   intent="primary"
+                   onClick={applyFilters} 
+                      className="flex-1 w-full group/viewcar relative overflow-hidden"
+                    >
+                      <span className="mr-8 transition-opacity duration-500 ease-in-out group-hover/viewcar:opacity-0 group-hover/viewcar:translate-x-[-10px]">
+                       Apply Filters
+                      </span>
+                      <i
+                        className="absolute bg-blue-400  right-1 top-1 bottom-1 rounded-sm z-10 grid w-1/4 place-items-center transition-all duration-500 ease-out bg-primary-foreground/15 group-hover/viewcar:w-[calc(100%-0.5rem)] group-hover/viewcar:bg-primary-foreground/25 group-active/viewcar:scale-90 text-black-500"
+                      >
+                        <SlidersHorizontal
+                          size={16}
+                          strokeWidth={2}
+                          aria-hidden="true"
+                          className="transition-transform duration-300 group-hover/viewcar:scale-110 group-active/viewcar:rotate-[-10deg]"
+                        />
+                      </i>
+                    </NeumorphButton>
+         
             </div>
           </div>
         </div>
