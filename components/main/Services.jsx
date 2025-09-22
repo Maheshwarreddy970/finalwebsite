@@ -14,7 +14,7 @@ const instrumentserif = Instrument_Serif({
 // Reusable Button Component
 const GetStartedButton = () => (
     <Link
-        href="https://cal.com/maheshwar-reddy-20/15min"
+        href="/getstarted"
         className="group hover:-translate-y-1 relative justify-center mt-14 items-center flex gap-2 rounded-2xl border-2 shadow-xl border-neutral-950 bg-neutral-900 px-6 py-3 font-medium text-white duration-1000 hover:shadow-lg hover:shadow-neutral-950/50"
     >
         <span className="absolute left-0 top-0 size-full rounded-2xl border-neutral-500 shadow-inner shadow-white/60 group-active:shadow-white/10"></span>
@@ -272,7 +272,7 @@ export default function Services() {
                     Admin <span className="opacity-50">features </span>
                 </h1>
                 <p className="text-center md:text-lg max-w-3xl text-neutral-600 font-medium">
-We believe in empowering dealerships with powerful yet simple tools. No overwhelming dashboards or unnecessary complexity—just the features you need to run your business efficiently.
+                    We believe in empowering dealerships with powerful yet simple tools. No overwhelming dashboards or unnecessary complexity—just the features you need to run your business efficiently.
 
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 scale-[1.03] gap-10 mt-16 max-w-7xl w-full border-y border-dashed border-black/20">

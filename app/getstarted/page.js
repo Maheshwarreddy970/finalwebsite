@@ -5,6 +5,7 @@ import { SunIcon as Sunburst } from "lucide-react";
 import { useState } from "react";
 import { collection, addDoc } from "firebase/firestore";
 import { firebasedb } from "@/lib/firebase"; // Adjust the import path as needed
+import UnicornScene from "unicornstudio-react";
 
 export default function BookFreeDemo() {
   const [name, setName] = useState("");
@@ -14,7 +15,7 @@ export default function BookFreeDemo() {
   const [instagram, setInstagram] = useState("");
   const [facebook, setFacebook] = useState("");
   const [youtube, setYoutube] = useState("");
-  
+
   const [nameError, setNameError] = useState("");
   const [emailError, setEmailError] = useState("");
   const [phoneError, setPhoneError] = useState("");
@@ -78,10 +79,10 @@ export default function BookFreeDemo() {
 
         // Add to Firebase
         await addDoc(collection(firebasedb, "demo_requests"), demoData);
-        
+
         console.log("Demo request submitted successfully!");
         setSubmitted(true);
-        
+
         // Reset form
         setName("");
         setEmail("");
@@ -90,10 +91,10 @@ export default function BookFreeDemo() {
         setInstagram("");
         setFacebook("");
         setYoutube("");
-        
+
         // Show success message
         alert("Thank you! We'll contact you within 24 hours to schedule your free demo.");
-        
+
       } catch (error) {
         console.error("Error submitting demo request:", error);
         alert("Sorry, there was an error submitting your request. Please try again.");
@@ -104,38 +105,20 @@ export default function BookFreeDemo() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center overflow-hidden ">
+    <div className=" lg:h-screen flex items-center justify-center overflow-hidden ">
       <div className="w-full relative h-full overflow-hidden flex flex-col md:flex-row">
-        <div className="w-full h-full z-2 absolute bg-gradient-to-t from-transparent to-black"></div>
-        <div className="flex absolute z-2 h-full w-full overflow-hidden backdrop-blur-2xl">
-          <div className="h-full z-2 w-[4rem] bg-gradient-to-b from-[#ffffff00] via-[#000000] via-[69%] to-[#ffffff30] opacity-30 overflow-hidden"></div>
-          <div className="h-full z-2 w-[4rem] bg-gradient-to-b from-[#ffffff00] via-[#000000] via-[69%] to-[#ffffff30] opacity-30 overflow-hidden"></div>
-          <div className="h-full z-2 w-[4rem] bg-gradient-to-b from-[#ffffff00] via-[#000000] via-[69%] to-[#ffffff30] opacity-30 overflow-hidden"></div>
-          <div className="h-full z-2 w-[4rem] bg-gradient-to-b from-[#ffffff00] via-[#000000] via-[69%] to-[#ffffff30] opacity-30 overflow-hidden"></div>
-          <div className="h-full z-2 w-[4rem] bg-gradient-to-b from-[#ffffff00] via-[#000000] via-[69%] to-[#ffffff30] opacity-30 overflow-hidden"></div>
-          <div className="h-full z-2 w-[4rem] bg-gradient-to-b from-[#ffffff00] via-[#000000] via-[69%] to-[#ffffff30] opacity-30 overflow-hidden"></div>
-          <div className="h-full z-2 w-[4rem] bg-gradient-to-b from-[#ffffff00] via-[#000000] via-[69%] to-[#ffffff30] opacity-30 overflow-hidden"></div>
-          <div className="h-full z-2 w-[4rem] bg-gradient-to-b from-[#ffffff00] via-[#000000] via-[69%] to-[#ffffff30] opacity-30 overflow-hidden"></div>
-          <div className="h-full z-2 w-[4rem] bg-gradient-to-b from-[#ffffff00] via-[#000000] via-[69%] to-[#ffffff30] opacity-30 overflow-hidden"></div>
-          <div className="h-full z-2 w-[4rem] bg-gradient-to-b from-[#ffffff00] via-[#000000] via-[69%] to-[#ffffff30] opacity-30 overflow-hidden"></div>
-          <div className="h-full z-2 w-[4rem] bg-gradient-to-b from-[#ffffff00] via-[#000000] via-[69%] to-[#ffffff30] opacity-30 overflow-hidden"></div>
-          <div className="h-full z-2 w-[4rem] bg-gradient-to-b from-[#ffffff00] via-[#000000] via-[69%] to-[#ffffff30] opacity-30 overflow-hidden"></div>
-        </div>
-        <div className="w-[15rem] h-[15rem] bg-orange-500 absolute z-1 rounded-full bottom-0"></div>
-        <div className="w-[8rem] h-[5rem] bg-white absolute z-1 rounded-full bottom-0"></div>
-        <div className="w-[8rem] h-[5rem] bg-white absolute z-1 rounded-full bottom-0"></div>
-        <div className="w-[15rem] h-[15rem] bg-orange-500 absolute z-1 left-1/2 -translate-x-1/2 rounded-full bottom-40"></div>
-        <div className="w-[8rem] h-[5rem] bg-white absolute z-1 left-1/2 -translate-x-1/2 rounded-full bottom-40"></div>
-        <div className="w-[8rem] h-[5rem] bg-white absolute z-1 left-1/2 -translate-x-1/2 rounded-full bottom-40"></div>
-
-        <div className="bg-black text-white p-8 md:p-12 md:w-1/2 relative rounded-bl-3xl overflow-hidden">
-          <h1 className="text-3xl md:text-5xl font-medium leading-tight z-10 tracking-tight relative">
+        <div className="bg-black text-white h-[60vh] md:h-screen  md:w-1/2 relative overflow-hidden">
+         <div className="px-8 py-12 md:px-12">
+          <h1 className=" text-3xl md:text-5xl font-medium leading-tight z-10 tracking-tight relative">
             AI-Driven Websites for Car Dealerships
           </h1>
-          <p className="mt-4 text-lg opacity-90 max-w-md leading-relaxed">
-            Get your FREE demo website with 1 month of hosting included. 
+          <p className="mt-4  md:text-lg opacity-90 max-w-md leading-relaxed">
+            Get your FREE demo website with 1 month of hosting included.
             Transform your dealership with our cutting-edge AI technology.
           </p>
+         </div>
+          <UnicornScene
+            production={true} className=" z-20 " projectId="cbmTT38A0CcuYxeiyj5H" width={'100%'} height={'100%'} />
         </div>
 
         <div className="p-8 bg-white md:p-12 md:w-1/2 flex flex-col bg-secondary z-99 text-secondary-foreground">
@@ -162,9 +145,8 @@ export default function BookFreeDemo() {
                 type="text"
                 id="name"
                 placeholder="John Doe"
-                className={`text-sm w-full py-2 px-3 border rounded-lg focus:outline-none focus:ring-1 bg-white text-black focus:ring-orange-500 ${
-                  nameError ? "border-red-500" : "border-gray-300"
-                }`}
+                className={`text-sm w-full py-2 px-3 border rounded-lg focus:outline-none focus:ring-1 bg-white text-black focus:ring-orange-500 ${nameError ? "border-red-500" : "border-gray-300"
+                  }`}
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 aria-invalid={!!nameError}
@@ -187,9 +169,8 @@ export default function BookFreeDemo() {
                 type="email"
                 id="email"
                 placeholder="john@dealership.com"
-                className={`text-sm w-full py-2 px-3 border rounded-lg focus:outline-none focus:ring-1 bg-white text-black focus:ring-orange-500 ${
-                  emailError ? "border-red-500" : "border-gray-300"
-                }`}
+                className={`text-sm w-full py-2 px-3 border rounded-lg focus:outline-none focus:ring-1 bg-white text-black focus:ring-orange-500 ${emailError ? "border-red-500" : "border-gray-300"
+                  }`}
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 aria-invalid={!!emailError}
@@ -212,9 +193,8 @@ export default function BookFreeDemo() {
                 type="tel"
                 id="phone"
                 placeholder="+1 (555) 123-4567"
-                className={`text-sm w-full py-2 px-3 border rounded-lg focus:outline-none focus:ring-1 bg-white text-black focus:ring-orange-500 ${
-                  phoneError ? "border-red-500" : "border-gray-300"
-                }`}
+                className={`text-sm w-full py-2 px-3 border rounded-lg focus:outline-none focus:ring-1 bg-white text-black focus:ring-orange-500 ${phoneError ? "border-red-500" : "border-gray-300"
+                  }`}
                 value={phone}
                 onChange={(e) => setPhone(e.target.value.replace(/\D/g, ''))}
                 aria-invalid={!!phoneError}
@@ -251,7 +231,7 @@ export default function BookFreeDemo() {
               <label className="block text-sm font-medium mb-2">
                 Social Media Profiles (Optional)
               </label>
-              
+
               {/* Instagram */}
               <div className="flex items-center gap-2">
                 <div className="w-8 h-8 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full flex items-center justify-center">

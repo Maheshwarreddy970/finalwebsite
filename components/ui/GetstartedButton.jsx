@@ -1,6 +1,6 @@
 export const GetStartedButton = () => (
   <Link
-    href="https://cal.com/maheshwar-reddy-20/15min"
+    href="/getstarted"
     className="group hover:-translate-y-1 relative justify-center items-center flex gap-2 rounded-2xl border-2 shadow-xl border-neutral-950 bg-neutral-900 px-6 py-3 font-medium text-white duration-1000 hover:shadow-lg hover:shadow-neutral-950/50"
   >
     <span className="absolute left-0 top-0 size-full rounded-2xl border-neutral-500 shadow-inner shadow-white/60 group-active:shadow-white/10"></span>

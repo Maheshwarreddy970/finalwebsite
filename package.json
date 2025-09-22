@@ -70,6 +70,7 @@
     "swiper": "^11.2.10",
     "tailwind-merge": "^3.0.2",
     "tailwindcss-animate": "^1.0.7",
+    "unicornstudio-react": "^1.4.31",
     "uuid": "^11.1.0",
     "xlsx": "^0.18.5",
     "zod": "^3.24.2",

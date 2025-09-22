@@ -81,7 +81,7 @@ export default function LogoSection() {
 
       {/* CTA */}
       <Link
-        href="https://cal.com/maheshwar-reddy-20/15min"
+        href="/getstarted"
         className="group hover:-translate-y-1 relative justify-center items-center flex gap-2 rounded-2xl border-2 shadow-xl border-neutral-950 bg-neutral-900 px-6 py-3 font-medium text-white duration-1000 hover:shadow-lg hover:shadow-neutral-950/50"
       >
         <span className="absolute left-0 top-0 size-full rounded-2xl border-neutral-500 shadow-inner shadow-white/60 group-active:shadow-white/10"></span>
@@ -168,14 +168,14 @@ export default function LogoSection() {
           technologyLogos.map((logo, index) => (
             <div key={index} className="flex flex-col items-center mt-10 px-5">
               <div className=' h-14 overflow-hidden flex items-center justify-center'>
-              <Image src={logo.src} alt={logo.alt} width={150} height={80} className="mb-4 p-5 object-contain" />
+                <Image src={logo.src} alt={logo.alt} width={150} height={80} className="mb-4 p-5 object-contain" />
               </div>
-              <p className={cn("text-center text-lg font-bold text-neutral-700 max-w-md",instrumentserif.className)}>{logo.subtitle}</p>
+              <p className={cn("text-center text-lg font-bold text-neutral-700 max-w-md", instrumentserif.className)}>{logo.subtitle}</p>
             </div>
           ))
         }
       </div>
-     
+
     </section>
   )
 }
