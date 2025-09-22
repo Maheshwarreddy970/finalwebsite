@@ -109,7 +109,7 @@ export function AnimatedNavFramer() {
         whileTap={!isExpanded ? { scale: 0.95 } : {}}
         onClick={handleNavClick}
         className={cn(
-          "flex items-center justify-between overflow-hidden rounded-full border bg-background  shadow-lg backdrop-blur-sm h-12",
+          "flex items-center justify-between overflow-hidden bg-white rounded-full border  shadow-lg backdrop-blur-sm h-12",
           !isExpanded && "cursor-pointer justify-center"
         )}
       >
