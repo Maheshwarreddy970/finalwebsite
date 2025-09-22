@@ -216,7 +216,7 @@ export const CarsList = () => {
                 </TableHeader>
                 <TableBody>
                   {carsData.data.map((car, index) => (
-                    <TableRow key={car.id+index}>
+                    <TableRow key={index}>
                       <TableCell>
                         <div className="w-10 h-10 rounded-md overflow-hidden">
                           {car.images && car.images.length > 0 ? (

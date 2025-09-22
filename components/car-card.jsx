@@ -102,7 +102,6 @@ export const CarCard = ({ car, showwishlist = true, className }) => {
             {`$${car.price.toLocaleString()}`}
           </LineShadowText>
         </div>
-
         <div className="text-gray-600 mb-4 flex flex-wrap justify-center gap-1.5 items-center">
           <Tooltip>
             <TooltipTrigger asChild>
