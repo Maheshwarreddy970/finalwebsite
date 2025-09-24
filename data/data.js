@@ -1397,7 +1397,7 @@ export const clientDetails = {
   axautostx: {
     name: "axautostx",
     background: {
-      video: "https://akbwqmvsjmqzpegrqsgq.supabase.co/storage/v1/object/public/store/6e45bb5f0a0e09a75f13f9e51a8bf019_highest.mp4",
+      video: "https://onpgpvvbtqtonbzbuodl.supabase.co/storage/v1/object/public/store/203%20(1).mp4",
     },
     logo: "https://res.cloudinary.com/dbcodcumz/image/upload/v1756366337/6ee482db4bfec2895ed85e9de40e37e0x_udhive.avif",
     thumbnail: "https://res.cloudinary.com/dbcodcumz/image/upload/v1756366336/313036886_565345252258388_2649066299043970179_n_ypq9zq.png",
