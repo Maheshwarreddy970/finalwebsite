@@ -916,7 +916,7 @@ export const clientDetails = {
   clearchoiceautosales: {
     name: "clearchoiceautosales",
     background: {
-      video: "https://akbwqmvsjmqzpegrqsgq.supabase.co/storage/v1/object/public/store/FDownloader.Net_AQP8n0PiC8LMogvEHcqc5zmzhQRI8bEnpTHGLidMrWQbbomf9yfBn37cvea96ziaSIe5r5mmZ6mQbfJIIAfJIjVP-bTZs3EsPYD41JZUs5mkiQ_720p_(HD).mp4",
+      image:"https://onpgpvvbtqtonbzbuodl.supabase.co/storage/v1/object/public/store/hero4.jpg"
     },
     logo: "https://res.cloudinary.com/dbcodcumz/image/upload/v1756205196/logo_1_j6vo5u.png",
     thumbnail: "https://res.cloudinary.com/dbcodcumz/image/upload/v1756205195/344576633_625626516103541_3894116956870530940_n_qagcpl.jpg",
