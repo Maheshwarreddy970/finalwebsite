@@ -1,7 +1,17 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ["res.cloudinary.com"],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "res.cloudinary.com",
+      },
+      {
+        protocol: "https",
+        hostname: "onpgpvvbtqtonbzbuodl.supabase.co",
+        pathname: "/storage/v1/object/public/**",
+      },
+    ],
   },
   serverActions: {
     bodySizeLimit: "5mb",
