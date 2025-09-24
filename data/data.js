@@ -964,7 +964,7 @@ export const clientDetails = {
   everestmotorsinc: {
     name: "everestmotorsinc",
     background: {
-      video: "https://akbwqmvsjmqzpegrqsgq.supabase.co/storage/v1/object/public/store/Everest%20Motors%20is%20always%20ready%20and%20shiny.mp4",
+      video: "https://onpgpvvbtqtonbzbuodl.supabase.co/storage/v1/object/public/store/o.png",
     },
     logo: "https://res.cloudinary.com/dbcodcumz/image/upload/v1756208350/logo_2_ortety.png",
     thumbnail: "https://res.cloudinary.com/dbcodcumz/image/upload/v1756208308/486663372_1171501994988704_7740120371490313956_n_zvho3w.jpg",

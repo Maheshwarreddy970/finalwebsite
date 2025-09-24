@@ -71,8 +71,10 @@ export default function Herosection() {
               muted
               playsInline
               preload="metadata"
+              poster={clientInfo.background.poster}
               className="absolute top-0 left-0 h-full w-full object-cover"
             >
+              <source src={clientInfo.background.videoWebM} type="video/webm" />
               <source src={clientInfo.background.video} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
