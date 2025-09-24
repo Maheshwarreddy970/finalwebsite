@@ -1589,7 +1589,7 @@ export const clientDetails = {
   autoselectiondealer: {
     name: "autoselectiondealer",
     background: {
-      video: "https://akbwqmvsjmqzpegrqsgq.supabase.co/storage/v1/object/public/store/AUTO%20SELECTION%20INC%20-%20Auto%20Selection%20Inc.%20(720p,%20h264,%20youtube).mp4",
+      image: "https://onpgpvvbtqtonbzbuodl.supabase.co/storage/v1/object/public/store/482017793_1176789681119152_1108889550795759479_n.jpg",
     },
     logo: "https://res.cloudinary.com/dbcodcumz/image/upload/v1756387014/Logo117291.d216b203_mhoysw.png",
     thumbnail: "https://res.cloudinary.com/dbcodcumz/image/upload/v1756387014/274347471_3036029969972056_3145709357539843567_n_y6og2v.jpg",
