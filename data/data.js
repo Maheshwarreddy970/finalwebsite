@@ -1349,7 +1349,7 @@ export const clientDetails = {
   hillthrillmotoplex: {
     name: "hillthrillmotoplex",
     background: {
-      video: "https://akbwqmvsjmqzpegrqsgq.supabase.co/storage/v1/object/public/store/get.mp4",
+      image: "https://onpgpvvbtqtonbzbuodl.supabase.co/storage/v1/object/public/store/381151977_337877515303990_5977202547589257518_n%20(1).jpg",
     },
     logo: "https://res.cloudinary.com/dbcodcumz/image/upload/v1756314115/hillthrillmotoplex-logo_tiu6xu.png",
     thumbnail: "https://res.cloudinary.com/dbcodcumz/image/upload/v1756314122/381151977_337877515303990_5977202547589257518_n_ca6zdu.jpg",
