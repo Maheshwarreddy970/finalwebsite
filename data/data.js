@@ -1541,7 +1541,7 @@ export const clientDetails = {
   amotorcompany: {
     name: "amotorcompany",
     background: {
-      video: "https://akbwqmvsjmqzpegrqsgq.supabase.co/storage/v1/object/public/store/Untitled%20video%20-%20Made%20with%20Clipchamp%20(1).mp4",
+      image:"https://onpgpvvbtqtonbzbuodl.supabase.co/storage/v1/object/public/store/a6ca68c244ba854bdd92b37302a35cde.jpg"
     },
     logo: "https://res.cloudinary.com/dbcodcumz/image/upload/v1756381572/a-motors-sales-and-finance-logo_sbh5cy.png",
     thumbnail: "https://res.cloudinary.com/dbcodcumz/image/upload/v1756381522/485645469_1042304144599603_5481539859998731708_n_pjeszn.jpg",
