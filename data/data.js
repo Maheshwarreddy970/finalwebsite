@@ -1253,7 +1253,7 @@ export const clientDetails = {
   miamigomotors: {
     name: "miamigomotors",
     background: {
-      video: "https://akbwqmvsjmqzpegrqsgq.supabase.co/storage/v1/object/public/store/snapsave-app_491004534070564_hd.mp4",
+      video: "https://onpgpvvbtqtonbzbuodl.supabase.co/storage/v1/object/public/store/AQOH-RBmgUJ0YGr791bJt-HvHWCP4XQvJIpmbiGpBawYhlIUgXlvTE7sFhvFV9syB6w1-iwDIgtA1AoMnawtogxwJbnvyrJD6u321hWMTF6Ubw.mp4",
     },
     logo: "https://res.cloudinary.com/dbcodcumz/image/upload/v1756296706/logo_1_uycawe.png",
     thumbnail: "https://res.cloudinary.com/dbcodcumz/image/upload/v1756296704/images_gybuzd.jpg",
