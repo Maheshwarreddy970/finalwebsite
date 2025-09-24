@@ -1637,7 +1637,7 @@ export const clientDetails = {
   shopwilsons: {
     name: "shopwilsons",
     background: {
-      video: "https://akbwqmvsjmqzpegrqsgq.supabase.co/storage/v1/object/public/store/Wilsons%20Approval%20Centre%202022%20-%20Mark%20Wilson's%20Better%20Used%20Cars%20(1080p,%20h264,%20youtube).mp4",
+      video: "https://onpgpvvbtqtonbzbuodl.supabase.co/storage/v1/object/public/store/snapsave-app_1929103777431820_hd.mp4",
     },
     logo: "https://res.cloudinary.com/dbcodcumz/image/upload/v1756529932/logo-head-mobile_rjq2d9.png",
     thumbnail: "https://res.cloudinary.com/dbcodcumz/image/upload/v1756529932/486346520_1191918196274034_7254672405022322295_n_smamup.jpg",
