@@ -1685,7 +1685,7 @@ export const clientDetails = {
   simpleauto: {
     name: "simpleauto",
     background: {
-      video: "https://akbwqmvsjmqzpegrqsgq.supabase.co/storage/v1/object/public/store/AQNhxQK2F9MCFAVkT0J1lKxCe-J5R8P1PdOqswfc0xteQR39Lx1inSc7SCfWhk8OwXXEUEpvYNenW20ZIEIbhUXDQDLzblC-K_hLLBc.mp4",
+      image:"https://res.cloudinary.com/dpsdgxeqt/image/upload/v1758792260/480257166_9417289084995543_3563321231303310344_n_bdiemr.jpg"
     },
     logo: "https://res.cloudinary.com/dbcodcumz/image/upload/v1756555597/pngtree_1756554794718_Simple-Auto-logo-1_avuhdw.png",
     thumbnail: "https://res.cloudinary.com/dbcodcumz/image/upload/v1756555596/531207869_18475531558072958_2868198984313358562_n_e99txy.jpg",
