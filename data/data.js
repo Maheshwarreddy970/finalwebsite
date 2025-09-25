@@ -2261,7 +2261,7 @@ export const clientDetails = {
   graceautopa: {
     name: "graceautopa",
     background: {
-      video: "https://akbwqmvsjmqzpegrqsgq.supabase.co/storage/v1/object/public/store/Grace%20Auto%20Group%20-%20Philadelphia's%20Leading%20Pre-Owned%20Dealership%20-%20Grace%20Auto%20Group%20(720p,%20h264,%20youtube).mp4",
+    image: "https://res.cloudinary.com/dbcodcumz/image/upload/v1756713112/Grace_pic_1_sx4tg8.webp",
     },
     logo: "https://res.cloudinary.com/dbcodcumz/image/upload/v1756712605/grace-auto-group-logo_nc5xh6.webp",
     thumbnail: "https://res.cloudinary.com/dbcodcumz/image/upload/v1756713112/Grace_pic_1_sx4tg8.webp",
