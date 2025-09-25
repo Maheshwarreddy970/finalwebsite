@@ -1781,7 +1781,7 @@ export const clientDetails = {
   carz4usauto: {
     name: "carz4usauto",
     background: {
-      video: "https://akbwqmvsjmqzpegrqsgq.supabase.co/storage/v1/object/public/store/Untitled%20video%20-%20Made%20with%20Clipchamp%20(3).mp4",
+      image:"https://res.cloudinary.com/dpsdgxeqt/image/upload/v1758790108/538364700_1333419732119614_8910890761750252333_n_ulidkh.png"
     },
     logo: "https://res.cloudinary.com/dbcodcumz/image/upload/v1756639145/carz4us-logo_fedijm.png",
     thumbnail: "https://res.cloudinary.com/dbcodcumz/image/upload/v1756639144/537019359_1328549829273271_1628236251911238902_n_vyqpwy.jpg",
