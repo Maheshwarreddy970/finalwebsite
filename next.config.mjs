@@ -11,6 +11,11 @@ const nextConfig = {
         hostname: "onpgpvvbtqtonbzbuodl.supabase.co",
         pathname: "/storage/v1/object/public/**",
       },
+      {
+        protocol: "https",
+        hostname: "alt.tailus.io", // 👈 allow Tailus images
+        pathname: "/images/**",    // restrict only to `/images/` paths
+      },
     ],
   },
   serverActions: {

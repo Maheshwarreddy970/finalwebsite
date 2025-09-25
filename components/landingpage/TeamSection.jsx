@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '../ui/landingcarousel';
 import { cn } from '@/lib/utils'
 import { Philosopher, Great_Vibes } from 'next/font/google'
+import Image from 'next/image';
 
 const philosopher = Philosopher({ subsets: ['latin'], weight: ["400", '700'] })
 const greatVibes = Great_Vibes({ subsets: ['latin'], weight: ["400"] })
@@ -55,11 +56,11 @@ export default function TeamSection() {
                         className={cn('  text-center  text-4xl md:text-6xl font-semibold text-black  ', philosopher.className)}
                     >
                         Meet Our Dedicated <span className={greatVibes.className}>Team</span> <br></br> Committed to Your Satisfaction
-                              
+
                     </div>
-                        <p className=' max-w-2xl mt-2 mx-auto text-center '>Our experienced professionals are dedicated to providing exceptional service and helping you find the perfect vehicle. From sales to service, we're here to make your car buying experience smooth and enjoyable.</p>
+                    <p className=' max-w-2xl mt-2 mx-auto text-center '>Our experienced professionals are dedicated to providing exceptional service and helping you find the perfect vehicle. From sales to service, we're here to make your car buying experience smooth and enjoyable.</p>
                 </div>
-                
+
                 <Carousel
                     opts={{
                         align: "start",
@@ -72,12 +73,13 @@ export default function TeamSection() {
 
                                 <div
                                     className="group overflow-hidden">
-                                    <img
-                                        className="h-96 w-full rounded-md object-cover object-top grayscale transition-all duration-500 hover:grayscale-0 group-hover:h-[22.5rem] group-hover:rounded-xl"
+                                    <Image
                                         src={member.avatar}
                                         alt="team member"
-                                        width="826"
-                                        height="1239"
+                                        width={826}
+                                        height={1239}
+                                        className="h-96 w-full rounded-md object-cover object-top grayscale transition-all duration-500 hover:grayscale-0 group-hover:h-[22.5rem] group-hover:rounded-xl"
+                                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 826px"
                                     />
                                     <div className="px-2 pt-2 sm:pb-0 sm:pt-4">
                                         <div className="flex justify-between">

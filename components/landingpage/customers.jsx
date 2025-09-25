@@ -42,7 +42,7 @@ export default function Customerstories() {
                         <CarouselItem key={index} className="basis-full sm:basis-1/2 md:basis-2/3 lg:basis-[25%]">
                             <div>
                                 <div className=' h-96 rounded-4xl shadow  overflow-hidden border border-neutral-300   bg-white p-1.5'>
-                                    <Image src={image} alt="Image" width={1920} height={1080} priority={false} loading="lazy" className="w-full h-full rounded-3xl overflow-hidden  object-cover"></Image>
+                                    <Image src={image} alt="Image" width={1920} height={1080} priority={false} loading="lazy" className="w-full h-full rounded-3xl overflow-hidden  object-cover" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 75vw, 1920px"></Image>
                                 </div>
                                 <div className=' px-6 mt-2 items-center flex justify-between bg-white '>
                                     <div className=' text-lg text-neutral-600 hover:text-black transition-all duration-300 ease-in-out hover:-translate-y-1 '>

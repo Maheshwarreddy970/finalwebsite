@@ -916,7 +916,7 @@ export const clientDetails = {
   clearchoiceautosales: {
     name: "clearchoiceautosales",
     background: {
-      image:"https://onpgpvvbtqtonbzbuodl.supabase.co/storage/v1/object/public/store/hero4.jpg"
+      image: "https://onpgpvvbtqtonbzbuodl.supabase.co/storage/v1/object/public/store/hero4.jpg"
     },
     logo: "https://res.cloudinary.com/dbcodcumz/image/upload/v1756205196/logo_1_j6vo5u.png",
     thumbnail: "https://res.cloudinary.com/dbcodcumz/image/upload/v1756205195/344576633_625626516103541_3894116956870530940_n_qagcpl.jpg",
@@ -1541,7 +1541,7 @@ export const clientDetails = {
   amotorcompany: {
     name: "amotorcompany",
     background: {
-      image:"https://onpgpvvbtqtonbzbuodl.supabase.co/storage/v1/object/public/store/a6ca68c244ba854bdd92b37302a35cde.jpg"
+      image: "https://onpgpvvbtqtonbzbuodl.supabase.co/storage/v1/object/public/store/a6ca68c244ba854bdd92b37302a35cde.jpg"
     },
     logo: "https://res.cloudinary.com/dbcodcumz/image/upload/v1756381572/a-motors-sales-and-finance-logo_sbh5cy.png",
     thumbnail: "https://res.cloudinary.com/dbcodcumz/image/upload/v1756381522/485645469_1042304144599603_5481539859998731708_n_pjeszn.jpg",
@@ -1685,7 +1685,7 @@ export const clientDetails = {
   simpleauto: {
     name: "simpleauto",
     background: {
-      image:"https://res.cloudinary.com/dpsdgxeqt/image/upload/v1758792260/480257166_9417289084995543_3563321231303310344_n_bdiemr.jpg"
+      image: "https://res.cloudinary.com/dpsdgxeqt/image/upload/v1758792260/480257166_9417289084995543_3563321231303310344_n_bdiemr.jpg"
     },
     logo: "https://res.cloudinary.com/dbcodcumz/image/upload/v1756555597/pngtree_1756554794718_Simple-Auto-logo-1_avuhdw.png",
     thumbnail: "https://res.cloudinary.com/dbcodcumz/image/upload/v1756555596/531207869_18475531558072958_2868198984313358562_n_e99txy.jpg",
@@ -1781,7 +1781,7 @@ export const clientDetails = {
   carz4usauto: {
     name: "carz4usauto",
     background: {
-      image:"https://res.cloudinary.com/dpsdgxeqt/image/upload/v1758790108/538364700_1333419732119614_8910890761750252333_n_ulidkh.png"
+      image: "https://res.cloudinary.com/dpsdgxeqt/image/upload/v1758790108/538364700_1333419732119614_8910890761750252333_n_ulidkh.png"
     },
     logo: "https://res.cloudinary.com/dbcodcumz/image/upload/v1756639145/carz4us-logo_fedijm.png",
     thumbnail: "https://res.cloudinary.com/dbcodcumz/image/upload/v1756639144/537019359_1328549829273271_1628236251911238902_n_vyqpwy.jpg",
@@ -2261,7 +2261,7 @@ export const clientDetails = {
   graceautopa: {
     name: "graceautopa",
     background: {
-    image: "https://res.cloudinary.com/dbcodcumz/image/upload/v1756713112/Grace_pic_1_sx4tg8.webp",
+      image: "https://res.cloudinary.com/dbcodcumz/image/upload/v1756713112/Grace_pic_1_sx4tg8.webp",
     },
     logo: "https://res.cloudinary.com/dbcodcumz/image/upload/v1756712605/grace-auto-group-logo_nc5xh6.webp",
     thumbnail: "https://res.cloudinary.com/dbcodcumz/image/upload/v1756713112/Grace_pic_1_sx4tg8.webp",
@@ -3133,10 +3133,10 @@ export const clientDetails = {
     mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d443006.829588406!2d-95.79084602097166!3d29.83568571432901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640b8b4488d8501%3A0xca0d02def365053b!2sHouston%2C%20TX%2C%20USA!5e0!3m2!1sen!2sin!4v1755955723731!5m2!1sen!2sin",
     images: [
       "https://res.cloudinary.com/drdvulk7o/image/upload/v1758803277/unnamed_2_jsbjhn.jpg",
-"https://res.cloudinary.com/drdvulk7o/image/upload/v1758803276/unnamed_1_muvdvn.jpg",
-"https://res.cloudinary.com/drdvulk7o/image/upload/v1758803277/unnamed_a2kpy1.jpg",
-"https://res.cloudinary.com/drdvulk7o/image/upload/v1758803276/unnamed_3_zhjit0.jpg",
-"https://res.cloudinary.com/drdvulk7o/image/upload/v1758803275/472478819_18483678925017813_33187399200034812_n_m4wske.jpg"
+      "https://res.cloudinary.com/drdvulk7o/image/upload/v1758803276/unnamed_1_muvdvn.jpg",
+      "https://res.cloudinary.com/drdvulk7o/image/upload/v1758803277/unnamed_a2kpy1.jpg",
+      "https://res.cloudinary.com/drdvulk7o/image/upload/v1758803276/unnamed_3_zhjit0.jpg",
+      "https://res.cloudinary.com/drdvulk7o/image/upload/v1758803275/472478819_18483678925017813_33187399200034812_n_m4wske.jpg"
     ],
     socialmedia:
       [
@@ -3181,10 +3181,10 @@ export const clientDetails = {
     mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d443006.829588406!2d-95.79084602097166!3d29.83568571432901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640b8b4488d8501%3A0xca0d02def365053b!2sHouston%2C%20TX%2C%20USA!5e0!3m2!1sen!2sin!4v1755955723731!5m2!1sen!2sin",
     images: [
       "https://res.cloudinary.com/drdvulk7o/image/upload/v1758805296/unnamed_mggtms.jpg",
-"https://res.cloudinary.com/drdvulk7o/image/upload/v1758805295/2021-05-22_srt7vp.jpg",
-"https://res.cloudinary.com/drdvulk7o/image/upload/v1758805295/2021-07-20_l1x0k3.jpg",
-"https://res.cloudinary.com/drdvulk7o/image/upload/v1758805296/2025-01-29_kurfvp.png",
-"https://res.cloudinary.com/drdvulk7o/image/upload/v1758805294/2024-05-16_w2nnkv.jpg"
+      "https://res.cloudinary.com/drdvulk7o/image/upload/v1758805295/2021-05-22_srt7vp.jpg",
+      "https://res.cloudinary.com/drdvulk7o/image/upload/v1758805295/2021-07-20_l1x0k3.jpg",
+      "https://res.cloudinary.com/drdvulk7o/image/upload/v1758805296/2025-01-29_kurfvp.png",
+      "https://res.cloudinary.com/drdvulk7o/image/upload/v1758805294/2024-05-16_w2nnkv.jpg"
 
     ],
     socialmedia:
@@ -3230,10 +3230,10 @@ export const clientDetails = {
     mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d443006.829588406!2d-95.79084602097166!3d29.83568571432901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640b8b4488d8501%3A0xca0d02def365053b!2sHouston%2C%20TX%2C%20USA!5e0!3m2!1sen!2sin!4v1755955723731!5m2!1sen!2sin",
     images: [
       "https://res.cloudinary.com/drdvulk7o/image/upload/v1758807048/unnamed_1_d7vjgx.jpg",
-"https://res.cloudinary.com/drdvulk7o/image/upload/v1758807048/unnamed_ssguon.jpg",
-"https://res.cloudinary.com/drdvulk7o/image/upload/v1758807047/2023-03-07_nx0biv.jpg",
-"https://res.cloudinary.com/drdvulk7o/image/upload/v1758807047/tempImagemSl4bz_wgdt40.jpg",
-"https://res.cloudinary.com/drdvulk7o/image/upload/v1758807046/2023-03-07_1_fyzywz.jpg"
+      "https://res.cloudinary.com/drdvulk7o/image/upload/v1758807048/unnamed_ssguon.jpg",
+      "https://res.cloudinary.com/drdvulk7o/image/upload/v1758807047/2023-03-07_nx0biv.jpg",
+      "https://res.cloudinary.com/drdvulk7o/image/upload/v1758807047/tempImagemSl4bz_wgdt40.jpg",
+      "https://res.cloudinary.com/drdvulk7o/image/upload/v1758807046/2023-03-07_1_fyzywz.jpg"
 
     ],
     socialmedia:
@@ -3249,10 +3249,10 @@ export const clientDetails = {
         url: "https://www.instagram.com/reel/DN1iWkUZKfV/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       },
       {
-        url: "https://www.instagram.com/reel/DKIoz4fy_Lt/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+        url: "https://www.instagram.com/reel/DIo4Jo1zh9s/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       },
       {
-        url: "https://www.instagram.com/reel/DD0qS89vuNl/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+        url: "https://www.instagram.com/reel/DEQ4IsOS5jw/?utm_source=ig_web_copy_link",
       },
       {
         url: "https://www.instagram.com/reel/DEQ4IsOS5jw/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
@@ -3271,8 +3271,6 @@ export const clientDetails = {
 };
 
 const dummy = {
-
-
   c: {
     name: "",
     background: {
