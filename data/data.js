@@ -3122,6 +3122,54 @@ export const clientDetails = {
       address: "1234 Maplewood Drive, Springfield|Driving Directions"
     }
   },
+  wellsautogroup: {
+    name: "wellsautogroup",
+    background: {
+      video: "https://scawtlrfhdehoibandjd.supabase.co/storage/v1/object/public/maheshwar/d9078bc60a0e09a710002382a2425b74_highest.mp4",
+    },
+    logo: "https://res.cloudinary.com/drdvulk7o/image/upload/v1758803275/c0d1013597b36a708311531ac08ecc1fx_apq8tn.avif",
+    thumbnail: "https://res.cloudinary.com/drdvulk7o/image/upload/v1758803275/fe8243511ce34e7cb2ad98662f5b790c_n2ogoy.avif",
+    location: "1234 Maplewood Drive, Springfield|Driving Directions",
+    mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d443006.829588406!2d-95.79084602097166!3d29.83568571432901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640b8b4488d8501%3A0xca0d02def365053b!2sHouston%2C%20TX%2C%20USA!5e0!3m2!1sen!2sin!4v1755955723731!5m2!1sen!2sin",
+    images: [
+      "https://res.cloudinary.com/drdvulk7o/image/upload/v1758803277/unnamed_2_jsbjhn.jpg",
+"https://res.cloudinary.com/drdvulk7o/image/upload/v1758803276/unnamed_1_muvdvn.jpg",
+"https://res.cloudinary.com/drdvulk7o/image/upload/v1758803277/unnamed_a2kpy1.jpg",
+"https://res.cloudinary.com/drdvulk7o/image/upload/v1758803276/unnamed_3_zhjit0.jpg",
+"https://res.cloudinary.com/drdvulk7o/image/upload/v1758803275/472478819_18483678925017813_33187399200034812_n_m4wske.jpg"
+    ],
+    socialmedia:
+      [
+        { name: "YouTube", link: "https://www.youtube.com" },
+        { name: "Instagram", link: "https://www.instagram.com" },
+        { name: "Facebook", link: "https://www.facebook.com" },
+        { name: "TikTok", link: "https://www.tiktok.com" }
+      ],
+
+    mediaItems: [
+      {
+        url: "https://www.instagram.com/reel/DH4tcB4MvJ0/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DPAEWv5jk_e/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DO9jdZojtjJ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DO1qnYEjmHQ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DOt_Nh2Dj0e/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+    ],
+
+    contact: {
+      phone: "123-456-7891",
+      email: "sales@example.com",
+      address: "1234 Maplewood Drive, Springfield|Driving Directions"
+    }
+  }
 };
 
 const dummy = {

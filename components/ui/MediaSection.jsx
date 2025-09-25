@@ -5,6 +5,7 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 import { InstagramEmbed } from 'react-social-media-embed'
 import { cn } from '@/lib/utils'
 import { Philosopher, Great_Vibes } from 'next/font/google'
+import { useClientStore } from '@/store/useClientStore';
 
 
 const philosopher = Philosopher({ subsets: ['latin'], weight: ["400", '700'] })
@@ -28,6 +29,7 @@ export default function MediaSection() {
       url: "https://www.instagram.com/p/DOqmssBEvFK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
     },
   ];
+  const clientInfo = useClientStore((state) => state.clientInfo)
 
   return (
     <div className="px-3 md:px-10  lg:mt-16 relative">
@@ -50,7 +52,7 @@ export default function MediaSection() {
         className="w-full relative mt-14 md:mt-0"
       >
         <CarouselContent >
-          {mediaItems.map((item, index) => {
+          {clientInfo?.mediaItems.map((item, index) => {
             const isReel = item.url.includes("/reel/");
             const containerHeight = isReel ? "35.3rem" : "26.5rem";
             const embedHeight = isReel ? "34rem" : "28.5rem";
