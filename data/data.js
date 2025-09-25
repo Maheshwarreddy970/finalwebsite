@@ -51,7 +51,7 @@ export const clientDetails = {
   supercarmiamigroup: {
     name: "supercarmiamigroup",
     background: {
-      image: "/1359276.jpeg"
+      image: "/Rent-A-Car-for-Family-Road-Trip.jpg"
     },
     logo: "https://res.cloudinary.com/dbcodcumz/image/upload/v1754909055/web-slogan_Mesa-de-trabajo-1_gijxpo.png",
     thumbnail: "https://res.cloudinary.com/dbcodcumz/image/upload/v1755863843/509432044_1401790888073697_5163818885904638990_n_a4uibp.jpg",
@@ -580,7 +580,7 @@ export const clientDetails = {
   durrettmotorcompany: {
     name: "durrettmotorcompany",
     background: {
-      image: "/1359276.jpeg"
+      image: "/Rent-A-Car-for-Family-Road-Trip.jpg"
     },
     logo: "https://res.cloudinary.com/dbcodcumz/image/upload/v1756017020/ca104e80c163a9fe83013a44d1ca6c2ex_tr3ps2.avif",
     thumbnail: "https://res.cloudinary.com/dbcodcumz/image/upload/v1756017020/3904dd2871244b68975b7b25695e45a4_pew6tx.jpg",
@@ -628,7 +628,7 @@ export const clientDetails = {
   paisanosautosales: {
     name: "paisanosautosales",
     background: {
-      image: "/1359276.jpeg"
+      image: "/Rent-A-Car-for-Family-Road-Trip.jpg"
     },
     logo: "https://res.cloudinary.com/dbcodcumz/image/upload/v1756024915/Untitled_Project-removebg-preview_xuanmp.png",
     thumbnail: "https://res.cloudinary.com/dbcodcumz/image/upload/v1756024416/493863967_1241786767951628_6961898935276585539_n_zfuvkb.jpg",
@@ -1109,7 +1109,7 @@ export const clientDetails = {
   ultimatems: {
     name: "ultimatems",
     background: {
-      image: "/1359276.jpeg"
+      image: "/Rent-A-Car-for-Family-Road-Trip.jpg"
     },
     logo: "https://res.cloudinary.com/dbcodcumz/image/upload/v1756227838/logo-theme_slfoez.png",
     thumbnail: "https://res.cloudinary.com/dbcodcumz/image/upload/v1756227837/327208131_968972284513403_5234327057343318918_n_let5jq.png",
@@ -1157,7 +1157,7 @@ export const clientDetails = {
   exeterauto: {
     name: "exeterauto",
     background: {
-      image: "/1359276.jpeg"
+      image: "/Rent-A-Car-for-Family-Road-Trip.jpg"
     },
     logo: "https://res.cloudinary.com/dbcodcumz/image/upload/v1756289652/pngtree_1756288947649_271135328_342319231042873_1826461196274763679_n_qbselp.png",
     thumbnail: "https://res.cloudinary.com/dbcodcumz/image/upload/v1756289207/480262307_930514119270680_6921598769344051092_n_awpntu.jpg",
@@ -1205,7 +1205,7 @@ export const clientDetails = {
   fredyusedcarsales: {
     name: "fredyusedcarsales",
     background: {
-      image: "/1359276.jpeg"
+      image: "/Rent-A-Car-for-Family-Road-Trip.jpg"
     },
     logo: "https://res.cloudinary.com/dbcodcumz/image/upload/v1756291342/logo.b4aeb33b_k6vjsf.png",
     thumbnail: "https://res.cloudinary.com/dbcodcumz/image/upload/v1756291341/412005872_859372509526308_4617945623747287327_n_rcs8q9.jpg",
@@ -1493,7 +1493,7 @@ export const clientDetails = {
   americasautofinancial: {
     name: "americasautofinancial",
     background: {
-      image: "/1359276.jpeg"
+      image: "/Rent-A-Car-for-Family-Road-Trip.jpg"
     },
     logo: "https://res.cloudinary.com/dbcodcumz/image/upload/v1756380413/pngtree_1756380324174_aaf-logo-w400_cjfni8.png",
     thumbnail: "https://res.cloudinary.com/dbcodcumz/image/upload/v1756380413/images_b1n2vd.png",
@@ -1829,7 +1829,7 @@ export const clientDetails = {
   foreignautoimports: {
     name: "foreignautoimports",
     background: {
-      image: "/1359276.jpeg"
+      image: "/Rent-A-Car-for-Family-Road-Trip.jpg"
     },
     logo: "https://res.cloudinary.com/dbcodcumz/image/upload/v1756643726/cropped-logo3_owrsqf.png",
     thumbnail: "https://res.cloudinary.com/dbcodcumz/image/upload/v1756643725/28361ebd-9917-404c-b075-4daf38fe8942_ljqoh4.jpg",
@@ -2021,7 +2021,7 @@ export const clientDetails = {
   onezeroonemotors: {
     name: "onezeroonemotors",
     background: {
-      image: "/1359276.jpeg"
+      image: "/Rent-A-Car-for-Family-Road-Trip.jpg"
     },
     logo: "https://res.cloudinary.com/dbcodcumz/image/upload/v1756659970/101-motors-logo_ew1pcd.webp",
     thumbnail: "https://res.cloudinary.com/dbcodcumz/image/upload/v1756659971/101-motors-og-2_e3t49y.webp",
@@ -2117,7 +2117,7 @@ export const clientDetails = {
   discountmotorstexas: {
     name: "discountmotorstexas",
     background: {
-      image: "/1359276.jpeg"
+      image: "/Rent-A-Car-for-Family-Road-Trip.jpg"
     },
     logo: "https://res.cloudinary.com/dbcodcumz/image/upload/v1756708201/logo-discount-motors-texas_apgmrt.png",
     thumbnail: "https://res.cloudinary.com/dbcodcumz/image/upload/v1756708379/slide-you-are-family_lq8vye.webp",
@@ -2406,7 +2406,7 @@ export const clientDetails = {
   keystoneautogroup: {
     name: "keystoneautogroup",
     background: {
-      image: "/1359276.jpeg"
+      image: "/Rent-A-Car-for-Family-Road-Trip.jpg"
     },
     logo: "https://res.cloudinary.com/dbcodcumz/image/upload/v1756721476/cropped-201907-b62cb7e34a794315952d6047cacce793-1_pl02ob.jpg",
     thumbnail: "https://res.cloudinary.com/dbcodcumz/image/upload/v1756721476/481254108_1295997688971110_6399575972784777625_n_plibtz.jpg",
@@ -2454,7 +2454,7 @@ export const clientDetails = {
   standardmotors: {
     name: "standardmotors",
     background: {
-      image: "/1359276.jpeg"
+      image: "/Rent-A-Car-for-Family-Road-Trip.jpg"
     },
     logo: "https://res.cloudinary.com/dbcodcumz/image/upload/v1756723637/cropped-Logo33782.abfa856e-1_mrqakj.png",
     thumbnail: "https://res.cloudinary.com/dbcodcumz/image/upload/v1756723636/482219970_641063842039102_7133751383629833188_n_onzsd1.jpg",
@@ -2502,7 +2502,7 @@ export const clientDetails = {
   betancourtautosales: {
     name: "betancourtautosales",
     background: {
-      image: "/1359276.jpeg"
+      image: "/Rent-A-Car-for-Family-Road-Trip.jpg"
     },
     logo: "https://res.cloudinary.com/dbcodcumz/image/upload/v1756725375/cropped-betancourt-auto-main-w300_mao3go.png",
     thumbnail: "https://res.cloudinary.com/dbcodcumz/image/upload/v1756725374/516769143_24895665226687609_71011449899629155_n_ttiafz.jpg",
@@ -2550,7 +2550,7 @@ export const clientDetails = {
   wepaythemax: {
     name: "wepaythemax",
     background: {
-      image: "/1359276.jpeg"
+      image: "/Rent-A-Car-for-Family-Road-Trip.jpg"
     },
     logo: "https://res.cloudinary.com/dbcodcumz/image/upload/v1756732180/autobuy_PrimaryLogo_TM-2048x697_btjdbr.webp",
     thumbnail: "https://res.cloudinary.com/dbcodcumz/image/upload/v1756732173/autobuy_we_pay_the_max_cover_y9rme4.jpg",
@@ -2646,7 +2646,7 @@ export const clientDetails = {
   rollingwheelsinc: {
     name: "rollingwheelsinc",
     background: {
-      image: "/1359276.jpeg"
+      image: "/Rent-A-Car-for-Family-Road-Trip.jpg"
     },
     logo: "https://res.cloudinary.com/dbcodcumz/image/upload/v1756734144/logo1_dk9o8w.png",
     thumbnail: "https://res.cloudinary.com/dbcodcumz/image/upload/v1756734142/533484995_1364846901895637_450858568397600778_n_fqwuif.jpg",
@@ -2838,7 +2838,7 @@ export const clientDetails = {
   familiamotorgroup: {
     name: "familiamotorgroup",
     background: {
-      image: "/1359276.jpeg"
+      image: "/Rent-A-Car-for-Family-Road-Trip.jpg"
     },
     logo: "https://res.cloudinary.com/dbcodcumz/image/upload/v1756742977/logo_familia_98_x_98png_3_tndg9t.avif",
     thumbnail: "https://res.cloudinary.com/dbcodcumz/image/upload/v1756743049/305206015_509666547836179_3163456848265072191_n_qdehhd.jpg",
@@ -2934,7 +2934,7 @@ export const clientDetails = {
   carsbuckny: {
     name: "carsbuckny",
     background: {
-      image: "/1359276.jpeg"
+      image: "/Rent-A-Car-for-Family-Road-Trip.jpg"
     },
     logo: "https://res.cloudinary.com/dbcodcumz/image/upload/v1756811501/logo_2_pfj715.png",
     thumbnail: "https://res.cloudinary.com/dbcodcumz/image/upload/v1756811500/277672504_380480484084423_1496268266085288513_n_jbrqpn.jpg",
@@ -3030,7 +3030,7 @@ export const clientDetails = {
   carwarriorsllc: {
     name: "carwarriorsllc",
     background: {
-      image: "/1359276.jpeg"
+      image: "/Rent-A-Car-for-Family-Road-Trip.jpg"
     },
     logo: "https://res.cloudinary.com/dbcodcumz/image/upload/v1756814310/cw-logo-w300_rsjmfg.png",
     thumbnail: "https://res.cloudinary.com/dbcodcumz/image/upload/v1756814296/324845149_155963153889512_4107477575606445235_n_kfbxaj.jpg",
