@@ -1733,7 +1733,7 @@ export const clientDetails = {
   truckmaxoftexas: {
     name: "truckmaxoftexas",
     background: {
-      image: "https://akbwqmvsjmqzpegrqsgq.supabase.co/storage/v1/object/public/store/bradley-dunn-6VbVMrdbC14-unsplash.jpg",
+      image: "https://res.cloudinary.com/dpsdgxeqt/image/upload/v1758793397/313013113_446680457596837_7908606267627505496_n_eczgx4.png",
     },
     logo: "https://res.cloudinary.com/dbcodcumz/image/upload/v1756557290/TruckMax-Logo_l2whkc.webp",
     thumbnail: "https://res.cloudinary.com/dbcodcumz/image/upload/v1756557290/313013113_446680457596837_7908606267627505496_n_ujl4bk.png",
