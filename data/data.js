@@ -3169,7 +3169,105 @@ export const clientDetails = {
       email: "sales@example.com",
       address: "1234 Maplewood Drive, Springfield|Driving Directions"
     }
-  }
+  },
+  vantageautogroup: {
+    name: "vantageautogroup",
+    background: {
+      video: "https://scawtlrfhdehoibandjd.supabase.co/storage/v1/object/public/maheshwar/videoplayback.mp4",
+    },
+    logo: "https://res.cloudinary.com/drdvulk7o/image/upload/v1758805295/67ec89e3f0f750b15a65608e_logo_vantage-auto-group_uh0wu7.png",
+    thumbnail: "https://res.cloudinary.com/drdvulk7o/image/upload/v1758805296/493262297_1269588258505028_438993826186313905_n_f9k46c.jpg",
+    location: "1234 Maplewood Drive, Springfield|Driving Directions",
+    mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d443006.829588406!2d-95.79084602097166!3d29.83568571432901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640b8b4488d8501%3A0xca0d02def365053b!2sHouston%2C%20TX%2C%20USA!5e0!3m2!1sen!2sin!4v1755955723731!5m2!1sen!2sin",
+    images: [
+      "https://res.cloudinary.com/drdvulk7o/image/upload/v1758805296/unnamed_mggtms.jpg",
+"https://res.cloudinary.com/drdvulk7o/image/upload/v1758805295/2021-05-22_srt7vp.jpg",
+"https://res.cloudinary.com/drdvulk7o/image/upload/v1758805295/2021-07-20_l1x0k3.jpg",
+"https://res.cloudinary.com/drdvulk7o/image/upload/v1758805296/2025-01-29_kurfvp.png",
+"https://res.cloudinary.com/drdvulk7o/image/upload/v1758805294/2024-05-16_w2nnkv.jpg"
+
+    ],
+    socialmedia:
+      [
+        { name: "YouTube", link: "https://www.youtube.com" },
+        { name: "Instagram", link: "https://www.instagram.com" },
+        { name: "Facebook", link: "https://www.facebook.com" },
+        { name: "TikTok", link: "https://www.tiktok.com" }
+      ],
+
+    mediaItems: [
+      {
+        url: "https://www.instagram.com/p/DO6mLnvEmtA/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DOw-dFPkfPh/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DOoTcpbkTb0/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/p/DO6kCUVkgCm/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DOrgn0sku2P/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+    ],
+
+    contact: {
+      phone: "123-456-7891",
+      email: "sales@example.com",
+      address: "1234 Maplewood Drive, Springfield|Driving Directions"
+    }
+  },
+  apexcars: {
+    name: "apexcars",
+    background: {
+      image: "https://res.cloudinary.com/drdvulk7o/image/upload/v1758807586/489932669_1207034134759396_3873888677263973759_n_lzqpcn.jpg",
+    },
+    logo: "https://res.cloudinary.com/drdvulk7o/image/upload/v1758806399/2193_Apex_logo_feb20_2810_s9xepw.webp",
+    thumbnail: "https://res.cloudinary.com/drdvulk7o/image/upload/v1758806399/20241122234145619_Image_11-22-24_at_3.41PM_rbxkug.webp",
+    location: "1234 Maplewood Drive, Springfield|Driving Directions",
+    mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d443006.829588406!2d-95.79084602097166!3d29.83568571432901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640b8b4488d8501%3A0xca0d02def365053b!2sHouston%2C%20TX%2C%20USA!5e0!3m2!1sen!2sin!4v1755955723731!5m2!1sen!2sin",
+    images: [
+      "https://res.cloudinary.com/drdvulk7o/image/upload/v1758807048/unnamed_1_d7vjgx.jpg",
+"https://res.cloudinary.com/drdvulk7o/image/upload/v1758807048/unnamed_ssguon.jpg",
+"https://res.cloudinary.com/drdvulk7o/image/upload/v1758807047/2023-03-07_nx0biv.jpg",
+"https://res.cloudinary.com/drdvulk7o/image/upload/v1758807047/tempImagemSl4bz_wgdt40.jpg",
+"https://res.cloudinary.com/drdvulk7o/image/upload/v1758807046/2023-03-07_1_fyzywz.jpg"
+
+    ],
+    socialmedia:
+      [
+        { name: "YouTube", link: "https://www.youtube.com" },
+        { name: "Instagram", link: "https://www.instagram.com" },
+        { name: "Facebook", link: "https://www.facebook.com" },
+        { name: "TikTok", link: "https://www.tiktok.com" }
+      ],
+
+    mediaItems: [
+      {
+        url: "https://www.instagram.com/reel/DN1iWkUZKfV/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DKIoz4fy_Lt/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DD0qS89vuNl/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DEQ4IsOS5jw/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        url: "https://www.instagram.com/reel/DCc43yfSRJv/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+    ],
+
+    contact: {
+      phone: "123-456-7891",
+      email: "sales@example.com",
+      address: "1234 Maplewood Drive, Springfield|Driving Directions"
+    }
+  },
 };
 
 const dummy = {
