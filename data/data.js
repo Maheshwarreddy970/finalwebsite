@@ -3079,16 +3079,16 @@ export const clientDetails = {
     background: {
       video: "https://scawtlrfhdehoibandjd.supabase.co/storage/v1/object/public/maheshwar/snapsave-app_969218682080060_hd.mp4",
     },
-    logo: "https://res.cloudinary.com/drdvulk7o/image/upload/v1758801204/ALP_RBG_logo.original_vmcmly.png",
-    thumbnail: "https://res.cloudinary.com/drdvulk7o/image/upload/v1758801232/546839664_814753394461157_4957377535065373358_n_gwkoqh.png",
+    logo: "https://res.cloudinary.com/drdvulk7o/image/upload/v1758882582/ALP_RBG_logo.original_isk22z.png",
+    thumbnail: "https://res.cloudinary.com/drdvulk7o/image/upload/v1758882583/546839664_814753394461157_4957377535065373358_n_bohkzg.png",
     location: "1234 Maplewood Drive, Springfield|Driving Directions",
     mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d443006.829588406!2d-95.79084602097166!3d29.83568571432901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640b8b4488d8501%3A0xca0d02def365053b!2sHouston%2C%20TX%2C%20USA!5e0!3m2!1sen!2sin!4v1755955723731!5m2!1sen!2sin",
     images: [
-      "https://res.cloudinary.com/drdvulk7o/image/upload/v1758801206/unnamed_jwo09c.jpg",
-      "https://res.cloudinary.com/drdvulk7o/image/upload/v1758801204/2024-04-04_1_hpnjgy.jpg",
-      "https://res.cloudinary.com/drdvulk7o/image/upload/v1758801205/capes_3_tgrluf.jpg",
-      "https://res.cloudinary.com/drdvulk7o/image/upload/v1758801205/capes_2_g1mzds.jpg",
-      "https://res.cloudinary.com/drdvulk7o/image/upload/v1758801205/2024-04-04_woz2uh.jpg",
+   "https://res.cloudinary.com/drdvulk7o/image/upload/v1758882583/capes_2_cz3uy1.jpg",
+      "https://res.cloudinary.com/drdvulk7o/image/upload/v1758882582/capes_3_fpftit.jpg",
+      "https://res.cloudinary.com/drdvulk7o/image/upload/v1758882583/2024-04-04_ytdc7z.jpg",
+      "https://res.cloudinary.com/drdvulk7o/image/upload/v1758882582/2024-04-04_1_dbxnbr.jpg",
+      "https://res.cloudinary.com/drdvulk7o/image/upload/v1758882583/capes_2_cz3uy1.jpg",
     ],
     socialmedia:
       [
@@ -3329,11 +3329,11 @@ const dummy = {
     location: "1234 Maplewood Drive, Springfield|Driving Directions",
     mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d443006.829588406!2d-95.79084602097166!3d29.83568571432901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640b8b4488d8501%3A0xca0d02def365053b!2sHouston%2C%20TX%2C%20USA!5e0!3m2!1sen!2sin!4v1755955723731!5m2!1sen!2sin",
     images: [
-      "",
-      "",
-      "",
-      "",
-      "",
+      "/Gemini_Generated_Image_d4kzc5d4kzc5d4kz-min.png",
+      "/Gemini_Generated_Image_dmws17dmws17dmws-min.png",
+      "/Gemini_Generated_Image_n3a5vxn3a5vxn3a5-min.png",
+      "/Gemini_Generated_Image_qyew7oqyew7oqyew-min.png",
+      "/Gemini_Generated_Image_yw7blcyw7blcyw7b-min.png",
     ],
     socialmedia:
       [
@@ -3345,20 +3345,21 @@ const dummy = {
 
     mediaItems: [
       {
-        url: "https://www.instagram.com/reel/DN5ro4sAjaT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+        url: "",
       },
       {
-        url: "https://www.instagram.com/p/DNFwXOdonZZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+        url: "",
       },
       {
-        url: "https://www.instagram.com/reel/DMfWAeDJiLd/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+        url: "",
       },
       {
-        url: "https://www.instagram.com/reel/DMvVqElMVyu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+        url: "",
       },
       {
-        url: "https://www.instagram.com/p/DOqmssBEvFK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+        url: "",
       },
+     
     ],
 
     contact: {
