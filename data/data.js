@@ -3273,16 +3273,16 @@ export const clientDetails = {
     background: {
       image: "/Rent-A-Car-for-Family-Road-Trip.jpg",
     },
-    logo: "https://res.cloudinary.com/drdvulk7o/image/upload/v1758871433/ASM-BusinessCards-01_bkizyo.png",
-    thumbnail: "https://res.cloudinary.com/drdvulk7o/image/upload/v1758871634/IMG_0146_kziemw.jpg",
+logo: "https://res.cloudinary.com/drdvulk7o/image/upload/v1758883214/ASM-BusinessCards-01_ff5eo4.png",
+    thumbnail: "https://res.cloudinary.com/drdvulk7o/image/upload/v1758883213/hero-desktop-images-firestone-app-fcac-web-bsro_mrtijp.jpg",
     location: "1234 Maplewood Drive, Springfield|Driving Directions",
     mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d443006.829588406!2d-95.79084602097166!3d29.83568571432901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640b8b4488d8501%3A0xca0d02def365053b!2sHouston%2C%20TX%2C%20USA!5e0!3m2!1sen!2sin!4v1755955723731!5m2!1sen!2sin",
-    images: [
-      "https://www.instagram.com/p/DO6Nz9mkcl-/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-      "https://www.instagram.com/p/DOo_9PbksZ0/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-      "https://www.instagram.com/p/DOHekl1kjHk/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-      "https://www.instagram.com/p/DNyP8bHUo9e/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-      "https://www.instagram.com/p/DNg6iAdSeeC/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+  images: [
+      "/Gemini_Generated_Image_d4kzc5d4kzc5d4kz-min.png",
+      "/Gemini_Generated_Image_dmws17dmws17dmws-min.png",
+      "/Gemini_Generated_Image_n3a5vxn3a5vxn3a5-min.png",
+      "/Gemini_Generated_Image_qyew7oqyew7oqyew-min.png",
+      "/Gemini_Generated_Image_yw7blcyw7blcyw7b-min.png",
     ],
     socialmedia:
       [
