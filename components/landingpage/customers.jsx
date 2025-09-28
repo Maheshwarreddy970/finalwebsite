@@ -17,6 +17,7 @@ export const playfair = Playfair_Display({
     preload: true,    // ✅ ensures font is preloaded
 });
 
+
 export default function Customerstories() {
   const images= [
       "/Gemini_Generated_Image_d4kzc5d4kzc5d4kz-min.png",
@@ -25,6 +26,8 @@ export default function Customerstories() {
       "/Gemini_Generated_Image_qyew7oqyew7oqyew-min.png",
       "/Gemini_Generated_Image_yw7blcyw7blcyw7b-min.png",
     ]
+
+    const clientInfo = useClientStore((state) => state.clientInfo);
 
     return (
         <section className='relative w-full mt-20 mb-3 px-3 md:px-10'>
