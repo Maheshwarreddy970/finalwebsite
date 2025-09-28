@@ -47,7 +47,7 @@ export default function Herosection() {
       </div>
       <div className="relative rounded-xl mt-1 shadow-md border   h-full w-full overflow-hidden aspect-video">
         {/* Background Image */}
-        {clientInfo?.background?.image && (
+        {/* {clientInfo?.background?.image && (
           <Image
             src={clientInfo.background.image}
             alt="Background"
@@ -57,10 +57,10 @@ export default function Herosection() {
             loading="lazy"
             className="absolute top-0 left-0 h-full w-full object-cover"
           />
-        )}
+        )} */}
 
         {/* Background Video */}
-        {clientInfo?.background?.video && (
+        {/* {clientInfo?.background?.video && (
           <div
             className="absolute top-0 left-0 w-full h-full overflow-hidden z-0">
             <video
@@ -79,8 +79,35 @@ export default function Herosection() {
               Your browser does not support the video tag.
             </video>
           </div>
-        )}
+        )} */}
+        <div
+          className="absolute top-0 left-0 w-full h-full overflow-hidden z-0">
+          <video
+            width="100%"
+            height="100%"
+            autoPlay
+            loop
+            muted
+            playsInline
+            preload="metadata"
+            poster="/VN20250928_124344 (1).mp4"
+            className="absolute top-0 left-0 h-full w-full object-cover"
+          >
+            <source src="/VN20250928_124344 (1).mp4" type="video/webm" />
+            <source src="/VN20250928_124344 (1).mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
 
+        <div className=' absolute top-[6%]  right-[2%] z-20'>
+          <Image
+            src={`${clientInfo?.logo ? clientInfo?.logo : "/vehiql-logo.png"}`}
+            alt="Vehiql Logo"
+            width={200}
+            height={60}
+            className=" h-16  w-auto object-contain"
+          />
+        </div>
 
       </div>
       <div className=' flex flex-col md:flex-row   md:justify-between mt-10  '>

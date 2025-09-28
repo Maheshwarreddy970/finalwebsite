@@ -18,8 +18,13 @@ export const playfair = Playfair_Display({
 });
 
 export default function Customerstories() {
-    const clientInfo = useClientStore((state) => state.clientInfo)
-
+  const images= [
+      "/Gemini_Generated_Image_d4kzc5d4kzc5d4kz-min.png",
+      "/Gemini_Generated_Image_dmws17dmws17dmws-min.png",
+      "/Gemini_Generated_Image_n3a5vxn3a5vxn3a5-min.png",
+      "/Gemini_Generated_Image_qyew7oqyew7oqyew-min.png",
+      "/Gemini_Generated_Image_yw7blcyw7blcyw7b-min.png",
+    ]
 
     return (
         <section className='relative w-full mt-20 mb-3 px-3 md:px-10'>
@@ -38,7 +43,7 @@ export default function Customerstories() {
                 className="w-full mt-14 md:mt-0 relative"
             >
                 <CarouselContent>
-                    {clientInfo?.images?.map((image, index) => (
+                    {images.map((image, index) => (
                         <CarouselItem key={index} className="basis-full sm:basis-1/2 md:basis-2/3 lg:basis-[25%]">
                             <div>
                                 <div className=' h-96 rounded-4xl shadow  overflow-hidden border border-neutral-300   bg-white p-1.5'>
