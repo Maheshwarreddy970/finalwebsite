@@ -50,7 +50,7 @@ export async function generateMetadata({ params }) {
       siteName: clientInfo?.name,
       images: [
         {
-          url: clientInfo?.thum, // should be absolute URL in prod
+          url: clientInfo?.thumb, // should be absolute URL in prod
           width: 1200,
           height: 630,
           alt: `${clientInfo?.name} Preview`,
