@@ -7,7 +7,13 @@ import { Send } from "lucide-react";
 import Link from "next/link";
 
 function Footer({ clientInfo }) {
-
+    const socialmedia =
+        [
+            { name: "YouTube", link: "https://www.youtube.com" },
+            { name: "Instagram", link: "https://www.instagram.com" },
+            { name: "Facebook", link: "https://www.facebook.com" },
+            { name: "TikTok", link: "https://www.tiktok.com" }
+        ]
     return (
         <>
             <footer className="px-4 mt-16 lg:mt-0 pt-12  md:px-6 lg:px-12   overflow-hidden relative border-dotted     border-t  bg-background text-foreground transition-colors duration-300 w-full  ">
@@ -37,9 +43,9 @@ function Footer({ clientInfo }) {
                                 </Button>
                             </div>
                             <div className="mb-6 flex space-x-4 mt-10">
-                                {clientInfo?.socialmedia.map((social,index) => (
+                                {socialmedia.map((social, index) => (
                                     <Link
-                                        key={social.name+index}
+                                        key={social.name + index}
                                         href={social.link}
                                         target="_blank"
                                         rel="noopener noreferrer"

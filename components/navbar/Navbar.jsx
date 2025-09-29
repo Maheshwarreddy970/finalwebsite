@@ -60,7 +60,7 @@ const Header = async ({ clientInfo }) => {
         <nav className="mx-auto flex items-center justify-between">
           <div className="flex gap-10 items-center">
             <Link href={`/${clientInfo?.name}`} className="flex">
-              <Image
+              <img
                 src={`${clientInfo?.logo ? clientInfo?.logo : "/vehiql-logo.png"}`}
                 alt="Vehiql Logo"
                 width={200}
