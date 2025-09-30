@@ -13,7 +13,7 @@ export default function Herosection() {
   const clientInfo = useClientStore((state) => state.clientInfo)
 
   // Determine if mainvideo is a valid URL (not "FALSE" or undefined)
-  const isMainVideoValid = clientInfo?.mainvideo && clientInfo.mainvideo !== 'FALSE'
+  const isMainVideoValid = clientInfo?.mainvideo && clientInfo.mainvideo !== ""
 
   return (
     <section className="px-3 md:px-10 pt-36 h-[60vh] md:h-screen w-full">
