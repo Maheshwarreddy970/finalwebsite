@@ -1283,28 +1283,783 @@ export const clientDetails = {
         url: "https://www.instagram.com/reel/DMjEW1AhBzx/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       },
     ],
-
-
-  },
-  g: {
-    name: "g",
-    mainvideo: "https://chatdocai.s3.ap-south-1.amazonaws.com/ssvid.net--2017-Porsche-Panamera-Turbo-Bring-a-Trailer_v720P.mp4",
-    logo: "https://res.cloudinary.com/dbcodcumz/image/upload/v1754909055/web-slogan_Mesa-de-trabajo-1_gijxpo.png",
-    thumb: "https://res.cloudinary.com/dbcodcumz/image/upload/v1755863843/509432044_1401790888073697_5163818885904638990_n_a4uibp.jpg",
   },
   echoparkautomotivedallas: {
     name: "echoparkautomotivedallas",
     logo: "https://www.echopark.com/-/media/project/sonic/echopark/header/logos-echo-park-full-color.svg?iar=0&hash=C1D8BC2BE9F3EF240BD9C685C57D9F67",
     thumb: "https://scontent.fvga2-3.fna.fbcdn.net/v/t39.30808-6/482026151_1042041241294952_2335942371559325669_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=108&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=uFufnP3bSqUQ7kNvwG-moDH&_nc_oc=AdkVFygldvkrEi-RSuzQNN7CQHFyHS4I65qMWu6gfxEns8U6IaSwurzmu8fYCokLiBDxChB8MOeKDUmgxgm71hMp&_nc_zt=23&_nc_ht=scontent.fvga2-3.fna&_nc_gid=rqrV45IFUcDiQt5mSfgvaw&oh=00_Afa0YKjpjoNmfQZ26LFet2lQ-XAzgwOJlL4tTLowL14tFw&oe=68DEFDE8",
     superwebsite: "https://www.superworldtechnologies.com/echoparkautomotivedallas",
-    mainvideo: "FALSE"
+    mainvideo: ""
   },
   vandergriffacura: {
     name: "vandergriffacura",
     logo: "https://pictures.dealer.com/v/vandergriffacuraadw/1534/327b004c9a5e9ccdaa206184f34cb8b5x.jpg?impolicy=downsize&h=160",
     thumb: "https://scontent.fvga2-2.fna.fbcdn.net/v/t39.30808-6/484582059_1077165474427138_234551142619384438_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=0NZ3lTWunyoQ7kNvwEOTjdS&_nc_oc=AdnlUdYh-bk8qSSAckW19HFuiL4DTf3S9Zo1H2XgiYzQUkpwTMoupquGKLlCEvuXhqroKUw7RF6t4md8dUprJsHd&_nc_zt=23&_nc_ht=scontent.fvga2-2.fna&_nc_gid=J0R2ORzafUx78Hbq6HoKDA&oh=00_AfZJ8nifYW7-9rkXBGXTOZ95g2cV7P_ku38r9WRCb49upQ&oe=68DEE394",
     superwebsite: "https://www.superworldtechnologies.com/vandergriffacura",
-    mainvideo: "FALSE"
+    mainvideo: ""
+  },
+  goodsonacuraofdallas: {
+    name: "goodsonacuraofdallas",
+    logo: "https://pictures.dealer.com/g/goodsonacuraofdallasadw/1234/2057e2bb2ee343579e30b8a45ae208e1.png?impolicy=downsize&h=140",
+    thumb: "https://scontent.fvga2-4.fna.fbcdn.net/v/t39.30808-6/481263508_1019862370188871_695159095707634722_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=107&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=FOH7-0ET8sYQ7kNvwEV5jJ0&_nc_oc=AdlrVEWnfr13tceLD7GBI6SPE0dda1A1CaounOgPAcU2EmdKvOXFBdu4weqoqlPpuDHIbFRhldWu0mA0SGDsL20M&_nc_zt=23&_nc_ht=scontent.fvga2-4.fna&_nc_gid=izfHwHMVOZ504t8_lZDUEA&oh=00_AfaRUm4wlQr5BZ3mw7NtenoIsB-_w-zK3ffSi_RpR3AhfQ&oe=68DEFB8A",
+    superwebsite: "https://www.superworldtechnologies.com/goodsonacuraofdallas",
+    mainvideo: "https://videos.dealer.com/videos2/clients/g/goodsonacuraofdallasadw/ecc72d9cd264436cbed8b9c5d93f7410_highest.mp4"
+  },
+  earthmotorcars: {
+    name: "earthmotorcars",
+    logo: "https://pictures.dealer.com/e/earthmotorcars/1234/26fe8880b47d47a69f44075baf2cef49.png?impolicy=downsize&h=180",
+    thumb: "https://scontent.fvga2-2.fna.fbcdn.net/v/t39.30808-6/530585532_1208305008005414_928296989061044817_n.png?stp=dst-png_s960x960&_nc_cat=104&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=B062VcYCIiwQ7kNvwEq52AW&_nc_oc=AdmenIhlg0bDwZuno0uet5NapLdBEGUrlGJxxCc2YQ0AfrEs6vzTASvrF_ir-nI-6ZYdwL57znFcLCXKNFnKAZGM&_nc_zt=23&_nc_ht=scontent.fvga2-2.fna&_nc_gid=uBI6z2bWmf9ZCw87T82-7A&oh=00_AfZN64Wq1GS1ICWRYrLWAAZzQ6oykNqjeYTUy3DjoDiMXA&oe=68DED348",
+    superwebsite: "https://www.superworldtechnologies.com/earthmotorcars",
+    mainvideo: ""
+  },
+  autoliquidatorsplus: {
+    name: "autoliquidatorsplus",
+    logo: "https://cdn.magiloop.com/images/autoliquidatorsplus/ALP_RBG_logo.original.png",
+    thumb: "https://scontent.fvga2-1.fna.fbcdn.net/v/t39.30808-6/546839664_814753394461157_4957377535065373358_n.png?_nc_cat=101&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=s5ETOgDzpUkQ7kNvwE5W_bB&_nc_oc=AdkZFBS1zqwYUqzSZ3LlBsj5ZG8BtvA3uAZAnU5wHqU8AEPLUQkOH3SPNIBAZrw22U3NyeBEnpfwZNf7Jn6fT24H&_nc_zt=23&_nc_ht=scontent.fvga2-1.fna&_nc_gid=BdYNhJtTzlRlv5fSQ9jYuQ&oh=00_AfZmkV_P5Dq7cLYtoLbOZKdEHGJwzbSslebn-C2N5Ipt6w&oe=68E04CF7",
+    superwebsite: "https://www.superworldtechnologies.com/autoliquidatorsplus",
+    mainvideo: ""
+  },
+  callahanmotorcompanyllc: {
+    name: "callahanmotorcompanyllc",
+    logo: "https://callahanmotorcompany.com/wp-content/uploads/sites/99/2023/12/logo_color_640.png",
+    thumb: "https://scontent.fvga2-1.fna.fbcdn.net/v/t39.30808-6/491354414_1188840383253587_3065529498072578721_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=105&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=Rva98Gdv-64Q7kNvwFiq1Cj&_nc_oc=Adk6qYurP8UyH0DY0nzqL3MX-f5V86MWgvMC94EnyDJrXzD9Fu1-HwZERh8s9mGOtXznv1pKs2K0zJ0jHCGe_Trp&_nc_zt=23&_nc_ht=scontent.fvga2-1.fna&_nc_gid=61wkiaPB1Icz4zj3OMDOOQ&oh=00_AfYUW62BLTQSQUrMWGd3PxiaUfV5UsA3PU_yJGxdjmfokw&oe=68E059E6",
+    superwebsite: "https://www.superworldtechnologies.com/callahanmotorcompanyllc",
+    mainvideo: "https://player.vimeo.com/video/1045536546?autoplay=1&_video&title=0&byline=0&background=1&portrait=0&color=00adef&loop=1&quality=720p&dnt=0&playsinline=1"
+  },
+  ecar1: {
+    name: "ecar1",
+    logo: "https://pictures.dealer.com/e/ecarone3/1234/8dfd8f6176f94182bdce21da816b491d.png?impolicy=downsize&h=160",
+    thumb: "https://scontent.fvga2-2.fna.fbcdn.net/v/t39.30808-6/490978037_1144577781014035_7927471694047385711_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=YBzI7ThXI4AQ7kNvwFuH15n&_nc_oc=AdmOLUdigDqLbBdJTVDYqDUoviitgXdolH4g4J5Enh29tBgJcHrWSBy3dJxcFS6bgVlLOYcNi2uQ1v2PHuH7AL2J&_nc_zt=23&_nc_ht=scontent.fvga2-2.fna&_nc_gid=0tkt_hUUM2P3DYofiUbziw&oh=00_AfbQzoSpE0Fi2gd2mC_N88N3JN6yIQdzTErNRHV51u6q_Q&oe=68E059F7",
+    superwebsite: "https://www.superworldtechnologies.com/ecar1",
+    mainvideo: ""
+  },
+  discountmotors3: {
+    name: "discountmotors3",
+    logo: "https://www.discountmotorstexas.com/assets/images/logo-discount-motors-texas.png",
+    thumb: "https://scontent.fvga2-1.fna.fbcdn.net/v/t39.30808-6/553110223_1600844957925052_2421542887235032138_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=105&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=u2_baDvYTAwQ7kNvwGVVYU9&_nc_oc=AdkvfpnXqz8bCq55ag2-bB3AAnGkC2iFX2k8Y6dSiRThgwrFisoHH8SI-srU0Oj02rgoJ2Vgce2hNssnqSCqKFJ6&_nc_zt=23&_nc_ht=scontent.fvga2-1.fna&_nc_gid=67Sb4mV6hy8bvZH8KtWlAw&oh=00_AfYg38l1zqm9oozK2dhUz1WsiGZlGmjNVa0ou3YIq9CBGw&oe=68E04791",
+    superwebsite: "https://www.superworldtechnologies.com/discountmotors3",
+    mainvideo: ""
+  },
+  wellsautogroup: {
+    name: "wellsautogroup",
+    logo: "https://pictures.dealer.com/w/wellsautogroupmckinney/1064/c0d1013597b36a708311531ac08ecc1fx.jpg?impolicy=downsize&h=400",
+    thumb: "https://scontent.fvga2-1.fna.fbcdn.net/v/t39.30808-6/485796120_1201644548633573_3445696494386752544_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=101&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=bFsDWYhseBAQ7kNvwHshApo&_nc_oc=Adn_5BxSADfEKZB9Cpdo5on_KL10dk4U3eO5hXTAukw7ignOlNizyh-rSuWvsHRBXUDmS6eiPHHaYz18a7hoRlzA&_nc_zt=23&_nc_ht=scontent.fvga2-1.fna&_nc_gid=t5AUnESRTn_A86c4zjsN8A&oh=00_AfZeYLL-v93VhPZWUez5siqJeN_gAp00xvawFqjjtQpnMw&oe=68E067F2",
+    superwebsite: "https://www.superworldtechnologies.com/wellsautogroup",
+    mainvideo: "https://videos.dealer.com/videos2/clients/w/wellsautogroupmckinney/d9078bc60a0e09a710002382a2425b74_highest.mp4"
+  },
+  allyautogroup: {
+    name: "allyautogroup",
+    logo: "https://dcdws.blob.core.windows.net/dws-15120769-18153-media/sites/18153/2024/11/ally-auto-grp-logo-w300.png",
+    thumb: "https://scontent.fvga2-2.fna.fbcdn.net/v/t39.30808-6/476232802_1051156790386650_3032259190153186105_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=Z-6XFBB5i7EQ7kNvwHspfS_&_nc_oc=Adk1NAfgZTN2kLLethIAs6C6jN_P_ifjv02GkSum3vylFqBHurdlvbUvVQU2hfac0P_nTS3o5v6qF3ytegRcYtvd&_nc_zt=23&_nc_ht=scontent.fvga2-2.fna&_nc_gid=IW6f8OV6emkUlhH4zm-NRA&oh=00_AfaQNkFHSekwX6xbN5LX1cwb4poZrAO7RuV64xtSliwEmw&oe=68E0601C",
+    superwebsite: "https://www.superworldtechnologies.com/allyautogroup",
+    mainvideo: "https://scawtlrfhdehoibandjd.supabase.co/storage/v1/object/public/maheshwar/Luxury%20Cars%20and%20Custom%20Pickups%20in%20Dallas,%20%20Austin,%20and%20Houston%20TX.mp4"
+  },
+  youdriveauto: {
+    name: "youdriveauto",
+    logo: "https://www.youdriveauto.com/_next/static/media/logo-black.bed88b24.svg",
+    thumb: "https://scontent.fvga2-2.fna.fbcdn.net/v/t39.30808-6/507518829_743472888425284_3420513438423476399_n.png?stp=dst-png_s960x960&_nc_cat=102&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=_vbKF67N3B0Q7kNvwHGKZ1W&_nc_oc=Adm4ZrOKqV0Yk-lYeGS16rnMzdV8ejyxg8X9nZ-ZCUeeTgJr_JT558glDsRZLSfK2cYLn9HC960ZNCTvgJRSSrvS&_nc_zt=23&_nc_ht=scontent.fvga2-2.fna&_nc_gid=qo3ky65Y-_C1e8x4NXBQQg&oh=00_AfbJCDdKG5QGzZz7WoxwB67tksqGes-UDf8Ky6hANlL01Q&oe=68E05CB5",
+    superwebsite: "https://www.superworldtechnologies.com/youdriveauto",
+    mainvideo: ""
+  },
+  autocitycredit: {
+    name: "autocitycredit",
+    logo: "https://images.jazelc.com/uploads/autocitycredit-v2-m2e/auto-city-logo-red-star.png",
+    thumb: "https://scontent.fvga2-2.fna.fbcdn.net/v/t39.30808-6/487854422_1069550025205937_8846130084733939308_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=102&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=Oyq7cKzRWXwQ7kNvwGjv0Rw&_nc_oc=Adlu0pFoMJc2pKgi7_nk-a8VvmzQO94HHdmnyItCd0MQcz8kM3FOIy7mcGVoLnfeiOJuFMZfxBugy7SEUROo_1iC&_nc_zt=23&_nc_ht=scontent.fvga2-2.fna&_nc_gid=s2k3ER9d43vOp75Rt4AQcw&oh=00_AfbRyRlLwqSIgpuZUSyXGdV-DDcdN9b-lXZfO4W3wtNqCw&oe=68E06055",
+    superwebsite: "https://www.superworldtechnologies.com/autocitycredit",
+    mainvideo: ""
+  },
+  goluxuryautogroup: {
+    name: "goluxuryautogroup",
+    logo: "https://pictures.dealer.com/g/goluxuryauto/1234/1029b102c5f34d90b0e7fbfd3babe170.png?impolicy=downsize&h=160",
+    thumb: "",
+    superwebsite: "https://www.superworldtechnologies.com/goluxuryautogroup",
+    mainvideo: ""
+  },
+  ridendrive: {
+    name: "ridendrive",
+    logo: "https://pictures.dealer.com/r/ridendrive/1119/e641f33997a51d6d99e1af7195941f69x.jpg?impolicy=downsize&h=160",
+    thumb: "https://scontent.fvga2-2.fna.fbcdn.net/v/t39.30808-6/521962682_10172101243240483_1512489064492930318_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=IvBnH5cP4T0Q7kNvwE9K0Ad&_nc_oc=Adk8ioNZY-3Wj4q0ZD9Lpma2b3XlOvnfMhcynyNGcQmI3_Y5bjo1ctDCzyxM37YvTL010kedk0ZThGG-3hivp76C&_nc_zt=23&_nc_ht=scontent.fvga2-2.fna&_nc_gid=oYoMQXh0cak7hY-2eNSZyQ&oh=00_AfbREpP1xuFYcw-WTxxOUhykJrQxxx6YUIMGRZ3u6fALSg&oe=68E06C1B",
+    superwebsite: "https://www.superworldtechnologies.com/ridendrive",
+    mainvideo: "https://videos.dealer.com/videos2/clients/r/ridendrive/781ed0ba6cf64e6e86556a44ee73d495_highest.mp4"
+  },
+  lewisvilleautoplex: {
+    name: "lewisvilleautoplex",
+    logo: "https://pictures.dealer.com/p/prodevtest/1130/da927596150d94a981647d096e414c54x.jpg?impolicy=downsize&h=160",
+    thumb: "https://scontent.fvga2-3.fna.fbcdn.net/v/t39.30808-6/489376655_1073121374863619_6303685495533945178_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=106&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=Sm0ohc68-yUQ7kNvwEZ49Wf&_nc_oc=Adm3LTlZS0pXwDT52Fpp2ERgMJ_PCU1f3c2oa9OD2gYpnHcAFklN_dMNMRWDDO3YopQIp8ukYplYZOumY3bMRI7s&_nc_zt=23&_nc_ht=scontent.fvga2-3.fna&_nc_gid=MQX6K6i0VDfV7_e30LhuPA&oh=00_AfZ4GKQT4FuWXWQgGh7vYB19Hi1VLMtUpWp9APqnakSUXQ&oe=68E06A76",
+    superwebsite: "https://www.superworldtechnologies.com/lewisvilleautoplex",
+    mainvideo: "https://videos.dealer.com/videos2/clients/l/lewisvilleautoplexpreowned/6b36fcee0a0e09a72c38e1135f169a01_highest.mp4"
+  },
+  bigtexautomart: {
+    name: "bigtexautomart",
+    logo: "https://cdn-websites.autodealersdigital.com/images/103244/logo/header_logo_66389727498c2.webp",
+    thumb: "https://cdn-websites.autodealersdigital.com/images/103244/slider_photo/upload_1_66389aa90fc0a.webp",
+    superwebsite: "https://www.superworldtechnologies.com/bigtexautomart",
+    mainvideo: ""
+  },
+  autosavvyfor2rth: {
+    name: "autosavvyfor2rth",
+    logo: "https://www.autosavvy.com/wp-content/themes/DealerInspireDealerTheme/images/logo-head.png",
+    thumb: "https://scontent.fvga2-2.fna.fbcdn.net/v/t39.30808-6/482344560_1048315844002756_2675396213595793143_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=104&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=hk4sm2E76PIQ7kNvwESCvv3&_nc_oc=AdlZyCM7lLMYWHHwCS2h_5Owv8HDb9sxX7mJKZk1a24kPNoDLlrioh8kd9UgkdAevGr3MS41_RvyGOWB_aOGdbx6&_nc_zt=23&_nc_ht=scontent.fvga2-2.fna&_nc_gid=qJZmQ-oiZ28sDJQKwvedWw&oh=00_AfY-n1IqUxK2uf1wE77TlQBUJRfsvhNo7JaLSBs7mTDmxg&oe=68E06BFF",
+    superwebsite: "https://www.superworldtechnologies.com/autosavvyfor2rth",
+    mainvideo: ""
+  },
+  enterprisecarsales: {
+    name: "enterprisecarsales",
+    logo: "https://images.enterprisecarsales.com/uploads/ecs-m2en/ECS-Logo.png",
+    thumb: "https://scontent.fvga2-1.fna.fbcdn.net/v/t39.30808-6/482015351_10162560794772328_3345493503560022789_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=105&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=keUp3s9ao2kQ7kNvwFKTK4o&_nc_oc=AdmDQs8NacDjX-ct0fiN5s6ZqpUsz8vyWezsmSWuCXM9zPFfEXjQ_JMafev0KANaYp1u8XG2ycRD_AVySxQHaNkx&_nc_zt=23&_nc_ht=scontent.fvga2-1.fna&_nc_gid=-E1Khel86wLfNhOnoA8tkg&oh=00_AfaVLjllKgtwlmwDNZFBVuaReTzbD92ln1LqMkLg_uW1HA&oe=68E07297",
+    superwebsite: "https://www.superworldtechnologies.com/enterprisecarsales",
+    mainvideo: ""
+  },
+  legacyautos: {
+    name: "legacyautos",
+    logo: "https://images.dealersync.com/2760/Logo/9421_Legacy_Logo_Inversion_2760.png?format=webp",
+    thumb: "https://scontent.fvga2-5.fna.fbcdn.net/v/t39.30808-6/509434752_1128819855932643_8303592336100738990_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=109&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=cd-8iWmP8A8Q7kNvwGv3mcr&_nc_oc=AdlLdMf349Wmw8oeZSl1uko57loKUpI6xivGROPBuCJAiScsnqHSgdvKWjNKHJaSjsLcSjLdQuwkyNScMgpzd3JZ&_nc_zt=23&_nc_ht=scontent.fvga2-5.fna&_nc_gid=M6YAltKqCqyNHADggTc1MA&oh=00_Afbso3eqpcs4QM8bD-OVJEdMX3reyLeIU9HYDTsQvtx5JQ&oe=68E06D5A",
+    superwebsite: "https://www.superworldtechnologies.com/legacyautos",
+    mainvideo: ""
+  },
+  b7motors: {
+    name: "b7motors",
+    logo: "https://cdn-websites.autodealersdigital.com/images/105119/logo/header_logo_6686659b859c2.webp",
+    thumb: "https://cdn-websites.autodealersdigital.com/images/105119/slider_photo/slider_photo_66867b30e0f9f.webp",
+    superwebsite: "https://www.superworldtechnologies.com/b7motors",
+    mainvideo: ""
+  },
+  keithmccoyautomotive: {
+    name: "keithmccoyautomotive",
+    logo: "https://dcdws.blob.core.windows.net/dws-9307243-44129-media/sites/44129/2023/01/keith-motors-w300.png",
+    thumb: "https://scontent.fvga2-1.fna.fbcdn.net/v/t39.30808-6/481222709_1205070384961169_356875489078804560_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=101&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=MH4ESJz1WY8Q7kNvwGGL9h-&_nc_oc=AdmWlU8nR3JVpECB2TfnQOtQVuehBRv5eB3uq-7ECT3mc-pzv2zqLVV8KMF9P60phIPDSimrrFHAl6WZaNaIPQI-&_nc_zt=23&_nc_ht=scontent.fvga2-1.fna&_nc_gid=CJYJFX3UxLaYSUZilICPfw&oh=00_AfaY7i3l9zd9zlvbgslAcorg37a_O0oXuSKJRs_KLIMakg&oe=68E05998",
+    superwebsite: "https://www.superworldtechnologies.com/keithmccoyautomotive",
+    mainvideo: ""
+  },
+  meitruckmax: {
+    name: "meitruckmax",
+    logo: "https://truckmaxoftexas.com/wp-content/uploads/2025/03/TruckMax-Logo.webp",
+    thumb: "https://scontent.fvga2-1.fna.fbcdn.net/v/t39.30808-6/313013113_446680457596837_7908606267627505496_n.png?stp=dst-png_s960x960&_nc_cat=101&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=Y91bwv34m0UQ7kNvwHTZmCl&_nc_oc=AdlIYkAPidLU4i4egHb3lbflXHQKc05ts7esrno7iHwxTfK5vzVpZm1YDgZg1l5Zria8Uw2Dlc9iNapcDekNd_va&_nc_zt=23&_nc_ht=scontent.fvga2-1.fna&_nc_gid=Uqe-uwi0MO5TZpQzhaYF-Q&oh=00_Afazr7j_Mq3E5bgSqTeiyQhTCC6ZKIyvffTZMVyHAdyCNg&oe=68E067C7",
+    superwebsite: "https://www.superworldtechnologies.com/meitruckmax",
+    mainvideo: ""
+  },
+  texashotrides: {
+    name: "texashotrides",
+    logo: "https://x-assets.autorevo-powersites.com/content/assets/clients/38d0d7e3-d4bf-444a-87fb-859aa889e17e/logo.png",
+    thumb: "https://x-assets.autorevo-powersites.com/content/assets/clients/38d0d7e3-d4bf-444a-87fb-859aa889e17e/hero_blue_lambo_1024.webp",
+    superwebsite: "https://www.superworldtechnologies.com/texashotrides",
+    mainvideo: ""
+  },
+  europeanmotorsinc: {
+    name: "europeanmotorsinc.",
+    logo: "https://www.europeanmotorsusa.com/assets/images/logo-european-motors-inc.png",
+    thumb: "https://www.europeanmotorsusa.com/assets/images/360-european-motors.webp",
+    superwebsite: "https://www.superworldtechnologies.com/europeanmotorsinc",
+    mainvideo: ""
+  },
+  ganasyafor2rth: {
+    name: "ganasyafor2rth",
+    logo: "https://tricolorstaticfiles.azureedge.net/img/ganasya/header/logo.png",
+    thumb: "https://tricolorstaticfiles.azureedge.net/img/ganasya/home/hero-carousel/hero-slide1-md.webp",
+    superwebsite: "https://www.superworldtechnologies.com/ganasyafor2rth",
+    mainvideo: "https://tricolorstaticfiles.azureedge.net/vid/tricolor/home/inspection_en_us.mp4"
+  },
+  mcandrewmotors: {
+    name: "mcandrewmotors",
+    logo: "https://mcandrewmotors.space.auto/wp-content/uploads/sites/105/2024/02/main-logo.png",
+    thumb: "https://mcandrewmotors.space.auto/wp-content/uploads/sites/105/2024/02/main-logo.png",
+    superwebsite: "https://www.superworldtechnologies.com/mcandrewmotors",
+    mainvideo: "https://player.vimeo.com/video/948900917?h=ee9c54afc2&background=1"
+  },
+  addisonautoplex: {
+    name: "addisonautoplex",
+    logo: "https://x-assets.autorevo-powersites.com/content/assets/clients/56484923-d5f4-427a-a6e4-5edde20762db/logo.png",
+    thumb: "https://x-assets.autorevo-powersites.com/content/assets/clients/56484923-d5f4-427a-a6e4-5edde20762db/about_image3_1366_cropped.jpg",
+    superwebsite: "https://www.superworldtechnologies.com/addisonautoplex",
+    mainvideo: "https://x-assets.autorevo-powersites.com/content/assets/clients/56484923-d5f4-427a-a6e4-5edde20762db/addisonautoplex_FPO_720.mp4"
+  },
+  l1starmotorsii: {
+    name: "l1starmotorsii",
+    logo: "https://lsm2.net/uploads/dynamic_areas/CBbZAaIHGtUStBXzbFqq/56/logo_updated_9-07-21.aiimg-ar1w632h157-c2Z0PXBuZw.webp",
+    thumb: "https://lsm2.net/uploads/dynamic_areas/8vTcKbNoVu6XAnbyTpGp/56/Slide-2.aiimg-w1900h922cr1en0-c2Z0PWpwZw.webp",
+    superwebsite: "https://www.superworldtechnologies.com/l1starmotorsii",
+    mainvideo: ""
+  },
+  vamosauto: {
+    name: "vamosauto",
+    logo: "https://vamosauto.us/wp-content/uploads/2024/06/Vamos-Auto-logo.webp",
+    thumb: "https://vamosauto.us/wp-content/uploads/2025/04/492539695_1280420330756998_646577355627240211_n-768x576.jpg",
+    superwebsite: "https://www.superworldtechnologies.com/vamosauto",
+    mainvideo: ""
+  },
+  streetsideclassicsdallasfor2rth: {
+    name: "streetsideclassicsdallasfor2rth",
+    logo: "https://www.streetsideclassics.com/assets/streetside/ss-logo-blue-80677607bed9af959c5b3d2289a590ee.svg",
+    thumb: "https://cdn.dealeraccelerate.com/streetside/marketing_assets/155/dallas-showroom.webp",
+    superwebsite: "https://www.superworldtechnologies.com/streetsideclassicsdallasfor2rth",
+    mainvideo: ""
+  },
+  adlautosales: {
+    name: "adlautosales",
+    logo: "https://dcdws.blob.core.windows.net/dws-2210619-71556-media/sites/71556/2024/06/ADLauto-logo2.png",
+    thumb: "https://dcdws.blob.core.windows.net/dws-2210619-71556-media/sites/71556/2024/06/ADLauto-logo2.png",
+    superwebsite: "https://www.superworldtechnologies.com/adlautosales",
+    mainvideo: ""
+  },
+  starsautosales: {
+    name: "starsautosales",
+    logo: "https://dcdws.blob.core.windows.net/dws-7034144-13268-media/sites/13268/2020/08/cropped-DWS-5STarAutoLLC_colorOnBlack.png",
+    thumb: "https://dcdws.blob.core.windows.net/dws-7034144-13268-media/2020/04/about-section.jpg?id=2271",
+    superwebsite: "https://www.superworldtechnologies.com/starsautosales",
+    mainvideo: ""
+  },
+  redlinemotors: {
+    name: "redlinemotors",
+    logo: "https://cdn-websites.autodealersdigital.com/images/104394/logo/header_logo_6887ebb428bba.webp",
+    thumb: "https://cdn-websites.autodealersdigital.com/ui_resources/pwa/home-page/slider_photo/1.webp",
+    superwebsite: "https://www.superworldtechnologies.com/redlinemotors",
+    mainvideo: ""
+  },
+  toplineauto: {
+    name: "toplineauto",
+    logo: "https://images.dealersync.com/3051/Logo/9069_TLA_Logo_3051.png?format=webp&height=160",
+    thumb: "https://images.dealersync.com/themes/customizations/electric/images/ds-about-us-2.jpg?format=webp&height=632",
+    superwebsite: "https://www.superworldtechnologies.com/toplineauto",
+    mainvideo: ""
+  },
+  fairlease: {
+    name: "fairlease",
+    logo: "https://www.fairlease.org/assets/img/fairlease-logo.svg",
+    thumb: "https://www.fairlease.org/assets/files/8EvM8hml/contact-hero.jpg",
+    superwebsite: "https://www.superworldtechnologies.com/fairlease",
+    mainvideo: ""
+  },
+  midcityautotruckexchangeinc: {
+    name: "midcityautotruckexchangeinc",
+    logo: "https://cdn-websites.autodealersdigital.com/images/105003/logo/header_logo_679364a1c4548.webp",
+    thumb: "https://cdn-websites.autodealersdigital.com/uploads/20241113-121747.jpg",
+    superwebsite: "https://www.superworldtechnologies.com/midcityautotruckexchangeinc",
+    mainvideo: ""
+  },
+  hurstautoplex: {
+    name: "hurstautoplex",
+    logo: "https://pictures.dealer.com/h/hurstautoplexgroup/0083/a647ef0709f4c71d308f68be4fd2b92ax.jpg?impolicy=downsize&h=100",
+    thumb: "https://pictures.dealer.com/h/hurstautoplexgroup/0092/7796051fd66977e781fc56490b239c01x.jpg?impolicy=downsize_bkpt&w=664",
+    superwebsite: "https://www.superworldtechnologies.com/hurstautoplex",
+    mainvideo: "https://videos.dealer.com/videos2/clients/h/hurstautoplexgroup/aed02f6d0a0e0ca21b13dc010d4ac69a_highest.mp4"
+  },
+  whips: {
+    name: "whips",
+    logo: "https://txwhips.com/wp-content/uploads/2024/03/whips_header_logo_2.png",
+    thumb: "https://txwhips.com/wp-content/uploads/2024/03/shutterstock_1132749404-scaled.jpg",
+    superwebsite: "https://www.superworldtechnologies.com/whips",
+    mainvideo: "https://txwhips.com/wp-content/uploads/2024/06/Compressed-Whips-Video.mp4"
+  },
+  huffinesusedcartrucksuperstore: {
+    name: "huffinesusedcartrucksuperstore",
+    logo: "https://pictures.dealer.com/h/huffinesautogroup/1234/731f252e0c104923be7144ffd351d965.png?impolicy=downsize&h=170",
+    thumb: "https://pictures.dealer.com/h/huffinesautogroup/1889/8eec9f0f9c66f287a1749bda9ef490c5x.jpg?impolicy=downsize_bkpt&w=672&quot",
+    superwebsite: "https://www.superworldtechnologies.com/huffinesusedcartrucksuperstore",
+    mainvideo: "https://videos.dealer.com/videos2/clients/h/huffinesautogroup/d8bff0310a0e09a7100023827ec943ea_highest.mp4"
+  },
+  siautoinc: {
+    name: "siautoinc",
+    logo: "https://siautoinc.space.auto/wp-content/uploads/sites/87/2023/07/Siauto8-w10241-min.png",
+    thumb: "https://siautoinc.com/wp-content/uploads/sites/87/2022/10/man-sitting-in-vehicle.jpg",
+    superwebsite: "https://www.superworldtechnologies.com/siautoinc",
+    mainvideo: ""
+  },
+  yarubbenterprisellc: {
+    name: "yarubbenterprisellc",
+    logo: "https://cdn-websites.autodealersdigital.com/images/103817/logo/header_logo_663de41f3b168.webp",
+    thumb: "https://cdn-websites.autodealersdigital.com/ui_resources/pwa/header_banners/4.webp",
+    superwebsite: "https://www.superworldtechnologies.com/yarubbenterprisellc",
+    mainvideo: ""
+  },
+  gtownmotors: {
+    name: "gtownmotors",
+    logo: "https://scawtlrfhdehoibandjd.supabase.co/storage/v1/object/public/maheshwar/492524130_1232361608892111_643168834402252542_n%20(1).jpg",
+    thumb: "https://cdn-websites.autodealersdigital.com/images/103860/slider_photo/slider_photo_663e2d6aea1b0.webp",
+    superwebsite: "https://www.superworldtechnologies.com/gtownmotors",
+    mainvideo: ""
+  },
+  passportmotors: {
+    name: "passportmotors",
+    logo: "https://gmacrmprod.s3.us-west-2.amazonaws.com/media/mNY/website/175632756533804.webp?w=2048&q=75",
+    thumb: "https://gmacrmprod.s3.us-west-2.amazonaws.com/media/mNY/website/175632756191052.webp?w=1920&q=75",
+    superwebsite: "https://www.superworldtechnologies.com/passportmotors",
+    mainvideo: ""
+  },
+  autovida: {
+    name: "autovida",
+    logo: "https://www.autovida.com/uploads/dynamic_areas/sV38HIlXzd3xyD3YALPj/63/rsz_11autovida_temp_new_logo.png",
+    thumb: "https://www.autovida.com/uploads/dynamic_areas/WyuQ7HvnV7qcXm98lTkE/63/Auto_Vida_Auto_Us.jpg",
+    superwebsite: "https://www.superworldtechnologies.com/autovida",
+    mainvideo: ""
+  },
+  autosfelix: {
+    name: "autosfelix",
+    logo: "https://www.autosfelix.com/_next/static/media/autos-felix-logo.024a2360.svg",
+    thumb: "https://dvzca8wvhrrmw.cloudfront.net/web-felix-resources/ourHistory-desktop.webp",
+    superwebsite: "https://www.superworldtechnologies.com/autosfelix",
+    mainvideo: ""
+  },
+  neighborhoodautoswatauga: {
+    name: "neighborhoodautoswatauga",
+    logo: "https://neighborhoodautos.com/wp-content/uploads/2024/01/logo-shadow.webp",
+    thumb: "https://neighborhoodautos.com/wp-content/uploads/2023/10/denton-768x425.jpg",
+    superwebsite: "https://www.superworldtechnologies.com/neighborhoodautoswatauga",
+    mainvideo: ""
+  },
+  wolkoautosales: {
+    name: "wolkoautosales",
+    logo: "https://dcdws.blob.core.windows.net/dws-2223386-73711-media/sites/73711/2024/08/wolko-logo.png",
+    thumb: "https://dcdws.blob.core.windows.net/dws-2223386-73711-media/sites/73711/2024/08/wolko-logo.png",
+    superwebsite: "https://www.superworldtechnologies.com/wolkoautosales",
+    mainvideo: ""
+  },
+  delrealautogroupllc: {
+    name: "delrealautogroupllc",
+    logo: "https://cdn-websites.autodealersdigital.com/images/102908/logo/header_logo_66991e4080b65.webp",
+    thumb: "https://cdn-websites.autodealersdigital.com/ui_resources/pwa/header_banners/14.webp",
+    superwebsite: "https://www.superworldtechnologies.com/delrealautogroupllc",
+    mainvideo: "https://cdn-websites.autodealersdigital.com/ui_resources/pwa/home-page/videos/204.mp4"
+  },
+  dallasautocenter: {
+    name: "dallasautocenter",
+    logo: "https://dcdws.blob.core.windows.net/dws-3461337-44527-media/sites/44527/2024/03/2-w300.png",
+    thumb: "https://dcdws.blob.core.windows.net/dws-3461337-44527-media/sites/44527/2024/03/Dallas-Auto-Center.jpg",
+    superwebsite: "https://www.superworldtechnologies.com/dallasautocenter",
+    mainvideo: ""
+  },
+  palominomotors: {
+    name: "palominomotors",
+    logo: "https://images.dealersync.com/3113/Logo/9467_PM_Logo_3113.png?format=webp&height=120",
+    thumb: "https://images.dealersync.com/3113/SliderUploadedFiles/20250307175300600_PM_2600x800_Drive.jpg?width=3840&format=webp&_=bf59a57f7be9f3ce964ee67c6a98bdf40c319537",
+    superwebsite: "https://www.superworldtechnologies.com/palominomotors",
+    mainvideo: ""
+  },
+  autohausimports: {
+    name: "autohausimports",
+    logo: "https://cdn.powersports.com/cdn-cgi/image/h=540,w=720/2C8AAB7FFAF032F55052E4A771AF5567.png",
+    thumb: "https://cdn.powersports.com/cdn-cgi/image/h=540,w=720/2C8AAB7FFAF032F55052E4A771AF5567.png",
+    superwebsite: "https://www.superworldtechnologies.com/autohausimports",
+    mainvideo: ""
+  },
+  aabroautosalesinc: {
+    name: "aabroautosalesinc",
+    logo: "https://dcdws.blob.core.windows.net/dws-17945263-90396-media/sites/90396/2025/05/cropped-cropped-cropped-SALES-TEAM-2-w300.png",
+    thumb: "https://dcdws.blob.core.windows.net/dws-17945263-90396-media/sites/90396/2025/05/SALES-TEAM-3.png",
+    superwebsite: "https://www.superworldtechnologies.com/aabroautosalesinc",
+    mainvideo: ""
+  },
+  donttradeitin: {
+    name: "donttradeitin",
+    logo: "https://b3769237.smushcdn.com/3769237/wp-content/uploads/2023/05/DTII_Ver_Final-tight-768x381.png?lossy=2&strip=1&avif=1",
+    thumb: "https://b3769237.smushcdn.com/3769237/wp-content/uploads/2025/06/2016-jeep-grand-cherokee-srt-night_100533551_h_edited-1-1024x674.jpg?lossy=2&strip=1&avif=1",
+    superwebsite: "https://www.superworldtechnologies.com/donttradeitin",
+    mainvideo: ""
+  },
+  bestautogroup: {
+    name: "bestautogroup",
+    logo: "https://dcdws.blob.core.windows.net/dws-11391610-10406-media/2020/01/best-auto-grp-logo.jpg",
+    thumb: "https://dcdws.blob.core.windows.net/dws-11391610-10406-media/2017/04/IMG_53991_BANNER.jpg",
+    superwebsite: "https://www.superworldtechnologies.com/bestautogroup",
+    mainvideo: ""
+  },
+  gatewayclassiccarsofdallas: {
+    name: "gatewayclassiccarsofdallas",
+    logo: "https://webassets.gatewayclassiccars.net/img/Gateway26YearsOpaque.svg",
+    thumb: "https://webassets.gatewayclassiccars.net/img/Gateway26YearsOpaque.svg",
+    superwebsite: "https://www.superworldtechnologies.com/gatewayclassiccarsofdallas",
+    mainvideo: ""
+  },
+  eastdallasdiesel: {
+    name: "eastdallasdiesel",
+    logo: "https://x-assets.autorevo-powersites.com/content/assets/clients/51a8d651-61ac-4a41-9405-2811355ecd2c/logo-diesel.png",
+    thumb: "https://x-assets.autorevo-powersites.com/content/assets/clients/51a8d651-61ac-4a41-9405-2811355ecd2c/welcome_nologo.jpg",
+    superwebsite: "https://www.superworldtechnologies.com/eastdallasdiesel",
+    mainvideo: "https://x-assets.autorevo-powersites.com/content/assets/clients/51a8d651-61ac-4a41-9405-2811355ecd2c/edd_video_720.mp4"
+  },
+  autodeal217: {
+    name: "autodeal217",
+    logo: "https://autodeal217.com/wp-content/uploads/2021/02/Auto-Deal-217-2.png",
+    thumb: "https://autodeal217.com/wp-content/uploads/2021/02/Auto-Deal-217-2.png",
+    superwebsite: "https://www.superworldtechnologies.com/autodeal217",
+    mainvideo: ""
+  },
+  marsdealership: {
+    name: "marsdealership",
+    logo: "https://marsdealership.com/wp-content/uploads/elementor/thumbs/2x3_5-round-h100-q1ysfrxyk61p9u502kprhd3yzghn2b6htvi55b2whs.png",
+    thumb: "https://marsdealership.com/wp-content/uploads/2023/02/photo_2023-02-03_17-05-51-1024x768.jpg",
+    superwebsite: "https://www.superworldtechnologies.com/marsdealership",
+    mainvideo: ""
+  },
+  autocasa: {
+    name: "autocasa",
+    logo: "https://dcdws.blob.core.windows.net/dws-5924853-22359-media/sites/22359/2021/06/cropped-auto-casa-logo-60c3a69bbe468.png",
+    thumb: "https://dcdws.blob.core.windows.net/dws-5924853-22359-media/2017/07/IMG_5824_20.jpg",
+    superwebsite: "https://www.superworldtechnologies.com/autocasa",
+    mainvideo: ""
+  },
+  e1autogroupcardealership: {
+    name: "e1autogroupcardealership",
+    logo: "https://www.eoneautogroup.com/uploads/8/0/7/9/80799044/editor/eone-logo-t-large-use.png?1682783830",
+    thumb: "https://www.eoneautogroup.com/uploads/8/0/7/9/80799044/editor/fast-easy-credit-approval-at-eone.jpg?1682509474",
+    superwebsite: "https://www.superworldtechnologies.com/e1autogroupcardealership",
+    mainvideo: ""
+  },
+  americarmotorcompany: {
+    name: "americarmotorcompany",
+    logo: "https://cdn-websites.autodealersdigital.com/images/106300/logo/header_logo_668680d04d752.webp",
+    thumb: "https://cdn-websites.autodealersdigital.com/images/106300/logo/header_logo_668680d04d752.webp",
+    superwebsite: "https://www.superworldtechnologies.com/americarmotorcompany",
+    mainvideo: ""
+  },
+  theshopclub: {
+    name: "theshopclub",
+    logo: "https://theshopclubs.com/wp-content/uploads/2020/07/the-shop-logo-dark.png",
+    thumb: "https://theshopclubs.com/wp-content/uploads/bb-plugin/cache/THE-SHOP-DERBY-TEXAS-322-landscape-ddde7c01934d756ef5228ee5ead256c3-mrwxfd98oa41.jpg",
+    superwebsite: "https://www.superworldtechnologies.com/theshopclub",
+    mainvideo: ""
+  },
+  avondaledealerships: {
+    name: "avondaledealerships",
+    logo: "https://pictures.dealer.com/a/avondaleautogroup/1234/1ae9ae954ea047f4a12e6ec250b28b6f.png?impolicy=downsize&h=200",
+    thumb: "https://pictures.dealer.com/a/avondaleautogroup/1234/5db46593868a4ec38228fd1fff7f1062.png?impolicy=downsize_bkpt&w=1440",
+    superwebsite: "https://www.superworldtechnologies.com/avondaledealerships",
+    mainvideo: ""
+  },
+  southwestinternationaltrucksarlington: {
+    name: "southwestinternationaltrucksarlington",
+    logo: "https://www.southwestinternational.com/images/sit-logo-white.png",
+    thumb: "https://www.southwestinternational.com/images/employment-banner-final.jpg",
+    superwebsite: "https://www.superworldtechnologies.com/southwestinternationaltrucksarlington",
+    mainvideo: ""
+  },
+  autoland: {
+    name: "autoland",
+    logo: "https://www.autolandtx.com/uploads/dynamic_areas/WOTXWTEca3aMLIbv7Bc1/40/logo-header.aiimg-ar1w94h87-c2Z0PXBuZw.webp",
+    thumb: "https://www.autolandtx.com/uploads/dynamic_areas/4rV0KH1Ta9RyIOTYaoaq/40/welcome-customer-img.aiimg-ar1w800-c2Z0PWpwZw.webp",
+    superwebsite: "https://www.superworldtechnologies.com/autoland",
+    mainvideo: ""
+  },
+  autosoftexas: {
+    name: "autosoftexas",
+    logo: "https://pictures.dealer.com/a/autosoftexascarrolltontyler/0987/e175d4fc7303ce1e6d1bd6a262708b24x.jpg?impolicy=downsize&h=120",
+    thumb: "https://pictures.dealer.com/a/autosoftexascarrolltontyler/1234/d5ae6a229ad443d7a48d61d3943a7718.jpg?impolicy=resize_crop&w=1600&h=500&quot",
+    superwebsite: "https://www.superworldtechnologies.com/autosoftexas",
+    mainvideo: ""
+  },
+  carzcity: {
+    name: "carzcity",
+    logo: "https://dcdws.blob.core.windows.net/dws-19675450-80708-media/sites/54944/2023/08/cropped-a4v1.jpg",
+    thumb: "https://dcdws.blob.core.windows.net/dws-19675450-80708-media/sites/80708/2024/12/untitled-155-1200-drone.jpg",
+    superwebsite: "https://www.superworldtechnologies.com/carzcity",
+    mainvideo: "https://player.vimeo.com/video/1070537207?loop=1&autoplay=1&title=0&byline=0&portrait=0&background=1&player_id=iframe63382"
+  },
+  brothersmotors: {
+    name: "brothersmotors",
+    logo: "https://dcdws.blob.core.windows.net/dws-9453463-12900-media/sites/12900/2020/11/Brothers-Motors-2-min.jpg",
+    thumb: "https://dcdws.blob.core.windows.net/dws-9453463-12900-media/2020/04/about-us-page-min.jpg",
+    superwebsite: "https://www.superworldtechnologies.com/brothersmotors",
+    mainvideo: ""
+  },
+  just7autosalesandservice: {
+    name: "just7autosalesandservice",
+    logo: "https://dcdws.blob.core.windows.net/dws-19556099-50650-media/sites/50650/2023/05/Just7-Logo-w300.png",
+    thumb: "https://dcdws.blob.core.windows.net/dws-19556099-50650-media/sites/50650/2025/07/just7autosales-about-w1920.jpg",
+    superwebsite: "https://www.superworldtechnologies.com/just7autosalesandservice",
+    mainvideo: ""
+  },
+  lkqdallas: {
+    name: "lkqdallas",
+    logo: "https://www.lkqcorp.com/wp-content/uploads/2020/04/logo-lkq-new2022-stacked-small.png",
+    thumb: "https://www.lkqcorp.com/wp-content/uploads/2022/05/DonFlynn.jpg",
+    superwebsite: "https://www.superworldtechnologies.com/lkqdallas",
+    mainvideo: ""
+  },
+  gulliverautogroup: {
+    name: "gulliverautogroup",
+    logo: "https://static.overfuel.com/dealers/gulliver-auto/image/gulliver-2-logo.webp?w=640&q=80",
+    thumb: "https://static.overfuel.com/dealers/gulliver-auto/image/07cbda4e-8252-4dd8-a465-a9ec99afb81b.webp?w=1080&q=80",
+    superwebsite: "https://www.superworldtechnologies.com/gulliverautogroup",
+    mainvideo: "https://static.overfuel.com/dealers/gulliver-auto/video/gulliver_hero_video.mp4"
+  },
+  camfleet: {
+    name: "camfleet",
+    logo: "https://cdn07.carsforsale.com/dealerlogos/1045377/logo.60e16219.jpg",
+    thumb: "https://cdn07.carsforsale.com/dealerlogos/1045377/logo.60e16219.jpg",
+    superwebsite: "https://www.superworldtechnologies.com/camfleet",
+    mainvideo: ""
+  },
+  urbanbuggygolfcarts: {
+    name: "urbanbuggygolfcarts",
+    logo: "https://lirp.cdn-website.com/98f1194e/dms3rep/multi/opt/Logo+black-169w.png",
+    thumb: "https://lirp.cdn-website.com/98f1194e/dms3rep/multi/opt/Lookbook+Cover-fae17a72-2064w.png",
+    superwebsite: "https://www.superworldtechnologies.com/urbanbuggygolfcarts",
+    mainvideo: ""
+  },
+  autohangar: {
+    name: "autohangar",
+    logo: "https://cdn07.carsforsale.com/dealerlogos/476879/logo192110.25dd9672.png",
+    thumb: "https://assets-cc.carsforsale.com/img/476879/avatar.jpg",
+    superwebsite: "https://www.superworldtechnologies.com/autohangar",
+    mainvideo: ""
+  },
+  p1motorwerks: {
+    name: "p1motorwerks",
+    logo: "https://www.p1motorwerks.com/uploads/1/4/4/1/144143240/published/p1-motorwerks-logo-wide-gradient-2.png?1673354216",
+    thumb: "https://www.p1motorwerks.com/uploads/1/4/4/1/144143240/supra-image_orig.jpeg",
+    superwebsite: "https://www.superworldtechnologies.com/p1motorwerks",
+    mainvideo: ""
+  },
+  ikoonautosales: {
+    name: "ikoonautosales",
+    logo: "https://dcdws.blob.core.windows.net/dws-11790688-60037-media/sites/60037/2023/11/logo_OywWaykh-w300.png",
+    thumb: "https://dcdws.blob.core.windows.net/dws-11790688-60037-media/sites/60037/2023/11/about-img.jpg",
+    superwebsite: "https://www.superworldtechnologies.com/ikoonautosales",
+    mainvideo: ""
+  },
+  ntxautoworld: {
+    name: "ntxautoworld",
+    logo: "https://dcdws.blob.core.windows.net/dws-21494979-62371-media/sites/62371/2024/10/ntx-logo-all-white-for-site2.png",
+    thumb: "https://dcdws.blob.core.windows.net/dws-21494979-62371-media/sites/62371/2024/01/cars-3A.jpg",
+    superwebsite: "https://www.superworldtechnologies.com/ntxautoworld",
+    mainvideo: ""
+  },
+  reddswheels: {
+    name: "reddswheels",
+    logo: "https://cdn07.carsforsale.com/dealerlogos/1026610/Logo397122.8be71794.png",
+    thumb: "https://assets-cc.carsforsale.com/img/1026610/avatar.jpg",
+    superwebsite: "https://www.superworldtechnologies.com/reddswheels",
+    mainvideo: ""
+  },
+  skylaneautosource: {
+    name: "skylaneautosource",
+    logo: "https://dcdws.blob.core.windows.net/dws-16063115-78706-media/sites/78706/2024/10/Skylane_Logo2.png",
+    thumb: "https://dcdws.blob.core.windows.net/dws-16063115-78706-media/sites/78706/2024/10/Skylane_Logo2.png",
+    superwebsite: "https://www.superworldtechnologies.com/skylaneautosource",
+    mainvideo: ""
+  },
+  ahzautogroup: {
+    name: "ahzautogroup",
+    logo: "https://dcdws.blob.core.windows.net/dws-12823975-52616-media/sites/52616/2023/06/ahz-logo-w300.png",
+    thumb: "https://dcdws.blob.core.windows.net/dws-12823975-52616-media/sites/52616/2023/06/ahz-logo-w300.png",
+    superwebsite: "https://www.superworldtechnologies.com/ahzautogroup",
+    mainvideo: ""
+  },
+  eliteautoinvestments: {
+    name: "eliteautoinvestments",
+    logo: "https://cdn-websites.autodealersdigital.com/images/105427/logo/header_logo_6663369b961c6.webp",
+    thumb: "https://cdn-websites.autodealersdigital.com/images/105427/welcome/welcome_photo_66633944b93eb.webp",
+    superwebsite: "https://www.superworldtechnologies.com/eliteautoinvestments",
+    mainvideo: ""
+  },
+  rlbsales: {
+    name: "rlbsales",
+    logo: "https://cdn-websites.autodealersdigital.com/images/103212/logo/header_logo_67bc8f7598aa1.webp",
+    thumb: "https://cdn-websites.autodealersdigital.com/ui_resources/pwa/home-page/slider_photo/6.webp",
+    superwebsite: "https://www.superworldtechnologies.com/rlbsales",
+    mainvideo: ""
+  },
+  eastdallasautomotive: {
+    name: "eastdallasautomotive",
+    logo: "https://cdn07.carsforsale.com/CustomTemplatePhotos/385114/photos/logo.3c4fd620.png",
+    thumb: "https://assets-cc.carsforsale.com/img/385114/avatar.jpg",
+    superwebsite: "https://www.superworldtechnologies.com/eastdallasautomotive",
+    mainvideo: ""
+  },
+  triplefautomotive: {
+    name: "triplefautomotive",
+    logo: "https://www.triplefautomotive.com/assets/triplef/triple-f-logo-9258c5439b57be264153f9e77f863727.svg",
+    thumb: "https://cdn.dealeraccelerate.com/triplef/marketing_assets/19/home-about.webp",
+    superwebsite: "https://www.superworldtechnologies.com/triplefautomotive",
+    mainvideo: ""
+  },
+  tarrantcountyliftautorepair: {
+    name: "tarrantcountyliftautorepair",
+    logo: "https://static.wixstatic.com/media/01cd97_d9c10de7d66e417a84b1e3bde814f2ee~mv2.png/v1/fill/w_228,h_154,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Logo%20Crop%20PNG.png",
+    thumb: "https://static.wixstatic.com/media/1051ae_a4017bdc9407424d8e7d6a98340750a1f000.jpg/v1/fill/w_980,h_730,al_c,q_85,usm_0.33_1.00_0.00,enc_avif,quality_auto/1051ae_a4017bdc9407424d8e7d6a98340750a1f000.jpg",
+    superwebsite: "https://www.superworldtechnologies.com/tarrantcountyliftautorepair",
+    mainvideo: "https://video.wixstatic.com/video/1051ae_a4017bdc9407424d8e7d6a98340750a1/1080p/mp4/file.mp4"
+  },
+  venecarsllc: {
+    name: "venecarsllc",
+    logo: "https://venecarsllc.com/wp-content/uploads/2020/05/Logo-text-negro.png",
+    thumb: "https://venecarsllc.com/wp-content/uploads/2019/06/arlington2.png",
+    superwebsite: "https://www.superworldtechnologies.com/venecarsllc",
+    mainvideo: ""
+  },
+  eddiescarconnectiondallastx: {
+    name: "eddiescarconnectiondallastx",
+    logo: "https://dcdws.blob.core.windows.net/dws-9266910-7709-media/2018/10/cropped-Logo288961adsf.png",
+    thumb: "https://dcdws.blob.core.windows.net/dws-9266910-7709-media/2018/10/cropped-Logo288961adsf.png",
+    superwebsite: "https://www.superworldtechnologies.com/eddiescarconnectiondallastx",
+    mainvideo: ""
+  },
+  alimportsinc: {
+    name: "alimportsinc",
+    logo: "https://imagescdn.dealercarsearch.com/DealerImages/17365/26519/logo.png",
+    thumb: "https://imagescdn.dealercarsearch.com/DealerImages/17365/saved/5ad176db.jpg",
+    superwebsite: "https://www.superworldtechnologies.com/alimportsinc",
+    mainvideo: ""
+  },
+  arlingtonautosales: {
+    name: "arlingtonautosales",
+    logo: "https://cdn07.carsforsale.com/dealerlogos/1023454/RS_15_AS_Logo.e1c2cad6.png",
+    thumb: "https://cdn07.carsforsale.com/CustomTemplatePhotos/1023454/photos/ss1.dcc15432.jpg",
+    superwebsite: "https://www.superworldtechnologies.com/arlingtonautosales",
+    mainvideo: ""
+  },
+  excellenceautodirect: {
+    name: "excellenceautodirect",
+    logo: "https://www.excellenceautodirect.com/wp-content/uploads/sites/98/2021/03/dealer-logo-mobile.png",
+    thumb: "https://i.vimeocdn.com/video/1157739090-12cd8ed196c16d607dcee32fe858b190e6e3d701567b43be8114d562938ae54a-d?",
+    superwebsite: "https://www.superworldtechnologies.com/excellenceautodirect",
+    mainvideo: ""
+  },
+  theautocavedallas: {
+    name: "theautocavedallas",
+    logo: "https://theautocave.com/wp-content/uploads/2025/08/The-Auto-Cave-logo.webp",
+    thumb: "https://theautocave.com/wp-content/uploads/2024/08/The-Auto-Cave-02-768x576.webp",
+    superwebsite: "https://www.superworldtechnologies.com/theautocavedallas",
+    mainvideo: ""
+  },
+  lakesidemotors: {
+    name: "lakesidemotors",
+    logo: "https://dcdws.blob.core.windows.net/dws-2215650-50776-media/sites/50776/2023/05/cropped-logo-w300.png",
+    thumb: "https://dcdws.blob.core.windows.net/dws-2215650-50776-media/sites/44348/2023/02/demo-69-about-us-w1024.jpg",
+    superwebsite: "https://www.superworldtechnologies.com/lakesidemotors",
+    mainvideo: ""
+  },
+  autousa: {
+    name: "autousa",
+    logo: "https://www.autousatexas.com/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fautousa-logo.d94d86d8.png&w=256&q=75",
+    thumb: "https://www.autousatexas.com/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fautousa-logo.d94d86d8.png&w=256&q=75",
+    superwebsite: "https://www.superworldtechnologies.com/autousa",
+    mainvideo: ""
+  },
+  valvolineinstantoilchange: {
+    name: "valvolineinstantoilchange",
+    logo: "https://a.mktgcdn.com/p/dMbizTOp5pkmTH62PKHtIp4h5Gj7yJAQ2Ch-mHXWIO4/512x134.png",
+    thumb: "https://dyn.mktgcdn.com/p/EUv_0tbTQn3jtVHNh0JYJmpdVVHuM5_7HUspUy2X-Ew/width=1920,height=1920",
+    superwebsite: "https://www.superworldtechnologies.com/valvolineinstantoilchange",
+    mainvideo: ""
+  },
+  cranshautosalesinc: {
+    name: "cranshautosalesinc",
+    logo: "https://cdn07.carsforsale.com/dealerlogos/673276/RS_12_RA_Logo.c13eab2d.png",
+    thumb: "https://assets-cc.carsforsale.com/img/673276/avatar.png",
+    superwebsite: "https://www.superworldtechnologies.com/cranshautosalesinc",
+    mainvideo: ""
+  },
+  fastbyaccelerateautogroup: {
+    name: "fastbyaccelerateautogroup",
+    logo: "https://storage.googleapis.com/savvy-images/fast-cars-logo-small.png",
+    thumb: "https://storage.googleapis.com/savvy-images/slides/FAST-Cars/FAST_Homepage_Buy_Online-W2100.jpeg",
+    superwebsite: "https://www.superworldtechnologies.com/fastbyaccelerateautogroup",
+    mainvideo: "https://storage.googleapis.com/savvy-images/fast-cars/FAST-Cars-Header%20-Video.mp4"
+  },
+  hoppermotorplex: {
+    name: "hoppermotorplex",
+    logo: "https://x-assets.autorevo-powersites.com/content/assets/clients/8f0f6021-279a-4a03-ad95-150d116e91da/hopper_30th_logo_a.png",
+    thumb: "https://x-assets.autorevo-powersites.com/content/assets/clients/8f0f6021-279a-4a03-ad95-150d116e91da/hopper_30th_logo_a.png",
+    superwebsite: "https://www.superworldtechnologies.com/hoppermotorplex",
+    mainvideo: "https://x-assets.autorevo-powersites.com/content/assets/clients/8f0f6021-279a-4a03-ad95-150d116e91da/hopper_video_v3_720.mp4"
+  },
+  hileyautomotivegroup: {
+    name: "hileyautomotivegroup",
+    logo: "https://pictures.dealer.com/h/hileyautomotivegroup/1234/c3f0ca098d9b42f09ada4ee913dd8ca7.png?impolicy=downsize&h=170",
+    thumb: "https://pictures.dealer.com/h/hileyautomotivegroup/0526/e73a45085c0406baa029e7af90e34474x.jpg?impolicy=downsize_bkpt&w=632",
+    superwebsite: "https://www.superworldtechnologies.com/hileyautomotivegroup",
+    mainvideo: ""
+  },
+  lakecityinvestment: {
+    name: "lakecityinvestment",
+    logo: "https://dcdws.blob.core.windows.net/dws-2225142-60946-media/sites/6044/2021/12/LCI-Logo_Blue-w300.png",
+    thumb: "https://dcdws.blob.core.windows.net/dws-2225142-60946-media/2017/07/IMG_5824_20.jpg",
+    superwebsite: "https://www.superworldtechnologies.com/lakecityinvestment",
+    mainvideo: ""
+  },
+  dfwuniqueauto: {
+    name: "dfwuniqueauto",
+    logo: "https://dcdws.blob.core.windows.net/dws-13394445-63088-media/sites/63088/2024/01/logo-theme-2-w300.png",
+    thumb: "https://dcdws.blob.core.windows.net/dws-13394445-63088-media/sites/63088/2024/01/Main-Banner-blu1.png",
+    superwebsite: "https://www.superworldtechnologies.com/dfwuniqueauto",
+    mainvideo: ""
+  },
+  familyauto: {
+    name: "familyauto",
+    logo: "https://familyautoya.com/wp-content/uploads/2024/04/FamilyAuto@1000x.png",
+    thumb: "https://familyautoya.com/wp-content/uploads/2025/04/BANNER-CINCO-LOCALIDADES-EN-FORT-WORTH-Y-HALTOM-CITY.jpg",
+    superwebsite: "https://www.superworldtechnologies.com/familyauto",
+    mainvideo: ""
+  },
+  autofi: {
+    name: "autofi",
+    logo: "https://dcdws.blob.core.windows.net/dws-14180966-41815-media/sites/41815/2022/11/AutoFi-Motors-logo.jpg",
+    thumb: "https://dcdws.blob.core.windows.net/dws-14180966-41815-media/sites/41815/2022/12/about-img.jpg",
+    superwebsite: "https://www.superworldtechnologies.com/autofi",
+    mainvideo: ""
+  },
+  mannamotors: {
+    name: "mannamotors",
+    logo: "https://dcdws.blob.core.windows.net/dws-2207893-73975-media/sites/73975/2024/08/new-manna-logo-w300.png",
+    thumb: "https://dcdws.blob.core.windows.net/dws-2207893-73975-media/sites/73975/2024/08/new-manna-logo-w300.png",
+    superwebsite: "https://www.superworldtechnologies.com/mannamotors",
+    mainvideo: ""
+  },
+  texasvehicleexchange: {
+    name: "texasvehicleexchange",
+    logo: "https://x-assets.autorevo-powersites.com/content/assets/clients/8d9e47ba-0998-449c-b554-0b3dda5eeed8/logo.png",
+    thumb: "https://x-assets.autorevo-powersites.com/content/assets/clients/8d9e47ba-0998-449c-b554-0b3dda5eeed8/TVE-37_1600.webp",
+    superwebsite: "https://www.superworldtechnologies.com/texasvehicleexchange",
+    mainvideo: ""
+  },
+  ekmotors: {
+    name: "ekmotors",
+    logo: "https://dcdws.blob.core.windows.net/dws-16743206-65100-media/sites/65100/2025/05/ek-motor.png",
+    thumb: "https://dcdws.blob.core.windows.net/dws-16743206-65100-media/sites/65100/2025/05/ek-motor.png",
+    superwebsite: "https://www.superworldtechnologies.com/ekmotors",
+    mainvideo: ""
+  },
+  legendmotorcarscarrollton: {
+    name: "legendmotorcarscarrollton",
+    logo: "https://x-assets.autorevo-powersites.com/content/assets/clients/7832cd88-5ebf-451a-8d01-0feb8cfe5f41/logo.png",
+    thumb: "https://x-assets.autorevo-powersites.com/content/assets/clients/7832cd88-5ebf-451a-8d01-0feb8cfe5f41/legend-dealership.jpg",
+    superwebsite: "https://www.superworldtechnologies.com/legendmotorcarscarrollton",
+    mainvideo: ""
+  },
+  customspaint: {
+    name: "customspaint",
+    logo: "https://dcdws.blob.core.windows.net/dws-22060312-64776-media/sites/64045/2024/02/972_Logo.cc434319.png",
+    thumb: "https://dcdws.blob.core.windows.net/dws-22060312-64776-media/sites/64045/2024/02/972_Logo.cc434319.png",
+    superwebsite: "https://www.superworldtechnologies.com/customspaint",
+    mainvideo: ""
+  },
+  metrogolfcarsinc: {
+    name: "metrogolfcarsinc",
+    logo: "https://static.wixstatic.com/media/a64288_6a57be2628874fde90923640d6c2425b~mv2.png/v1/fill/w_420,h_166,al_c,q_85,enc_avif,quality_auto/_edited.png",
+    thumb: "https://static.wixstatic.com/media/a64288_0d17d51266484d63882c137bd5352b37~mv2.png/v1/crop/x_0,y_1141,w_5756,h_2533/fill/w_2796,h_1234,al_c,q_95,usm_0.66_1.00_0.01,enc_avif,quality_auto/a64288_0d17d51266484d63882c137bd5352b37~mv2.png",
+    superwebsite: "https://www.superworldtechnologies.com/metrogolfcarsinc",
+    mainvideo: ""
+  },
+  l1staroffroad: {
+    name: "l1staroffroad",
+    logo: "https://aw1.imgix.net/aw/_content/site/lonestartruckhq/lonestar-offroad.png?auto=format&dpr=2&fit=max&h=95&q=50&w=165",
+    thumb: "https://aw1.imgix.net/aw/_content/site/lonestartruckhq/lonestar-offroad.png?auto=format&dpr=2&fit=max&h=95&q=50&w=165",
+    superwebsite: "https://www.superworldtechnologies.com/l1staroffroad",
+    mainvideo: ""
+  },
+  evolutionautoconceptsperformanceshop: {
+    name: "evolutionautoconceptsperformanceshop",
+    logo: "https://static.wixstatic.com/media/a79bd0_65f440fe020a46fe83611ca7189e2ca4.png/v1/fill/w_1248,h_280,al_c,q_85,enc_avif,quality_auto/a79bd0_65f440fe020a46fe83611ca7189e2ca4.png",
+    thumb: "https://static.wixstatic.com/media/a79bd0_ed920abb815a42a39b9353326ec06f2f.jpg/v1/fill/w_1225,h_599,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/a79bd0_ed920abb815a42a39b9353326ec06f2f.jpg",
+    superwebsite: "https://www.superworldtechnologies.com/evolutionautoconceptsperformanceshop",
+    mainvideo: ""
+  },
+  pablomotorsarlington: {
+    name: "pablomotorsarlington",
+    logo: "https://dcdws.blob.core.windows.net/dws-8625057-55853-media/sites/55853/2023/08/202308-903a2b1441634a25b9eac8f1bf477a7c.jpg",
+    thumb: "https://dcdws.blob.core.windows.net/dws-8625057-55853-media/sites/55853/2023/08/202308-903a2b1441634a25b9eac8f1bf477a7c.jpg",
+    superwebsite: "https://www.superworldtechnologies.com/pablomotorsarlington",
+    mainvideo: ""
   }
 };
 
