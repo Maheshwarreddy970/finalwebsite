@@ -12,9 +12,8 @@ const greatVibes = Great_Vibes({ subsets: ['latin'], weight: ['400'] })
 export default function Herosection() {
   const clientInfo = useClientStore((state) => state.clientInfo)
 
-  // Determine if mainvideo is a valid URL (not "FALSE" or undefined)
-  const isMainVideoValid = clientInfo?.mainvideo && clientInfo.mainvideo !== ""
-
+  const isMainVideoValid = clientInfo?.mainvideo && clientInfo.mainvideo !== "";
+  const isVimeoUrl = clientInfo?.mainvideo?.includes('vimeo.com');
   return (
     <section className="px-3 md:px-10 pt-36 h-[60vh] md:h-screen w-full">
       <div
@@ -42,27 +41,38 @@ export default function Herosection() {
       </div>
       <div className="relative rounded-xl mt-1 shadow-md border h-full w-full overflow-hidden aspect-video">
         <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0">
-          <video
-            width="100%"
-            height="100%"
-            autoPlay
-            loop
-            muted
-            playsInline
-            preload="metadata"
-            poster={isMainVideoValid ? clientInfo.mainvideo : '/VN20250928_124344 (1).mp4'}
-            className="absolute top-0 left-0 h-full w-full object-cover"
-          >
-            <source
-              src={isMainVideoValid ? clientInfo.mainvideo : '/VN20250928_124344 (1).mp4'}
-              type="video/mp4"
+          {isVimeoUrl ? (
+            <iframe
+              src={clientInfo.mainvideo}
+              width="100%"
+              height="100%"
+              allow="autoplay; fullscreen; picture-in-picture"
+              allowFullScreen
+              className="absolute top-0 left-0 h-full w-full object-cover"
             />
-            <source
-              src={isMainVideoValid ? clientInfo.mainvideo : '/VN20250928_124344 (1).mp4'}
-              type="video/webm"
-            />
-            Your browser does not support the video tag.
-          </video>
+          ) : (
+            <video
+              width="100%"
+              height="100%"
+              autoPlay
+              loop
+              muted
+              playsInline
+              preload="metadata"
+              poster={isMainVideoValid ? clientInfo.mainvideo : '/VN20250928_124344 (1).mp4'}
+              className="absolute top-0 left-0 h-full w-full object-cover"
+            >
+              <source
+                src={isMainVideoValid ? clientInfo.mainvideo : '/VN20250928_124344 (1).mp4'}
+                type="video/mp4"
+              />
+              <source
+                src={isMainVideoValid ? clientInfo.mainvideo : '/VN20250928_124344 (1).mp4'}
+                type="video/webm"
+              />
+              Your browser does not support the video tag.
+            </video>
+          )}
         </div>
 
         <div className="absolute top-[3%] right-[3%] md:top-[6%] md:right-[2%] z-20">
