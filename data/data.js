@@ -1326,11 +1326,11 @@ export const clientDetails = {
     superwebsite: "https://www.superworldtechnologies.com/callahanmotorcompanyllc",
     mainvideo: "https://player.vimeo.com/video/1045536546?autoplay=1&_video&title=0&byline=0&background=1&portrait=0&color=00adef&loop=1&quality=720p&dnt=0&playsinline=1"
   },
-  ecar1: {
-    name: "ecar1",
+  ecarone: {
+    name: "ecarone",
     logo: "https://pictures.dealer.com/e/ecarone3/1234/8dfd8f6176f94182bdce21da816b491d.png?impolicy=downsize&h=160",
     thumb: "https://scontent.fvga2-2.fna.fbcdn.net/v/t39.30808-6/490978037_1144577781014035_7927471694047385711_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=YBzI7ThXI4AQ7kNvwFuH15n&_nc_oc=AdmOLUdigDqLbBdJTVDYqDUoviitgXdolH4g4J5Enh29tBgJcHrWSBy3dJxcFS6bgVlLOYcNi2uQ1v2PHuH7AL2J&_nc_zt=23&_nc_ht=scontent.fvga2-2.fna&_nc_gid=0tkt_hUUM2P3DYofiUbziw&oh=00_AfbQzoSpE0Fi2gd2mC_N88N3JN6yIQdzTErNRHV51u6q_Q&oe=68E059F7",
-    superwebsite: "https://www.superworldtechnologies.com/ecar1",
+    superwebsite: "https://www.superworldtechnologies.com/ecarone",
     mainvideo: ""
   },
   discountmotors3: {
@@ -1396,11 +1396,11 @@ export const clientDetails = {
     superwebsite: "https://www.superworldtechnologies.com/bigtexautomart",
     mainvideo: ""
   },
-  autosavvyfor2rth: {
-    name: "autosavvyfor2rth",
+  autosavvyfortworth: {
+    name: "autosavvyfortworth",
     logo: "https://www.autosavvy.com/wp-content/themes/DealerInspireDealerTheme/images/logo-head.png",
     thumb: "https://scontent.fvga2-2.fna.fbcdn.net/v/t39.30808-6/482344560_1048315844002756_2675396213595793143_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=104&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=hk4sm2E76PIQ7kNvwESCvv3&_nc_oc=AdlZyCM7lLMYWHHwCS2h_5Owv8HDb9sxX7mJKZk1a24kPNoDLlrioh8kd9UgkdAevGr3MS41_RvyGOWB_aOGdbx6&_nc_zt=23&_nc_ht=scontent.fvga2-2.fna&_nc_gid=qJZmQ-oiZ28sDJQKwvedWw&oh=00_AfY-n1IqUxK2uf1wE77TlQBUJRfsvhNo7JaLSBs7mTDmxg&oe=68E06BFF",
-    superwebsite: "https://www.superworldtechnologies.com/autosavvyfor2rth",
+    superwebsite: "https://www.superworldtechnologies.com/autosavvyfortworth",
     mainvideo: ""
   },
   enterprisecarsales: {
@@ -1446,17 +1446,17 @@ export const clientDetails = {
     mainvideo: ""
   },
   europeanmotorsinc: {
-    name: "europeanmotorsinc.",
+    name: "europeanmotorsinc",
     logo: "https://www.europeanmotorsusa.com/assets/images/logo-european-motors-inc.png",
     thumb: "https://www.europeanmotorsusa.com/assets/images/360-european-motors.webp",
     superwebsite: "https://www.superworldtechnologies.com/europeanmotorsinc",
     mainvideo: ""
   },
-  ganasyafor2rth: {
-    name: "ganasyafor2rth",
+  ganasyafortworth: {
+    name: "ganasyafortworth",
     logo: "https://tricolorstaticfiles.azureedge.net/img/ganasya/header/logo.png",
     thumb: "https://tricolorstaticfiles.azureedge.net/img/ganasya/home/hero-carousel/hero-slide1-md.webp",
-    superwebsite: "https://www.superworldtechnologies.com/ganasyafor2rth",
+    superwebsite: "https://www.superworldtechnologies.com/ganasyafortworth",
     mainvideo: "https://tricolorstaticfiles.azureedge.net/vid/tricolor/home/inspection_en_us.mp4"
   },
   mcandrewmotors: {
@@ -1487,11 +1487,11 @@ export const clientDetails = {
     superwebsite: "https://www.superworldtechnologies.com/vamosauto",
     mainvideo: ""
   },
-  streetsideclassicsdallasfor2rth: {
-    name: "streetsideclassicsdallasfor2rth",
+  streetsideclassicsdallasfortworth: {
+    name: "streetsideclassicsdallasfortworth",
     logo: "https://www.streetsideclassics.com/assets/streetside/ss-logo-blue-80677607bed9af959c5b3d2289a590ee.svg",
     thumb: "https://cdn.dealeraccelerate.com/streetside/marketing_assets/155/dallas-showroom.webp",
-    superwebsite: "https://www.superworldtechnologies.com/streetsideclassicsdallasfor2rth",
+    superwebsite: "https://www.superworldtechnologies.com/streetsideclassicsdallasfortworth",
     mainvideo: ""
   },
   adlautosales: {
@@ -1501,11 +1501,11 @@ export const clientDetails = {
     superwebsite: "https://www.superworldtechnologies.com/adlautosales",
     mainvideo: ""
   },
-  starsautosales: {
-    name: "starsautosales",
+  fivestarsautosales: {
+    name: "fivestarsautosales",
     logo: "https://dcdws.blob.core.windows.net/dws-7034144-13268-media/sites/13268/2020/08/cropped-DWS-5STarAutoLLC_colorOnBlack.png",
     thumb: "https://dcdws.blob.core.windows.net/dws-7034144-13268-media/2020/04/about-section.jpg?id=2271",
-    superwebsite: "https://www.superworldtechnologies.com/starsautosales",
+    superwebsite: "https://www.superworldtechnologies.com/fivestarsautosales",
     mainvideo: ""
   },
   redlinemotors: {
@@ -1529,11 +1529,11 @@ export const clientDetails = {
     superwebsite: "https://www.superworldtechnologies.com/fairlease",
     mainvideo: ""
   },
-  midcityautotruckexchangeinc: {
+  midcityautoandtruckexchangeinc: {
     name: "midcityautotruckexchangeinc",
     logo: "https://cdn-websites.autodealersdigital.com/images/105003/logo/header_logo_679364a1c4548.webp",
     thumb: "https://cdn-websites.autodealersdigital.com/uploads/20241113-121747.jpg",
-    superwebsite: "https://www.superworldtechnologies.com/midcityautotruckexchangeinc",
+    superwebsite: "https://www.superworldtechnologies.com/midcityautoandtruckexchangeinc",
     mainvideo: ""
   },
   hurstautoplex: {
@@ -1550,11 +1550,11 @@ export const clientDetails = {
     superwebsite: "https://www.superworldtechnologies.com/whips",
     mainvideo: "https://txwhips.com/wp-content/uploads/2024/06/Compressed-Whips-Video.mp4"
   },
-  huffinesusedcartrucksuperstore: {
+  huffinesusedandcartrucksuperstore: {
     name: "huffinesusedcartrucksuperstore",
     logo: "https://pictures.dealer.com/h/huffinesautogroup/1234/731f252e0c104923be7144ffd351d965.png?impolicy=downsize&h=170",
     thumb: "https://pictures.dealer.com/h/huffinesautogroup/1889/8eec9f0f9c66f287a1749bda9ef490c5x.jpg?impolicy=downsize_bkpt&w=672&quot",
-    superwebsite: "https://www.superworldtechnologies.com/huffinesusedcartrucksuperstore",
+    superwebsite: "https://www.superworldtechnologies.com/huffinesusedcarandtrucksuperstore",
     mainvideo: "https://videos.dealer.com/videos2/clients/h/huffinesautogroup/d8bff0310a0e09a7100023827ec943ea_highest.mp4"
   },
   siautoinc: {
@@ -2040,11 +2040,11 @@ export const clientDetails = {
     superwebsite: "https://www.superworldtechnologies.com/metrogolfcarsinc",
     mainvideo: ""
   },
-  l1staroffroad: {
-    name: "l1staroffroad",
+  lonestaroffroad: {
+    name: "lonestaroffroad",
     logo: "https://aw1.imgix.net/aw/_content/site/lonestartruckhq/lonestar-offroad.png?auto=format&dpr=2&fit=max&h=95&q=50&w=165",
     thumb: "https://aw1.imgix.net/aw/_content/site/lonestartruckhq/lonestar-offroad.png?auto=format&dpr=2&fit=max&h=95&q=50&w=165",
-    superwebsite: "https://www.superworldtechnologies.com/l1staroffroad",
+    superwebsite: "https://www.superworldtechnologies.com/lonestaroffroad",
     mainvideo: ""
   },
   evolutionautoconceptsperformanceshop: {
