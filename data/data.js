@@ -1473,11 +1473,11 @@ export const clientDetails = {
     superwebsite: "https://www.superworldtechnologies.com/addisonautoplex",
     mainvideo: "https://x-assets.autorevo-powersites.com/content/assets/clients/56484923-d5f4-427a-a6e4-5edde20762db/addisonautoplex_FPO_720.mp4"
   },
-  l1starmotorsii: {
+  lonestarmotorsii: {
     name: "l1starmotorsii",
     logo: "https://lsm2.net/uploads/dynamic_areas/CBbZAaIHGtUStBXzbFqq/56/logo_updated_9-07-21.aiimg-ar1w632h157-c2Z0PXBuZw.webp",
     thumb: "https://lsm2.net/uploads/dynamic_areas/8vTcKbNoVu6XAnbyTpGp/56/Slide-2.aiimg-w1900h922cr1en0-c2Z0PWpwZw.webp",
-    superwebsite: "https://www.superworldtechnologies.com/l1starmotorsii",
+    superwebsite: "https://www.superworldtechnologies.com/lonestarmotorsii",
     mainvideo: ""
   },
   vamosauto: {
@@ -1550,7 +1550,7 @@ export const clientDetails = {
     superwebsite: "https://www.superworldtechnologies.com/whips",
     mainvideo: "https://txwhips.com/wp-content/uploads/2024/06/Compressed-Whips-Video.mp4"
   },
-  huffinesusedandcartrucksuperstore: {
+  huffinesusedcarandtrucksuperstore: {
     name: "huffinesusedcartrucksuperstore",
     logo: "https://pictures.dealer.com/h/huffinesautogroup/1234/731f252e0c104923be7144ffd351d965.png?impolicy=downsize&h=170",
     thumb: "https://pictures.dealer.com/h/huffinesautogroup/1889/8eec9f0f9c66f287a1749bda9ef490c5x.jpg?impolicy=downsize_bkpt&w=672&quot",
@@ -1697,11 +1697,11 @@ export const clientDetails = {
     superwebsite: "https://www.superworldtechnologies.com/autocasa",
     mainvideo: ""
   },
-  e1autogroupcardealership: {
+  eoneautogroupcardealership: {
     name: "e1autogroupcardealership",
     logo: "https://www.eoneautogroup.com/uploads/8/0/7/9/80799044/editor/eone-logo-t-large-use.png?1682783830",
     thumb: "https://www.eoneautogroup.com/uploads/8/0/7/9/80799044/editor/fast-easy-credit-approval-at-eone.jpg?1682509474",
-    superwebsite: "https://www.superworldtechnologies.com/e1autogroupcardealership",
+    superwebsite: "https://www.superworldtechnologies.com/eoneautogroupcardealership",
     mainvideo: ""
   },
   americarmotorcompany: {
