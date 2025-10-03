@@ -75,15 +75,7 @@ export default function Herosection() {
           )}
         </div>
 
-        <div className="absolute top-[3%] right-[3%] md:top-[6%] md:right-[2%] z-20">
-          <img
-            src={clientInfo?.logo ? clientInfo.logo : '/vehiql-logo.png'}
-            alt="Vehiql Logo"
-            width={200}
-            height={60}
-            className="h-10 md:h-16 w-auto object-contain"
-          />
-        </div>
+  
       </div>
       <div className="flex flex-col md:flex-row md:justify-between mt-10">
         <div className={cn('text-2xl text-black', philosopher.className)}>
