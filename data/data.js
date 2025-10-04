@@ -2646,7 +2646,7 @@ export const clientDetails = {
     name: "gatewaycardealerincusedcarsforsalehillsideave,newyork",
     logo: "https://www.gatewaycardealer.com/Dealer-Websites/Gateway-Car-Dealer-NY/images/logo.png",
     thumb: "https://www.gatewaycardealer.com/Dealer-Websites/Gateway-Car-Dealer-NY/images/spring-sale-banner.jpg",
-    superwebsite: "https://www.superworldtechnologies.com/gatewaycardealerincusedcarsforsalehillsideave,newyork",
+    superwebsite: "https://www.superworldtechnologies.com/gatewaycardealerincusedcarsforsalehillsideave",
     mainvideo: ""
   },
   greatdealmotors: {
