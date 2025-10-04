@@ -2656,11 +2656,11 @@ export const clientDetails = {
     superwebsite: "https://www.superworldtechnologies.com/greatdealmotors",
     mainvideo: ""
   },
-  turnautomallnewhydepark,newyork: {
-    name: "turnautomallnewhydepark,newyork",
+  turnautomallnewhydepark: {
+    name: "turnautomallnewhydepark",
     logo: "https://images.app.ridemotive.com/lzmw03ykswh28zh8nxt5jncihoec",
     thumb: "https://images.app.ridemotive.com/lzmw03ykswh28zh8nxt5jncihoec",
-    superwebsite: "https://www.superworldtechnologies.com/turnautomallnewhydepark,newyork",
+    superwebsite: "https://www.superworldtechnologies.com/turnautomallnewhydepark",
     mainvideo: ""
   },
   jtlautosalesinc: {
@@ -2866,11 +2866,11 @@ export const clientDetails = {
     superwebsite: "https://www.superworldtechnologies.com/precisionautosalesofny",
     mainvideo: ""
   },
-  gabriellitrucksalesservice,hicksville: {
-    name: "gabriellitrucksalesservice,hicksville",
+  gabriellitrucksalesservice: {
+    name: "gabriellitrucksalesservice",
     logo: "https://www.gabriellitruck.com/images/gabriellitruck-logo.png",
     thumb: "https://www.gabriellitruck.com/fckimages/pages/location/Nassau.jpg",
-    superwebsite: "https://www.superworldtechnologies.com/gabriellitrucksalesservice,hicksville",
+    superwebsite: "https://www.superworldtechnologies.com/gabriellitrucksalesservice",
     mainvideo: ""
   },
   huntingtonramserviceparts: {
@@ -3307,11 +3307,11 @@ export const clientDetails = {
     superwebsite: "https://www.superworldtechnologies.com/dhakaautoleasing",
     mainvideo: ""
   },
-  joeyboatsandcars,llc: {
-    name: "joeyboatsandcars,llc",
+  joeyboatsandcars: {
+    name: "joeyboatsandcars",
     logo: "https://img1.wsimg.com/isteam/ip/43ba7353-8688-43dc-a8f6-31af86ba90bb/blob-7571bb7.png/:/rs=w:955,h:400,cg:true,m/cr=w:955,h:400/qt=q:95",
     thumb: "https://img1.wsimg.com/isteam/ip/43ba7353-8688-43dc-a8f6-31af86ba90bb/blob-7571bb7.png/:/rs=w:955,h:400,cg:true,m/cr=w:955,h:400/qt=q:95",
-    superwebsite: "https://www.superworldtechnologies.com/joeyboatsandcars,llc",
+    superwebsite: "https://www.superworldtechnologies.com/joeyboatsandcars",
     mainvideo: ""
   },
   vipautocreditexpress: {
