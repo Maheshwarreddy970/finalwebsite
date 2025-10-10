@@ -1,5 +1,12 @@
 
 export const clientDetails = {
+  car:{
+    name:"Pro Auto",
+    mainvideo: "",
+thumb:'/Screenshot2025-10-1016401.jpeg',
+logo:'/zent-logo-png-car-22.png',
+
+  },
   g: {
     name: "g",
     mainvideo: "https://chatdocai.s3.ap-south-1.amazonaws.com/ssvid.net--2017-Porsche-Panamera-Turbo-Bring-a-Trailer_v720P.mp4",
